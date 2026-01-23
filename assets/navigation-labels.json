@@ -1,0 +1,18 @@
+{
+  "en": {
+    "previous": "← Back to",
+    "next": "Next:",
+    "nextArrow": "→",
+    "startTopic": "Start Topic",
+    "backToPrimer": "← Back to Primer",
+    "backToIntro": "← Back to Introduction"
+  },
+  "es": {
+    "previous": "← Atrás:",
+    "next": "Siguiente:",
+    "nextArrow": "→",
+    "startTopic": "Comenzar Tema",
+    "backToPrimer": "← Atrás: Introducción",
+    "backToIntro": "← Atrás: Introducción"
+  }
+}

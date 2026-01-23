@@ -1,0 +1,114 @@
+{
+  "en": {
+    "tagline": "Your localization thinking cap.",
+    "sections": {
+      "navigation": {
+        "title": "Course Navigation",
+        "links": [
+          {
+            "text": "Course Home",
+            "url": "/"
+          },
+          {
+            "text": "Outline",
+            "url": "/outline.html"
+          },
+          {
+            "text": "About",
+            "url": "/about.html"
+          },
+          {
+            "text": "Contact",
+            "url": "/contact.html"
+          }
+        ]
+      },
+      "social": {
+        "title": "Where to Find Us",
+        "links": [
+          {
+            "text": "LinkedIn",
+            "url": "https://www.linkedin.com/company/locessentials/"
+          },
+          {
+            "text": "YouTube",
+            "url": "https://www.youtube.com/@locessentials"
+          },
+          {
+            "text": "Email: info@locessentials.com",
+            "url": "mailto:info@locessentials.com"
+          }
+        ]
+      },
+      "legal": {
+        "title": "Legal Language",
+        "links": [
+          {
+            "text": "Terms & Conditions",
+            "url": "https://locessentials.com/terms-of-service/"
+          },
+          {
+            "text": "Privacy Policy",
+            "url": "https://locessentials.com/privacy-policy/"
+          }
+        ]
+      }
+    }
+  },
+  "es": {
+    "tagline": "Your localization thinking cap.",
+    "sections": {
+      "navigation": {
+        "title": "Navegación del Curso",
+        "links": [
+          {
+            "text": "Inicio del curso",
+            "url": "/"
+          },
+          {
+            "text": "Esquema",
+            "url": "/esquema.html"
+          },
+          {
+            "text": "Acerca de",
+            "url": "/acerca.html"
+          },
+          {
+            "text": "Contacto",
+            "url": "/contacto.html"
+          }
+        ]
+      },
+      "social": {
+        "title": "Dónde Encontrarnos",
+        "links": [
+          {
+            "text": "LinkedIn",
+            "url": "https://www.linkedin.com/company/locessentials/"
+          },
+          {
+            "text": "YouTube",
+            "url": "https://www.youtube.com/@locessentials"
+          },
+          {
+            "text": "Correo: info@locessentials.com",
+            "url": "mailto:info@locessentials.com"
+          }
+        ]
+      },
+      "legal": {
+        "title": "Lenguaje Legal",
+        "links": [
+          {
+            "text": "Términos y Condiciones",
+            "url": "https://locessentials.com/terms-of-service/"
+          },
+          {
+            "text": "Política de Privacidad",
+            "url": "https://locessentials.com/privacy-policy/"
+          }
+        ]
+      }
+    }
+  }
+}

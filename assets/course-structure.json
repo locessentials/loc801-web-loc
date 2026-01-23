@@ -1,0 +1,304 @@
+{
+  "en": {
+    "mainLinks": [
+      {
+        "label": "Course Home",
+        "url": "/",
+        "icon": "📚"
+      },
+      {
+        "label": "Outline",
+        "url": "/outline.html",
+        "icon": "📋"
+      },
+      {
+        "label": "About",
+        "url": "/about.html",
+        "icon": "ℹ️"
+      },
+      {
+        "label": "Contact",
+        "url": "/contact.html",
+        "icon": "💬"
+      }
+    ],
+    "topicsTitle": "Course Topics",
+    "topics": [
+      {
+        "number": 1,
+        "title": "Website Localization Orientation",
+        "pages": [
+          {
+            "label": "Topic 1 Primer",
+            "url": "/t-1/topic-1-primer.html"
+          },
+          {
+            "label": "Self-Evaluation",
+            "url": "/t-1/self-evaluation.html"
+          },
+          {
+            "label": "Web I18n and L10n",
+            "url": "/t-1/web-i18n-l10n.html"
+          },
+          {
+            "label": "Cultural Ergonomics",
+            "url": "/t-1/cultural-ergonomics.html"
+          },
+          {
+            "label": "Topic 1 Conclusion",
+            "url": "/t-1/topic-1-conclusion.html"
+          }
+        ]
+      },
+      {
+        "number": 2,
+        "title": "Website Translatables & Localization Workflows",
+        "pages": [
+          {
+            "label": "Topic 2 Primer",
+            "url": "/t-2/topic-2-primer.html"
+          },
+          {
+            "label": "Translatables Examples",
+            "url": "/t-2/translatables-examples.html"
+          },
+          {
+            "label": "Web Localization Workflows",
+            "url": "/t-2/web-loc-workflows.html"
+          },
+          {
+            "label": "GitHub Setup",
+            "url": "/t-2/github-setup.html"
+          },
+          {
+            "label": "Topic 2 Conclusion",
+            "url": "/t-2/topic-2-conclusion.html"
+          }
+        ]
+      },
+      {
+        "number": 3,
+        "title": "HTML & Visual Studio Code",
+        "pages": [
+          {
+            "label": "Topic 3 Primer",
+            "url": "/t-3/topic-3-primer.html"
+          }
+        ]
+      },
+      {
+        "number": 4,
+        "title": "JavaScript, JSON & CSS",
+        "pages": [
+          {
+            "label": "Topic 4 Primer",
+            "url": "/t-4/topic-4-primer.html"
+          }
+        ]
+      },
+      {
+        "number": 5,
+        "title": "Blogs, Newsletters & SEO",
+        "pages": [
+          {
+            "label": "Topic 5 Primer",
+            "url": "/t-5/topic-5-primer.html"
+          }
+        ]
+      },
+      {
+        "number": 6,
+        "title": "Choosing Your Translator",
+        "pages": [
+          {
+            "label": "Topic 6 Primer",
+            "url": "/t-6/topic-6-primer.html"
+          }
+        ]
+      },
+      {
+        "number": 7,
+        "title": "Translation Technology Options",
+        "pages": [
+          {
+            "label": "Topic 7 Primer",
+            "url": "/t-7/topic-7-primer.html"
+          }
+        ]
+      },
+      {
+        "number": 8,
+        "title": "Multilingual WordPress",
+        "pages": [
+          {
+            "label": "Topic 8 Primer",
+            "url": "/t-8/topic-8-primer.html"
+          }
+        ]
+      },
+      {
+        "number": 9,
+        "title": "Working with Developers & LQA",
+        "pages": [
+          {
+            "label": "Topic 9 Primer",
+            "url": "/t-9/topic-9-primer.html"
+          }
+        ]
+      },
+      {
+        "number": 10,
+        "title": "Conclusions & Project Showcase",
+        "pages": [
+          {
+            "label": "Topic 10 Primer",
+            "url": "/t-10/topic-10-primer.html"
+          }
+        ]
+      }
+    ]
+  },
+  "es": {
+    "mainLinks": [
+      {
+        "label": "Inicio del curso",
+        "url": "/",
+        "icon": "📚"
+      },
+      {
+        "label": "Esquema",
+        "url": "/esquema.html",
+        "icon": "📋"
+      },
+      {
+        "label": "Acerca de",
+        "url": "/acerca.html",
+        "icon": "ℹ️"
+      },
+      {
+        "label": "Contacto",
+        "url": "/contacto.html",
+        "icon": "💬"
+      }
+    ],
+    "topicsTitle": "Temas del Curso",
+    "topics": [
+      {
+        "number": 1,
+        "title": "Orientación en la Localización de Sitios Web",
+        "pages": [
+          {
+            "label": "Tema 1 - Introducción",
+            "url": "/t-1/tema-1-intro.html"
+          },
+          {
+            "label": "Autoevaluación",
+            "url": "/t-1/autoevaluación.html"
+          },
+          {
+            "label": "I18n y L10n Web",
+            "url": "/t-1/i18n-l10n-web.html"
+          },
+          {
+            "label": "Ergonomía Cultural",
+            "url": "/t-1/ergonomía-cultural.html"
+          },
+          {
+            "label": "Tema 1 - Conclusión",
+            "url": "/t-1/tema-1-conclusión.html"
+          }
+        ]
+      },
+      {
+        "number": 2,
+        "title": "Traducibles de Sitios Web y Flujos de Trabajo de la Localización",
+        "pages": [
+          {
+            "label": "Tema 2 - Introducción",
+            "url": "/t-2/tema-2-intro.html"
+          }
+        ]
+      },
+      {
+        "number": 3,
+        "title": "HTML y Visual Studio Code",
+        "pages": [
+          {
+            "label": "Tema 3 - Introducción",
+            "url": "/t-3/tema-3-intro.html"
+          }
+        ]
+      },
+      {
+        "number": 4,
+        "title": "JavaScript, JSON y CSS",
+        "pages": [
+          {
+            "label": "Tema 4 - Introducción",
+            "url": "/t-4/tema-4-intro.html"
+          }
+        ]
+      },
+      {
+        "number": 5,
+        "title": "Blogs, Boletines y SEO",
+        "pages": [
+          {
+            "label": "Tema 5 - Introducción",
+            "url": "/t-5/tema-5-intro.html"
+          }
+        ]
+      },
+      {
+        "number": 6,
+        "title": "Selección de Traductor",
+        "pages": [
+          {
+            "label": "Tema 6 - Introducción",
+            "url": "/t-6/tema-6-intro.html"
+          }
+        ]
+      },
+      {
+        "number": 7,
+        "title": "Opciones de Tecnología de Traducción",
+        "pages": [
+          {
+            "label": "Tema 7 - Introducción",
+            "url": "/t-7/tema-7-intro.html"
+          }
+        ]
+      },
+      {
+        "number": 8,
+        "title": "WordPress Multilingüe",
+        "pages": [
+          {
+            "label": "Tema 8 - Introducción",
+            "url": "/t-8/tema-8-intro.html"
+          }
+        ]
+      },
+      {
+        "number": 9,
+        "title": "Trabajar con Desarrolladores y LQA",
+        "pages": [
+          {
+            "label": "Tema 9 - Introducción",
+            "url": "/t-9/tema-9-intro.html"
+          }
+        ]
+      },
+      {
+        "number": 10,
+        "title": "Conclusiones y Proyecto Final",
+        "pages": [
+          {
+            "label": "Tema 10 - Introducción",
+            "url": "/t-10/tema-10-intro.html"
+          }
+        ]
+      }
+    ]
+  }
+}
