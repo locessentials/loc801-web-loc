@@ -49,7 +49,7 @@ function renderFooter() {
     const footerHTML = `
         <div class="footer-content">
             <div class="footer-column footer-left">
-                <img src="../assets/LocCapLogoTransparent.png" alt="Two toned baseball cap in blue with the phrase Loc in white lettering enclosed in a white square on the crown" class="footer-logo">
+                <img src="../assets/images/LocCapLogoTransparent.png" alt="Two toned baseball cap in blue with the phrase Loc in white lettering enclosed in a white square on the crown" class="footer-logo">
                 <a href="https://locessentials.com" target="_blank" rel="noopener noreferrer" class="footer-brand">LocEssentials</a>
                 <p class="footer-tagline">${content.tagline}</p>
             </div>

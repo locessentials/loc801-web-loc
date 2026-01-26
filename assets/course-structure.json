@@ -63,8 +63,8 @@
             "url": "/t-2/translatables-examples.html"
           },
           {
-            "label": "Web Localization Workflows",
-            "url": "/t-2/web-loc-workflows.html"
+            "label": "Theory and Practice",
+            "url": "/t-2/web-loc-theory-forum.html"
           },
           {
             "label": "GitHub Setup",
@@ -216,6 +216,22 @@
           {
             "label": "Tema 2 - Introducción",
             "url": "/t-2/tema-2-intro.html"
+          },
+          {
+            "label": "Elementos Traducibles",
+            "url": "/t-2/elementos-traducibles.html"
+          },
+          {
+            "label": "La Teoría y la Práctica",
+            "url": "/t-2/foro-teoría-loc-web.html"
+          },
+          {
+            "label": "Configuración de GitHub",
+            "url": "/t-2/configuración-github.html"
+          },
+          {
+            "label": "Tema 2 - Conclusión",
+            "url": "/t-2/tema-2-conclusión.html"
           }
         ]
       },

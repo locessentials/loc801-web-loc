@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn how to set up GitHub and Visual Studio Code for web localization projects. Create your first repository and publish a live website using GitHub Pages.">
+    <meta name="keywords" content="GitHub setup, Visual Studio Code, version control, Git configuration, GitHub Pages, web localization portfolio">
+    
+    <!-- Open Graph for social media -->
+    <meta property="og:title" content="GitHub Setup | Topic 2 | Loc801">
+    <meta property="og:description" content="Set up your GitHub account and Visual Studio Code for web localization projects.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://loc801.locessentials.com/t-2/github-setup.html">
+    <meta property="og:image" content="https://loc801.locessentials.com/assets/images/LocCapTransparentTilted.png">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://loc801.locessentials.com/t-2/github-setup.html">
+    
+    <!-- Language alternates -->
+    <link rel="alternate" hreflang="es" href="configuración-github.html">
+    <link rel="alternate" hreflang="en" href="github-setup.html">
+    <link rel="alternate" hreflang="x-default" href="github-setup.html">
+    
+    <title>GitHub Setup | Topic 2 | Loc801</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../assets/styles.css">
+</head>
+<body>
+    <div class="page-wrapper">
+        <div class="main-content-wrapper">
+            <main class="main-content">
+                <!-- Header -->
+                <header>
+                    <div class="header-content">
+                        <div class="logo-section">
+                            <img src="../assets/images/LocCapTransparentTilted.png" alt="LocEssentials cap logo" class="logo">
+                            <a href="/" class="course-title">Loc801: Web Localization for Beginners</a>
+                        </div>
+                        <div class="header-actions">
+                            <a href="/outline.html" class="outline-btn">
+                                <span>📋</span>
+                                <span>Outline</span>
+                            </a>
+                            <div class="lang-picker">
+                                <button class="lang-btn" data-lang="en">English</button>
+                                <button class="lang-btn" data-lang="es">Español</button>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+
+                <!-- Main Content -->
+                <div class="container">
+                    <nav class="breadcrumb">
+                        <a href="/">Course Home</a>
+                        <span class="breadcrumb-separator">›</span>
+                        <a href="/t-2/topic-2-primer.html">Topic 2</a>
+                        <span class="breadcrumb-separator">›</span>
+                        <span>GitHub Setup</span>
+                    </nav>
+
+                    <div class="page-header">
+                        <span class="topic-number">TOPIC 2</span>
+                        <h1 class="topic-title">GitHub Account & Visual Studio Code Setup</h1>
+                        <p class="topic-description">
+                            Set up your professional development environment with GitHub and Visual Studio Code. You'll create your first repository, publish a live website, and establish the foundation for your web localization portfolio.
+                        </p>
+                    </div>
+
+                    <div class="content-section">
+                        <h2 class="section-title">
+                            <span class="section-icon">🧭</span>
+                            Overview
+                        </h2>
+                        <p class="regular-text">
+                            Developers often use a combination of Visual Studio Code and GitHub for coding projects, and teams use GitHub to collaborate on coding projects. You're going to create the GitHub account where you'll build your web localization portfolio. On this page, you'll also find instructions on how to connect your GitHub Account to Visual Studio Code.
+                        </p>
+                    </div>
+
+                    <div class="content-section">
+                        <h2 class="section-title">
+                            <span class="section-icon">❓</span>
+                            What is GitHub?
+                        </h2>
+                        <p class="intro-text">
+                            GitHub is a web-based platform for version control and collaboration. It allows developers and localization professionals to work together on projects, track changes, and manage code repositories. To learn more about GitHub and Git, visit the official documentation:
+                        </p>
+                        <div class="resource-box">
+                            <p class="resource-content">
+                                <a href="https://docs.github.com/en/get-started/start-your-journey/about-github-and-git" target="_blank" rel="noopener" class="inline-link">About GitHub and Git - GitHub Docs</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="content-section">
+                        <h2 class="section-title">
+                            <span class="section-icon">💻</span>
+                            What is Visual Studio Code?
+                        </h2>
+                        <p class="intro-text">
+                            Visual Studio Code (VS Code) is a free, powerful code editor that supports multiple programming languages and offers features like syntax highlighting, debugging, and Git integration. It's an essential tool for web development and localization work. To learn more about VS Code, visit:
+                        </p>
+                        <div class="resource-box">
+                            <p class="resource-content">
+                                <a href="https://code.visualstudio.com/docs/setup/setup-overview" target="_blank" rel="noopener" class="inline-link">Visual Studio Code Setup Overview</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="content-section instructions-section">
+                        <h2 class="section-title">
+                            <span class="section-icon">📋</span>
+                            Part 1: Set Up Your GitHub Account
+                        </h2>
+
+                        <div class="tip-box">
+                            <div class="tip-box-title">⚠️ Important Note</div>
+                            <div class="tip-box-content">
+                                What you observe on your machine when following these instructions may not match exactly what is indicated here. If you run into issues, you can prompt ChatGPT or another LLM-based system for help. Also, there are multiple ways to connect GitHub to VS Code, and you're encouraged to explore various methods to find the one that works best for you.
+                            </div>
+                        </div>
+                        <br>
+                        <div class="instruction-steps">
+                            <div class="instruction-step">
+                                <div class="step-number">1</div>
+                                <h3 class="step-title">Create Your Account</h3>
+                            </div>
+                            <div>
+                                <p class="step-content">
+                                    Navigate to <a href="https://github.com" target="_blank" rel="noopener" class="inline-link">https://github.com</a> and sign up for an account. If you already have a GitHub account, you can skip this step.
+                                </p>
+                            </div>
+
+                            <div class="instruction-step">
+                                <div class="step-number">2</div>
+                                <h3 class="step-title">Enable Two-Factor Authentication</h3>
+                            </div>
+                            <div>
+                                <p class="step-content">
+                                    Once you've created and verified your account, enable two-factor authentication by navigating to <strong>Account Settings</strong> → <strong>Password and authentication</strong> → <strong>Enable 2FA</strong>.
+                                </p>
+                            </div>
+
+                            <div class="instruction-step">
+                                <div class="step-number">3</div>
+                                <h3 class="step-title">Configure Your Profile</h3>
+                            </div>
+                            <div>
+                                <p class="step-content">
+                                    Click on <strong>Edit profile</strong>. Add an avatar image, your name, and a brief biography. You can also add your email and relevant social links to make your profile professional and complete.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-section instructions-section">
+                        <h2 class="section-title">
+                            <span class="section-icon">⚙️</span>
+                            Part 2: Install Git on Your Computer
+                        </h2>
+                        
+                        <div class="instruction-steps">
+                            <div class="instruction-step">
+                                <div class="step-number">1</div>
+                                <h3 class="step-title">For Windows</h3>
+                            </div>
+                            <div>
+                                <ul class="step-list">
+                                    <li>Download Git from <a href="https://git-scm.com/download/win" target="_blank" rel="noopener" class="inline-link">https://git-scm.com/download/win</a></li>
+                                    <li>Run the installer</li>
+                                    <li>Use default settings (recommended for beginners)</li>
+                                    <li>Complete the installation</li>
+                                </ul>
+                            </div>
+
+                            <div class="instruction-step">
+                                <div class="step-number">2</div>
+                                <h3 class="step-title">For macOS</h3>
+                            </div>
+                            <div>
+                                <ul class="step-list">
+                                    <li>Open Terminal</li>
+                                    <li>Type: <code>git --version</code></li>
+                                    <li>If Git isn't installed, macOS will prompt you to install Xcode Command Line Tools</li>
+                                    <li>Follow the prompts to install</li>
+                                </ul>
+                            </div>
+
+                            <div class="instruction-step">
+                                <div class="step-number">3</div>
+                                <h3 class="step-title">Verify Git Installation</h3>
+                            </div>
+                            <div>
+                                <ul class="step-list">
+                                    <li>Open Git CMD (Windows) or Terminal (macOS/Linux)</li>
+                                    <li>Type: <code>git --version</code></li>
+                                    <li>You should see a version number (e.g., "git version 2.43.0")</li>
+                                </ul>
+                                <img src="../assets/images/git-version.png" alt="Terminal window displaying git version 2.48.1.windows.1 in response to git --version command" class="image">
+                            </div>
+                        </div>
+
+                        <div class="tip-box">
+                            <div class="tip-box-title">💡 Important for Windows Users</div>
+                            <div class="tip-box-content">
+                                When you install Git, it comes with <strong>Git CMD</strong> - a special command-line program designed to work with Git. You should use Git CMD (not regular Command Prompt) whenever you need to run Git commands. You'll find Git CMD in your Start Menu after installation.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-section instructions-section">
+                        <h2 class="section-title">
+                            <span class="section-icon">🔧</span>
+                            Part 3: Configure Git
+                        </h2>
+                        
+                        <div class="instruction-steps">
+                            <div class="instruction-step">
+                                <div class="step-number">1</div>
+                                <h3 class="step-title">Set Your Identity</h3>
+                            </div>
+                            <div>
+                                <p class="step-content">Open Git CMD (Windows) or Terminal (macOS/Linux) and run the following commands:</p>
+                                <ul class="step-list">
+                                    <li>Set your GitHub username: <code>git config --global user.name "your username"</code></li>
+                                    <li>Check that your username was configured correctly: <code>git config user.name</code></li>
+                                    <li>Set your email (use the same email as your GitHub account): <code>git config --global user.email "your.email@example.com"</code></li>
+                                    <li>Check that your email was configured correctly: <code>git config user.email</code></li>
+                                </ul>
+                                <img src="../assets/images/git-user-config.png" alt="Terminal window showing git config commands setting global user name to locessentials and email to localization.essentials@gmail.com" class="image">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-section instructions-section">
+                        <h2 class="section-title">
+                            <span class="section-icon">📥</span>
+                            Part 4: Download and Install Visual Studio Code
+                        </h2>
+                        
+                        <div class="instruction-steps">
+                            <div class="instruction-step">
+                                <div class="step-number">1</div>
+                                <h3 class="step-title">Install VS Code</h3>
+                            </div>
+                            <div>
+                                <p class="step-content">If you haven't already installed Visual Studio Code:</p>
+                                <ul class="step-list">
+                                    <li>Go to <a href="https://code.visualstudio.com" target="_blank" rel="noopener" class="inline-link">https://code.visualstudio.com</a></li>
+                                    <li>Click <strong>Download</strong> for your operating system</li>
+                                    <li>Install VS Code following the installer prompts</li>
+                                    <li>Launch VS Code</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-section instructions-section">
+                        <h2 class="section-title">
+                            <span class="section-icon">📦</span>
+                            Part 5: Create a Repository in GitHub
+                        </h2>
+                        
+                        <div class="instruction-steps">
+                            <div class="instruction-step">
+                                <div class="step-number">1</div>
+                                <h3 class="step-title">Create Your First Repository</h3>
+                            </div>
+                            <div>
+                                <ul class="step-list">
+                                    <li>Navigate to <a href="https://github.com" target="_blank" rel="noopener" class="inline-link">GitHub</a> and be sure you're signed into your account</li>
+                                    <li>Click the <strong>+</strong> icon in the upper right corner and select <strong>New repository</strong></li>
+                                    <li>Repository name: <code>loc801-hello-world</code></li>
+                                    <li>Select <strong>Public</strong> (so you can share your work)</li>
+                                    <li>No need to add a README or a license at this time</li>
+                                    <li>Click <strong>Create repository</strong></li>
+                                </ul>
+                                <img src="../assets/images/GitHub-repo.png" alt="GitHub repository creation form with fields for repository name, description, visibility settings, and initialization options" class="image">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-section instructions-section">
+                        <h2 class="section-title">
+                            <span class="section-icon">📄</span>
+                            Part 6: Add a File to Your Repository
+                        </h2>
+                        
+                        <div class="instruction-steps">
+                            <div class="instruction-step">
+                                <div class="step-number">1</div>
+                                <h3 class="step-title">Create Your First HTML File</h3>
+                            </div>
+                            <div>
+                                <ul class="step-list">
+                                    <li>In your new repository on GitHub.com, click the <strong>"creating a new file"</strong> link in the light blue Quick setup box</li>
+                                    <li>Name the file: <code>index.html</code></li>
+                                    <li>Copy and paste this code into the file:</li>
+                                </ul>
+                                <pre style="background: var(--alabaster); padding: 1.5rem; border-radius: 8px; overflow-x: auto; margin: 1rem 0;"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Hello, world!&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Welcome to my site&lt;/h1&gt;
+    &lt;p&gt;Coming soon! A number of localized web projects&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+                                <ul class="step-list">
+                                    <li>Click <strong>Commit changes…</strong> You can update the commit message and add an extended description if you like</li>
+                                </ul>
+                                <img src="../assets/images/GitHub-index.png" alt="GitHub web interface showing the index.html file editor with basic HTML structure including Welcome to my site heading" class="image">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-section instructions-section">
+                        <h2 class="section-title">
+                            <span class="section-icon">💾</span>
+                            Part 7: Clone Your Repository to Your Computer
+                        </h2>
+                        
+                        <div class="instruction-steps">
+                            <div class="instruction-step">
+                                <div class="step-number">1</div>
+                                <h3 class="step-title">Get the Repository URL</h3>
+                            </div>
+                            <div>
+                                <ul class="step-list">
+                                    <li>On the home page for your repository on GitHub.com, click the green <strong>Code</strong> button</li>
+                                    <li>Make sure <strong>HTTPS</strong> is selected (not SSH) and click the copy icon to copy the URL (it will look like: <code>https://github.com/yourusername/loc801-hello-world.git</code>)</li>
+                                </ul>
+                            </div>
+
+                            <div class="instruction-step">
+                                <div class="step-number">2</div>
+                                <h3 class="step-title">Clone the Repository</h3>
+                            </div>
+                            <div>
+                                <ul class="step-list">
+                                    <li>Open Git CMD (Windows) or Terminal (macOS/Linux) and navigate to the folder location where you would like to store the project. For example: <code>cd C:\Users\alain\OneDrive\Documents\GitHub</code></li>
+                                    <li>Clone the repo: <code>git clone https://github.com/yourusername/loc801-hello-world.git</code></li>
+                                    <li>A folder named after your repo containing your <code>index.html</code> file should now be in the location you indicated</li>
+                                </ul>
+                                <img src="../assets/images/git-cloned.png" alt="Windows File Explorer showing the loc801-hello-world folder containing a .git folder and index.html file" class="image">
+                            </div>
+
+                            <div class="instruction-step">
+                                <div class="step-number">3</div>
+                                <h3 class="step-title">Open in Visual Studio Code</h3>
+                            </div>
+                            <div>
+                                <ul class="step-list">
+                                    <li>Open the repo folder in Visual Studio Code by navigating to <strong>File</strong> → <strong>Open folder</strong></li>
+                                    <li>Make some changes to the contents of the file in VS Code, respecting the HTML code structure</li>
+                                </ul>
+                                <img src="../assets/images/VSC-index.png" alt="Visual Studio Code editor displaying index.html file with HTML code structure including welcome heading and paragraph about upcoming localized web projects" class="image">
+                            </div>
+
+                            <div class="instruction-step">
+                                <div class="step-number">4</div>
+                                <h3 class="step-title">Push Changes to GitHub</h3>
+                            </div>
+                            <div>
+                                <p class="step-content">Now, push the changes to your repo on GitHub. In Git CMD/Terminal:</p>
+                                <ul class="step-list">
+                                    <li><strong>Navigate to the repo folder</strong> using the <code>cd</code> command</li>
+                                    <li><code>git add .</code></li>
+                                    <li><code>git commit -m "Description of update"</code></li>
+                                    <li><code>git push</code></li>
+                                </ul>
+                                <img src="../assets/images/git-push.png" alt="Terminal window showing git add, commit, and push commands with output confirming successful push to remote repository" class="image">
+                                <p class="step-content">Navigate back to your repo on GitHub and observe the updates.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-section instructions-section">
+                        <h2 class="section-title">
+                            <span class="section-icon">🌐</span>
+                            Part 8: Enable GitHub Pages (Make Your Site Live!)
+                        </h2>
+                        
+                        <div class="instruction-steps">
+                            <div class="instruction-step">
+                                <div class="step-number">1</div>
+                                <h3 class="step-title">Configure GitHub Pages</h3>
+                            </div>
+                            <div>
+                                <ul class="step-list">
+                                    <li>Navigate to the repository settings (not your account settings)</li>
+                                    <li>In the left sidebar, scroll down and click <strong>Pages</strong></li>
+                                    <li>Under <strong>Source</strong>, select <strong>Deploy from a branch</strong></li>
+                                    <li>Under <strong>Branch</strong>, choose <strong>main</strong> from the dropdown</li>
+                                    <li>Keep the folder set to <strong>/ (root)</strong></li>
+                                    <li>Click <strong>Save</strong></li>
+                                </ul>
+                            </div>
+
+                            <div class="instruction-step">
+                                <div class="step-number">2</div>
+                                <h3 class="step-title">Wait for Deployment</h3>
+                            </div>
+                            <div>
+                                <ul class="step-list">
+                                    <li>GitHub will show a message that your site is being deployed</li>
+                                    <li>Refresh the page after about 30 seconds</li>
+                                    <li>You'll see a message: "Your site is live at <code>https://yourusername.github.io/loc801-hello-world/</code>"</li>
+                                </ul>
+                                <img src="../assets/images/GitHub-pages.png" alt="GitHub Pages settings page showing the site is live at locessentials.github.io/loc801-hello-world with deployment options" class="image">
+                            </div>
+
+                            <div class="instruction-step">
+                                <div class="step-number">3</div>
+                                <h3 class="step-title">Visit Your Live Site</h3>
+                            </div>
+                            <div>
+                                <ul class="step-list">
+                                    <li>Click the <strong>Visit site</strong> button or copy the URL</li>
+                                    <li>Your Hello World page is now live on the internet!</li>
+                                    <li>Your site URL will always be: <code>https://yourusername.github.io/loc801-hello-world/</code></li>
+                                </ul>
+                                <img src="../assets/images/GitHub-published-site.png" alt="Browser window displaying the published website with Welcome to my site heading and text about upcoming localized web projects" class="image">
+                            </div>
+                        </div>
+
+                        <div class="info-box">
+                            <div class="info-box-title">📌 Important Notes</div>
+                            <div class="info-box-content">
+                                <ul style="list-style: none; padding: 0; margin: 0;">
+                                    <li style="margin-bottom: 0.5rem;">• It may take 1-2 minutes for your site to appear the first time</li>
+                                    <li style="margin-bottom: 0.5rem;">• Every time you push changes to GitHub, your site will automatically update</li>
+                                    <li style="margin-bottom: 0.5rem;">• You can share this URL with anyone - it's publicly accessible</li>
+                                    <li>• This setup is perfect for showing your localization portfolio to potential employers or clients!</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-section">
+                        <h2 class="section-title">
+                            <span class="section-icon">🗺️</span>
+                            Coming Next
+                        </h2>
+                        <p class="intro-text">
+                            Now that you have Git and GitHub set up with VS Code and your first live website, you're ready to start working on localization projects! In upcoming lessons, you'll:
+                        </p>
+                        <ul class="objectives-list">
+                            <li class="objective-item">Learn more about working in Visual Studio Code</li>
+                            <li class="objective-item">Learn about HTML structure and how to identify translatable content</li>
+                            <li class="objective-item">Work with multiple web programming languages to build bilingual websites</li>
+                            <li class="objective-item">Use GitHub Pages to publish bilingual websites</li>
+                            <li class="objective-item">Use GitHub to manage your localization portfolio</li>
+                        </ul>
+                        <p class="conclusion-text">
+                            Now that you have GitHub, you'll be able to collaborate with teams on web localization projects as well!
+                        </p>
+                    </div>
+
+                    <!-- Navigation - Content loaded via JavaScript -->
+                    <div class="topic-nav"></div>
+                </div>
+
+                <!-- Footer - Content loaded via JavaScript -->
+                <footer class="site-footer"></footer>
+
+            </main>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="../assets/language-switcher.js"></script>
+    <script src="../assets/topic-navigation.js"></script>
+    <script src="../assets/footer.js"></script>
+</body>
+</html>

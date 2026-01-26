@@ -416,6 +416,7 @@ header {
 .tip-box-content {
     color: var(--text-medium);
     line-height: 1.7;
+    margin-bottom: 1rem;
 }
 
 /* Navigation */
@@ -645,6 +646,19 @@ header {
     margin-bottom: 2rem;
 }
 
+.regular-text {
+    font-size: 1.05rem;
+    color: var(--text-dark);
+    line-height: 1.8;
+}
+
+.conclusion-text {
+    font-size: 1.05rem;
+    color: var(--text-dark);
+    line-height: 1.8;
+    margin-top: 2rem;
+}
+
 .inline-link {
     color: var(--medium-blue);
     text-decoration: none;
@@ -729,6 +743,15 @@ header {
 
 .step-list li:last-child {
     margin-bottom: 12px;
+}
+
+/* Image */
+.image {
+    display: block;
+    width: 100%;
+    max-width: 800px;
+    border-radius: 8px;
+    margin: 1rem auto;
 }
 
 /* Resource Box */
