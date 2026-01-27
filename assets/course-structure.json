@@ -3,7 +3,7 @@
     "mainLinks": [
       {
         "label": "Course Home",
-        "url": "/",
+        "url": "/index.html",
         "icon": "📚"
       },
       {
@@ -162,7 +162,7 @@
     "mainLinks": [
       {
         "label": "Inicio del curso",
-        "url": "/",
+        "url": "/inicio.html",
         "icon": "📚"
       },
       {

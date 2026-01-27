@@ -14,11 +14,25 @@ document.addEventListener('DOMContentLoaded', async function() {
 });
 
 /**
+ * Determine the correct path based on current location
+ */
+function getAssetPathForLangSwitch() {
+    const path = window.location.pathname;
+    // If we're at root level (index.html, inicio.html, outline.html, esquema.html, etc.)
+    if (path === '/' || path.match(/^\/(index|inicio|outline|esquema|about|acerca|contact|contacto)\.html$/)) {
+        return 'assets/course-structure.json';
+    }
+    // If we're in a subdirectory (like /t-1/)
+    return '../assets/course-structure.json';
+}
+
+/**
  * Load course structure from JSON file
  */
 async function loadCourseStructureForLangSwitch() {
     try {
-        const response = await fetch('../assets/course-structure.json');
+        const path = getAssetPathForLangSwitch();
+        const response = await fetch(path);
         if (!response.ok) {
             throw new Error('Failed to load course structure');
         }
@@ -36,16 +50,17 @@ function findCurrentPagePosition() {
 
     const currentPath = decodeURIComponent(window.location.pathname);
     const currentLang = document.documentElement.lang || 'en';
-    const structure = courseStructureForLangSwitch[currentLang] || courseStructureForLangSwitch.en;
+    const structure = courseStructureForLangSwitch[currentLang];
+    
+    if (!structure || !structure.mainLinks || !structure.topics) return null;
 
-    // Check main links first
+    // Check main links
     for (let i = 0; i < structure.mainLinks.length; i++) {
-        const link = structure.mainLinks[i];
-        if (currentPath.endsWith(link.url) || currentPath === link.url) {
-            return {
-                type: 'mainLink',
-                index: i
-            };
+        const linkUrl = decodeURIComponent(structure.mainLinks[i].url);
+        if (currentPath === linkUrl || 
+            (linkUrl === '/index.html' && currentPath === '/') ||
+            (linkUrl === '/inicio.html' && currentPath === '/')) {
+            return { type: 'mainLink', index: i };
         }
     }
 
@@ -53,14 +68,9 @@ function findCurrentPagePosition() {
     for (let topicIndex = 0; topicIndex < structure.topics.length; topicIndex++) {
         const topic = structure.topics[topicIndex];
         for (let pageIndex = 0; pageIndex < topic.pages.length; pageIndex++) {
-            const page = topic.pages[pageIndex];
-            const decodedPageUrl = decodeURIComponent(page.url);
-            if (currentPath.endsWith(decodedPageUrl)) {
-                return {
-                    type: 'topicPage',
-                    topicIndex,
-                    pageIndex
-                };
+            const pageUrl = decodeURIComponent(topic.pages[pageIndex].url);
+            if (currentPath === pageUrl) {
+                return { type: 'topicPage', topicIndex, pageIndex };
             }
         }
     }
@@ -79,13 +89,11 @@ function getEquivalentPage(targetLang) {
     if (!targetStructure) return null;
 
     if (currentPosition.type === 'mainLink') {
-        // Return the equivalent main link
         return targetStructure.mainLinks[currentPosition.index]?.url || null;
-    } else if (currentPosition.type === 'topicPage') {
-        // Return the equivalent topic page
-        const targetTopic = targetStructure.topics[currentPosition.topicIndex];
-        if (!targetTopic) return null;
-        return targetTopic.pages[currentPosition.pageIndex]?.url || null;
+    }
+    
+    if (currentPosition.type === 'topicPage') {
+        return targetStructure.topics[currentPosition.topicIndex]?.pages[currentPosition.pageIndex]?.url || null;
     }
 
     return null;
@@ -124,6 +132,12 @@ function initLanguageSwitcher() {
             // Don't do anything if clicking the current language
             if (targetLang === currentLang) return;
             
+            // Debug check
+            if (!courseStructureForLangSwitch) {
+                console.error('Course structure not loaded!');
+                return;
+            }
+            
             // Save language preference
             localStorage.setItem('loc801-language', targetLang);
             
@@ -136,7 +150,8 @@ function initLanguageSwitcher() {
             } else {
                 // Fallback to homepage if no equivalent page found
                 console.warn('No equivalent page found, redirecting to homepage');
-                window.location.href = '/';
+                const homePage = targetLang === 'es' ? '/inicio.html' : '/index.html';
+                window.location.href = homePage;
             }
         });
     });

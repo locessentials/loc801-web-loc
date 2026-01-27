@@ -15,11 +15,24 @@ document.addEventListener('DOMContentLoaded', async function() {
 });
 
 /**
+ * Determine the correct path based on current location
+ */
+function getAssetPath() {
+    const path = window.location.pathname;
+    // If we're at root level (index.html, inicio.html, etc.)
+    if (path === '/' || path.match(/^\/(index|inicio)\.html$/)) {
+        return 'assets/footer-content.json';
+    }
+    // If we're in a subdirectory
+    return '../assets/footer-content.json';
+}
+
+/**
  * Load footer content from JSON file
  */
 async function loadFooterContent() {
     try {
-        const response = await fetch('../assets/footer-content.json');
+        const response = await fetch(getAssetPath());
         if (!response.ok) {
             throw new Error('Failed to load footer content');
         }
@@ -49,7 +62,7 @@ function renderFooter() {
     const footerHTML = `
         <div class="footer-content">
             <div class="footer-column footer-left">
-                <img src="../assets/images/LocCapLogoTransparent.png" alt="Two toned baseball cap in blue with the phrase Loc in white lettering enclosed in a white square on the crown" class="footer-logo">
+                <img src="${window.location.pathname === '/' || window.location.pathname.match(/^\/(index|inicio)\.html$/) ? 'assets/images/LocCapLogoTransparent.png' : '../assets/images/LocCapLogoTransparent.png'}" alt="Two toned baseball cap in blue with the phrase Loc in white lettering enclosed in a white square on the crown" class="footer-logo">
                 <a href="https://locessentials.com" target="_blank" rel="noopener noreferrer" class="footer-brand">LocEssentials</a>
                 <p class="footer-tagline">${content.tagline}</p>
             </div>

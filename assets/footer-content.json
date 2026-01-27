@@ -7,7 +7,7 @@
         "links": [
           {
             "text": "Course Home",
-            "url": "/"
+            "url": "/index.html"
           },
           {
             "text": "Outline",
@@ -63,7 +63,7 @@
         "links": [
           {
             "text": "Inicio del curso",
-            "url": "/"
+            "url": "/inicio.html"
           },
           {
             "text": "Esquema",

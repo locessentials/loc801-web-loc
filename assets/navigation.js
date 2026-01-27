@@ -21,7 +21,13 @@ document.addEventListener('DOMContentLoaded', async function() {
  */
 async function loadCourseStructure() {
     try {
-        const response = await fetch('../assets/course-structure.json');
+        // Detect if we're at root level or in a subdirectory
+        const path = window.location.pathname;
+        const assetPath = (path === '/' || path.match(/^\/(index|inicio|outline|esquema|about|acerca|contact|contacto)\.html$/))
+            ? 'assets/course-structure.json'
+            : '../assets/course-structure.json';
+        
+        const response = await fetch(assetPath);
         if (!response.ok) {
             throw new Error('Failed to load course structure');
         }
