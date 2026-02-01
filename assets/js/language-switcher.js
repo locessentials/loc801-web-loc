@@ -20,10 +20,10 @@ function getAssetPathForLangSwitch() {
     const path = window.location.pathname;
     // If we're at root level (index.html, inicio.html, outline.html, esquema.html, etc.)
     if (path === '/' || path.match(/^\/(index|inicio|outline|esquema|about|acerca|contact|contacto)\.html$/)) {
-        return 'assets/course-structure.json';
+        return 'assets/data/course-structure.json';
     }
     // If we're in a subdirectory (like /t-1/)
-    return '../assets/course-structure.json';
+    return '../assets/data/course-structure.json';
 }
 
 /**

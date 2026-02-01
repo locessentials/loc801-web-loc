@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aprende los fundamentos de HTML para localización web incluyendo estructura de documentos, elementos comunes y sintaxis de código para traductores y profesionales de localización.">
+    <meta name="keywords" content="HTML básico, HTML para localización, estructura HTML, elementos HTML, HTML localización web">
+    
+    <!-- Open Graph para redes sociales -->
+    <meta property="og:title" content="Código HTML | Tema 3 | Loc801">
+    <meta property="og:description" content="Domina los fundamentos de HTML para un trabajo efectivo de localización web.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://loc801.locessentials.com/t-3/código-html.html">
+    <meta property="og:image" content="https://loc801.locessentials.com/assets/images/LocCapTransparentTilted.png">
+    
+    <!-- URL canónica -->
+    <link rel="canonical" href="https://loc801.locessentials.com/t-3/código-html.html">
+    
+    <!-- Alternativas de idioma -->
+    <link rel="alternate" hreflang="es" href="código-html.html">
+    <link rel="alternate" hreflang="en" href="html-code.html">
+    <link rel="alternate" hreflang="x-default" href="html-code.html">
+    
+    <title>Código HTML | Tema 3 | Loc801</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Hojas de estilo -->
+    <link rel="stylesheet" href="../assets/styles/styles.css">
+    <link rel="stylesheet" href="../assets/styles/html-code-viewer.css">
+</head>
+<body>
+    <div class="page-wrapper">
+        <div class="main-content-wrapper">
+            <main class="main-content">
+                <!-- Encabezado -->
+                <header>
+                    <div class="header-content">
+                        <div class="logo-section">
+                            <img src="../assets/images/LocCapTransparentTilted.png" alt="Logo de gorra LocEssentials" class="logo">
+                            <a href="/" class="course-title">Loc801: Localización Web para Principiantes</a>
+                        </div>
+                        <div class="header-actions">
+                            <a href="/esquema.html" class="outline-btn">
+                                <span>📋</span>
+                                <span>Esquema</span>
+                            </a>
+                            <div class="lang-picker">
+                                <button class="lang-btn" data-lang="en">English</button>
+                                <button class="lang-btn" data-lang="es">Español</button>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+
+                <!-- Contenido principal -->
+                <div class="container">
+                    <nav class="breadcrumb">
+                        <a href="/">Inicio del curso</a>
+                        <span class="breadcrumb-separator">›</span>
+                        <a href="/t-3/tema-3-intro.html">Tema 3</a>
+                        <span class="breadcrumb-separator">›</span>
+                        <span>Código HTML</span>
+                    </nav>
+
+                    <div class="page-header">
+                        <span class="topic-number">TEMA 3</span>
+                        <h1 class="topic-title">Comprendiendo el Código HTML</h1>
+                        <p class="topic-description">
+                            Aprende los elementos HTML fundamentales que encontrarás en proyectos de localización web y comprende cómo la estructura del código afecta el trabajo de traducción.
+                        </p>
+                    </div>
+
+                    <div class="content-section">
+                        <h2 class="section-title">
+                            <span class="section-icon">🎬</span>
+                            Tutorial en Video
+                        </h2>
+                        <p class="intro-text">
+                            Antes de explorar los ejemplos interactivos, observa este tutorial completo de HTML. Aunque hayas visto HTML antes, este video es un excelente repaso.
+                        </p>
+                        
+                        <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; background: #000; border-radius: 12px; margin: 2rem 0;">
+                            <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" width="560" height="315" src="https://www.youtube.com/embed/TNQleomUw6U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+
+                    <div class="content-section">
+                        <h2 class="section-title">
+                            <span class="section-icon">🏗️</span>
+                            Estructura del Documento HTML
+                        </h2>
+                        <p class="intro-text">
+                            Cada documento HTML sigue una estructura estándar. Comprender esta estructura te ayuda a identificar dónde vive el contenido traducible y dónde los elementos técnicos deben permanecer sin cambios.
+                        </p>
+
+                        <div class="info-box">
+                            <div class="info-box-title">Las Dos Secciones Principales</div>
+                            <div class="info-box-content">
+                                <strong>&lt;head&gt;</strong> - Contiene metadatos, el título de página que aparece en la pestaña del navegador y enlaces a hojas de estilo. Esta sección NO es visible para las personas que visitan la página pero contiene elementos SEO importantes como palabras claves y descripciones que a menudo necesitan localización. La optimización para motores de búsqueda (SEO) se cubre con más detalle en el <a href="/t-5/tema-5-intro.html" class="inline-link">Tema 5</a>.
+                                <br><br>
+                                <strong>&lt;body&gt;</strong> - Contiene todo el contenido visible que las personas que visitan el sitio ven en la página web. Aquí es donde ocurre la mayor parte del trabajo de traducción.
+                            </div>
+                        </div>
+
+                        <div class="code-example-wrapper">
+                            <div class="code-tabs">
+                                <button class="code-tab active" data-example="structure">Ver Código</button>
+                                <button class="code-tab" data-example="structure">Ver Resultado</button>
+                            </div>
+                            <div class="code-display">
+                                <div class="code-view active" data-example="structure">
+                                    <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="es"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Título de Mi Página&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Bienvenides a Mi Sitio Web&lt;/h1&gt;
+    &lt;p&gt;Este es el contenido visible.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+                                </div>
+                                <div class="result-view" data-example="structure">
+                                    <div class="result-content">
+                                        <h1>Bienvenides a Mi Sitio Web</h1>
+                                        <br>
+                                        <p>Este es el contenido visible.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-section">
+                        <h2 class="section-title">
+                            <span class="section-icon">🔖</span>
+                            Etiquetas de Apertura y Cierre
+                        </h2>
+                        <p class="intro-text">
+                            La mayoría de los elementos HTML consisten en una <strong>etiqueta de apertura</strong> y una <strong>etiqueta de cierre</strong> que envuelven el contenido. La etiqueta de cierre es idéntica a la etiqueta de apertura excepto que tiene una barra diagonal (/) antes del nombre del elemento.
+                        </p>
+
+                        <div class="info-box">
+                            <div class="info-box-title">Estructura de Etiquetas</div>
+                            <div class="info-box-content">
+                                <strong>Etiqueta de apertura:</strong> <code>&lt;p&gt;</code> - Marca dónde comienza el elemento
+                                <br><br>
+                                <strong>Contenido:</strong> El texto u otros elementos que van dentro
+                                <br><br>
+                                <strong>Etiqueta de cierre:</strong> <code>&lt;/p&gt;</code> - Marca dónde termina el elemento
+                                <br><br>
+                                <strong>Elemento completo:</strong> <code>&lt;p&gt;Este es mi contenido&lt;/p&gt;</code>
+                            </div>
+                        </div>
+
+                        <div class="tip-box">
+                            <div class="tip-box-title">💡 Crítico para la Localización</div>
+                            <div class="tip-box-content">
+                                Al traducir HTML, debes mantener intactas tanto la etiqueta de apertura como la de cierre. Solo traduce el contenido entre ellas. Por ejemplo:
+                                <br><br>
+                                <strong>Original:</strong> <code>&lt;h1&gt;La bienvenida a nuestro sitio&lt;/h1&gt;</code>
+                                <br>
+                                <strong>Traducido:</strong> <code>&lt;h1&gt;Welcome to our site&lt;/h1&gt;</code>
+                                <br><br>
+                                Nota que <code>&lt;h1&gt;</code> y <code>&lt;/h1&gt;</code> permanecen sin cambios—solo el texto entre ellas se traduce.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-section">
+                        <h2 class="section-title">
+                            <span class="section-icon">🔤</span>
+                            Elementos HTML Comunes
+                        </h2>
+                        <p class="intro-text">
+                            A continuación están los elementos HTML que encontrarás con más frecuencia en el trabajo de localización. Haz clic entre "Ver Código" y "Ver Resultado" para ver cómo la sintaxis HTML se traduce a lo que las personas que visitan un sitio ven.
+                        </p>
+
+                        <!-- Encabezados -->
+                        <h3 style="color: var(--dark-blue); margin: 2rem 0 1rem 0; font-size: 1.25rem;">Encabezados</h3>
+                        <p class="regular-text" style="margin-bottom: 1.5rem;">
+                            Los encabezados estructuran el contenido jerárquicamente. &lt;h1&gt; es el más importante, &lt;h6&gt; es el menos importante. Traduce el texto del encabezado pero mantén el nivel del encabezado.
+                        </p>
+                        <div class="code-example-wrapper">
+                            <div class="code-tabs">
+                                <button class="code-tab active" data-example="headings">Ver Código</button>
+                                <button class="code-tab" data-example="headings">Ver Resultado</button>
+                            </div>
+                            <div class="code-display">
+                                <div class="code-view active" data-example="headings">
+                                    <pre><code>&lt;h1&gt;Encabezado Principal&lt;/h1&gt;
+&lt;h2&gt;Subencabezado&lt;/h2&gt;
+&lt;h3&gt;Título de Sección&lt;/h3&gt;
+&lt;h4&gt;Título de Subsección&lt;/h4&gt;</code></pre>
+                                </div>
+                                <div class="result-view" data-example="headings">
+                                    <div class="result-content">
+                                        <h1 style="font-size: 2rem; margin-bottom: 0.5rem;">Encabezado Principal</h1>
+                                        <h2 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Subencabezado</h2>
+                                        <h3 style="font-size: 1.25rem; margin-bottom: 0.5rem;">Título de Sección</h3>
+                                        <h4 style="font-size: 1.1rem;">Título de Subsección</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Párrafos -->
+                        <h3 style="color: var(--dark-blue); margin: 2rem 0 1rem 0; font-size: 1.25rem;">Párrafos</h3>
+                        <p class="regular-text" style="margin-bottom: 1.5rem;">
+                            Los párrafos contienen el texto del cuerpo principal. Traduce el contenido entre las etiquetas &lt;p&gt; y &lt;/p&gt;.
+                        </p>
+                        <div class="code-example-wrapper">
+                            <div class="code-tabs">
+                                <button class="code-tab active" data-example="paragraphs">Ver Código</button>
+                                <button class="code-tab" data-example="paragraphs">Ver Resultado</button>
+                            </div>
+                            <div class="code-display">
+                                <div class="code-view active" data-example="paragraphs">
+                                    <pre><code>&lt;p&gt;Este es un párrafo de texto.&lt;/p&gt;
+&lt;p&gt;Este es otro párrafo.&lt;/p&gt;</code></pre>
+                                </div>
+                                <div class="result-view" data-example="paragraphs">
+                                    <div class="result-content">
+                                        <p>Este es un párrafo de texto.</p>
+                                        <p>Este es otro párrafo.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Enlaces -->
+                        <h3 style="color: var(--dark-blue); margin: 2rem 0 1rem 0; font-size: 1.25rem;">Enlaces</h3>
+                        <p class="regular-text" style="margin-bottom: 1.5rem;">
+                            Los enlaces usan la etiqueta &lt;a&gt;. Traduce el texto visible del enlace pero ten cuidado con el atributo href—a veces los URLs necesitan localización, a veces no.
+                        </p>
+                        <div class="code-example-wrapper">
+                            <div class="code-tabs">
+                                <button class="code-tab active" data-example="links">Ver Código</button>
+                                <button class="code-tab" data-example="links">Ver Resultado</button>
+                            </div>
+                            <div class="code-display">
+                                <div class="code-view active" data-example="links">
+                                    <pre><code>&lt;a href="https://ejemplo.com"&gt;Visita nuestro sitio web&lt;/a&gt;
+&lt;a href="/acerca.html"&gt;Aprende más sobre nosotres&lt;/a&gt;</code></pre>
+                                </div>
+                                <div class="result-view" data-example="links">
+                                    <div class="result-content">
+                                        <a href="https://ejemplo.com" style="color: var(--medium-blue); text-decoration: none; font-weight: 500;">Visita nuestro sitio web</a><br>
+                                        <a href="/acerca.html" style="color: var(--medium-blue); text-decoration: none; font-weight: 500;">Aprende más sobre nosotres</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Listas -->
+                        <h3 style="color: var(--dark-blue); margin: 2rem 0 1rem 0; font-size: 1.25rem;">Listas</h3>
+                        <p class="regular-text" style="margin-bottom: 1.5rem;">
+                            Las listas desordenadas (&lt;ul&gt;) muestran viñetas. Las listas ordenadas (&lt;ol&gt;) muestran números. Cada elemento de lista usa etiquetas &lt;li&gt;.
+                        </p>
+                        <div class="code-example-wrapper">
+                            <div class="code-tabs">
+                                <button class="code-tab active" data-example="lists">Ver Código</button>
+                                <button class="code-tab" data-example="lists">Ver Resultado</button>
+                            </div>
+                            <div class="code-display">
+                                <div class="code-view active" data-example="lists">
+                                    <pre><code>&lt;ul&gt;
+    &lt;li&gt;Primer elemento&lt;/li&gt;
+    &lt;li&gt;Segundo elemento&lt;/li&gt;
+    &lt;li&gt;Tercer elemento&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+    &lt;li&gt;Paso uno&lt;/li&gt;
+    &lt;li&gt;Paso dos&lt;/li&gt;
+    &lt;li&gt;Paso tres&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+                                </div>
+                                <div class="result-view" data-example="lists">
+                                    <div class="result-content">
+                                        <ul>
+                                            <li>Primer elemento</li>
+                                            <li>Segundo elemento</li>
+                                            <li>Tercer elemento</li>
+                                        </ul>
+                                        <ol>
+                                            <li>Paso uno</li>
+                                            <li>Paso dos</li>
+                                            <li>Paso tres</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Strong y Em -->
+                        <h3 style="color: var(--dark-blue); margin: 2rem 0 1rem 0; font-size: 1.25rem;">Énfasis de Texto</h3>
+                        <p class="regular-text" style="margin-bottom: 1.5rem;">
+                            &lt;strong&gt; hace el texto en negrita para importancia. &lt;em&gt; hace el texto en cursiva para énfasis. Preserva estas etiquetas de formato en la traducción.
+                        </p>
+                        <div class="code-example-wrapper">
+                            <div class="code-tabs">
+                                <button class="code-tab active" data-example="emphasis">Ver Código</button>
+                                <button class="code-tab" data-example="emphasis">Ver Resultado</button>
+                            </div>
+                            <div class="code-display">
+                                <div class="code-view active" data-example="emphasis">
+                                    <pre><code>&lt;p&gt;Este es un texto &lt;strong&gt;muy importante&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Este es un texto &lt;em&gt;enfatizado&lt;/em&gt;.&lt;/p&gt;</code></pre>
+                                </div>
+                                <div class="result-view" data-example="emphasis">
+                                    <div class="result-content">
+                                        <p>Este es un texto <strong>muy importante</strong>.</p>
+                                        <p>Este es un texto <em>enfatizado</em>.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Div y Span -->
+                        <h3 style="color: var(--dark-blue); margin: 2rem 0 1rem 0; font-size: 1.25rem;">Contenedores</h3>
+                        <p class="regular-text" style="margin-bottom: 1.5rem;">
+                            &lt;div&gt; es un contenedor a nivel de bloque para agrupar contenido. &lt;span&gt; es un contenedor en línea para dar estilo a partes del texto. Estos no cambian la apariencia por sí mismos pero a menudo se estilizan con CSS.
+                        </p>
+                        <div class="code-example-wrapper">
+                            <div class="code-tabs">
+                                <button class="code-tab active" data-example="containers">Ver Código</button>
+                                <button class="code-tab" data-example="containers">Ver Resultado</button>
+                            </div>
+                            <div class="code-display">
+                                <div class="code-view active" data-example="containers">
+                                    <pre><code>&lt;div&gt;
+    &lt;p&gt;Este párrafo está dentro de un div.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Este texto tiene una &lt;span&gt;parte resaltada&lt;/span&gt;.&lt;/p&gt;</code></pre>
+                                </div>
+                                <div class="result-view" data-example="containers">
+                                    <div class="result-content">
+                                        <div style="padding: 1rem; background: var(--alabaster); border-radius: 8px; margin-bottom: 1rem;">
+                                            <p>Este párrafo está dentro de un div.</p>
+                                        </div>
+                                        <p>Este texto tiene una <span style="background: yellow; padding: 0 0.25rem;">parte resaltada</span>.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-section">
+                        <h2 class="section-title">
+                            <span class="section-icon">💡</span>
+                            Puntos Clave para la Localización
+                        </h2>
+                        <ul class="objectives-list">
+                            <li class="objective-item">Las etiquetas HTML en sí nunca deben traducirse—solo el contenido entre las etiquetas de apertura y cierre</li>
+                            <li class="objective-item">La sección &lt;head&gt; contiene metadatos como títulos de página y descripciones que son cruciales para SEO y deben localizarse</li>
+                            <li class="objective-item">La sección &lt;body&gt; contiene todo el contenido visible que las personas que visitan la página ven y necesita traducción</li>
+                            <li class="objective-item">Las etiquetas de formato como &lt;strong&gt; y &lt;em&gt; deben preservarse en la traducción para mantener el énfasis deseado</li>
+                            <li class="objective-item">El texto del enlace (entre etiquetas &lt;a&gt;) debe traducirse, pero los URLs href requieren consideración cuidadosa</li>
+                            <li class="objective-item">La estructura de lista (&lt;ul&gt;, &lt;ol&gt;, &lt;li&gt;) debe mantenerse incluso mientras traduces el contenido de la lista</li>
+                        </ul>
+                    </div>
+
+                    <div class="content-section">
+                        <h2 class="section-title">
+                            <span class="section-icon">🎯</span>
+                            Ejercicio de Práctica
+                        </h2>
+                        <p class="intro-text">
+                            Encuentra una página web simple en inglés y mira su código fuente (clic derecho → "Ver Código Fuente de la Página" o "View Page Source" en la mayoría de navegadores). Identifica:
+                        </p>
+                        <ul class="objectives-list">
+                            <li class="objective-item">Qué hay en la sección &lt;head&gt; vs la sección &lt;body&gt;</li>
+                            <li class="objective-item">Qué elementos contienen texto traducible</li>
+                            <li class="objective-item">Qué etiquetas HTML nunca deben cambiarse durante la traducción</li>
+                            <li class="objective-item">Cualquier atributo (como href o texto alternativo) que podría necesitar localización</li>
+                        </ul>
+                        
+                        <div class="tip-box">
+                            <div class="tip-box-title">💡 Consejo de Experta</div>
+                            <div class="tip-box-content">
+                                Las herramientas de desarrollo del navegador son la mejor amiga de quien diseña para la web. La siguiente lección cubre cómo usarlas, pero si deseas empezar con anticipación, haz clic derecho en una página y selecciona "Inspeccionar elemento" o "Inspect element" para abrir las herramientas de desarrollo e inspeccionar la estructura HTML de cualquier página web.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Navigation - Content loaded via JavaScript -->
+                    <div class="topic-nav"></div>
+                </div>
+
+                <!-- Footer - Content loaded via JavaScript -->
+                <footer class="site-footer"></footer>
+
+            </main>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="../assets/js/header.js"></script>
+    <script src="../assets/js/language-switcher.js"></script>
+    <script src="../assets/js/topic-navigation.js"></script>
+    <script src="../assets/js/footer.js"></script>
+    <script src="../assets/js/html-code-viewer.js"></script>
+</body>
+</html>

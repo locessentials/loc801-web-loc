@@ -21,10 +21,10 @@ function getAssetPath() {
     const path = window.location.pathname;
     // If we're at root level (index.html, inicio.html, etc.)
     if (path === '/' || path.match(/^\/(index|inicio)\.html$/)) {
-        return 'assets/footer-content.json';
+        return 'assets/data/footer-content.json';
     }
     // If we're in a subdirectory
-    return '../assets/footer-content.json';
+    return '../assets/data/footer-content.json';
 }
 
 /**

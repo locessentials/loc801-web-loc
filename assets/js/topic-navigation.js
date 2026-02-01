@@ -21,12 +21,12 @@ document.addEventListener('DOMContentLoaded', async function() {
 async function loadNavigationData() {
     try {
         // Load course structure
-        const structureResponse = await fetch('../assets/course-structure.json');
+        const structureResponse = await fetch('../assets/data/course-structure.json');
         if (!structureResponse.ok) throw new Error('Failed to load course structure');
         courseStructure = await structureResponse.json();
 
         // Load navigation labels
-        const labelsResponse = await fetch('../assets/navigation-labels.json');
+        const labelsResponse = await fetch('../assets/data/navigation-labels.json');
         if (!labelsResponse.ok) throw new Error('Failed to load navigation labels');
         navigationLabels = await labelsResponse.json();
     } catch (error) {

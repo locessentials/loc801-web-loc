@@ -83,6 +83,10 @@
           {
             "label": "Topic 3 Primer",
             "url": "/t-3/topic-3-primer.html"
+          },
+          {
+            "label": "HTML Code",
+            "url": "/t-3/html-code.html"
           }
         ]
       },
@@ -242,6 +246,10 @@
           {
             "label": "Tema 3 - Introducción",
             "url": "/t-3/tema-3-intro.html"
+          },
+          {
+            "label": "Código HTML",
+            "url": "/t-3/código-html.html"
           }
         ]
       },
