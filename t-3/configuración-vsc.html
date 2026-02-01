@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aprende a configurar Visual Studio Code para trabajo de localización web, incluyendo extensiones y ajustes esenciales para editar HTML.">
+    <meta name="keywords" content="configuración Visual Studio Code, configuración VSC, herramientas desarrollo web, configuración editor HTML, extensión Live Server">
+    
+    <!-- Open Graph para redes sociales -->
+    <meta property="og:title" content="Configuración de VSC | Tema 3 | Loc801">
+    <meta property="og:description" content="Configura Visual Studio Code para trabajo efectivo de localización y desarrollo web.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://loc801.locessentials.com/t-3/configuración-vsc.html">
+    <meta property="og:image" content="https://loc801.locessentials.com/assets/images/LocCapTransparentTilted.png">
+    
+    <!-- URL canónica -->
+    <link rel="canonical" href="https://loc801.locessentials.com/t-3/configuración-vsc.html">
+    
+    <!-- Alternativas de idioma -->
+    <link rel="alternate" hreflang="es" href="configuración-vsc.html">
+    <link rel="alternate" hreflang="en" href="vsc-setup.html">
+    <link rel="alternate" hreflang="x-default" href="vsc-setup.html">
+    
+    <title>Configuración de VSC | Tema 3 | Loc801</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Hojas de estilo -->
+    <link rel="stylesheet" href="../assets/styles/styles.css">
+</head>
+<body>
+    <div class="page-wrapper">
+        <div class="main-content-wrapper">
+            <main class="main-content">
+                <!-- Encabezado -->
+                <header>
+                    <div class="header-content">
+                        <div class="logo-section">
+                            <img src="../assets/images/LocCapTransparentTilted.png" alt="Logo de gorra LocEssentials" class="logo">
+                            <a href="/" class="course-title">Loc801: Localización Web para Principiantes</a>
+                        </div>
+                        <div class="header-actions">
+                            <a href="/esquema.html" class="outline-btn">
+                                <span>📋</span>
+                                <span>Esquema</span>
+                            </a>
+                            <div class="lang-picker">
+                                <button class="lang-btn" data-lang="en">English</button>
+                                <button class="lang-btn" data-lang="es">Español</button>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+
+                <!-- Contenido principal -->
+                <div class="container">
+                    <nav class="breadcrumb">
+                        <a href="/">Inicio del curso</a>
+                        <span class="breadcrumb-separator">›</span>
+                        <a href="/t-3/tema-3-intro.html">Tema 3</a>
+                        <span class="breadcrumb-separator">›</span>
+                        <span>Configuración de VSC</span>
+                    </nav>
+
+                    <div class="page-header">
+                        <span class="topic-number">TEMA 3</span>
+                        <h1 class="topic-title">Configuración de Visual Studio Code</h1>
+                        <p class="topic-description">
+                            Configura tu entorno de desarrollo con ajustes y extensiones esenciales para trabajar eficientemente con archivos HTML y previsualizar tu trabajo de localización en tiempo real.
+                        </p>
+                    </div>
+
+                    <div class="content-section">
+                        <h2 class="section-title">
+                            <span class="section-icon">🧭</span>
+                            Resumen
+                        </h2>
+                        <p class="intro-text">
+                            Visual Studio Code es un editor de código potente y gratuito que se ha convertido en un estándar de la industria para el desarrollo web y el trabajo de localización. En este ejercicio, configurarás VSC con los ajustes y extensiones que harán tu flujo de trabajo de localización más eficiente.
+                        </p>
+
+                        <div class="info-box">
+                            <div class="info-box-title">💡 Por Qué Importan Estos Ajustes</div>
+                            <div class="info-box-content">
+                                Los pasos de configuración que completarás no solo son útiles—son esenciales para el trabajo efectivo de localización web. El guardado automático evita que pierdas tu trabajo, el ajuste de línea hace que las líneas largas de código sean legibles, y Live Server te permite ver instantáneamente cómo tus cambios afectan la página web real <strong>antes</strong> de que subas tu código a tu sitio en vivo.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-section">
+                        <h2 class="section-title">
+                            <span class="section-icon">🎬</span>
+                            Tutorial en Video
+                        </h2>
+                        <p class="intro-text">
+                            Si eres nuevo trabajando en Visual Studio Code, mira este tutorial oficial para principiantes para entender la interfaz y las características básicas de VSC.
+                        </p>
+                        
+                        <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; background: #000; border-radius: 12px; margin: 2rem 0;">
+                            <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" width="560" height="315" src="https://www.youtube.com/embed/FzRGSlhQIyY?si=8UBBJRNAlD6kYXv8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+
+                    <div class="content-section instructions-section">
+                        <h2 class="section-title">
+                            <span class="section-icon">📋</span>
+                            Instrucciones para la Configuración de VSC
+                        </h2>
+                        
+                        <div class="instruction-steps">
+                            <div class="instruction-step">
+                                <div class="step-number">1</div>
+                                <h3 class="step-title">Instala VS Code (Si Es Necesario)</h3>
+                            </div>
+                            <div>
+                                <p class="step-content">
+                                    Este curso presentó por primera vez Visual Studio Code en el Tema 2. Si no lo instalaste entonces, sigue estos pasos para hacerlo ahora:
+                                </p>
+                                <ul class="step-list">
+                                    <li>Ve a <a href="https://code.visualstudio.com" target="_blank" rel="noopener noreferrer" class="inline-link">https://code.visualstudio.com</a></li>
+                                    <li>Haz clic en Descargar para tu sistema operativo</li>
+                                    <li>Instala VS Code siguiendo las indicaciones del instalador</li>
+                                    <li>Inicia VS Code</li>
+                                </ul>
+                            </div>
+
+                            <div class="instruction-step">
+                                <div class="step-number">2</div>
+                                <h3 class="step-title">Activa el Guardado Automático</h3>
+                            </div>
+                            <div>
+                                <p class="step-content">
+                                    Comienza activando el Guardado Automático para asegurar que nunca pierdas tu trabajo. Para hacerlo:
+                                </p>
+                                <ul class="step-list">
+                                    <li>Haz clic en <strong>File</strong> (Archivo) en la barra de menú</li>
+                                    <li>Selecciona <strong>Auto Save</strong> (Autoguardar)</li>
+                                    <li>Verás una marca de verificación junto a "Auto Save" cuando esté activado</li>
+                                </ul>
+                                <img src="../assets/images/VSC-AutoSave.png" alt="Menú Archivo de Visual Studio Code abierto con la opción Autoguardar resaltada en un recuadro rojo." class="image">
+                            </div>
+
+                            <div class="instruction-step">
+                                <div class="step-number">3</div>
+                                <h3 class="step-title">Abre Tu Carpeta de Proyecto</h3>
+                            </div>
+                            <div>
+                                <p class="step-content">
+                                    <strong>Importante:</strong> Normalmente querrás abrir una carpeta de proyecto completa, no solo archivos individuales. Esto te da acceso a todos tus archivos en la barra lateral y habilita muchas características útiles. Cuando selecciones "Open Folder", solo podrás seleccionar una carpeta, y los archivos individuales no se mostrarán en el diálogo.
+                                </p>
+                                <ul class="step-list">
+                                    <li>Haz clic en <strong>File > Open Folder</strong> (Archivo > Abrir Carpeta)</li>
+                                    <li>Navega hasta la carpeta de tu repositorio</li>
+                                    <li>Selecciona la carpeta y haz clic en <strong>Open</strong></li>
+                                    <li>Ahora deberías ver los archivos de tu proyecto en la barra lateral del Explorador a la izquierda</li>
+                                </ul>
+                            </div>
+
+                            <div class="instruction-step">
+                                <div class="step-number">4</div>
+                                <h3 class="step-title">Activa el Ajuste de Línea</h3>
+                            </div>
+                            <div>
+                                <p class="step-content">
+                                    El ajuste de línea hace que las líneas largas de código sean legibles al ajustarlas para que quepan en tu pantalla en lugar de requerir desplazamiento horizontal:
+                                </p>
+                                <ul class="step-list">
+                                    <li>Abre cualquier archivo HTML de tu proyecto</li>
+                                    <li>Haz clic en <strong>View</strong> (Ver) en la barra de menú</li>
+                                    <li>Selecciona <strong>Word Wrap</strong> (Ajuste de Línea)</li>
+                                    <li>Las líneas largas ahora se ajustarán para que quepan en tu ventana</li>
+                                </ul>
+                                <img src="../assets/images/VSC-WordWrap.png" alt="Menú Ver de Visual Studio Code abierto con la opción Ajuste de Línea resaltada en un recuadro rojo." class="image">
+                            </div>
+
+                            <div class="instruction-step">
+                                <div class="step-number">5</div>
+                                <h3 class="step-title">Instala la Extensión Live Server</h3>
+                            </div>
+                            <div>
+                                <p class="step-content">
+                                    Live Server es esencial para el desarrollo web—abre un servidor web local donde puedes ver tu trabajo localmente en tu máquina y actualiza automáticamente tu navegador cuando guardas cambios:
+                                </p>
+                                <ul class="step-list">
+                                    <li>Haz clic en el ícono de Extensiones en la barra lateral izquierda (o presiona <code>Ctrl+Shift+X</code> / <code>Cmd+Shift+X</code>)</li>
+                                    <li>Busca "Live Server"</li>
+                                    <li>Encuentra la extensión de Ritwick Dey</li>
+                                    <li>Haz clic en <strong>Instalar</strong> (Install)</li>
+                                </ul>
+                                <img src="../assets/images/VSC-LiveServer-extension.png" alt="Mercado de Extensiones de Visual Studio Code mostrando resultados de búsqueda de la extensión Live Server. La extensión Live Server de Ritwick Dey está resaltada con una flecha roja apuntando al botón Instalar." class="image">
+                            </div>
+
+                            <div class="instruction-step">
+                                <div class="step-number">6</div>
+                                <h3 class="step-title">Previsualiza Tu Trabajo con Live Server</h3>
+                            </div>
+                            <div>
+                                <p class="step-content">
+                                    Ahora puedes previsualizar cualquier archivo HTML en tu navegador con recarga automática:
+                                </p>
+                                <ul class="step-list">
+                                    <li>En la barra lateral del Explorador, haz clic derecho en cualquier archivo HTML</li>
+                                    <li>Selecciona <strong>Abrir con Live Server</strong> (Open with Live Server)</li>
+                                    <li>Tu navegador predeterminado se abrirá mostrando la página</li>
+                                    <li>Cualquier cambio que hagas y guardes se actualizará automáticamente en el navegador</li>
+                                </ul>
+                                <img src="../assets/images/VSC-OpenW-LiveServer.png" alt="Barra lateral del Explorador de Visual Studio Code con menú contextual mostrado después de hacer clic derecho en un archivo HTML. La opción 'Abrir con Live Server' está resaltada en un cuadro de información azul y rodeada por un borde rojo." class="image">
+                                <p class="conclusion-text">
+                                    Previsualizar tu trabajo de esta manera te permite ver cómo se verán tus cambios de localización en la página web real antes de implementarlos en vivo.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-section">
+                        <h2 class="section-title">
+                            <span class="section-icon">✅</span>
+                            ¡Todo listo!
+                        </h2>
+                        <p class="intro-text">
+                            Tu entorno de Visual Studio Code ahora está configurado para el trabajo de localización web. Tienes el guardado automático protegiendo tus cambios, el ajuste de línea haciendo el código legible, y Live Server proporcionando vistas previas instantáneas de tu trabajo.
+                        </p>
+                        <p class="conclusion-text">
+                            En la siguiente página, pondrás estas herramientas en práctica en tu primera tarea práctica de localización web. Trabajarás con archivos HTML reales, harás cambios y verás los resultados instantáneamente en tu navegador.
+                        </p>
+                    </div>
+
+                    <!-- Navigation - Content loaded via JavaScript -->
+                    <div class="topic-nav"></div>
+                </div>
+
+                <!-- Footer - Content loaded via JavaScript -->
+                <footer class="site-footer"></footer>
+
+            </main>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="../assets/js/header.js"></script>
+    <script src="../assets/js/language-switcher.js"></script>
+    <script src="../assets/js/topic-navigation.js"></script>
+    <script src="../assets/js/footer.js"></script>
+</body>
+</html>

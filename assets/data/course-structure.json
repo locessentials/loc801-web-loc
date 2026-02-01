@@ -87,6 +87,10 @@
           {
             "label": "HTML Code",
             "url": "/t-3/html-code.html"
+          },
+          {
+            "label": "VSC Setup",
+            "url": "/t-3/vsc-setup.html"
           }
         ]
       },
@@ -250,6 +254,10 @@
           {
             "label": "Código HTML",
             "url": "/t-3/código-html.html"
+          },
+          {
+            "label": "Configuración de VSC",
+            "url": "/t-3/configuración-vsc.html"
           }
         ]
       },
