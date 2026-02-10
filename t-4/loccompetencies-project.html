@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Localize the self-evaluation tool you used in Topic 1, practicing HTML, JSON, and CSS localization while considering system design bias.">
+    <meta name="keywords" content="localization project, self-evaluation localization, JSON localization, CSS localization, system design bias">
+    
+    <!-- Open Graph for social media -->
+    <meta property="og:title" content="LocCompetencies Project | Topic 4 | Loc801">
+    <meta property="og:description" content="Apply your HTML, JSON, and CSS skills to localize a working web application.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://loc801.locessentials.com/t-4/loccompetencies-project.html">
+    <meta property="og:image" content="https://loc801.locessentials.com/assets/images/LocCapTransparentTilted.png">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://loc801.locessentials.com/t-4/loccompetencies-project.html">
+    
+    <!-- Language alternates -->
+    <link rel="alternate" hreflang="es" href="proyecto-loccompetencies.html">
+    <link rel="alternate" hreflang="en" href="loccompetencies-project.html">
+    <link rel="alternate" hreflang="x-default" href="loccompetencies-project.html">
+    
+    <title>LocCompetencies Project | Topic 4 | Loc801</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../assets/styles/styles.css">
+</head>
+<body>
+    <div class="page-wrapper">
+        <div class="main-content-wrapper">
+            <main class="main-content">
+                <!-- Header -->
+                <header>
+                    <div class="header-content">
+                        <div class="logo-section">
+                            <img src="../assets/images/LocCapTransparentTilted.png" alt="LocEssentials cap logo" class="logo">
+                            <a href="/" class="course-title">Loc801: Web Localization for Beginners</a>
+                        </div>
+                        <div class="header-actions">
+                            <a href="/outline.html" class="outline-btn">
+                                <span>📋</span>
+                                <span>Outline</span>
+                            </a>
+                            <div class="lang-picker">
+                                <button class="lang-btn" data-lang="en">English</button>
+                                <button class="lang-btn" data-lang="es">Español</button>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+
+                <!-- Main Content -->
+                <div class="container">
+                    <nav class="breadcrumb">
+                        <a href="/">Course Home</a>
+                        <span class="breadcrumb-separator">›</span>
+                        <a href="/t-4/topic-4-primer.html">Topic 4</a>
+                        <span class="breadcrumb-separator">›</span>
+                        <span>LocCompetencies Project</span>
+                    </nav>
+
+                    <div class="page-header">
+                        <span class="topic-number">TOPIC 4</span>
+                        <h1 class="topic-title">LocCompetencies Project</h1>
+                        <p class="topic-description">
+                            Localize the self-evaluation tool from Topic 1, applying your HTML, JSON, and CSS skills while critically examining the tool's scoring methodology and visual design decisions.
+                        </p>
+                    </div>
+
+                    <div class="content-section">
+                        <h2 class="section-title">
+                            <span class="section-icon">🎯</span>
+                            Project Overview
+                        </h2>
+                        <p class="intro-text">
+                            In Topic 1, you used the Localization Competencies Self-Evaluation Tool to assess your skills. Now you'll localize that same tool to Mexican Spanish, putting into practice everything you've learned about HTML, JSON, and CSS localization while thinking critically about system design decisions.
+                        </p>
+
+                        <div class="info-box">
+                            <div class="info-box-title">🔄 From User to Localizer</div>
+                            <div class="info-box-content">
+                                This project gives you a unique perspective: you've experienced the tool as a user, and now you'll work with it as a localizer. Remember when you reflected on whether the scoring methodology felt fair? That reflection becomes crucial now—you'll examine the scoring logic and consider whether it needs adjustment for your target audience.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-section">
+                        <h2 class="section-title">
+                            <span class="section-icon">📚</span>
+                            Background Reading
+                        </h2>
+                        <p class="intro-text">
+                            Before starting your localization work, read these two blog posts to understand how the tool was designed and the decisions behind its scoring methodology:
+                        </p>
+
+                        <div class="resource-box" style="margin-bottom: 2rem;">
+                            <h3 class="resource-title">Understanding the Tool</h3>
+                            <p class="resource-content">
+                                <a href="https://locessentials.com/blog/2026/01/06/assess-your-localization-competency-with-our-self-evaluation-tool/" target="_blank" rel="noopener" class="inline-link">Assess Your Localization Competency with our Self Evaluation Tool</a> explains the tool's purpose, structure, and intended use cases.
+                            </p>
+                        </div>
+
+                        <div class="resource-box">
+                            <h3 class="resource-title">The Scoring System</h3>
+                            <p class="resource-content">
+                                <a href="https://locessentials.com/blog/2026/01/06/localization-competency-scoring-methodology-in-lmcc-self-evaluation/" target="_blank" rel="noopener" class="inline-link">Localization Competency Scoring Methodology used in the LMCC Self Evaluation</a> details how career recommendations are calculated and which competencies are weighted for different roles.
+                            </p>
+                        </div>
+
+                        <div class="tip-box">
+                            <div class="tip-box-title">💡 Critical Perspective</div>
+                            <div class="tip-box-content">
+                                While these tools may appear objective—they're on the web, they use numbers, they look official—remember that human beings designed every aspect of them. The scoring thresholds, the career recommendations, the competency weights: all reflect the biases and assumptions of the system designers. As a localizer, you need to evaluate whether these design decisions make sense for your target audience and culture. Don't just translate the content—engage critically with it. In fact, part of this project requires you to reflect on your critical thinking and decision-making process, so be sure to read the instructions all the way through to know what to document as you work.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-section">
+                        <h2 class="section-title">
+                            <span class="section-icon">🍴</span>
+                            Fork and Clone the Repository
+                        </h2>
+                        <p class="intro-text">
+                            Your first step is creating your own copy of the project repository and downloading it to your local machine.
+                        </p>
+
+                        <div class="instruction-steps">
+                            <div class="instruction-step">
+                                <div class="step-number">1</div>
+                                <h3 class="step-title">Fork the Repository</h3>
+                            </div>
+                            <div>
+                                <p class="step-content">
+                                    Navigate to the <a href="https://github.com/locessentials/LocCompetencies-SelfEval" target="_blank" rel="noopener" class="inline-link">LocCompetencies-SelfEval repository</a> on GitHub. Click the "Fork" button in the top-right corner to create your own copy under your GitHub account.
+                                </p>
+                            </div>
+
+                            <div class="instruction-step">
+                                <div class="step-number">2</div>
+                                <h3 class="step-title">Clone to Your Computer</h3>
+                            </div>
+                            <div>
+                                <p class="step-content">
+                                    Clone your forked repository to your local machine using the command line or GitHub Desktop, just as you did for the Terminology Webpage Project in Topic 3.
+                                </p>
+                            </div>
+
+                            <div class="instruction-step">
+                                <div class="step-number">3</div>
+                                <h3 class="step-title">Open in Visual Studio Code</h3>
+                            </div>
+                            <div>
+                                <p class="step-content">
+                                    Open the project folder in Visual Studio Code and explore the file structure. Take time to understand how the application is organized before you begin localizing.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-section instructions-section">
+                        <h2 class="section-title">
+                            <span class="section-icon">📋</span>
+                            Localization Tasks
+                        </h2>
+                        
+                        <p class="intro-text">
+                            To create a Mexican Spanish version of the self-evaluation tool, you'll need to create and translate two new files while considering adjustments to the configuration files.
+                        </p>
+
+                        <div class="instruction-steps">
+                            <div class="instruction-step">
+                                <div class="step-number">1</div>
+                                <h3 class="step-title">Create the Spanish HTML File</h3>
+                            </div>
+                            <div>
+                                <p class="step-content">
+                                    Duplicate <code>index.html</code> and rename it to <code>LocCompetencies_es-MX.html</code>. This will be your working file for the Spanish version.
+                                </p>
+                                <ul class="step-list">
+                                    <li>Update the <code>lang</code> attribute to <code>es-MX</code></li>
+                                    <li>Translate all metadata (title tag, meta description)</li>
+                                    <li>Translate visible content throughout the page</li>
+                                    <li>Consider language alternates and canonical URLs</li>
+                                </ul>
+                            </div>
+
+                            <div class="instruction-step">
+                                <div class="step-number">2</div>
+                                <h3 class="step-title">Create the Spanish Strings File</h3>
+                            </div>
+                            <div>
+                                <p class="step-content">
+                                    Duplicate <code>strings_en-us.json</code> and rename it to <code>strings_es-mx.json</code>. This file contains all the dynamic text used by the JavaScript application.
+                                </p>
+                                <ul class="step-list">
+                                    <li>Translate all interface strings (buttons, labels, instructions)</li>
+                                    <li>Translate competency descriptions and question text</li>
+                                    <li>Translate career path recommendations and descriptions</li>
+                                    <li>Translate all feedback and result messages</li>
+                                    <li>Use gender-neutral language in Spanish where appropriate</li>
+                                </ul>
+                            </div>
+
+                            <div class="instruction-step">
+                                <div class="step-number">3</div>
+                                <h3 class="step-title">Review and Adjust CSS Variables</h3>
+                            </div>
+                            <div>
+                                <p class="step-content">
+                                    Open <code>styles.css</code> and examine the CSS custom properties (variables) defined in the <code>:root</code> selector. The tool currently offers two style options: LocEssentials brand colors and UIC (Universidad Intercontinental) colors.
+                                </p>
+                                <ul class="step-list">
+                                    <li>Consider which color scheme best serves your target audience</li>
+                                    <li>Think about cultural associations with colors in Mexican Spanish contexts</li>
+                                    <li>Evaluate whether the existing spacing and typography work for Spanish text</li>
+                                    <li>Document your reasoning for any changes you make</li>
+                                </ul>
+                            </div>
+
+                            <div class="instruction-step">
+                                <div class="step-number">4</div>
+                                <h3 class="step-title">Examine the Scoring Configuration</h3>
+                            </div>
+                            <div>
+                                <p class="step-content">
+                                    Open <code>career-paths-config.json</code> and review the competency thresholds and weights for different career recommendations.
+                                </p>
+                                <ul class="step-list">
+                                    <li>Do these thresholds make sense for the Mexican market?</li>
+                                    <li>Should any competencies be weighted differently for your target audience?</li>
+                                    <li>Are the career paths equally relevant across different markets?</li>
+                                    <li>Consider whether you need to adjust any values and why</li>
+                                </ul>
+                            </div>
+
+                            <div class="instruction-step">
+                                <div class="step-number">5</div>
+                                <h3 class="step-title">Test Your Localization</h3>
+                            </div>
+                            <div>
+                                <p class="step-content">
+                                    Use Live Server to preview your localized version. Complete the entire self-evaluation in Spanish to ensure:
+                                </p>
+                                <ul class="step-list">
+                                    <li>All text displays correctly with proper encoding</li>
+                                    <li>Text expansion hasn't broken the layout</li>
+                                    <li>The scoring system functions correctly</li>
+                                    <li>Career recommendations display appropriately</li>
+                                    <li>All interactive elements work as expected</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-section">
+                        <h2 class="section-title">
+                            <span class="section-icon">✍️</span>
+                            Required Reflection
+                        </h2>
+                        <p class="intro-text">
+                            After completing your localization, write a 2-3 paragraph reflection addressing these three areas:
+                        </p>
+
+                        <div class="resource-box" style="margin-bottom: 2rem;">
+                            <h3 class="resource-title">1. Translation Challenges and Decisions</h3>
+                            <p class="resource-content">
+                                Discuss the challenges you encountered when working with the translatable content. What decisions did you make about terminology, tone, and cultural adaptation? How did you handle technical terms or concepts that don't translate directly? What strategies did you use to maintain clarity while working within the constraints of the interface?
+                            </p>
+                        </div>
+
+                        <div class="resource-box" style="margin-bottom: 2rem;">
+                            <h3 class="resource-title">2. Scoring Methodology Analysis</h3>
+                            <p class="resource-content">
+                                Reflect on the scoring methodology. Did you make changes to the career path thresholds or competency weights in <code>career-paths-config.json</code>? Why or why not? Remember when you took this evaluation in Topic 1 and considered whether the results felt fair—does your answer change when thinking about Mexican Spanish speakers taking this assessment? What biases or assumptions might be embedded in the original scoring system?
+                            </p>
+                        </div>
+
+                        <div class="resource-box">
+                            <h3 class="resource-title">3. CSS and Visual Design Decisions</h3>
+                            <p class="resource-content">
+                                Did you choose to use the LocEssentials color scheme or the UIC color scheme for your localized version? What adjustments, if any, did you make to the CSS variables? Your answer should not be "I didn't make changes because the styles looked fine." Instead, discuss the specific audience you imagined taking this self-evaluation in Mexican Spanish and explain how your visual design choices serve that audience. Consider cultural color associations, professional contexts, and user expectations.
+                            </p>
+                        </div>
+
+                        <div class="tip-box">
+                            <div class="tip-box-title">💡 Critical Thinking Required</div>
+                            <div class="tip-box-content">
+                                This reflection isn't about describing what you did—it's about explaining your reasoning and demonstrating critical awareness of how localization decisions affect users. Even if you chose not to modify something, you should articulate why that decision serves your target audience better than alternatives would have.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-section">
+                        <h2 class="section-title">
+                            <span class="section-icon">✅</span>
+                            Pre-Submission Checklist
+                        </h2>
+                        
+                        <div class="resource-box">
+                            <h3 class="resource-title">Required Files</h3>
+                            <ul class="step-list" style="margin-top: 1rem;">
+                                <li><code>LocCompetencies_es-MX.html</code> with <code>lang="es-MX"</code> and all content translated</li>
+                                <li><code>strings_es-mx.json</code> with all interface strings and content translated</li>
+                                <li>Updated metadata (title, description) in the HTML file</li>
+                                <li>Functioning language detection or language switcher (if implemented)</li>
+                            </ul>
+
+                            <h3 class="resource-title" style="margin-top: 2rem;">Quality Standards</h3>
+                            <ul class="step-list" style="margin-top: 1rem;">
+                                <li><strong>Linguistic accuracy</strong> - Correct Mexican Spanish grammar and culturally appropriate terminology</li>
+                                <li><strong>Technical precision</strong> - Accurate translation of localization competency concepts</li>
+                                <li><strong>Inclusive language</strong> - Gender-neutral constructions where appropriate</li>
+                                <li><strong>Functional integrity</strong> - All interactive features work correctly</li>
+                                <li><strong>Visual quality</strong> - Layout handles Spanish text expansion appropriately</li>
+                            </ul>
+
+                            <h3 class="resource-title" style="margin-top: 2rem;">Written Reflection</h3>
+                            <ul class="step-list" style="margin-top: 1rem;">
+                                <li>2-3 paragraphs addressing all three required topics</li>
+                                <li>Demonstrates critical thinking about design decisions</li>
+                                <li>Provides specific examples and reasoning</li>
+                                <li>Connects back to concepts from the course</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="content-section">
+                        <h2 class="section-title">
+                            <span class="section-icon">🚀</span>
+                            Deployment and Submission
+                        </h2>
+                        
+                        <div class="instruction-steps">
+                            <div class="instruction-step">
+                                <div class="step-number">1</div>
+                                <h3 class="step-title">Commit and Push</h3>
+                            </div>
+                            <div>
+                                <p class="step-content">
+                                    Commit all your changes with a clear message like "Add Mexican Spanish localization" and push to your GitHub repository.
+                                </p>
+                            </div>
+
+                            <div class="instruction-step">
+                                <div class="step-number">2</div>
+                                <h3 class="step-title">Enable GitHub Pages</h3>
+                            </div>
+                            <div>
+                                <p class="step-content">
+                                    In your repository settings, enable GitHub Pages deployment from the main branch as you've done in previous projects.
+                                </p>
+                            </div>
+
+                            <div class="instruction-step">
+                                <div class="step-number">3</div>
+                                <h3 class="step-title">Test the Live Site</h3>
+                            </div>
+                            <div>
+                                <p class="step-content">
+                                    Visit your GitHub Pages URL and test the entire self-evaluation flow in Spanish. Verify that all features work correctly in the deployed version.
+                                </p>
+                            </div>
+
+                            <div class="instruction-step">
+                                <div class="step-number">4</div>
+                                <h3 class="step-title">Submit Your Work</h3>
+                            </div>
+                            <div>
+                                <p class="step-content">
+                                    Submit the following in the format requested by your instructor:
+                                </p>
+                                <ul class="step-list">
+                                    <li>Link to your GitHub Pages site (e.g., <code>https://yourusername.github.io/LocCompetencies-SelfEval/</code>)</li>
+                                    <li>Your 2-3 paragraph written reflection</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-section">
+                        <h2 class="section-title">
+                            <span class="section-icon">⚠️</span>
+                            Common Issues to Avoid
+                        </h2>
+                        <ul class="objectives-list">
+                            <li class="objective-item">Leaving English text in the JSON file—every string must be translated</li>
+                            <li class="objective-item">Breaking the JSON structure by adding or removing commas incorrectly</li>
+                            <li class="objective-item">Not testing the complete evaluation flow before deployment</li>
+                            <li class="objective-item">Writing a superficial reflection that doesn't engage with the critical thinking prompts</li>
+                            <li class="objective-item">Making CSS changes without documenting your reasoning in the reflection</li>
+                            <li class="objective-item">Not considering whether the scoring methodology is appropriate for your target market</li>
+                        </ul>
+                    </div>
+
+                    <!-- Navigation - Content loaded via JavaScript -->
+                    <div class="topic-nav"></div>
+                </div>
+
+                <!-- Footer - Content loaded via JavaScript -->
+                <footer class="site-footer"></footer>
+
+            </main>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="../assets/js/header.js"></script>
+    <script src="../assets/js/language-switcher.js"></script>
+    <script src="../assets/js/topic-navigation.js"></script>
+    <script src="../assets/js/footer.js"></script>
+</body>
+</html>
