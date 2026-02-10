@@ -109,6 +109,10 @@
           {
             "label": "Topic 4 Primer",
             "url": "/t-4/topic-4-primer.html"
+          },
+          {
+            "label": "JavaScript & JSON Basics",
+            "url": "/t-4/javascript-json-basics.html"
           }
         ]
       },
@@ -284,6 +288,10 @@
           {
             "label": "Tema 4 - Introducción",
             "url": "/t-4/tema-4-intro.html"
+          },
+          {
+            "label": "JavaScript y JSON",
+            "url": "/t-4/javascript-json-lo-básico.html"
           }
         ]
       },

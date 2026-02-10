@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn JavaScript and JSON fundamentals for web localization, including how to externalize translatable strings for efficient multilingual workflows.">
+    <meta name="keywords" content="JavaScript basics, JSON localization, externalized strings, i18n JavaScript, web localization JSON, translatable strings">
+    
+    <!-- Open Graph for social media -->
+    <meta property="og:title" content="JavaScript &amp; JSON Basics | Topic 4 | Loc801">
+    <meta property="og:description" content="Learn JavaScript and JSON fundamentals and how to externalize translatable strings for localization.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://loc801.locessentials.com/t-4/javascript-json-basics.html">
+    <meta property="og:image" content="https://loc801.locessentials.com/assets/images/LocCapTransparentTilted.png">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://loc801.locessentials.com/t-4/javascript-json-basics.html">
+    
+    <!-- Language alternates -->
+    <link rel="alternate" hreflang="es" href="javascript-json-lo-básico.html">
+    <link rel="alternate" hreflang="en" href="javascript-json-basics.html">
+    <link rel="alternate" hreflang="x-default" href="javascript-json-basics.html">
+    
+    <title>JavaScript &amp; JSON Basics | Topic 4 | Loc801</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../assets/styles/styles.css">
+    <link rel="stylesheet" href="../assets/styles/code-viewer.css">
+</head>
+<body>
+    <div class="page-wrapper">
+        <div class="main-content-wrapper">
+            <main class="main-content">
+                <!-- Header -->
+                <header>
+                    <div class="header-content">
+                        <div class="logo-section">
+                            <img src="../assets/images/LocCapTransparentTilted.png" alt="LocEssentials cap logo" class="logo">
+                            <a href="/" class="course-title">Loc801: Web Localization for Beginners</a>
+                        </div>
+                        <div class="header-actions">
+                            <a href="/outline.html" class="outline-btn">
+                                <span>📋</span>
+                                <span>Outline</span>
+                            </a>
+                            <div class="lang-picker">
+                                <button class="lang-btn" data-lang="en">English</button>
+                                <button class="lang-btn" data-lang="es">Español</button>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+
+                <!-- Main Content -->
+                <div class="container">
+                    <nav class="breadcrumb">
+                        <a href="/">Course Home</a>
+                        <span class="breadcrumb-separator">›</span>
+                        <a href="/t-4/topic-4-primer.html">Topic 4</a>
+                        <span class="breadcrumb-separator">›</span>
+                        <span>JavaScript &amp; JSON Basics</span>
+                    </nav>
+
+                    <div class="page-header">
+                        <span class="topic-number">TOPIC 4</span>
+                        <h1 class="topic-title">JavaScript &amp; JSON Basics</h1>
+                        <p class="topic-description">
+                            Understand the fundamentals of JavaScript and JSON, and learn how externalizing translatable strings makes localization workflows more efficient and maintainable.
+                        </p>
+                    </div>
+
+                    <!-- What is JavaScript -->
+                    <div class="content-section">
+                        <h2 class="section-title">
+                            <span class="section-icon">⚡</span>
+                            What is JavaScript?
+                        </h2>
+                        <p class="intro-text">
+                            JavaScript (JS) is the programming language that brings websites to life. While HTML provides structure and CSS handles styling, JavaScript adds <strong>interactivity and dynamic behavior</strong>. Every time you click a button that opens a menu, submit a form, or see content update without a page reload, JavaScript is doing the work behind the scenes.
+                        </p>
+                        <p class="conclusion-text">
+                            For localization professionals, understanding JavaScript matters because JS is how content that depends on user interaction is loaded dynamically on the page. Plus, in builds in which translatable strings haven't been properly externalized, a great deal of content that needs to be translated&mdash;such as error messages, button labels, quiz feedback, and dynamically loaded content&mdash;may actually live inside JavaScript files. If you only translate the HTML, you'll miss a significant portion of what users actually see and interact with.
+                        </p>
+
+                        <div class="info-box">
+                            <div class="info-box-title">Common JavaScript Elements</div>
+                            <div class="info-box-content">
+                                <strong>Variables</strong> &mdash; Named containers that store data. Think of them like labeled boxes. For example, <code>let greeting = "Hello";</code> stores the text "Hello" in a variable called <code>greeting</code>.
+                                <br><br>
+                                <strong>Functions</strong> &mdash; Reusable blocks of code that perform a specific task. For example, a function called <code>showWelcomeMessage()</code> might display a greeting to the user in their language.
+                                <br><br>
+                                <strong>Control Structures</strong> &mdash; JavaScript uses conditional statements and loops to control the flow of the program. For example, an <code>if</code> statement might check the user's language preference and load the appropriate content.
+                                <br><br>
+                                <strong>Error Handling</strong> &mdash; JavaScript can catch and handle errors gracefully, which is important for providing a good user experience. For example, if a translation file fails to load, JavaScript can display a fallback message instead of leaving the user with a broken page.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- What is JSON -->
+                    <div class="content-section">
+                        <h2 class="section-title">
+                            <span class="section-icon">📦</span>
+                            What is JSON?
+                        </h2>
+                        <p class="intro-text">
+                            JSON (JavaScript Object Notation) is a lightweight format for storing and exchanging structured data. It's human-readable, which makes it easy for translators to work with, and machine-readable, which makes it ideal for web applications. JSON has become a standard format for storing translatable content separately that is then loaded from application code, like JavaScript.
+                        </p>
+
+                        <div class="info-box">
+                            <div class="info-box-title">Common JSON Elements</div>
+                            <div class="info-box-content">
+                                <strong>Keys</strong> &mdash; Labels that identify each piece of data, always enclosed in double quotes. Example: <code>"pageTitle"</code>. These labels are generally not translated, as they serve as identifiers for the application to retrieve the correct content.
+                                <br><br>
+                                <strong>Values</strong> &mdash; The actual data associated with a key. Values can be text strings, numbers, booleans (<code>true</code>/<code>false</code>), or more complex structures. Example: <code>"Welcome to our site"</code>. Text strings are the most common type of content that gets translated in localization projects, ensuring that users can navigate a site in their preferred language.
+                                <br><br>
+                                <strong>Objects</strong> &mdash; Collections of key-value pairs wrapped in curly braces <code>{ }</code>. Objects let you group related data together.
+                                <br><br>
+                                <strong>Arrays</strong> &mdash; Ordered lists of values wrapped in square brackets <code>[ ]</code>. Useful for storing lists of items like menu options or quiz answers.
+                            </div>
+                        </div>
+
+                        <h3 style="color: var(--dark-blue); margin: 2rem 0 1rem 0; font-size: 1.25rem;">A Simple JSON Example</h3>
+                        <p class="regular-text" style="margin-bottom: 1.5rem;">
+                            Here's what a JSON file storing translatable content might look like. Notice how keys stay the same across languages while only the values change&mdash;this is the foundation of JSON-based localization. Also notice how each opening bracket must have an associated closing bracket.
+                        </p>
+
+                        <div class="code-example-wrapper">
+                            <div class="code-tabs">
+                                <button class="code-tab active" data-example="json-en">JSON in English</button>
+                                <button class="code-tab" data-example="json-es">JSON in Spanish</button>
+                            </div>
+                            <div class="code-display json-comparer">
+                                <div class="json-view active" data-example="json-en">
+                                    <pre><code>{
+    "pageTitle": "Terminology and Generative AI",
+    "nav": {
+        "home": "Home",
+        "about": "About",
+        "contact": "Contact"
+    },
+    "quiz": {
+        "submitButton": "Submit Answer",
+        "correctMessage": "Correct!",
+        "incorrectMessage": "Incorrect. Try again."
+    }
+}
+                    </code></pre>
+                                </div>
+                                <div class="json-view" data-example="json-es">
+                                    <pre><code>{
+    "pageTitle": "Terminología e IA Generativa",
+    "nav": {
+        "home": "Inicio",
+        "about": "Acerca de",
+        "contact": "Contacto"
+    },
+    "quiz": {
+        "submitButton": "Enviar Respuesta",
+        "correctMessage": "¡Correcto!",
+        "incorrectMessage": "Incorrecto. Intenta de nuevo."
+    }
+}
+                    </code></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Externalized Strings Introduction -->
+                    <div class="content-section">
+                        <h2 class="section-title">
+                            <span class="section-icon">🔗</span>
+                            Externalizing Translatable Strings
+                        </h2>
+                        <p class="intro-text">
+                            Now that you understand the basics of JavaScript and JSON, let's explore one of the most important best practices in web localization: <strong>externalizing translatable strings</strong>. This means moving all user-facing text out of your code files (like JavaScript) and into separate data files (like JSON) that your application loads dynamically.
+                        </p>
+                        <p class="conclusion-text">
+                            To illustrate this concept, we'll look at a refactored version of the Terminology Webpage you localized in Topic 3. You'll be able to compare the original and refactored versions side by side to see exactly what changed and why.
+                        </p>
+
+                        <div class="tip-box">
+                            <div class="tip-box-title">💡 What is Refactoring?</div>
+                            <div class="tip-box-content">
+                                <strong>Refactoring</strong> means restructuring existing code to improve its organization without changing what it does. The webpage still looks and behaves exactly the same, but the underlying code is cleaner and easier to maintain.
+                                <br><br>
+                                Refactoring is one of the great advantages of working with code. You can start a project with a solid foundation, and then build upon it as your needs evolve. The Terminology Webpage started as a straightforward bilingual project. Now we're refactoring it to follow the best practice of externalized strings&mdash;making it easier to add new languages, update content, and collaborate with translators who may not be comfortable editing code files directly.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- The Problem: Embedded Strings -->
+                    <div class="content-section">
+                        <h2 class="section-title">
+                            <span class="section-icon">🔍</span>
+                            The Problem: Embedded Strings
+                        </h2>
+                        <p class="intro-text">
+                            Remember the <code>terminology-quiz_en-US.js</code> file from the original Terminology Webpage project? In that file, all of the translatable strings&mdash;quiz questions, feedback messages, correct and incorrect responses&mdash;were embedded directly in the JavaScript code.
+                        </p>
+
+                        <h3 style="color: var(--dark-blue); margin: 2rem 0 1rem 0; font-size: 1.25rem;">Original Approach: Strings Inside JavaScript</h3>
+                        <p class="regular-text" style="margin-bottom: 1.5rem;">
+                            Here's a simplified view of how the quiz data was structured in the original JavaScript file. Notice how the translatable text is mixed in with the application logic:
+                        </p>
+
+                        <div class="code-example-wrapper">
+                            <div class="code-tabs">
+                                <button class="code-tab active" data-example="embedded">View Code</button>
+                                <button class="code-tab" data-example="embedded">Why It's Problematic</button>
+                            </div>
+                            <div class="code-display">
+                                <div class="code-view active" data-example="embedded">
+                                    <pre><code>// terminology-quiz_en-US.js (original)
+q1: {
+    correct: "False",
+    correctFeedback: "Correct! It's important to remember
+        that just because communities of speakers use
+        common language doesn't mean that those speakers
+        share the exact same conceptualization...",
+    incorrectFeedback: {
+        "True": "Incorrect. It's important to remember..."
+    }
+},
+q2: {
+    correct: "use in a specific subject field",
+    correctFeedback: "Correct! Special language is a natural
+        language used in a subject field...",
+    incorrectFeedback: {
+        "independent of any specific subject field":
+            "Incorrect. Special language is a natural
+            language used in a subject field..."
+    }
+}</code></pre>
+                                </div>
+                                <div class="result-view" data-example="embedded">
+                                    <div class="result-content">
+                                        <p><strong>This approach creates several problems for localization:</strong></p>
+                                        <ul>
+                                            <li><strong>Code duplication</strong> &mdash; To add Spanish, you had to duplicate the entire JavaScript file as <code>terminology-quiz_es-MX.js</code>, copying all the application logic along with the translatable text.</li>
+                                            <li><strong>Maintenance burden</strong> &mdash; If you need to fix a bug in the quiz logic, you now have to update it in every language file separately.</li>
+                                            <li><strong>Translator friction</strong> &mdash; Translators need to work inside code files, increasing the risk of accidentally breaking the application.</li>
+                                            <li><strong>Scaling difficulty</strong> &mdash; Adding a third or fourth language means duplicating the entire file again each time.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- The Solution: Externalized Strings -->
+                    <div class="content-section">
+                        <h2 class="section-title">
+                            <span class="section-icon">✨</span>
+                            The Solution: Externalized Strings in JSON
+                        </h2>
+                        <p class="intro-text">
+                            In the refactored version, the translatable strings have been moved out of the JavaScript file and into separate JSON files&mdash;one for each language. The JavaScript file now contains only the application logic that the translator does not need to touch and dynamically loads the appropriate JSON file based on the user's selected language.
+                        </p>
+
+                        <h3 style="color: var(--dark-blue); margin: 2rem 0 1rem 0; font-size: 1.25rem;">Refactored Approach: JSON Data Files + Shared Logic</h3>
+
+                        <div class="code-example-wrapper">
+                            <div class="code-tabs">
+                                <button class="code-tab active" data-example="externalized">JSON Data File</button>
+                                <button class="code-tab" data-example="externalized">Shared JavaScript</button>
+                            </div>
+                            <div class="code-display">
+                                <div class="code-view active" data-example="externalized">
+                                    <pre><code>// strings_en-US.json
+{
+    "q1": {
+        "correct": "False",
+        "correctFeedback": "Correct! It\u2019s important
+            to remember that just because communities
+            of speakers use common language doesn\u2019t
+            mean that those speakers share the exact
+            same conceptualization...",
+        "incorrectFeedback": {
+            "True": "Incorrect. It\u2019s important
+                to remember..."
+        }
+    },
+    "q2": {
+        "correct": "use in a specific subject field",
+        "correctFeedback": "Correct! Special language
+            is a natural language used in a subject
+            field...",
+        "incorrectFeedback": {
+            "independent of any specific subject field":
+                "Incorrect. Special language is a
+                natural language used in a subject
+                field..."
+        }
+    }
+}</code></pre>
+                                </div>
+                                <div class="result-view" data-example="externalized">
+                                    <div class="result-content">
+                                        <pre><code>// terminology-quiz.js (shared across all languages)
+async function loadQuizContent(lang) {
+    const response = await fetch(
+        `strings_${lang}.json`
+    );
+    const quizData = await response.json();
+    return quizData;
+}
+
+function checkAnswer(questionId, selectedAnswer) {
+    const question = quizData[questionId];
+    if (selectedAnswer === question.correct) {
+        showFeedback(question.correctFeedback);
+    } else {
+        showFeedback(
+            question.incorrectFeedback[selectedAnswer]
+        );
+    }
+}</code></pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="info-box">
+                            <div class="info-box-title">What Changed?</div>
+                            <div class="info-box-content">
+                                <strong>Before:</strong> Two separate JS files (<code>terminology-quiz_en-US.js</code> and <code>terminology-quiz_es-MX.js</code>), each containing both application logic and translatable text.
+                                <br><br>
+                                <strong>After:</strong> One shared <code>terminology-quiz.js</code> file with the application logic, plus separate JSON data files for each language (<code>strings_en-US.json</code> and <code>strings_es-MX.json</code>).
+                                <br><br>
+                                The result? Translators work with clean, structured JSON files instead of navigating complex code. Developers maintain logic in one place. Everyone benefits.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Compare the Repos -->
+                    <div class="content-section">
+                        <h2 class="section-title">
+                            <span class="section-icon">🔀</span>
+                            Compare the Repositories
+                        </h2>
+                        <p class="intro-text">
+                            To see the full picture of what changed between the original and refactored versions, explore both repositories:
+                        </p>
+
+                        <div class="resource-box" style="margin-bottom: 2rem;">
+                            <h3 class="resource-title">Original Repository</h3>
+                            <p class="resource-content">
+                                <a href="https://github.com/locessentials/loc801-term-webpage-project" target="_blank" rel="noopener noreferrer" class="inline-link">github.com/locessentials/loc801-term-webpage-project</a> &mdash; The version you worked with in Topic 3, with embedded translatable strings in the JavaScript files.
+                            </p>
+                        </div>
+
+                        <div class="resource-box" style="margin-bottom: 2rem;">
+                            <h3 class="resource-title">Refactored Repository</h3>
+                            <p class="resource-content">
+                                <a href="https://github.com/locessentials/loc801-term-webpage-refactored" target="_blank" rel="noopener noreferrer" class="inline-link">github.com/locessentials/loc801-term-webpage-refactored</a> &mdash; The improved version with externalized translatable strings in JSON files.
+                            </p>
+                        </div>
+
+                        <div class="resource-box">
+                            <h3 class="resource-title">See the Changes in Detail</h3>
+                            <p class="resource-content">
+                                Observe exactly what changed between the original and refactored versions in <a href="https://github.com/locessentials/loc801-term-webpage-refactored/commit/f2ca340e3ed5ba7ff5c6ae0dfb6f19c442a8b959" target="_blank" rel="noopener noreferrer" class="inline-link">Commit f2ca340</a>. This commit view highlights every addition, deletion, and modification&mdash;making it a valuable exercise in understanding how refactoring works in practice.
+                            </p>
+                        </div>
+
+                        <div class="tip-box">
+                            <div class="tip-box-title">💡 What's New in the Refactored Repo</div>
+                            <div class="tip-box-content">
+                                In the updated repository, you'll also find a new English page for the "Getting Started with Terminology Management" article that was linked in the original version. This additional page was added in response to a request to localize that content as part of the project&mdash;a realistic scenario you'll encounter in professional localization work, where project scope evolves over time.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Working with Quotes in JSON -->
+                    <div class="content-section">
+                        <h2 class="section-title">
+                            <span class="section-icon">💬</span>
+                            Working with Quotes in JSON
+                        </h2>
+                        <p class="intro-text">
+                            One important detail to notice when working with JSON files: JSON uses double quotes (<code>"</code>) to mark keys and values. This means that if your translatable text contains straight double quotes, they'll conflict with the JSON syntax and break the file.
+                        </p>
+
+                        <h3 style="color: var(--dark-blue); margin: 2rem 0 1rem 0; font-size: 1.25rem;">How the Refactored Repo Handles Quotes</h3>
+                        <p class="regular-text" style="margin-bottom: 1.5rem;">
+                            The refactored repository uses a combination of curly quotes (&ldquo; &rdquo;) and straight quotes (&quot; &quot;) in the JSON files. Curly quotes don't conflict with JSON syntax because JSON only recognizes straight double quotes as structural delimiters.
+                        </p>
+
+                        <div class="code-example-wrapper">
+                            <div class="code-tabs">
+                                <button class="code-tab active" data-example="quotes">❌ This Breaks</button>
+                                <button class="code-tab" data-example="quotes">✅ This Works</button>
+                            </div>
+                            <div class="code-display">
+                                <div class="code-view active" data-example="quotes">
+                                    <pre><code>// ❌ Broken: straight quotes inside a JSON string
+{
+    "feedback": "She said "hello" to everyone."
+}
+// The parser sees four separate fragments
+// instead of one complete string!</code></pre>
+                                </div>
+                                <div class="result-view" data-example="quotes">
+                                    <div class="result-content">
+                                        <pre><code>// ✅ Option A: Use curly quotes inside the string
+{
+    "feedback": "She said \u201chello\u201d to everyone."
+}
+
+// ✅ Option B: Escape straight quotes with backslash
+{
+    "feedback": "She said \"hello\" to everyone."
+}</code></pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="info-box">
+                            <div class="info-box-title">Keeping Quotes Consistent</div>
+                            <div class="info-box-content">
+                                For a polished project, it's best to use one style of quotation marks consistently throughout your content. Some systems can automatically render straight quotes as curly quotes using CSS (with the <code>font-variant-alternates</code> property) or through JavaScript post-processing. This way, you can store simple escaped straight quotes in your JSON and let the presentation layer handle the visual styling.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Practice Activity -->
+                    <div class="content-section">
+                        <h2 class="section-title">
+                            <span class="section-icon">🎯</span>
+                            Practice: Refactor Your Own Project
+                        </h2>
+                        <p class="intro-text">
+                            If you'd like hands-on practice with refactoring, you can update your own fork of the <a href="https://github.com/locessentials/loc801-term-webpage-project" target="_blank" rel="noopener noreferrer" class="inline-link">original Terminology Webpage project</a> so that it reflects the best practice of externalizing translatable strings. This is optional but valuable practice.
+                        </p>
+                        <p class="regular-text">
+                            To get started, follow the instructions in the <a href="https://github.com/locessentials/loc801-term-webpage-refactored/blob/main/README.md" target="_blank" rel="noopener noreferrer" class="inline-link">README of the refactored repository</a>, which walks you through implementing the changes step by step.
+                        </p>
+
+                        <div class="info-box">
+                            <div class="info-box-title">What You'll Practice</div>
+                            <div class="info-box-content">
+                                By refactoring your own project, you'll gain experience with:
+                                <ul class="step-list" style="margin-top: 1rem;">
+                                    <li>Moving translatable strings from JavaScript files into JSON files</li>
+                                    <li>Structuring JSON data for multilingual content</li>
+                                    <li>Updating JavaScript to dynamically load language-specific content</li>
+                                    <li>Testing that both language versions work correctly after refactoring</li>
+                                    <li>Handling special characters and quotation marks in JSON</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Resources -->
+                    <div class="content-section">
+                        <h2 class="section-title">
+                            <span class="section-icon">📚</span>
+                            Resources for Learning More
+                        </h2>
+                        <p class="intro-text">
+                            This lesson gives you a localization-focused introduction to JavaScript and JSON. If you'd like to build deeper coding skills, here are some recommended resources:
+                        </p>
+
+                        <div class="resource-box" style="margin-bottom: 2rem;">
+                            <h3 class="resource-title">Text-Based Tutorials</h3>
+                            <ul class="resource-list">
+                                <li><a href="https://www.w3schools.com/js/default.asp" target="_blank" rel="noopener noreferrer" class="inline-link">JavaScript Tutorial from W3Schools</a> &mdash; A comprehensive, beginner-friendly walkthrough of JavaScript fundamentals</li>
+                                <li><a href="https://www.w3schools.com/js/js_json.asp" target="_blank" rel="noopener noreferrer" class="inline-link">JavaScript JSON from W3Schools</a> &mdash; Focused coverage of JSON syntax and how JavaScript works with JSON data</li>
+                            </ul>
+                        </div>
+
+                        <div class="resource-box">
+                            <h3 class="resource-title">Video Tutorials</h3>
+                            <p class="resource-content">
+                                Beyond the channels we've shared in previous topics, there are many YouTube creators who teach JavaScript and JSON clearly and effectively. One recommendation is <a href="https://youtu.be/xB3ZmUH6GqU?si=mOSLivy6HljWy4Rh" target="_blank" rel="noopener noreferrer" class="inline-link">Coding Tutorials by Catherine Li</a>.
+                            </p>
+                            <p class="resource-content">
+                                We encourage you to explore and find the YouTube channels and content creators whose teaching style works best for you. Everyone learns differently, and having a go-to channel for coding questions can be a valuable resource throughout your career.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Navigation - Content loaded via JavaScript -->
+                    <div class="topic-nav"></div>
+                </div>
+
+                <!-- Footer - Content loaded via JavaScript -->
+                <footer class="site-footer"></footer>
+
+            </main>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="../assets/js/header.js"></script>
+    <script src="../assets/js/language-switcher.js"></script>
+    <script src="../assets/js/topic-navigation.js"></script>
+    <script src="../assets/js/footer.js"></script>
+    <script src="../assets/js/code-viewer.js"></script>
+</body>
+</html>

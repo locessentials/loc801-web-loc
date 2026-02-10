@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aprende los fundamentos de JavaScript y JSON para la localización web, incluyendo cómo externalizar cadenas traducibles para flujos de trabajo multilingües eficientes.">
+    <meta name="keywords" content="fundamentos JavaScript, localización JSON, cadenas externalizadas, i18n JavaScript, localización web JSON, cadenas traducibles">
+    
+    <!-- Open Graph para redes sociales -->
+    <meta property="og:title" content="JavaScript y JSON: Lo Básico | Tema 4 | Loc801">
+    <meta property="og:description" content="Aprende los fundamentos de JavaScript y JSON, y cómo externalizar cadenas traducibles para la localización.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://loc801.locessentials.com/t-4/javascript-json-lo-básico.html">
+    <meta property="og:image" content="https://loc801.locessentials.com/assets/images/LocCapTransparentTilted.png">
+    
+    <!-- URL canónica -->
+    <link rel="canonical" href="https://loc801.locessentials.com/t-4/javascript-json-lo-básico.html">
+    
+    <!-- Alternativas de idioma -->
+    <link rel="alternate" hreflang="es" href="javascript-json-lo-básico.html">
+    <link rel="alternate" hreflang="en" href="javascript-json-basics.html">
+    <link rel="alternate" hreflang="x-default" href="javascript-json-basics.html">
+    
+    <title>JavaScript y JSON: Lo Básico | Tema 4 | Loc801</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Hojas de estilo -->
+    <link rel="stylesheet" href="../assets/styles/styles.css">
+    <link rel="stylesheet" href="../assets/styles/code-viewer.css">
+</head>
+<body>
+    <div class="page-wrapper">
+        <div class="main-content-wrapper">
+            <main class="main-content">
+                <!-- Encabezado -->
+                <header>
+                    <div class="header-content">
+                        <div class="logo-section">
+                            <img src="../assets/images/LocCapTransparentTilted.png" alt="Logo de gorra LocEssentials" class="logo">
+                            <a href="/" class="course-title">Loc801: Localización Web para Principiantes</a>
+                        </div>
+                        <div class="header-actions">
+                            <a href="/esquema.html" class="outline-btn">
+                                <span>📋</span>
+                                <span>Esquema</span>
+                            </a>
+                            <div class="lang-picker">
+                                <button class="lang-btn" data-lang="en">English</button>
+                                <button class="lang-btn" data-lang="es">Español</button>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+
+                <!-- Contenido principal -->
+                <div class="container">
+                    <nav class="breadcrumb">
+                        <a href="/">Inicio del curso</a>
+                        <span class="breadcrumb-separator">›</span>
+                        <a href="/t-4/tema-4-intro.html">Tema 4</a>
+                        <span class="breadcrumb-separator">›</span>
+                        <span>JavaScript y JSON: Lo Básico</span>
+                    </nav>
+
+                    <div class="page-header">
+                        <span class="topic-number">TEMA 4</span>
+                        <h1 class="topic-title">JavaScript y JSON: Lo Básico</h1>
+                        <p class="topic-description">
+                            Comprende los fundamentos de JavaScript y JSON, y aprende cómo la externalización de cadenas traducibles hace que los flujos de trabajo de localización sean más eficientes y fáciles de mantener.
+                        </p>
+                    </div>
+
+                    <!-- ¿Qué es JavaScript? -->
+                    <div class="content-section">
+                        <h2 class="section-title">
+                            <span class="section-icon">⚡</span>
+                            ¿Qué es JavaScript?
+                        </h2>
+                        <p class="intro-text">
+                            JavaScript (JS) es el lenguaje de programación que da vida a los sitios web. Mientras que HTML proporciona la estructura y CSS maneja el estilo, JavaScript agrega <strong>interactividad y comportamiento dinámico</strong>. Cada vez que haces clic en un botón que abre un menú, envías un formulario o ves contenido actualizarse sin recargar la página, JavaScript está haciendo el trabajo detrás de escena.
+                        </p>
+                        <p class="conclusion-text">
+                            Para profesionales de localización, entender JavaScript es importante porque JS es la forma en que se carga dinámicamente en la página el contenido que depende de la interacción del usuario. Además, en compilaciones en las que las cadenas traducibles no se han externalizado correctamente, una gran cantidad de contenido que necesita traducirse&mdash;como mensajes de error, etiquetas de botones, retroalimentación de cuestionarios y contenido cargado dinámicamente&mdash;puede en realidad residir dentro de archivos JavaScript. Si solo traduces el HTML, pasarás por alto una parte significativa de lo que los usuarios realmente ven e interactúan.
+                        </p>
+
+                        <div class="info-box">
+                            <div class="info-box-title">Elementos Comunes de JavaScript</div>
+                            <div class="info-box-content">
+                                <strong>Variables</strong> &mdash; Contenedores con nombre que almacenan datos. Piensa en ellas como cajas etiquetadas. Por ejemplo, <code>let greeting = "Hola";</code> almacena el texto "Hola" en una variable llamada <code>greeting</code>.
+                                <br><br>
+                                <strong>Funciones</strong> &mdash; Bloques de código reutilizables que realizan una tarea específica. Por ejemplo, una función llamada <code>showWelcomeMessage()</code> podría mostrar un saludo al usuario en su idioma.
+                                <br><br>
+                                <strong>Estructuras de Control</strong> &mdash; JavaScript utiliza declaraciones condicionales y bucles para controlar el flujo del programa. Por ejemplo, una declaración <code>if</code> podría verificar la preferencia de idioma del usuario y cargar el contenido apropiado.
+                                <br><br>
+                                <strong>Manejo de Errores</strong> &mdash; JavaScript puede capturar y manejar errores de manera elegante, lo cual es importante para proporcionar una buena experiencia de usuario. Por ejemplo, si un archivo de traducción no se carga, JavaScript puede mostrar un mensaje de respaldo en lugar de dejar al usuario con una página dañada.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ¿Qué es JSON? -->
+                    <div class="content-section">
+                        <h2 class="section-title">
+                            <span class="section-icon">📦</span>
+                            ¿Qué es JSON?
+                        </h2>
+                        <p class="intro-text">
+                            JSON (JavaScript Object Notation, o Notación de Objetos de JavaScript) es un formato ligero para almacenar e intercambiar datos estructurados. Es legible por humanos, lo que facilita el trabajo de los traductores, y legible por máquinas, lo que lo hace ideal para aplicaciones web. JSON se ha convertido en un formato estándar para almacenar contenido traducible de manera separada que luego se carga desde el código de la aplicación, como JavaScript.
+                        </p>
+
+                        <div class="info-box">
+                            <div class="info-box-title">Elementos Comunes de JSON</div>
+                            <div class="info-box-content">
+                                <strong>Claves (keys)</strong> &mdash; Etiquetas que identifican cada dato, siempre encerradas entre comillas dobles. Ejemplo: <code>"pageTitle"</code>
+                                <br><br>
+                                <strong>Valores (values)</strong> &mdash; Los datos reales asociados con una clave. Los valores pueden ser cadenas de texto, números, booleanos (<code>true</code>/<code>false</code>), u estructuras más complejas. Ejemplo: <code>"Te damos la bienvenida a nuestro sitio"</code>
+                                <br><br>
+                                <strong>Objetos</strong> &mdash; Colecciones de pares clave-valor envueltas en llaves <code>{ }</code>. Los objetos permiten agrupar datos relacionados.
+                                <br><br>
+                                <strong>Arreglos (arrays)</strong> &mdash; Listas ordenadas de valores envueltas en corchetes <code>[ ]</code>. Útiles para almacenar listas de elementos como opciones de menú o respuestas de cuestionarios.
+                            </div>
+                        </div>
+
+                        <h3 style="color: var(--dark-blue); margin: 2rem 0 1rem 0; font-size: 1.25rem;">Un Ejemplo Simple de JSON</h3>
+                        <p class="regular-text" style="margin-bottom: 1.5rem;">
+                            Así podría verse un archivo JSON que almacena contenido traducible. Observa cómo las claves permanecen iguales entre idiomas mientras que solo los valores cambian&mdash;esta es la base de la localización con JSON.
+                        </p>
+
+                        <div class="code-example-wrapper">
+                            <div class="code-tabs">
+                                <button class="code-tab active" data-example="json-en">JSON en inglés</button>
+                                <button class="code-tab" data-example="json-es">JSON en español</button>
+                            </div>
+                            <div class="code-display json-comparer">
+                                <div class="json-view active" data-example="json-en">
+                                    <pre><code>{
+    "pageTitle": "Terminology and Generative AI",
+    "nav": {
+        "home": "Home",
+        "about": "About",
+        "contact": "Contact"
+    },
+    "quiz": {
+        "submitButton": "Submit Answer",
+        "correctMessage": "Correct!",
+        "incorrectMessage": "Incorrect. Try again."
+    }
+}
+                    </code></pre>
+                                </div>
+                                <div class="json-view" data-example="json-es">
+                                    <pre><code>{
+    "pageTitle": "Terminología e IA Generativa",
+    "nav": {
+        "home": "Inicio",
+        "about": "Acerca de",
+        "contact": "Contacto"
+    },
+    "quiz": {
+        "submitButton": "Enviar Respuesta",
+        "correctMessage": "¡Correcto!",
+        "incorrectMessage": "Incorrecto. Intenta de nuevo."
+    }
+}
+                    </code></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Introducción a la Externalización de Cadenas -->
+                    <div class="content-section">
+                        <h2 class="section-title">
+                            <span class="section-icon">🔗</span>
+                            Externalización de Cadenas Traducibles
+                        </h2>
+                        <p class="intro-text">
+                            Ahora que comprendes los fundamentos de JavaScript y JSON, exploremos una de las mejores prácticas más importantes en la localización web: <strong>la externalización de cadenas traducibles</strong>. Esto significa mover todo el texto visible para la persona que visita el sitio fuera de tus archivos de código (como JavaScript) y hacia archivos de datos separados (como JSON) que tu aplicación carga dinámicamente.
+                        </p>
+                        <p class="conclusion-text">
+                            Para ilustrar este concepto, examinaremos una versión refactorizada de la página web de terminología que localizaste en el Tema 3. Podrás comparar las versiones original y refactorizada lado a lado para ver exactamente qué cambió y por qué.
+                        </p>
+
+                        <div class="tip-box">
+                            <div class="tip-box-title">💡 ¿Qué es la Refactorización?</div>
+                            <div class="tip-box-content">
+                                <strong>La refactorización</strong> significa reestructurar el código existente para mejorar su organización sin cambiar lo que hace. La página web sigue viéndose y comportándose exactamente igual, pero el código subyacente es más limpio y fácil de mantener.
+                                <br><br>
+                                La refactorización es una de las grandes ventajas de trabajar con código. Puedes comenzar un proyecto con una base sólida, y luego construir sobre ella a medida que tus necesidades evolucionan. La página web de terminología comenzó como un proyecto bilingüe sencillo. Ahora la estamos refactorizando para seguir la mejor práctica de cadenas externalizadas&mdash;facilitando agregar nuevos idiomas, actualizar contenido y colaborar con traductores que quizás no se sientan cómodes editando archivos de código directamente.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- El Problema: Cadenas Incrustadas -->
+                    <div class="content-section">
+                        <h2 class="section-title">
+                            <span class="section-icon">🔍</span>
+                            El Problema: Cadenas Incrustadas
+                        </h2>
+                        <p class="intro-text">
+                            ¿Recuerdas el archivo <code>terminology-quiz_en-US.js</code> del proyecto original de la página web de terminología? En ese archivo, todas las cadenas traducibles&mdash;preguntas del cuestionario, mensajes de retroalimentación, respuestas correctas e incorrectas&mdash;estaban incrustadas directamente en el código JavaScript.
+                        </p>
+
+                        <h3 style="color: var(--dark-blue); margin: 2rem 0 1rem 0; font-size: 1.25rem;">Enfoque Original: Cadenas Dentro de JavaScript</h3>
+                        <p class="regular-text" style="margin-bottom: 1.5rem;">
+                            Aquí tienes una vista simplificada de cómo se estructuraban los datos del cuestionario en el archivo JavaScript original. Observa cómo el texto traducible está mezclado con la lógica de la aplicación:
+                        </p>
+
+                        <div class="code-example-wrapper">
+                            <div class="code-tabs">
+                                <button class="code-tab active" data-example="embedded">Ver Código</button>
+                                <button class="code-tab" data-example="embedded">Por Qué Es Problemático</button>
+                            </div>
+                            <div class="code-display">
+                                <div class="code-view active" data-example="embedded">
+                                    <pre><code>// terminology-quiz_en-US.js (original)
+q1: {
+    correct: "False",
+    correctFeedback: "Correct! It's important to remember
+        that just because communities of speakers use
+        common language doesn't mean that those speakers
+        share the exact same conceptualization...",
+    incorrectFeedback: {
+        "True": "Incorrect. It's important to remember..."
+    }
+},
+q2: {
+    correct: "use in a specific subject field",
+    correctFeedback: "Correct! Special language is a natural
+        language used in a subject field...",
+    incorrectFeedback: {
+        "independent of any specific subject field":
+            "Incorrect. Special language is a natural
+            language used in a subject field..."
+    }
+}</code></pre>
+                                </div>
+                                <div class="result-view" data-example="embedded">
+                                    <div class="result-content">
+                                        <p><strong>Este enfoque crea varios problemas para la localización:</strong></p>
+                                        <ul>
+                                            <li><strong>Duplicación de código</strong> &mdash; Para agregar el español, tuviste que duplicar el archivo JavaScript completo como <code>terminology-quiz_es-MX.js</code>, copiando toda la lógica de la aplicación junto con el texto traducible.</li>
+                                            <li><strong>Carga de mantenimiento</strong> &mdash; Si necesitas corregir un error en la lógica del cuestionario, ahora tienes que actualizarlo en cada archivo de idioma por separado.</li>
+                                            <li><strong>Fricción para traductores</strong> &mdash; Quienes traducen necesitan trabajar dentro de archivos de código, lo que aumenta el riesgo de romper accidentalmente la aplicación.</li>
+                                            <li><strong>Dificultad para escalar</strong> &mdash; Agregar un tercer o cuarto idioma significa duplicar el archivo completo cada vez.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- La Solución: Cadenas Externalizadas -->
+                    <div class="content-section">
+                        <h2 class="section-title">
+                            <span class="section-icon">✨</span>
+                            La Solución: Cadenas Externalizadas en JSON
+                        </h2>
+                        <p class="intro-text">
+                            En la versión refactorizada, las cadenas traducibles se han movido fuera del archivo JavaScript y hacia archivos JSON separados&mdash;uno para cada idioma. El archivo JavaScript ahora contiene solo la lógica de la aplicación que quien traduce no necesita tocar y carga dinámicamente el archivo JSON apropiado según el idioma seleccionado por el usuario.
+                        </p>
+
+                        <h3 style="color: var(--dark-blue); margin: 2rem 0 1rem 0; font-size: 1.25rem;">Enfoque Refactorizado: Archivos de Datos JSON + Lógica Compartida</h3>
+
+                        <div class="code-example-wrapper">
+                            <div class="code-tabs">
+                                <button class="code-tab active" data-example="externalized">Archivo de Datos JSON</button>
+                                <button class="code-tab" data-example="externalized">JavaScript Compartido</button>
+                            </div>
+                            <div class="code-display">
+                                <div class="code-view active" data-example="externalized">
+                                    <pre><code>// strings_en-US.json
+{
+    "q1": {
+        "correct": "False",
+        "correctFeedback": "Correct! It\u2019s important
+            to remember that just because communities
+            of speakers use common language doesn\u2019t
+            mean that those speakers share the exact
+            same conceptualization...",
+        "incorrectFeedback": {
+            "True": "Incorrect. It\u2019s important
+                to remember..."
+        }
+    },
+    "q2": {
+        "correct": "use in a specific subject field",
+        "correctFeedback": "Correct! Special language
+            is a natural language used in a subject
+            field...",
+        "incorrectFeedback": {
+            "independent of any specific subject field":
+                "Incorrect. Special language is a
+                natural language used in a subject
+                field..."
+        }
+    }
+}</code></pre>
+                                </div>
+                                <div class="result-view" data-example="externalized">
+                                    <div class="result-content">
+                                        <pre><code>// terminology-quiz.js (compartido entre todos los idiomas)
+async function loadQuizContent(lang) {
+    const response = await fetch(
+        `strings_${lang}.json`
+    );
+    const quizData = await response.json();
+    return quizData;
+}
+
+function checkAnswer(questionId, selectedAnswer) {
+    const question = quizData[questionId];
+    if (selectedAnswer === question.correct) {
+        showFeedback(question.correctFeedback);
+    } else {
+        showFeedback(
+            question.incorrectFeedback[selectedAnswer]
+        );
+    }
+}</code></pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="info-box">
+                            <div class="info-box-title">¿Qué Cambió?</div>
+                            <div class="info-box-content">
+                                <strong>Antes:</strong> Dos archivos JS separados (<code>terminology-quiz_en-US.js</code> y <code>terminology-quiz_es-MX.js</code>), cada uno conteniendo tanto la lógica de la aplicación como el texto traducible.
+                                <br><br>
+                                <strong>Después:</strong> Un archivo <code>terminology-quiz.js</code> compartido con la lógica de la aplicación, más archivos de datos JSON separados para cada idioma (<code>strings_en-US.json</code> y <code>strings_es-MX.json</code>).
+                                <br><br>
+                                ¿El resultado? Quienes traducen trabajan con archivos JSON limpios y estructurados en lugar de navegar código complejo. Quienes desarrollan mantienen la lógica en un solo lugar. Todes se benefician.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Compara los Repositorios -->
+                    <div class="content-section">
+                        <h2 class="section-title">
+                            <span class="section-icon">🔀</span>
+                            Compara los Repositorios
+                        </h2>
+                        <p class="intro-text">
+                            Para ver el panorama completo de lo que cambió entre las versiones original y refactorizada, explora ambos repositorios:
+                        </p>
+
+                        <div class="resource-box" style="margin-bottom: 2rem;">
+                            <h3 class="resource-title">Repositorio Original</h3>
+                            <p class="resource-content">
+                                <a href="https://github.com/locessentials/loc801-term-webpage-project" target="_blank" rel="noopener noreferrer" class="inline-link">github.com/locessentials/loc801-term-webpage-project</a> &mdash; La versión con la que trabajaste en el Tema 3, con cadenas traducibles incrustadas en los archivos JavaScript.
+                            </p>
+                        </div>
+
+                        <div class="resource-box" style="margin-bottom: 2rem;">
+                            <h3 class="resource-title">Repositorio Refactorizado</h3>
+                            <p class="resource-content">
+                                <a href="https://github.com/locessentials/loc801-term-webpage-refactored" target="_blank" rel="noopener noreferrer" class="inline-link">github.com/locessentials/loc801-term-webpage-refactored</a> &mdash; La versión mejorada con cadenas traducibles externalizadas en archivos JSON.
+                            </p>
+                        </div>
+
+                        <div class="resource-box">
+                            <h3 class="resource-title">Ve los Cambios en Detalle</h3>
+                            <p class="resource-content">
+                                Observa exactamente qué cambió entre las versiones original y refactorizada en el <a href="https://github.com/locessentials/loc801-term-webpage-refactored/commit/f2ca340e3ed5ba7ff5c6ae0dfb6f19c442a8b959" target="_blank" rel="noopener noreferrer" class="inline-link">Commit f2ca340</a>. Esta vista de commit resalta cada adición, eliminación y modificación&mdash;lo que la convierte en un ejercicio valioso para comprender cómo funciona la refactorización en la práctica.
+                            </p>
+                        </div>
+
+                        <div class="tip-box">
+                            <div class="tip-box-title">💡 Novedades en el Repositorio Refactorizado</div>
+                            <div class="tip-box-content">
+                                En el repositorio actualizado, también encontrarás una nueva página en inglés para el artículo "Getting Started with Terminology Management" que estaba enlazado en la versión original. Esta página adicional se agregó en respuesta a una solicitud de localizar ese contenido como parte del proyecto&mdash;un escenario realista que encontrarás en el trabajo profesional de localización, donde el alcance del proyecto evoluciona con el tiempo.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Trabajar con Comillas en JSON -->
+                    <div class="content-section">
+                        <h2 class="section-title">
+                            <span class="section-icon">💬</span>
+                            Trabajar con Comillas en JSON
+                        </h2>
+                        <p class="intro-text">
+                            Un detalle importante a notar al trabajar con archivos JSON: JSON usa comillas dobles rectas (<code>"</code>) para marcar claves y valores. Esto significa que si tu texto traducible contiene comillas dobles rectas, entrarán en conflicto con la sintaxis de JSON y romperán el archivo.
+                        </p>
+
+                        <h3 style="color: var(--dark-blue); margin: 2rem 0 1rem 0; font-size: 1.25rem;">Cómo el Repositorio Refactorizado Maneja las Comillas</h3>
+                        <p class="regular-text" style="margin-bottom: 1.5rem;">
+                            El repositorio refactorizado usa una combinación de comillas tipográficas (&ldquo; &rdquo;) y comillas rectas (&quot; &quot;) en los archivos JSON. Las comillas tipográficas no entran en conflicto con la sintaxis de JSON porque JSON solo reconoce las comillas dobles rectas como delimitadores estructurales.
+                        </p>
+
+                        <div class="code-example-wrapper">
+                            <div class="code-tabs">
+                                <button class="code-tab active" data-example="quotes">❌ Esto Falla</button>
+                                <button class="code-tab" data-example="quotes">✅ Esto Funciona</button>
+                            </div>
+                            <div class="code-display">
+                                <div class="code-view active" data-example="quotes">
+                                    <pre><code>// ❌ Error: comillas rectas dentro de una cadena JSON
+{
+    "feedback": "Ella dijo "hola" a todes."
+}
+// El analizador ve cuatro fragmentos separados
+// ¡en lugar de una cadena completa!</code></pre>
+                                </div>
+                                <div class="result-view" data-example="quotes">
+                                    <div class="result-content">
+                                        <pre><code>// ✅ Opción A: Usar comillas tipográficas dentro de la cadena
+{
+    "feedback": "Ella dijo \u201chola\u201d a todes."
+}
+
+// ✅ Opción B: Escapar comillas rectas con barra invertida
+{
+    "feedback": "Ella dijo \"hola\" a todes."
+}</code></pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="info-box">
+                            <div class="info-box-title">Mantener la Consistencia en las Comillas</div>
+                            <div class="info-box-content">
+                                Para un proyecto bien pulido, es mejor usar un estilo de comillas de manera consistente en todo tu contenido. Algunos sistemas pueden renderizar automáticamente las comillas rectas como comillas tipográficas usando CSS (con la propiedad <code>font-variant-alternates</code>) o mediante procesamiento posterior con JavaScript. De esta manera, puedes almacenar comillas rectas escapadas simples en tu JSON y dejar que la capa de presentación maneje el estilo visual.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Actividad de Práctica -->
+                    <div class="content-section">
+                        <h2 class="section-title">
+                            <span class="section-icon">🎯</span>
+                            Práctica: Refactoriza Tu Propio Proyecto
+                        </h2>
+                        <p class="intro-text">
+                            Si deseas practicar la refactorización de forma directa, puedes actualizar tu propia bifurcación del <a href="https://github.com/locessentials/loc801-term-webpage-project" target="_blank" rel="noopener noreferrer" class="inline-link">proyecto original de la página web de terminología</a> para que refleje la mejor práctica de externalizar cadenas traducibles. Esto es opcional pero es una práctica valiosa.
+                        </p>
+                        <p class="regular-text">
+                            Para comenzar, sigue las instrucciones en el <a href="https://github.com/locessentials/loc801-term-webpage-refactored/blob/main/README.md" target="_blank" rel="noopener noreferrer" class="inline-link">README del repositorio refactorizado</a>, que te guía paso a paso en la implementación de los cambios.
+                        </p>
+
+                        <div class="info-box">
+                            <div class="info-box-title">Lo Que Practicarás</div>
+                            <div class="info-box-content">
+                                Al refactorizar tu propio proyecto, adquirirás experiencia en:
+                                <ul class="step-list" style="margin-top: 1rem;">
+                                    <li>Mover cadenas traducibles de archivos JavaScript a archivos JSON</li>
+                                    <li>Estructurar datos JSON para contenido multilingüe</li>
+                                    <li>Actualizar JavaScript para cargar dinámicamente contenido específico de cada idioma</li>
+                                    <li>Verificar que ambas versiones de idioma funcionen correctamente después de la refactorización</li>
+                                    <li>Manejar caracteres especiales y comillas en JSON</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Recursos -->
+                    <div class="content-section">
+                        <h2 class="section-title">
+                            <span class="section-icon">📚</span>
+                            Recursos para Aprender Más
+                        </h2>
+                        <p class="intro-text">
+                            Esta lección ofrece una introducción a JavaScript y JSON enfocada en la localización. Si deseas desarrollar habilidades de programación más profundas, aquí tienes algunos recursos recomendados:
+                        </p>
+
+                        <div class="resource-box" style="margin-bottom: 2rem;">
+                            <h3 class="resource-title">Tutoriales en Texto</h3>
+                            <ul class="resource-list">
+                                <li><a href="https://www.freecodecamp.org/espanol/learn/javascript-v9/" target="_blank" rel="noopener noreferrer" class="inline-link">Certificación de JavaScript por freeCodeCamp</a> &mdash; Un curso interactivo y completo de JavaScript disponible en español</li>
+                                <li><a href="https://codigonautas.com/json-que-es-como-trabajar/" target="_blank" rel="noopener noreferrer" class="inline-link">JSON: ¿Qué es este Formato y Cómo Trabajar con Él?</a> &mdash; Una guía clara sobre la sintaxis de JSON y cómo trabajar con datos estructurados</li>
+                            </ul>
+                        </div>
+
+                        <div class="resource-box">
+                            <h3 class="resource-title">Tutoriales en Video</h3>
+                            <p class="resource-content">
+                                Más allá de los canales que compartimos en temas anteriores, hay una buena variedad de creadores de contenido en YouTube que enseñan JavaScript y JSON de manera clara y efectiva. Una recomendación es <a href="https://www.youtube.com/watch?v=ivdTnPl1ND0" target="_blank" rel="noopener noreferrer" class="inline-link">freeCodeCamp Español</a>.
+                            </p>
+                            <p class="resource-content">
+                                Te animamos a explorar y encontrar los canales de YouTube cuyo estilo de enseñanza funcione mejor para ti. Cada persona aprende de manera diferente, y tener un canal favorito para consultas de programación puede ser un recurso valioso a lo largo de tu carrera.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Navigation - Content loaded via JavaScript -->
+                    <div class="topic-nav"></div>
+                </div>
+
+                <!-- Footer - Content loaded via JavaScript -->
+                <footer class="site-footer"></footer>
+
+            </main>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="../assets/js/header.js"></script>
+    <script src="../assets/js/language-switcher.js"></script>
+    <script src="../assets/js/topic-navigation.js"></script>
+    <script src="../assets/js/footer.js"></script>
+    <script src="../assets/js/code-viewer.js"></script>
+</body>
+</html>

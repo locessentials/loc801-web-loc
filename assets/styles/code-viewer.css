@@ -174,3 +174,53 @@
         padding: 1.5rem;
     }
 }
+
+/* ============================================
+   JSON Code Comparer Styles
+   Side-by-side JSON comparison component
+   ============================================ */
+
+/* JSON Comparer Container */
+.json-comparer {
+    background: #1e1e1e;
+}
+
+/* JSON Views */
+.json-view {
+    display: none;
+    padding: 2rem;
+    padding-bottom: 0;
+    flex: 1;
+}
+
+.json-view.active {
+    display: block;
+}
+
+.json-view pre {
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    color: #d4d4d4;
+    overflow-x: auto;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    height: 100%;
+}
+
+.json-view code {
+    font-family: 'Courier New', Courier, monospace;
+    color: #d4d4d4;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .json-view {
+        padding: 1.5rem;
+    }
+    
+    .json-view pre {
+        font-size: 0.85rem;
+    }
+}
