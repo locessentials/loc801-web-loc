@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aprende los fundamentos de CSS para localización web incluyendo conceptos de estilo, selectores y cómo CSS afecta la presentación de contenido traducido.">
+    <meta name="keywords" content="conceptos básicos CSS, CSS para localización, estilizar contenido web, selectores CSS, localización web CSS">
+    
+    <!-- Open Graph para redes sociales -->
+    <meta property="og:title" content="Conceptos Básicos de CSS | Tema 4 | Loc801">
+    <meta property="og:description" content="Comprende los fundamentos de CSS y cómo el estilo impacta el contenido localizado.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://loc801.locessentials.com/t-4/conceptos-básicos-css.html">
+    <meta property="og:image" content="https://loc801.locessentials.com/assets/images/LocCapTransparentTilted.png">
+    
+    <!-- URL canónica -->
+    <link rel="canonical" href="https://loc801.locessentials.com/t-4/conceptos-básicos-css.html">
+    
+    <!-- Alternativas de idioma -->
+    <link rel="alternate" hreflang="es" href="conceptos-básicos-css.html">
+    <link rel="alternate" hreflang="en" href="css-basics.html">
+    <link rel="alternate" hreflang="x-default" href="css-basics.html">
+    
+    <title>Conceptos Básicos de CSS | Tema 4 | Loc801</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Hojas de estilo -->
+    <link rel="stylesheet" href="../assets/styles/styles.css">
+    <link rel="stylesheet" href="../assets/styles/code-viewer.css">
+</head>
+<body>
+    <div class="page-wrapper">
+        <div class="main-content-wrapper">
+            <main class="main-content">
+                <!-- Encabezado -->
+                <header>
+                    <div class="header-content">
+                        <div class="logo-section">
+                            <img src="../assets/images/LocCapTransparentTilted.png" alt="Logo de gorra LocEssentials" class="logo">
+                            <a href="/" class="course-title">Loc801: Localización Web para Principiantes</a>
+                        </div>
+                        <div class="header-actions">
+                            <a href="/esquema.html" class="outline-btn">
+                                <span>📋</span>
+                                <span>Esquema</span>
+                            </a>
+                            <div class="lang-picker">
+                                <button class="lang-btn" data-lang="en">English</button>
+                                <button class="lang-btn" data-lang="es">Español</button>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+
+                <!-- Contenido principal -->
+                <div class="container">
+                    <nav class="breadcrumb">
+                        <a href="/">Inicio del curso</a>
+                        <span class="breadcrumb-separator">›</span>
+                        <a href="/t-4/tema-4-intro.html">Tema 4</a>
+                        <span class="breadcrumb-separator">›</span>
+                        <span>CSS y Estilización Visual</span>
+                    </nav>
+
+                    <div class="page-header">
+                        <span class="topic-number">TEMA 4</span>
+                        <h1 class="topic-title">CSS y Estilización Visual</h1>
+                        <p class="topic-description">
+                            Aprende cómo las hojas de estilo en cascada (CSS) controlan la presentación visual del contenido web y por qué comprender CSS es esencial para el trabajo efectivo de localización.
+                        </p>
+                    </div>
+
+                    <div class="content-section">
+                        <h2 class="section-title">
+                            <span class="section-icon">🎨</span>
+                            ¿Qué es CSS?
+                        </h2>
+                        <p class="intro-text">
+                            CSS (Cascading Style Sheets, u Hojas de Estilo en Cascada) es el lenguaje usado para estilizar y diseñar páginas web. Mientras HTML proporciona la estructura y el contenido, CSS controla cómo se ve ese contenido: colores, fuentes, espaciado, disposición y diseño responsivo. Piensa en HTML como el cuerpo y CSS como la ropa y el estilo que hace que la página sea visualmente distintiva.
+                        </p>
+                        
+                        <p class="regular-text">
+                            CSS funciona seleccionando elementos HTML y aplicándoles reglas visuales. Por ejemplo, puedes seleccionar todos los párrafos y hacerlos azules, o seleccionar un encabezado específico y centrarlo en la página. Estas reglas de estilo se mantienen separadas del contenido HTML, facilitando mantener un diseño consistente en múltiples páginas.
+                        </p>
+                    </div>
+
+                    <div class="content-section">
+                        <h2 class="section-title">
+                            <span class="section-icon">🌍</span>
+                            Por Qué Importa CSS para la Localización
+                        </h2>
+                        <p class="intro-text">
+                            Como profesional de localización, comprender CSS te ayuda a anticipar y resolver desafíos comunes de localización. CSS impacta directamente cómo tu contenido traducido se muestra en la página.
+                        </p>
+
+                        <div class="info-box">
+                            <div class="info-box-title">Consideraciones Clave de CSS en Localización</div>
+                            <div class="info-box-content">
+                                <strong>Expansión del texto:</strong> El español es típicamente 15-30% más largo que el inglés. Propiedades de CSS como <code>width</code>, <code>max-width</code> y <code>overflow</code> determinan si el texto expandido cabe adecuadamente o rompe la disposición.
+                                <br><br>
+                                <strong>Requisitos de fuentes:</strong> Diferentes idiomas requieren diferentes fuentes. Mientras <code>font-family: 'Roboto'</code> funciona bien para escrituras latinas, necesitarás fuentes diferentes para contenido en árabe, chino o tailandés.
+                                <br><br>
+                                <strong>Dirección de lectura:</strong> Idiomas de derecha a izquierda (RTL) como árabe y hebreo requieren propiedades de CSS como <code>direction: rtl</code> y <code>text-align: right</code> para mostrarse correctamente.
+                                <br><br>
+                                <strong>Altura de línea y espaciado:</strong> Escrituras con caracteres complejos (como tailandés o devanagari) a menudo necesitan <code>line-height</code> y <code>letter-spacing</code> aumentados para legibilidad.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-section">
+                        <h2 class="section-title">
+                            <span class="section-icon">🎬</span>
+                            Tutorial en Video
+                        </h2>
+                        <p class="intro-text">
+                            Antes de explorar los ejemplos interactivos, observa este tutorial integral de CSS. El video cubre los fundamentos de CSS desde lo básico de estilización hasta selectores avanzados y técnicas de disposición.
+                        </p>
+                        
+                        <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; background: #000; border-radius: 12px; margin: 2rem 0;">
+                            <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" width="560" height="315" src="https://www.youtube.com/embed/Y-OhzQpsRwI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+
+                        <div class="tip-box">
+                            <div class="tip-box-title">💡 Opciones de Idioma del Video</div>
+                            <div class="tip-box-content">
+                                Este video está disponible en múltiples idiomas. Haz clic en el ícono de engranaje de Configuración en el reproductor de YouTube, selecciona "Pista de audio" y elige entre el audio original en español (US) o el audio autodoblado en inglés (US). ¡Este es un gran ejemplo de localización multimedia en acción!
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-section">
+                        <h2 class="section-title">
+                            <span class="section-icon">🎯</span>
+                            Fundamentos de Selectores CSS
+                        </h2>
+                        <p class="intro-text">
+                            CSS usa selectores para dirigirse a elementos HTML para estilización. Comprender los selectores es crucial para el trabajo de localización porque necesitas saber qué elementos serán afectados por las reglas de estilo.
+                        </p>
+
+                        <!-- Selectores de Elemento -->
+                        <h3 style="color: var(--dark-blue); margin: 2rem 0 1rem 0; font-size: 1.25rem;">Selectores de Elemento</h3>
+                        <p class="regular-text" style="margin-bottom: 1.5rem;">
+                            Los selectores de elemento apuntan a todas las instancias de una etiqueta HTML. Por ejemplo, seleccionar <code>p</code> estiliza todos los párrafos, mientras <code>h1</code> estiliza todos los encabezados primarios.
+                        </p>
+                        <div class="code-example-wrapper">
+                            <div class="code-tabs">
+                                <button class="code-tab active" data-example="element">Ver CSS</button>
+                                <button class="code-tab" data-example="element">Ver Resultado</button>
+                            </div>
+                            <div class="code-display">
+                                <div class="code-view active" data-example="element">
+                                    <pre><code>/* Selector de elemento - apunta a todos los párrafos */
+p {
+    color: #2b7bb9;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+/* Selector de elemento - apunta a todos los encabezados h2 */
+h2 {
+    color: #1c6399;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}</code></pre>
+                                </div>
+                                <div class="result-view" data-example="element">
+                                    <div class="result-content">
+                                        <h2 style="color: #1c6399; font-weight: 600; margin-bottom: 1rem;">Encabezado de Muestra</h2>
+                                        <p style="color: #2b7bb9; font-size: 1.1rem; line-height: 1.8;">Este párrafo está estilizado usando un selector de elemento. Todos los párrafos en la página tendrían este color azul, tamaño de fuente más grande y altura de línea aumentada.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Selectores de Clase -->
+                        <h3 style="color: var(--dark-blue); margin: 2rem 0 1rem 0; font-size: 1.25rem;">Selectores de Clase</h3>
+                        <p class="regular-text" style="margin-bottom: 1.5rem;">
+                            Las clases te permiten estilizar grupos específicos de elementos. Una clase se agrega al HTML con el atributo <code>class</code> y se selecciona en CSS con un prefijo de punto (<code>.</code>). Múltiples elementos pueden compartir la misma clase.
+                        </p>
+                        <div class="code-example-wrapper">
+                            <div class="code-tabs">
+                                <button class="code-tab active" data-example="class">Ver CSS</button>
+                                <button class="code-tab" data-example="class">Ver Resultado</button>
+                            </div>
+                            <div class="code-display">
+                                <div class="code-view active" data-example="class">
+                                    <pre><code>/* Selector de clase - apunta a elementos con class="highlight" */
+.highlight {
+    background-color: #fff9e6;
+    padding: 1rem;
+    border-left: 4px solid #ffa500;
+    border-radius: 8px;
+}
+
+/* Selector de clase para mensajes de advertencia */
+.warning {
+    color: #d32f2f;
+    font-weight: 600;
+    font-style: italic;
+}</code></pre>
+                                </div>
+                                <div class="result-view" data-example="class">
+                                    <div class="result-content">
+                                        <div style="background-color: #fff9e6; padding: 1rem; border-left: 4px solid #ffa500; border-radius: 8px; margin-bottom: 1rem;">
+                                            <p style="margin: 0;">Este elemento tiene aplicada la clase "highlight". Nota el color de fondo, el relleno y el borde izquierdo.</p>
+                                        </div>
+                                        <p style="color: #d32f2f; font-weight: 600; font-style: italic; margin: 0;">Este texto tiene aplicada la clase "warning", haciéndolo rojo, en negrita y en cursiva.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Selectores de ID -->
+                        <h3 style="color: var(--dark-blue); margin: 2rem 0 1rem 0; font-size: 1.25rem;">Selectores de ID</h3>
+                        <p class="regular-text" style="margin-bottom: 1.5rem;">
+                            Los IDs son identificadores únicos para elementos individuales. Un ID se agrega al HTML con el atributo <code>id</code> y se selecciona en CSS con un prefijo de almohadilla (<code>#</code>). Cada ID solo debe aparecer una vez por página.
+                        </p>
+                        <div class="code-example-wrapper">
+                            <div class="code-tabs">
+                                <button class="code-tab active" data-example="id">Ver CSS</button>
+                                <button class="code-tab" data-example="id">Ver Resultado</button>
+                            </div>
+                            <div class="code-display">
+                                <div class="code-view active" data-example="id">
+                                    <pre><code>/* Selector de ID - apunta al elemento con id="main-title" */
+#main-title {
+    color: #ef91c6;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* Selector de ID para un elemento de navegación específico */
+#primary-nav {
+    background-color: #50A5E6;
+    padding: 1.5rem;
+    border-radius: 10px;
+}</code></pre>
+                                </div>
+                                <div class="result-view" data-example="id">
+                                    <div class="result-content">
+                                        <h1 style="color: #ef91c6; font-size: 2rem; text-align: center; margin-bottom: 2rem;">Título Único de Página</h1>
+                                        <div style="background-color: #50A5E6; padding: 1.5rem; border-radius: 10px; color: white;">
+                                            <p style="margin: 0;">Este elemento de navegación tiene un ID único y estilización específica que solo se aplica a este único elemento.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="info-box">
+                            <div class="info-box-title">Clases vs IDs: Cuándo Usar Cuál</div>
+                            <div class="info-box-content">
+                                <strong>Usa clases</strong> cuando múltiples elementos necesiten la misma estilización. Por ejemplo, todos los mensajes de error, todas las cajas resaltadas o todos los botones de llamada a la acción.
+                                <br><br>
+                                <strong>Usa IDs</strong> para elementos únicos que aparecen una vez por página, como la navegación principal, el encabezado de página o el pie de página. Los IDs también son útiles para interacciones con JavaScript y anclajes de página.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-section">
+                        <h2 class="section-title">
+                            <span class="section-icon">🚫</span>
+                            Qué NO Traducir en CSS
+                        </h2>
+                        <p class="intro-text">
+                            Al localizar proyectos web, es crucial saber qué elementos de CSS nunca deben traducirse. Cambiar estos romperá la estilización y funcionalidad del sitio web.
+                        </p>
+
+                        <div class="resource-box">
+                            <h3 class="resource-title">Nunca Traduzcas Estos Elementos de CSS</h3>
+                            <ul class="step-list">
+                                <li><strong>Nombres de propiedades CSS:</strong> <code>color</code>, <code>font-size</code>, <code>background-color</code>, <code>margin</code>, etc. siempre permanecen en inglés</li>
+                                <li><strong>Valores de propiedades CSS (palabras clave):</strong> <code>bold</code>, <code>center</code>, <code>block</code>, <code>flex</code>, <code>red</code>, etc. permanecen en inglés</li>
+                                <li><strong>Nombres de clases:</strong> <code>class="highlight"</code>, <code>class="warning-box"</code>, <code>class="cta-button"</code> permanecen sin cambios</li>
+                                <li><strong>Nombres de IDs:</strong> <code>id="main-nav"</code>, <code>id="hero-section"</code>, <code>id="footer"</code> permanecen en inglés</li>
+                                <li><strong>Nombres de archivos CSS:</strong> <code>styles.css</code>, <code>main.css</code>, <code>responsive.css</code> no cambian</li>
+                                <li><strong>Medidas y unidades:</strong> <code>px</code>, <code>rem</code>, <code>%</code>, <code>vh</code> permanecen como están</li>
+                            </ul>
+                            
+                            <p class="resource-content" style="margin-top: 1.5rem;">
+                                <strong>PUEDES traducir:</strong> Comentarios de CSS (texto entre <code>/* */</code>) si existen, ya que estos son notas para desarrolladores y no afectan la funcionalidad. Sin embargo, la mayoría de los proyectos mantienen los comentarios en el idioma de origen.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="content-section">
+                        <h2 class="section-title">
+                            <span class="section-icon">📏</span>
+                            Expansión de Texto y CSS
+                        </h2>
+                        <p class="intro-text">
+                            Uno de los problemas de localización más comunes es la expansión del texto. Cuando traduces "Buy Now" a "Comprar Ahora", la versión en español ocupa más espacio. Las propiedades de CSS determinan si la disposición acomoda esta expansión o se rompe.
+                        </p>
+
+                        <h3 style="color: var(--dark-blue); margin: 2rem 0 1rem 0; font-size: 1.25rem;">Ejemplo de Ancho Fijo</h3>
+                        <p class="regular-text" style="margin-bottom: 1.5rem;">
+                            Este botón tiene un ancho fijo que no acomoda texto más largo:
+                        </p>
+                        <div class="code-example-wrapper">
+                            <div class="code-tabs">
+                                <button class="code-tab active" data-example="fixed">Ver CSS</button>
+                                <button class="code-tab" data-example="fixed">Ver Resultado</button>
+                            </div>
+                            <div class="code-display">
+                                <div class="code-view active" data-example="fixed">
+                                    <pre><code>/* Ancho fijo - problemático para traducción */
+.button-fixed {
+    width: 120px;
+    padding: 0.75rem 1rem;
+    background-color: #50A5E6;
+    color: white;
+    text-align: center;
+    border-radius: 8px;
+    overflow: hidden;
+}</code></pre>
+                                </div>
+                                <div class="result-view" data-example="fixed">
+                                    <div class="result-content">
+                                        <div style="width: 120px; padding: 0.75rem 1rem; background-color: #50A5E6; color: white; text-align: center; border-radius: 8px; overflow: hidden; margin-bottom: 1rem;">
+                                            Buy Now
+                                        </div>
+                                        <div style="width: 120px; padding: 0.75rem 1rem; background-color: #50A5E6; color: white; text-align: center; border-radius: 8px; overflow: hidden;">
+                                            Comprar Ahora
+                                        </div>
+                                        <p style="margin-top: 1rem; font-size: 0.9rem; color: var(--text-medium);">Nota cómo el texto en español se ajusta y hace que el botón tenga un tamaño extraño porque no cabe en el ancho fijo.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h3 style="color: var(--dark-blue); margin: 2rem 0 1rem 0; font-size: 1.25rem;">Ejemplo de Ancho Flexible</h3>
+                        <p class="regular-text" style="margin-bottom: 1.5rem;">
+                            Este botón usa dimensionamiento flexible que se adapta a la longitud del contenido:
+                        </p>
+                        <div class="code-example-wrapper">
+                            <div class="code-tabs">
+                                <button class="code-tab active" data-example="flexible">Ver CSS</button>
+                                <button class="code-tab" data-example="flexible">Ver Resultado</button>
+                            </div>
+                            <div class="code-display">
+                                <div class="code-view active" data-example="flexible">
+                                    <pre><code>/* Ancho flexible - mejor para traducción */
+.button-flexible {
+    padding: 0.75rem 1.5rem;
+    background-color: #50A5E6;
+    color: white;
+    text-align: center;
+    border-radius: 8px;
+    display: inline-block;
+    min-width: 120px;
+}</code></pre>
+                                </div>
+                                <div class="result-view" data-example="flexible">
+                                    <div class="result-content">
+                                        <div style="padding: 0.75rem 1.5rem; background-color: #50A5E6; color: white; text-align: center; border-radius: 8px; display: inline-block; min-width: 120px; margin-bottom: 1rem;">
+                                            Buy Now
+                                        </div>
+                                        <br>
+                                        <div style="padding: 0.75rem 1.5rem; background-color: #50A5E6; color: white; text-align: center; border-radius: 8px; display: inline-block; min-width: 120px;">
+                                            Comprar Ahora
+                                        </div>
+                                        <p style="margin-top: 1rem; font-size: 0.9rem; color: var(--text-medium);">El botón se expande para ajustarse al texto en español mientras mantiene el relleno y apariencia adecuados.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tip-box">
+                            <div class="tip-box-title">💡 Probando la Expansión de Texto</div>
+                            <div class="tip-box-content">
+                                Al localizar, siempre verifica cómo se ven tus traducciones en el navegador real. Propiedades como <code>min-width</code>, <code>max-width</code>, <code>padding</code> y <code>overflow</code> determinan si la expansión del texto rompe la disposición. Si notas que el texto se corta o los botones se ven apretados, puede que quien desarrolla necesite ajustar el CSS.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-section">
+                        <h2 class="section-title">
+                            <span class="section-icon">🚀</span>
+                            Práctica con CSS
+                        </h2>
+                        <p class="intro-text">
+                            Tendrás práctica práctica con CSS en tu próximo proyecto de localización web. Verás cómo la estilización CSS afecta el contenido traducido para que puedas trabajar con desarrolladores y asegurar que tus traducciones se muestren correctamente en diferentes idiomas.
+                        </p>
+                        <p class="conclusion-text">
+                            Aunque puede que no escribas CSS como profesional de localización, comprender cómo funciona te ayuda a comunicarte efectivamente con desarrolladores, anticipar problemas de disposición y entregar sitios web localizados de mayor calidad.
+                        </p>
+                    </div>
+
+                    <!-- Navigation - Content loaded via JavaScript -->
+                    <div class="topic-nav"></div>
+                </div>
+
+                <!-- Footer - Content loaded via JavaScript -->
+                <footer class="site-footer"></footer>
+
+            </main>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="../assets/js/header.js"></script>
+    <script src="../assets/js/language-switcher.js"></script>
+    <script src="../assets/js/topic-navigation.js"></script>
+    <script src="../assets/js/footer.js"></script>
+    <script src="../assets/js/code-viewer.js"></script>
+</body>
+</html>

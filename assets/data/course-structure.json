@@ -113,6 +113,10 @@
           {
             "label": "JavaScript & JSON Basics",
             "url": "/t-4/javascript-json-basics.html"
+          },
+          {
+            "label": "CSS and Visual Styling",
+            "url": "/t-4/css-visual-styling.html"
           }
         ]
       },
@@ -292,6 +296,10 @@
           {
             "label": "JavaScript y JSON",
             "url": "/t-4/javascript-json-lo-básico.html"
+          },
+          {
+            "label": "CSS y Estilización Visual",
+            "url": "/t-4/css-estilización-visual.html"
           }
         ]
       },
