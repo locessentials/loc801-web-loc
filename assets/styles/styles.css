@@ -253,7 +253,7 @@ header {
     font-size: 1.5rem;
     font-weight: 600;
     color: var(--dark-blue);
-    margin-bottom: 2rem;
+    margin-bottom: 1.25rem;
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -269,6 +269,10 @@ header {
     justify-content: center;
     color: white;
     font-size: 1.5rem;
+}
+
+.p-w-padding {
+    padding-top: 1rem;
 }
 
 /* Objectives List */
@@ -416,7 +420,21 @@ header {
 .tip-box-content {
     color: var(--text-medium);
     line-height: 1.7;
-    margin-bottom: 1rem;
+}
+
+.tip-box h2 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+.tip-box p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.tip-box p:last-child {
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 /* Navigation */
@@ -643,7 +661,7 @@ header {
     font-size: 1.05rem;
     color: var(--text-dark);
     line-height: 1.8;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
 }
 
 .regular-text {
@@ -652,11 +670,25 @@ header {
     line-height: 1.8;
 }
 
+.regular-text-w-top-padding {
+    font-size: 1.05rem;
+    color: var(--text-dark);
+    line-height: 1.8;
+    padding-top: 1rem;
+}
+
+.regular-text-w-bottom-padding {
+    font-size: 1.05rem;
+    color: var(--text-dark);
+    line-height: 1.8;
+    padding-bottom: 1rem;
+}
+
 .conclusion-text {
     font-size: 1.05rem;
     color: var(--text-dark);
     line-height: 1.8;
-    margin-top: 2rem;
+    margin-top: 1.5rem;
 }
 
 .inline-link {
@@ -719,7 +751,29 @@ header {
     grid-column: 2;
 }
 
-.step-list {
+/* For ordered lists (numbers) - use with <ol> */
+.ol-step-list {
+    list-style: decimal;
+    padding-left: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    grid-column: 2;
+}
+
+.ol-step-list li {
+    color: var(--text-medium);
+    line-height: 1.7;
+    padding-left: 0.5rem;
+}
+
+.ol-step-list li::marker {
+    color: var(--light-blue);
+    font-weight: 600;
+}
+
+/* For unordered lists (bullets) - use with <ul> */
+.ul-step-list {
     list-style: none;
     padding-left: 1.5rem;
     display: flex;
@@ -728,20 +782,20 @@ header {
     grid-column: 2;
 }
 
-.step-list li {
+.ul-step-list li {
     color: var(--text-medium);
     position: relative;
     padding-left: 1.5rem;
 }
 
-.step-list li::before {
+.ul-step-list li::before {
     content: '•';
     position: absolute;
     left: 0;
     color: var(--light-blue);
 }
 
-.step-list li:last-child {
+.ul-step-list li:last-child {
     margin-bottom: 12px;
 }
 

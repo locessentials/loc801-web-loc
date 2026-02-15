@@ -1,0 +1,217 @@
+/* ============================================
+   SEO Lesson Pages - Supplementary Styles
+   Only adds styles not already in styles.css
+   ============================================ */
+
+/* Subsection Titles (h3 within content sections) */
+.subsection-title {
+    font-size: 1.35rem;
+    font-weight: 600;
+    color: var(--dark-blue);
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--alabaster);
+}
+
+/* Instruction Box */
+.instruction-box {
+    background: linear-gradient(135deg, rgba(80, 165, 230, 0.08), rgba(239, 145, 198, 0.08));
+    border: 2px solid var(--light-blue);
+    border-radius: 12px;
+    padding: 2rem;
+    margin: 2rem 0;
+}
+
+.instruction-title {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: var(--dark-blue);
+    margin-bottom: 1.25rem;
+}
+
+/* Override marker color for instruction boxes specifically */
+.instruction-box .ol-step-list li::marker {
+    color: var(--medium-blue);
+}
+
+.instruction-box .ol-step-list li,
+.instruction-box .ul-step-list li {
+    color: var(--text-dark);
+}
+
+/* Callout Box - similar to info-box but with pink theme */
+.callout-box {
+    background: rgba(255, 105, 180, 0.08);
+    border-left: 4px solid var(--pink);
+    border-radius: 8px;
+    padding: 1.5rem 2rem;
+    margin-top: 2rem;
+}
+
+.callout-box p {
+    color: var(--text-dark);
+    line-height: 1.7;
+    margin: 0;
+}
+
+.callout-box strong {
+    color: var(--dark-blue);
+    font-weight: 600;
+}
+
+/* Definition Box - for numbered definitions */
+.definition-box {
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-left: 4px solid var(--light-blue);
+    border-radius: 8px;
+    padding: 1.5rem 2rem;
+    margin: 1.75rem 0;
+}
+
+.definition-box h4 {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--dark-blue);
+    margin-bottom: 0.75rem;
+}
+
+.definition-box p {
+    color: var(--text-medium);
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* Code Example - for displaying code blocks */
+.code-example {
+    background: #1e1e1e;
+    border-radius: 8px;
+    padding: 2rem;
+    margin: 2rem 0;
+    overflow-x: auto;
+}
+
+.code-example pre {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.code-example code {
+    font-family: 'Courier New', Courier, monospace;
+    color: #d4d4d4;
+}
+
+/* Practice Box - for hands-on activities */
+.practice-box {
+    background: linear-gradient(135deg, rgba(96, 255, 108, 0.08), rgba(80, 165, 230, 0.08));
+    border: 2px solid #60ff6c;
+    border-radius: 12px;
+    padding: 2rem;
+    margin: 2rem 0;
+}
+
+.practice-title {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: var(--dark-blue);
+    margin-bottom: 1rem;
+}
+
+.practice-box p {
+    color: var(--text-dark);
+    line-height: 1.7;
+    margin-bottom: 1rem;
+}
+
+.practice-box p:last-child {
+    margin-bottom: 0;
+}
+
+.practice-box ul {
+    list-style: none;
+    padding-left: 1.5rem;
+    margin-top: 1rem;
+}
+
+.practice-box ul li {
+    color: var(--text-dark);
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.7;
+}
+
+.practice-box ul li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: #60ff6c;
+    font-weight: 700;
+}
+
+.practice-box strong {
+    color: var(--dark-blue);
+    font-weight: 600;
+}
+
+/* Warning Box - for warnings about bad practices */
+.warning-box {
+    background: rgba(255, 69, 0, 0.05);
+    border-left: 4px solid #ff4500;
+    border-radius: 8px;
+    padding: 1.5rem 2rem;
+    margin: 2rem 0;
+}
+
+.warning-box h4 {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #ff4500;
+    margin-bottom: 0.75rem;
+}
+
+.warning-box p {
+    color: var(--text-dark);
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* Inline code within paragraphs */
+.regular-text code,
+.intro-text code,
+.conclusion-text code {
+    background: var(--alabaster);
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.9rem;
+    color: var(--dark-blue);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .instruction-box,
+    .callout-box,
+    .definition-box,
+    .practice-box,
+    .warning-box {
+        padding: 1.5rem;
+    }
+    
+    .code-example {
+        padding: 1.5rem;
+    }
+    
+    .code-example pre {
+        font-size: 0.85rem;
+    }
+    
+    .subsection-title {
+        font-size: 1.2rem;
+        margin-top: 2rem;
+    }
+}
