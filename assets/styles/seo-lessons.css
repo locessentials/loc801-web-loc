@@ -14,6 +14,15 @@
     border-bottom: 2px solid var(--alabaster);
 }
 
+/* Tool Subsection Titles (h4 within tools section) */
+.tool-subsection-title {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: var(--dark-blue);
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
 /* Instruction Box */
 .instruction-box {
     background: linear-gradient(135deg, rgba(80, 165, 230, 0.08), rgba(239, 145, 198, 0.08));
@@ -68,6 +77,10 @@
     border-radius: 8px;
     padding: 1.5rem 2rem;
     margin: 1.75rem 0;
+}
+
+.definition-box:last-child {
+    margin-bottom: 0;
 }
 
 .definition-box h4 {
@@ -192,6 +205,66 @@
     color: var(--dark-blue);
 }
 
+/* Pros and Cons Table */
+.pros-cons-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+}
+
+.pros-cons-table:last-child {
+    margin-bottom: 0;
+}
+
+.pros-cons-table thead tr {
+    background: var(--alabaster);
+}
+
+.pros-cons-table th {
+    padding: 1rem;
+    text-align: left;
+    font-weight: 600;
+    color: var(--dark-blue);
+    width: 50%;
+    border: 1px solid #e5e7eb;
+}
+
+.pros-cons-table td {
+    padding: 1rem;
+    border: 1px solid #e5e7eb;
+    vertical-align: top;
+}
+
+.pros-cons-table ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.pros-cons-table ul li {
+    margin-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.pros-cons-table ul li:last-child {
+    margin-bottom: 0;
+}
+
+/* Bullet styling for pros (left column) */
+.pros-cons-table td:first-child ul li span {
+    position: absolute;
+    left: 0;
+    color: var(--pink);
+}
+
+/* Bullet styling for cons (right column) */
+.pros-cons-table td:last-child ul li span {
+    position: absolute;
+    left: 0;
+    color: var(--light-blue);
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .instruction-box,
@@ -213,5 +286,11 @@
     .subsection-title {
         font-size: 1.2rem;
         margin-top: 2rem;
+    }
+    
+    .pros-cons-table th,
+    .pros-cons-table td {
+        padding: 0.75rem;
+        font-size: 0.9rem;
     }
 }
