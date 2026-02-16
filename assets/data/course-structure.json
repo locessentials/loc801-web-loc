@@ -143,6 +143,10 @@
           {
             "label": "Keyword Research",
             "url": "/t-5/keyword-research.html"
+          },
+          {
+            "label": "LLM Discoverability",
+            "url": "/t-5/llm-discoverability.html"
           }
         ]
       },
@@ -342,6 +346,10 @@
           {
             "label": "Investigación de Keywords",
             "url": "/t-5/investigación-keywords.html"
+          },
+          {
+            "label": "Visibilidad en los LLMs",
+            "url": "/t-5/visibilidad-en-llms.html"
           }
         ]
       },
