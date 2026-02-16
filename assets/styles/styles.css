@@ -291,19 +291,18 @@ header {
 }
 
 .objective-item::before {
-    content: '✔';
+    content: '✓';
     position: absolute;
     left: 0;
     width: 28px;
     height: 28px;
     background: white;
     border-radius: 6px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     color: var(--pink);
     font-weight: 700;
     font-size: 1.2rem;
+    line-height: 28px;
+    text-align: center;
 }
 
 /* Workflow List */
@@ -322,7 +321,7 @@ header {
 }
 
 .workflow-item::before {
-    content: '➝';
+    content: 'âž';
     position: absolute;
     left: 0;
     width: 28px;
@@ -341,6 +340,13 @@ header {
 .activities-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+/* 2x2 Activities Grid - for pages with 4 activities */
+.activities-grid-2x2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
 }
 
@@ -751,10 +757,6 @@ header {
     grid-column: 2;
 }
 
-.step-content:last-child {
-    margin-bottom: 0;
-}
-
 /* For ordered lists (numbers) - use with <ol> */
 .ol-step-list {
     list-style: decimal;
@@ -776,10 +778,6 @@ header {
     font-weight: 600;
 }
 
-.ol-step-list li:last-child {
-    margin-bottom: 0;
-}
-
 /* For unordered lists (bullets) - use with <ul> */
 .ul-step-list {
     list-style: none;
@@ -797,7 +795,7 @@ header {
 }
 
 .ul-step-list li::before {
-    content: '•';
+    content: 'â€¢';
     position: absolute;
     left: 0;
     color: var(--light-blue);
@@ -857,7 +855,7 @@ header {
 }
 
 .resource-list li::before {
-    content: '•';
+    content: 'â€¢';
     position: absolute;
     left: 0;
     color: var(--light-blue);
@@ -895,6 +893,10 @@ header {
     }
 
     .activities-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .activities-grid-2x2 {
         grid-template-columns: 1fr;
     }
 
