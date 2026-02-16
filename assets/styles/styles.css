@@ -751,6 +751,10 @@ header {
     grid-column: 2;
 }
 
+.step-content:last-child {
+    margin-bottom: 0;
+}
+
 /* For ordered lists (numbers) - use with <ol> */
 .ol-step-list {
     list-style: decimal;
@@ -770,6 +774,10 @@ header {
 .ol-step-list li::marker {
     color: var(--light-blue);
     font-weight: 600;
+}
+
+.ol-step-list li:last-child {
+    margin-bottom: 0;
 }
 
 /* For unordered lists (bullets) - use with <ul> */

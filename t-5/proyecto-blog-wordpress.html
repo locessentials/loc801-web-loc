@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Crea una publicación de blog en WordPress optimizada tanto para SEO tradicional como para descubribilidad en LLM. Aplica investigación de palabras clave, Yoast SEO y estrategia de boletines.">
+    <meta name="keywords" content="blog WordPress, optimización SEO, Yoast SEO, investigación palabras clave, descubribilidad LLM, estrategia boletín">
+    
+    <!-- Open Graph para redes sociales -->
+    <meta property="og:title" content="Proyecto de Blog en WordPress | Tema 5 | Loc801">
+    <meta property="og:description" content="Aplica principios de SEO tradicional y descubribilidad en LLM al crear una publicación de blog optimizada.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://loc801.locessentials.com/t-5/proyecto-blog-wordpress.html">
+    <meta property="og:image" content="https://loc801.locessentials.com/assets/images/LocCapTransparentTilted.png">
+    
+    <!-- URL canónica -->
+    <link rel="canonical" href="https://loc801.locessentials.com/t-5/proyecto-blog-wordpress.html">
+    
+    <!-- Alternativas de idioma -->
+    <link rel="alternate" hreflang="es" href="proyecto-blog-wordpress.html">
+    <link rel="alternate" hreflang="en" href="wordpress-blog-project.html">
+    <link rel="alternate" hreflang="x-default" href="wordpress-blog-project.html">
+    
+    <title>Proyecto de Blog en WordPress | Tema 5 | Loc801</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Hojas de estilo -->
+    <link rel="stylesheet" href="../assets/styles/styles.css">
+    <link rel="stylesheet" href="../assets/styles/seo-lessons.css">
+</head>
+<body>
+    <div class="page-wrapper">
+        <div class="main-content-wrapper">
+            <main class="main-content">
+                <!-- Encabezado -->
+                <header>
+                    <div class="header-content">
+                        <div class="logo-section">
+                            <img src="../assets/images/LocCapTransparentTilted.png" alt="Logo de gorra LocEssentials" class="logo">
+                            <a href="/" class="course-title">Loc801: Localización Web para Principiantes</a>
+                        </div>
+                        <div class="header-actions">
+                            <a href="/esquema.html" class="outline-btn">
+                                <span>📋</span>
+                                <span>Esquema</span>
+                            </a>
+                            <div class="lang-picker">
+                                <button class="lang-btn" data-lang="en">English</button>
+                                <button class="lang-btn" data-lang="es">Español</button>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+
+                <!-- Contenido principal -->
+                <div class="container">
+                    <nav class="breadcrumb">
+                        <a href="/">Inicio del curso</a>
+                        <span class="breadcrumb-separator">›</span>
+                        <a href="/t-5/tema-5-intro.html">Tema 5</a>
+                        <span class="breadcrumb-separator">›</span>
+                        <span>Proyecto de Blog en WordPress</span>
+                    </nav>
+
+                    <div class="page-header">
+                        <span class="topic-number">TEMA 5</span>
+                        <h1 class="topic-title">Proyecto de Blog en WordPress</h1>
+                        <p class="topic-description">
+                            Crea una publicación de blog en WordPress que demuestre tu comprensión de los principios de SEO tradicional, investigación de palabras clave y descubribilidad en LLM.
+                        </p>
+                    </div>
+
+                    <div class="content-section">
+                        <h2 class="section-title">
+                            <span class="section-icon">🎯</span>
+                            Resumen del Proyecto
+                        </h2>
+                        <p class="intro-text">
+                            En este proyecto, crearás un sitio de WordPress y escribirás una publicación de blog optimizada tanto para motores de búsqueda tradicionales como para modelos de lenguaje de gran escala. Esta tarea práctica integra todo lo que has aprendido sobre SEO, investigación de palabras clave y descubribilidad de contenido.
+                        </p>
+                        
+                        <p class="regular-text">
+                            El objetivo es escribir contenido web a medida en inglés estadounidense o español mexicano, según la audiencia específica y los objetivos que tengas para el proyecto. Recuerda: los sitios web diseñados para una región y audiencia específicas suelen ser más efectivos que los sitios bilingües con selectores de idioma y cobertura desigual entre idiomas.
+                        </p>
+
+                        <div class="info-box">
+                            <h2 class="info-box-title">¿Por qué WordPress?</h2>
+                            <p class="info-box-content">WordPress impulsa aproximadamente el 43% de todos los sitios web a nivel global, lo que lo convierte en el sistema de gestión de contenidos más utilizado del mundo. Aunque Wix también es popular en México, el dominio de WordPress en el mercado significa que es valioso comprender cómo usarlo para cualquier persona que trabaje en localización web. La flexibilidad de la plataforma, su extenso ecosistema de plugins y sus funciones SEO integradas lo convierten en una opción buena para aprender a optimizar contenido para la descubribilidad.</p>
+                        </div>
+                    </div>
+
+                    <div class="content-section">
+                        <h2 class="section-title">
+                            <span class="section-icon">⚙️</span>
+                            Parte 1: Configura tu Sitio de WordPress
+                        </h2>
+                        
+                        <div class="instruction-steps">
+                            <div class="instruction-step">
+                                <div class="step-number">1</div>
+                                <h3 class="step-title">Crea un Sitio de WordPress</h3>
+                            </div>
+                            <div>
+                                <p class="step-content">
+                                    Ve a <a href="https://wordpress.com" target="_blank" rel="noopener" class="inline-link">WordPress.com</a> y crea una cuenta gratuita. Elige un nombre para tu sitio y selecciona un tema que te guste. Tendrás la oportunidad de personalizar la apariencia más adelante.
+                                </p>
+                                <div class="info-box" style="margin-top: 1rem; margin-bottom: 1rem;">
+                                    <div class="info-box-title">¿Ya Tienes un Blog de WordPress?</div>
+                                    <div class="info-box-content">
+                                        Si ya tienes un sitio de WordPress con el que quieres trabajar, ¡adelante! Puedes completar esta tarea usando tu blog existente.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="instruction-step">
+                                <div class="step-number">2</div>
+                                <h3 class="step-title">Instala el Plugin Yoast SEO</h3>
+                            </div>
+                            <div>
+                                <p class="step-content">
+                                    Navega a la sección de Plugins en tu panel de WordPress y busca "Yoast SEO". Instala y activa la versión gratuita del plugin. Yoast añadirá un panel de análisis SEO en la parte inferior de cada página y publicación de blog que crees.
+                                </p>
+                                <p class="step-content" style="margin-top: 1rem;">
+                                    El plugin Yoast proporciona retroalimentación en tiempo real sobre varios factores clave de SEO:
+                                </p>
+                                <ul class="ul-step-list" style="margin-top: 0.5rem;">
+                                    <li><strong>Uso de la frase clave principal</strong> - Qué tan bien has incorporado tu palabra clave objetivo</li>
+                                    <li><strong>Meta descripción</strong> - El resumen que aparece en los resultados de búsqueda</li>
+                                    <li><strong>Optimización de imágenes</strong> - Si has incluido imágenes con texto alternativo</li>
+                                    <li><strong>Enlaces internos y externos</strong> - Enlaces a otras páginas y fuentes autorizadas</li>
+                                    <li><strong>Legibilidad</strong> - Complejidad del texto y estructura (concéntrate menos en esto—tu estilo de escritura puede no ajustarse a las prioridades de legibilidad de Yoast, y eso está bien. El SEO se trata de producir contenido de alta calidad, no necesariamente de seguir fórmulas rígidas de legibilidad)</li>
+                                </ul>
+                            </div>
+
+                            <div class="instruction-step">
+                                <div class="step-number">3</div>
+                                <h3 class="step-title">Personaliza tu Página de Inicio</h3>
+                            </div>
+                            <div>
+                                <p class="step-content">
+                                    Tómate un tiempo para organizar la página de inicio de tu sitio. Añade una breve descripción sobre el tema de tu blog, ajusta el diseño si es necesario y asegúrate de que represente bien tu contenido.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-section">
+                        <h2 class="section-title">
+                            <span class="section-icon">✍️</span>
+                            Parte 2: Escribe tu Publicación de Blog
+                        </h2>
+                        
+                        <p class="intro-text">
+                            Ahora viene la parte principal de la tarea: escribir una publicación de blog que demuestre tu comprensión del SEO y la descubribilidad en LLM.
+                        </p>
+
+                        <div class="instruction-steps">
+                            <div class="instruction-step">
+                                <div class="step-number">1</div>
+                                <h3 class="step-title">Elige tu Tema y Audiencia</h3>
+                            </div>
+                            <div>
+                                <p class="step-content">
+                                    Selecciona un tema sobre el que tengas conocimientos o que te interese explorar. De manera crítica, necesitas identificar una <strong>audiencia específica</strong> para esta publicación. No digas simplemente "México" o "Estados Unidos"—estos son países, no audiencias. En su lugar, piensa en quién exactamente se beneficiaría de leer este contenido.
+                                </p>
+                                <div class="resource-box" style="margin-top: 1rem; margin-bottom: .7rem;">
+                                    <h3 class="resource-title">Ejemplos de Audiencias Específicas</h3>
+                                    <ul class="ul-step-list">
+                                        <li>Estudiantes de traducción de licenciatura en México</li>
+                                        <li>Propietaries de pequeños negocios en Texas que buscan expandirse a mercados mexicanos</li>
+                                        <li>Intérpretes de español-inglés que se preparan para la certificación médica</li>
+                                        <li>Docentes de preparatoria en California que enseñan español como segundo idioma</li>
+                                        <li>Estudiantes de primera generación en la Universidad de Florida</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="instruction-step">
+                                <div class="step-number">2</div>
+                                <h3 class="step-title">Realiza Investigación de Palabras Clave</h3>
+                            </div>
+                            <div>
+                                <p class="step-content">
+                                    Usa una herramienta de investigación de palabras clave como <a href="https://mangools.com/kwfinder" target="_blank" rel="noopener" class="inline-link">KWFinder</a> (que ofrece una prueba gratuita) para identificar una palabra clave principal para tu publicación. Considera:
+                                </p>
+                                <ul class="ul-step-list" style="margin-top: 0.5rem;">
+                                    <li>Volumen de búsqueda - ¿Cuántas personas están buscando este término?</li>
+                                    <li>Dificultad de la palabra clave - ¿Qué tan competitiva es esta palabra clave?</li>
+                                    <li>Intención de búsqueda - ¿Qué están buscando realmente las personas cuando buscan este término?</li>
+                                    <li>Relevancia para tu audiencia específica</li>
+                                </ul>
+                                <p class="step-content">
+                                    Toma capturas de pantalla de tu investigación—necesitarás incluir al menos una en tu reflexión.
+                                </p>
+                            </div>
+
+                            <div class="instruction-step">
+                                <div class="step-number">3</div>
+                                <h3 class="step-title">Escribe para SEO Tradicional</h3>
+                            </div>
+                            <div>
+                                <p class="step-content">
+                                    Redacta tu publicación de blog teniendo en mente las mejores prácticas de SEO tradicional:
+                                </p>
+                                <ul class="ul-step-list" style="margin-top: 0.5rem;">
+                                    <li>Incluye tu palabra clave principal de manera natural en el título, primer párrafo y a lo largo del contenido</li>
+                                    <li>Escribe una meta descripción atractiva (el resumen que aparece en los resultados de búsqueda)</li>
+                                    <li>Usa encabezados (H2, H3) para estructurar tu contenido</li>
+                                    <li>Añade al menos una imagen con texto alternativo descriptivo</li>
+                                    <li>Incluye por lo menos enlaces externos (a fuentes autorizadas)</li>
+                                    <li>Busca una cobertura integral de tu tema</li>
+                                </ul>
+                                <p class="step-content">
+                                    Usa el panel de Yoast SEO para guiar tu optimización. Tu objetivo es obtener una "carita feliz" verde para la puntuación de SEO. Toma una captura de pantalla cuando lo logres—la necesitarás para tu reflexión.
+                                </p>
+                            </div>
+
+                            <div class="instruction-step">
+                                <div class="step-number">4</div>
+                                <h3 class="step-title">Escribe para Descubribilidad en LLM</h3>
+                            </div>
+                            <div>
+                                <p class="step-content">
+                                    Más allá del SEO tradicional, optimiza tu contenido para modelos de lenguaje de gran escala:
+                                </p>
+                                <ul class="ul-step-list" style="margin-top: 0.5rem;">
+                                    <li>Usa lenguaje claro y directo que responda preguntas específicas</li>
+                                    <li>Incluye contexto relevante y definiciones</li>
+                                    <li>Estructura la información de manera lógica con secciones claras</li>
+                                    <li>Proporciona información autorizada con atribución adecuada</li>
+                                    <li>Usa datos estructurados cuando sea apropiado (listas, tablas, instrucciones paso a paso)</li>
+                                    <li>Escribe contenido que sería valioso si se citara directamente en una respuesta de IA</li>
+                                </ul>
+                            </div>
+
+                            <div class="instruction-step">
+                                <div class="step-number">5</div>
+                                <h3 class="step-title">Publica tu Entrada</h3>
+                            </div>
+                            <div>
+                                <p class="step-content">
+                                    Una vez que estés satisfeche con tu contenido y hayas logrado una buena puntuación de SEO en Yoast, publica tu publicación de blog. Asegúrate de que sea públicamente accesible.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-section">
+                        <h2 class="section-title">
+                            <span class="section-icon">📤</span>
+                            Parte 3: Escribe tu Reflexión
+                        </h2>
+                        
+                        <p class="intro-text">
+                            Junto con el enlace a tu publicación de blog publicada, envía una breve reflexión que aborde las siguientes preguntas:
+                        </p>
+
+                        <div class="resource-box">
+                            <h3 class="resource-title">Preguntas de Reflexión</h3>
+                            
+                            <p class="resource-content" style="font-weight: 600; margin-top: 1.5rem;">1. ¿Quién es la audiencia específica de la publicación?</p>
+                            <p class="resource-content">
+                                Sé específique aquí—no digas simplemente "México" o "Estados Unidos". Describe el grupo particular de personas para las que estás escribiendo y por qué este contenido sería valioso para elles.
+                            </p>
+
+                            <p class="resource-content" style="font-weight: 600; margin-top: 1.5rem;">2. Dada la audiencia, ¿qué palabra clave principal priorizaste y por qué?</p>
+                            <p class="resource-content">
+                                Explica tu proceso de investigación de palabras clave y toma de decisiones. ¿Qué intención de búsqueda estabas enfocando? Incluye al menos una captura de pantalla que demuestre tu investigación (de KWFinder u otra herramienta de investigación de palabras clave).
+                            </p>
+
+                            <p class="resource-content" style="font-weight: 600; margin-top: 1.5rem;">3. ¿Cómo escribiste para SEO tradicional?</p>
+                            <p class="resource-content">
+                                Describe las técnicas específicas de SEO que empleaste. Incluye al menos una captura de pantalla que muestre una "carita feliz" verde del plugin Yoast SEO para demostrar tu trabajo.
+                            </p>
+
+                            <p class="resource-content" style="font-weight: 600; margin-top: 1.5rem;">4. ¿Cómo escribiste para descubribilidad en LLM?</p>
+                            <p class="resource-content">
+                                Explica cómo optimizaste tu contenido para modelos de lenguaje de gran escala. ¿Qué estrategias específicas usaste más allá del SEO tradicional?
+                            </p>
+
+                            <p class="resource-content" style="font-weight: 600; margin-top: 1.5rem;">5. ¿Algo más que quieras añadir?</p>
+                            <p class="resource-content">
+                                Comparte cualquier desafío que encontraste, ideas interesantes que obtuviste o contexto adicional sobre tu proyecto.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="content-section">
+                        <h2 class="section-title">
+                            <span class="section-icon">📧</span>
+                            Estrategia de Boletín para Distribución de Contenido
+                        </h2>
+                        
+                        <p class="intro-text">
+                            Crear excelente contenido de blog es solo la mitad de la batalla—también necesitas asegurarte de que tu audiencia realmente lo vea. Aquí es donde entra la estrategia de boletines.
+                        </p>
+
+                        <p class="regular-text">
+                            Un boletín por correo electrónico proporciona un canal directo hacia tu audiencia que tú controlas. A diferencia de las redes sociales, donde los algoritmos determinan si las personas ven tu contenido, los boletines por correo garantizan la entrega a las bandejas de entrada de suscriptores. Esto los convierte en una herramienta invaluable para creadores de contenido, negocios y cualquier persona que construye una audiencia en línea.
+                        </p>
+
+                        <h3 class="subsection-title">Cómo Funciona la Estrategia de Boletín con Contenido de Blog</h3>
+                        
+                        <p class="regular-text">
+                            El flujo de trabajo típico se ve así:
+                        </p>
+                        <br>
+                        <ol class="objectives-list">
+                            <li class="objective-item"><strong>Escribe múltiples publicaciones de blog</strong> a lo largo del tiempo, cada una optimizada para SEO y descubribilidad en LLM</li>
+                            <li class="objective-item"><strong>Crea un boletín</strong> (usando plataformas como Substack, Mailchimp o ConvertKit) que se envíe semanal, quincenal o mensualmente</li>
+                            <li class="objective-item"><strong>Incluye adelantos en tu boletín</strong> que resuman cada publicación de blog con un gancho atractivo</li>
+                            <li class="objective-item"><strong>Enlaza a tu sitio web</strong> donde les lectores pueden acceder al artículo completo</li>
+                        </ol>
+
+                        <div class="info-box">
+                            <h2 class="info-box-title">Por Qué Funciona Esta Estrategia</h2>
+                            <p class="info-box-content">El boletín incluye suficiente información para despertar el interés, pero les lectores deben visitar tu sitio web para leer el artículo completo. Esto impulsa el tráfico a tu sitio, mejora tus métricas de SEO (como el tiempo en la página y la tasa de rebote), y crea el hábito de que tu audiencia regrese a tu sitio web. Además, no dependes de los algoritmos de redes sociales que muestran tu contenido—tienes una relación directa con tus lectores.</p>
+                        </div>
+                        <br>
+                        <p class="regular-text">
+                            Muchos bloggers y creadores de contenido exitosos usan este enfoque dual: publicaciones de blog optimizadas para SEO para descubribilidad, combinadas con boletines por correo electrónico para entrega garantizada y retención de audiencia. Considera cómo podrías integrar esta estrategia en tu propio flujo de trabajo de creación de contenido.
+                        </p>
+                    </div>
+
+                    <div class="content-section">
+                        <h2 class="section-title">
+                            <span class="section-icon">📋</span>
+                            Lista de Verificación de Entrega
+                        </h2>
+                        
+                        <p class="intro-text">
+                            Antes de enviar, verifica que hayas completado todos los elementos requeridos:
+                        </p>
+
+                        <ul class="objectives-list">
+                            <li class="objective-item">Sitio de WordPress creado con tema elegido</li>
+                            <li class="objective-item">Plugin Yoast SEO instalado y activado</li>
+                            <li class="objective-item">Página de inicio personalizada con información básica</li>
+                            <li class="objective-item">Publicación de blog publicada y públicamente accesible</li>
+                            <li class="objective-item">Contenido escrito para una audiencia específica y bien definida</li>
+                            <li class="objective-item">Palabra clave principal investigada usando una herramienta de investigación (verificada con una captura de pantalla)</li>
+                            <li class="objective-item">Mejores prácticas de SEO tradicional aplicadas (verificadas con puntuación verde de Yoast)</li>
+                            <li class="objective-item">Estrategias de descubribilidad en LLM implementadas</li>
+                            <li class="objective-item">Reflexión completada abordando las cinco preguntas</li>
+                            <li class="objective-item">Al menos una captura de pantalla de investigación de palabras clave incluida</li>
+                            <li class="objective-item">Al menos una captura de pantalla de puntuación verde de Yoast SEO incluida</li>
+                        </ul>
+
+                        <div class="info-box" style="margin-top: 2rem;">
+                            <div class="info-box-title">Formato de Entrega</div>
+                            <div class="info-box-content">
+                                <p>Envía lo siguiente en el formato solicitado por tu instructore:</p>
+                                <ol class="ul-step-list" style="margin-top: 1rem;">
+                                    <li>Enlace a tu publicación de blog publicada</li>
+                                    <li>Tu reflexión escrita con capturas de pantalla integradas</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Navigation - Content loaded via JavaScript -->
+                    <div class="topic-nav"></div>
+                </div>
+
+                <!-- Footer - Content loaded via JavaScript -->
+                <footer class="site-footer"></footer>
+
+            </main>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="../assets/js/header.js"></script>
+    <script src="../assets/js/language-switcher.js"></script>
+    <script src="../assets/js/topic-navigation.js"></script>
+    <script src="../assets/js/footer.js"></script>
+</body>
+</html>

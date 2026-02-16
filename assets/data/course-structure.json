@@ -147,6 +147,10 @@
           {
             "label": "LLM Discoverability",
             "url": "/t-5/llm-discoverability.html"
+          },
+          {
+            "label": "Wordpress Blog Project",
+            "url": "/t-5/wordpress-blog-project.html"
           }
         ]
       },
@@ -350,6 +354,10 @@
           {
             "label": "Visibilidad en los LLMs",
             "url": "/t-5/visibilidad-en-llms.html"
+          },
+          {
+            "label": "Proyecto de Blog en WordPress",
+            "url": "/t-5/proyecto-blog-wordpress.html"
           }
         ]
       },
