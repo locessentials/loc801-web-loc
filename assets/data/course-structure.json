@@ -130,7 +130,7 @@
       },
       {
         "number": 5,
-        "title": "Blogs, Newsletters & SEO",
+        "title": "Traditional SEO, Keyword Research & LLM Discoverability",
         "pages": [
           {
             "label": "Topic 5 Primer",
@@ -151,6 +151,10 @@
           {
             "label": "Wordpress Blog Project",
             "url": "/t-5/wordpress-blog-project.html"
+          },
+          {
+            "label": "Topic 5 Conclusion",
+            "url": "/t-5/topic-5-conclusion.html"
           }
         ]
       },
@@ -337,7 +341,7 @@
       },
       {
         "number": 5,
-        "title": "Blogs, Boletines y SEO",
+        "title": "SEO Tradicional, Palabras Clave y Visibilidad en LLMs",
         "pages": [
           {
             "label": "Tema 5 - Introducción",
@@ -358,6 +362,10 @@
           {
             "label": "Proyecto de Blog en WordPress",
             "url": "/t-5/proyecto-blog-wordpress.html"
+          },
+          {
+            "label": "Tema 5 - Conclusión",
+            "url": "/t-5/tema-5-conclusión.html"
           }
         ]
       },
