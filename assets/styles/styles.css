@@ -413,7 +413,8 @@ header {
     border-left: 4px solid #ffa500;
     padding: 2rem;
     border-radius: 8px;
-    margin-top: 2.5rem;
+    margin-top: 16px;
+    margin-bottom: 11.2px;
 }
 
 .tip-box-title {
@@ -756,6 +757,14 @@ header {
     margin-bottom: 0.75rem;
     grid-column: 2;
 }
+
+.step-content:last-child {
+    color: var(--text-medium);
+    line-height: 1.7;
+    grid-column: 2;
+    margin-bottom: 0;
+}
+
 
 /* For ordered lists (numbers) - use with <ol> */
 .ol-step-list {
