@@ -321,7 +321,7 @@ header {
 }
 
 .workflow-item::before {
-    content: 'âž';
+    content: '➔';
     position: absolute;
     left: 0;
     width: 28px;
@@ -795,7 +795,7 @@ header {
 }
 
 .ul-step-list li::before {
-    content: 'â€¢';
+    content: '•';
     position: absolute;
     left: 0;
     color: var(--light-blue);
@@ -855,7 +855,7 @@ header {
 }
 
 .resource-list li::before {
-    content: 'â€¢';
+    content: '•';
     position: absolute;
     left: 0;
     color: var(--light-blue);
