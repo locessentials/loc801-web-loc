@@ -1,0 +1,193 @@
+/* ============================================
+   Loc801 - Topic 6
+   Translator Selection Checklist Stylesheet
+   ============================================ */
+
+/* Checklist Section */
+.checklist-section {
+    margin-bottom: 2.5rem;
+}
+
+.checklist-section:last-child {
+    margin-bottom: 0;
+}
+
+/* Proficiency Card */
+.proficiency-card {
+    background: var(--alabaster);
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
+    overflow: hidden;
+    transition: box-shadow 0.2s ease;
+}
+
+.proficiency-card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+}
+
+/* Card Header */
+.proficiency-header {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    padding: 1.5rem 2rem;
+    background: linear-gradient(135deg, rgba(239, 145, 198, 0.12), rgba(80, 165, 230, 0.12));
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.proficiency-icon {
+    width: 44px;
+    height: 44px;
+    background: linear-gradient(135deg, var(--pink), var(--light-blue));
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    flex-shrink: 0;
+}
+
+.proficiency-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--dark-blue);
+    margin: 0;
+}
+
+/* Card Body */
+.proficiency-body {
+    padding: 1.75rem 2rem;
+}
+
+.proficiency-description {
+    font-size: 1rem;
+    color: var(--text-medium);
+    line-height: 1.7;
+    margin-bottom: 1rem;
+}
+
+.proficiency-example {
+    font-size: 0.95rem;
+    color: var(--text-light);
+    font-style: italic;
+    background: white;
+    border-left: 3px solid var(--light-blue);
+    padding: 0.75rem 1rem;
+    border-radius: 0 6px 6px 0;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+/* Web Localization Context Box */
+.web-loc-context {
+    background: linear-gradient(135deg, rgba(239, 145, 198, 0.08), rgba(80, 165, 230, 0.08));
+    border: 1px solid rgba(80, 165, 230, 0.25);
+    border-radius: 8px;
+    padding: 1rem 1.25rem 1.2rem;
+    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+
+.web-loc-context-label {
+    display: block;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--medium-blue);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 0.4rem;
+    margin-top: 0.4rem;
+}
+
+/* Indicators Section */
+.indicators-label {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--dark-blue);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 0.75rem;
+}
+
+.indicators-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.indicators-list li {
+    position: relative;
+    padding-left: 1.75rem;
+    font-size: 0.97rem;
+    color: var(--text-medium);
+    line-height: 1.6;
+}
+
+.indicators-list li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--pink);
+    font-weight: 700;
+    font-size: 0.95rem;
+}
+
+/* Intro Callout */
+.checklist-intro-callout {
+    background: linear-gradient(135deg, rgba(239, 145, 198, 0.1), rgba(80, 165, 230, 0.1));
+    border-radius: 12px;
+    padding: 2rem;
+    margin-bottom: 2.5rem;
+    font-size: 1.05rem;
+    color: var(--text-dark);
+    line-height: 1.8;
+    border: 1px solid rgba(80, 165, 230, 0.2);
+}
+
+/* How to Use This Checklist Note */
+.how-to-use {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+    background: #fff9e6;
+    border-left: 4px solid #ffa500;
+    padding: 1.5rem;
+    border-radius: 0 8px 8px 0;
+    margin-bottom: 24px;
+}
+
+.how-to-use-icon {
+    font-size: 1.4rem;
+    flex-shrink: 0;
+    margin-top: 0.1rem;
+}
+
+.how-to-use-text {
+    font-size: 0.97rem;
+    color: var(--text-medium);
+    line-height: 1.7;
+}
+
+.how-to-use-text strong {
+    color: var(--dark-blue);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .proficiency-header {
+        padding: 1.25rem 1.5rem;
+    }
+
+    .proficiency-body {
+        padding: 1.25rem 1.5rem;
+    }
+
+    .checklist-intro-callout {
+        padding: 1.5rem;
+    }
+}
