@@ -171,8 +171,12 @@
             "url": "/t-6/choosing-your-translator.html"
           },
           {
-            "label": "Selection Checklist",
+            "label": "Translator Selection Checklist",
             "url": "/t-6/translator-selection-checklist.html"
+          },
+          {
+            "label": "Working with Agencies",
+            "url": "/t-6/working-with-agencies.html"
           }
         ]
       },
@@ -390,8 +394,12 @@
             "url": "/t-6/elegir-quién-traduce.html"
           },
           {
-            "label": "Lista de Selección",
+            "label": "Lista de Selección de Traductores",
             "url": "/t-6/lista-selección-traductores.html"
+          },
+          {
+            "label": "Trabajar con Agencias",
+            "url": "/t-6/trabajar-con-agencias.html"
           }
         ]
       },
