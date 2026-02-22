@@ -191,6 +191,10 @@
           {
             "label": "Topic 7 Primer",
             "url": "/t-7/topic-7-primer.html"
+          },
+          {
+            "label": "Segmentation Forum",
+            "url": "/t-7/segmentation-forum.html"
           }
         ]
       },
@@ -418,6 +422,10 @@
           {
             "label": "Tema 7 - Introducción",
             "url": "/t-7/tema-7-intro.html"
+          },
+          {
+            "label": "Foro de Segmentación",
+            "url": "/t-7/foro-segmentación.html"
           }
         ]
       },
