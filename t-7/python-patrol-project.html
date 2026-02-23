@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Use a CAT tool to localize a conservation webpage into Miami Spanish, analyze translation quality, and reflect on SEO and LLM discoverability outcomes.">
+    <meta name="keywords" content="CAT tool, computer-assisted translation, web localization project, TEnT, translation memory, Miami Spanish, GitHub Pages">
+    
+    <!-- Open Graph for social media -->
+    <meta property="og:title" content="Python Patrol Localization Project | Topic 7 | Loc801">
+    <meta property="og:description" content="Use a CAT tool to localize a conservation webpage into Miami Spanish and reflect on translation quality, SEO, and LLM discoverability.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://loc801.locessentials.com/t-7/python-patrol-project.html">
+    <meta property="og:image" content="https://loc801.locessentials.com/assets/images/LocCapTransparentTilted.png">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://loc801.locessentials.com/t-7/python-patrol-project.html">
+    
+    <!-- Language alternates -->
+    <link rel="alternate" hreflang="en" href="python-patrol-project.html">
+    <link rel="alternate" hreflang="es" href="proyecto-python-patrol.html">
+    <link rel="alternate" hreflang="x-default" href="python-patrol-project.html">
+    
+    <title>Python Patrol Localization Project | Topic 7 | Loc801</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../assets/styles/styles.css">
+    <link rel="stylesheet" href="../assets/styles/code-viewer.css">
+</head>
+<body>
+    <div class="page-wrapper">
+        <div class="main-content-wrapper">
+            <main class="main-content">
+                <!-- Header -->
+                <header>
+                    <div class="header-content">
+                        <div class="logo-section">
+                            <img src="../assets/images/LocCapTransparentTilted.png" alt="LocEssentials cap logo" class="logo">
+                            <a href="/" class="course-title">Loc801: Web Localization for Beginners</a>
+                        </div>
+                        <div class="header-actions">
+                            <a href="/outline.html" class="outline-btn">
+                                <span>📋</span>
+                                <span>Outline</span>
+                            </a>
+                            <div class="lang-picker">
+                                <button class="lang-btn" data-lang="en">English</button>
+                                <button class="lang-btn" data-lang="es">Español</button>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+
+                <!-- Main Content -->
+                <div class="container">
+                    <nav class="breadcrumb">
+                        <a href="/">Course Home</a>
+                        <span class="breadcrumb-separator">›</span>
+                        <a href="/t-7/topic-7-primer.html">Topic 7</a>
+                        <span class="breadcrumb-separator">›</span>
+                        <span>Python Patrol Localization Project</span>
+                    </nav>
+
+                    <div class="page-header">
+                        <span class="topic-number">TOPIC 7</span>
+                        <h1 class="topic-title">Python Patrol Localization Project</h1>
+                        <p class="topic-description">
+                            Use a CAT tool to localize a real conservation webpage into Miami Spanish, then reflect on the quality of what segment-by-segment translation actually produces.
+                        </p>
+                    </div>
+
+                    <div class="content-section">
+                        <h2 class="section-title">
+                            <span class="section-icon">🎯</span>
+                            Project Overview
+                        </h2>
+                        <p class="intro-text">
+                            In this project, you will work with a real webpage from The Nature Conservancy's Python Patrol campaign and localize it into Miami Spanish—the variety of Spanish spoken in South Florida, shaped by Colombian, Cuban, and other Latin American influences. Your target audience is Spanish-speaking Floridians who may encounter Burmese pythons and need to know how to report them.
+                        </p>
+                        
+                        <p class="regular-text">
+                            This project asks you to do two things at once: produce a working bilingual website, and think critically about what a CAT tool's segment-by-segment translation does and doesn't get right. You'll get hands-on experience with a real TEnT (Translation Environment Tool), practice your link localization skills, and reflect honestly on translation quality, SEO, and LLM discoverability.
+                        </p>
+
+                        <div class="info-box">
+                            <div class="info-box-title">🐍 Why Python Patrol?</div>
+                            <div class="info-box-content">
+                                The Burmese python invasion in the Florida Everglades is a real and ongoing ecological crisis. The Nature Conservancy's Python Patrol program trains volunteers to safely report python sightings—but the program's reach depends on people knowing it exists. A Spanish-language version of this page has the potential to bring thousands of South Florida residents into the conservation effort. That's a real use case, with a real audience, and real stakes for getting the localization right.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-section">
+                        <h2 class="section-title">
+                            <span class="section-icon">🍴</span>
+                            Part 1: Fork the Repository
+                        </h2>
+                        <p class="intro-text">
+                            Your first step is to create your own copy of the project repository on GitHub.
+                        </p>
+
+                        <div class="instruction-steps">
+                            <div class="instruction-step">
+                                <div class="step-number">1</div>
+                                <h3 class="step-title">Fork the Repo</h3>
+                            </div>
+                            <div>
+                                <p class="step-content">
+                                    Navigate to the <a href="https://github.com/locessentials/loc801-python-patrol" target="_blank" rel="noopener" class="inline-link">loc801-python-patrol repository</a> on GitHub. Click the <strong>Fork</strong> button in the top-right corner to create your own copy under your GitHub account.
+                                </p>
+                            </div>
+
+                            <div class="instruction-step">
+                                <div class="step-number">2</div>
+                                <h3 class="step-title">Clone to Your Computer</h3>
+                            </div>
+                            <div>
+                                <p class="step-content">
+                                    Clone your forked repository to your local machine using GitHub Desktop or the command line, as you've done in previous projects. Open it in Visual Studio Code and read through the README before you do anything else.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-section">
+                        <h2 class="section-title">
+                            <span class="section-icon">🔧</span>
+                            Part 2: Translate with a CAT Tool
+                        </h2>
+                        <p class="intro-text">
+                            Now comes the core task: translating <code>index.html</code> using the CAT tool of your choice.
+                        </p>
+
+                        <div class="instruction-steps">
+                            <div class="instruction-step">
+                                <div class="step-number">1</div>
+                                <h3 class="step-title">Choose Your TEnT</h3>
+                            </div>
+                            <div>
+                                <p class="step-content">
+                                    Review the tools covered in this topic and select one to work with. Refer to the <a href="technology-scorecard.html" class="inline-link">Technology Scorecard</a> and the <a href="segmentation-forum.html" class="inline-link">Segmentation Forum</a> for guidance. You'll be asked to explain your choice in your reflection, so think it through before you commit.
+                                </p>
+                                <div class="tip-box" style="margin-top: 1rem;">
+                                    <div class="tip-box-title">💡 Tip</div>
+                                    <div class="tip-box-content">
+                                        If you're new to CAT tools, OmegaT is free, open-source, and handles HTML files well. If you want to try a professional cloud-based environment, SmartCAT offers a free tier. Either way, make sure you can export a clean HTML file when you're done.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="instruction-step">
+                                <div class="step-number">2</div>
+                                <h3 class="step-title">Handle the JavaScript String First</h3>
+                            </div>
+                            <div>
+                                <p class="step-content">
+                                    Open <code>PythonPatrol-base.js</code> and find the <code>STRINGS</code> object near the top of the file. The <code>es-US</code> key has a placeholder value in English. Before loading <code>index.html</code> into your CAT tool, think about how you'll handle this string. It won't be picked up automatically from the HTML file.
+                                </p>
+                                <p class="step-content">
+                                    Some options: add it to your translation memory manually, create a small plain-text file with just this string and run it through your tool first, or translate it directly. Whatever you decide, be ready to explain your approach in your reflection.
+                                </p>
+                            </div>
+
+                            <div class="instruction-step">
+                                <div class="step-number">3</div>
+                                <h3 class="step-title">Import and Translate <code>index.html</code></h3>
+                            </div>
+                            <div>
+                                <p class="step-content">
+                                    Load <code>index.html</code> into your CAT tool as the source file, with Miami Spanish (<code>es-US</code>) as the target language. Work through the segments, translating the page content. 
+                                </p>
+                                <p class="step-content">
+                                    Pay attention to what your tool segments correctly and what it doesn't. Does it keep HTML tags intact? Does it handle inline elements like <code>&lt;strong&gt;</code> and <code>&lt;em&gt;</code> sensibly? Take notes on anything unusual—you'll use these observations in your reflection.
+                                </p>
+
+                                <div class="resource-box" style="margin-top: 1rem;">
+                                    <h3 class="resource-title">What to Translate</h3>
+                                    <ul class="ul-step-list">
+                                        <li>All visible text content: headings, paragraphs, lists, button labels, placeholder text</li>
+                                        <li>Image <code>alt</code> and <code>title</code> attributes</li>
+                                        <li>The <code>&lt;title&gt;</code> element and all <code>&lt;meta&gt;</code> content (description, keywords, Open Graph tags)</li>
+                                        <li>Footer link text</li>
+                                    </ul>
+                                    <h3 class="resource-title" style="margin-top: 1.5rem;">What Not to Translate</h3>
+                                    <ul class="ul-step-list">
+                                        <li>HTML tag names or attribute names (<code>class</code>, <code>id</code>, <code>href</code>, etc.)</li>
+                                        <li>CSS class names</li>
+                                        <li>Local file paths (image <code>src</code> values, stylesheet links)</li>
+                                        <li>The phone number <strong>1-888-IVEGOT1</strong> — this is a real hotline; keep it as-is</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="instruction-step">
+                                <div class="step-number">4</div>
+                                <h3 class="step-title">Export as <code>inicio.html</code></h3>
+                            </div>
+                            <div>
+                                <p class="step-content">
+                                    Export your translated file and save it as <code>inicio.html</code> in the repo root. Then open it in VS Code and make the following manual adjustments, which your CAT tool won't handle automatically:
+                                </p>
+                                <ul class="ul-step-list">
+                                    <li>Set <code>&lt;html lang="es-US"&gt;</code></li>
+                                    <li>Set <code>og:locale</code> to <code>es_US</code> and <code>og:url</code> to <code>inicio.html</code></li>
+                                    <li>Move <code>class="active"</code> to the Español link in the language switcher</li>
+                                    <li>Update the JS string placeholder in <code>PythonPatrol-base.js</code> with your translation</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-section">
+                        <h2 class="section-title">
+                            <span class="section-icon">🔗</span>
+                            Part 3: Localize External Links
+                        </h2>
+                        <p class="intro-text">
+                            A localized page shouldn't send Spanish-speaking users to English-only resources if better options exist. For each external link in <code>index.html</code>, check whether a Spanish-language equivalent page is available.
+                        </p>
+
+                        <div class="resource-box">
+                            <h3 class="resource-title">Links to Check</h3>
+                            <ul class="ul-step-list">
+                                <li><a href="https://www.eddmaps.org/florida/report/index.htm" target="_blank" rel="noopener" class="inline-link">IveGot1.org</a> — Check for a language toggle or Spanish URL</li>
+                                <li><a href="https://myfwc.com/wildlifehabitats/nonnatives/python/" target="_blank" rel="noopener" class="inline-link">Florida Fish and Wildlife Conservation Commission</a> — Look for an <code>es</code> subdomain or Spanish page</li>
+                                <li><a href="https://edis.ifas.ufl.edu/uw336" target="_blank" rel="noopener" class="inline-link">UF IFAS Extension — Non-Native Reptiles Guide</a> — Check for a Spanish PDF or alternate page</li>
+                                <li><a href="https://www.nytimes.com/2019/04/08/us/python-florida.html" target="_blank" rel="noopener" class="inline-link">New York Times article</a> — Check NYT en Español</li>
+                                <li><a href="https://preserve.nature.org/page/80910/donate/1" target="_blank" rel="noopener" class="inline-link">Nature Conservancy donate link</a> — Check for a Spanish donation page</li>
+                            </ul>
+                        </div>
+
+                        <p class="regular-text" style="margin-top: 1.5rem;">
+                            For each link where a Spanish equivalent exists, update both the <code>href</code> and the visible link text in <code>inicio.html</code>. If no Spanish equivalent exists, keep the English link. Either way, note your findings in your reflection—the absence of Spanish resources is itself worth commenting on.
+                        </p>
+                    </div>
+
+                    <div class="content-section">
+                        <h2 class="section-title">
+                            <span class="section-icon">🚀</span>
+                            Part 4: Publish to GitHub Pages
+                        </h2>
+
+                        <div class="instruction-steps">
+                            <div class="instruction-step">
+                                <div class="step-number">1</div>
+                                <h3 class="step-title">Commit and Push</h3>
+                            </div>
+                            <div>
+                                <p class="step-content">
+                                    Commit all your changes—<code>inicio.html</code> and the updated <code>PythonPatrol-base.js</code>—with a descriptive commit message and push to your GitHub repository.
+                                </p>
+                            </div>
+
+                            <div class="instruction-step">
+                                <div class="step-number">2</div>
+                                <h3 class="step-title">Enable GitHub Pages</h3>
+                            </div>
+                            <div>
+                                <p class="step-content">
+                                    In your repository settings, go to <strong>Settings → Pages → Deploy from branch → main → / (root)</strong>. Wait a minute, then verify that both pages load correctly at your GitHub Pages URL:
+                                </p>
+                                <ul class="ul-step-list">
+                                    <li><code>https://[your-username].github.io/loc801-python-patrol/index.html</code> → English page</li>
+                                    <li><code>https://[your-username].github.io/loc801-python-patrol/inicio.html</code> → Spanish page</li>
+                                </ul>
+                            </div>
+
+                            <div class="instruction-step">
+                                <div class="step-number">3</div>
+                                <h3 class="step-title">Test the Language Switcher</h3>
+                            </div>
+                            <div>
+                                <p class="step-content">
+                                    Confirm that the language switcher in the header links correctly between your English and Spanish pages in both directions.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-section">
+                        <h2 class="section-title">
+                            <span class="section-icon">✍️</span>
+                            Part 5: Write Your Reflection
+                        </h2>
+                        <p class="intro-text">
+                            After completing the localization, write a reflection that addresses all four areas below. This is not a summary of what you did—it's an analysis of how well it worked and why.
+                        </p>
+
+                        <div class="resource-box" style="margin-bottom: 1.5rem;">
+                            <h3 class="resource-title">1. Tool Choice</h3>
+                            <p class="resource-content">
+                                Which CAT tool did you use, and why did you choose it over the other options covered in this topic? Consider factors like cost, HTML support, translation memory features, and ease of use. Would you choose the same tool for a larger or more complex project?
+                            </p>
+                        </div>
+
+                        <div class="resource-box" style="margin-bottom: 1.5rem;">
+                            <h3 class="resource-title">2. The JavaScript String</h3>
+                            <p class="resource-content">
+                                How did you handle the UI string in <code>PythonPatrol-base.js</code>? Describe your approach and explain why you handled it that way. What does this experience tell you about the challenges of localizing content that lives outside the main translatable file?
+                            </p>
+                        </div>
+
+                        <div class="resource-box" style="margin-bottom: 1.5rem;">
+                            <h3 class="resource-title">3. Translation Quality</h3>
+                            <p class="resource-content">
+                                How well did the segment-by-segment translation perform? Give specific examples—segments that translated well and segments that needed significant post-editing. Think about things like: Did the tool handle inline HTML tags correctly? Were there any segments where the segmentation itself caused problems? How did the CAT tool's output compare to what you would have written from scratch?
+                            </p>
+                        </div>
+
+                        <div class="resource-box">
+                            <h3 class="resource-title">4. SEO and LLM Discoverability</h3>
+                            <p class="resource-content">
+                                Evaluate what the sentence-by-sentence translation did for—and possibly against—the page's SEO and LLM discoverability. Did the translated content read naturally enough to rank well in Spanish-language search? Were there keyword choices in the translation that felt awkward or unnatural for a Miami Spanish audience? Did the structure and metadata carry over in a way that would serve the page well in Spanish-language search and AI-generated responses?
+                            </p>
+                        </div>
+
+                        <div class="tip-box" style="margin-top: 1.5rem;">
+                            <div class="tip-box-title">💡 What Makes a Good Reflection</div>
+                            <div class="tip-box-content">
+                                Strong reflections are specific and honest. "The translation was mostly good" is not a useful answer. Name actual segments, describe actual problems, and connect your observations back to what you've learned about translation quality, SEO, and localization workflows. If the tool performed poorly on something, say so clearly and explain why you think that happened.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-section">
+                        <h2 class="section-title">
+                            <span class="section-icon">📋</span>
+                            Submission Checklist
+                        </h2>
+                        
+                        <p class="intro-text">
+                            Before submitting, verify that you've completed all required elements:
+                        </p>
+
+                        <ul class="objectives-list">
+                            <li class="objective-item">Repository forked from <a href="https://github.com/locessentials/loc801-python-patrol" target="_blank" rel="noopener" class="inline-link">locessentials/loc801-python-patrol</a></li>
+                            <li class="objective-item"><code>inicio.html</code> committed to the repo root with <code>lang="es-US"</code></li>
+                            <li class="objective-item">All visible text content translated into Miami Spanish</li>
+                            <li class="objective-item">Metadata translated (<code>&lt;title&gt;</code>, meta description, keywords, Open Graph tags)</li>
+                            <li class="objective-item">Language switcher active state updated to Español in <code>inicio.html</code></li>
+                            <li class="objective-item">UI string in <code>PythonPatrol-base.js</code> translated (the <code>es-US</code> key)</li>
+                            <li class="objective-item">External links checked for Spanish equivalents and updated where applicable</li>
+                            <li class="objective-item">Site published to GitHub Pages with both pages loading correctly</li>
+                            <li class="objective-item">Language switcher navigates correctly between English and Spanish pages</li>
+                            <li class="objective-item">Reflection written addressing all four required areas</li>
+                        </ul>
+
+                        <div class="info-box" style="margin-top: 2rem;">
+                            <div class="info-box-title">Submission Format</div>
+                            <div class="info-box-content">
+                                <p>Submit the following in the format requested by your instructor:</p>
+                                <ol class="ul-step-list" style="margin-top: 1rem;">
+                                    <li>Link to your GitHub Pages site (the Spanish page: <code>inicio.html</code>)</li>
+                                    <li>Your written reflection addressing all four areas</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Navigation - Content loaded via JavaScript -->
+                    <div class="topic-nav"></div>
+                </div>
+
+                <!-- Footer - Content loaded via JavaScript -->
+                <footer class="site-footer"></footer>
+
+            </main>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="../assets/js/header.js"></script>
+    <script src="../assets/js/language-switcher.js"></script>
+    <script src="../assets/js/topic-navigation.js"></script>
+    <script src="../assets/js/footer.js"></script>
+</body>
+</html>

@@ -5,12 +5,19 @@
 
 /* Inline code snippets */
 .info-box code,
-.tip-box code {
+.tip-box code,
+.step-content code,
+.resource-content code,
+.intro-text code,
+.regular-text code,
+.ul-step-list li code,
+.objectives-list li code {
     background: var(--alabaster);
     padding: 0.25rem 0.5rem;
     border-radius: 4px;
     font-family: 'Courier New', Courier, monospace;
     font-size: 0.9rem;
+    color: var(--dark-blue);
 }
 
 .tip-box code {

@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Usa una herramienta TAC para localizar una página de conservación al español de Miami, analiza la calidad de la traducción y reflexiona sobre el SEO y la descubribilidad en LLM.">
+    <meta name="keywords" content="herramienta TAC, traducción asistida por computadora, proyecto de localización web, TEnT, memoria de traducción, español de Miami, GitHub Pages">
+    
+    <!-- Open Graph para redes sociales -->
+    <meta property="og:title" content="Proyecto de Localización Web: Python Patrol | Tema 7 | Loc801">
+    <meta property="og:description" content="Usa una herramienta TAC para localizar una página de conservación al español de Miami y reflexiona sobre la calidad de la traducción, el SEO y la descubribilidad en LLM.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://loc801.locessentials.com/t-7/proyecto-python-patrol.html">
+    <meta property="og:image" content="https://loc801.locessentials.com/assets/images/LocCapTransparentTilted.png">
+    
+    <!-- URL canónica -->
+    <link rel="canonical" href="https://loc801.locessentials.com/t-7/proyecto-python-patrol.html">
+    
+    <!-- Alternativas de idioma -->
+    <link rel="alternate" hreflang="en" href="python-patrol-project.html">
+    <link rel="alternate" hreflang="es" href="proyecto-python-patrol.html">
+    <link rel="alternate" hreflang="x-default" href="python-patrol-project.html">
+    
+    <title>Proyecto de Localización Web: Python Patrol | Tema 7 | Loc801</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Hojas de estilo -->
+    <link rel="stylesheet" href="../assets/styles/styles.css">
+    <link rel="stylesheet" href="../assets/styles/code-viewer.css">
+</head>
+<body>
+    <div class="page-wrapper">
+        <div class="main-content-wrapper">
+            <main class="main-content">
+                <!-- Encabezado -->
+                <header>
+                    <div class="header-content">
+                        <div class="logo-section">
+                            <img src="../assets/images/LocCapTransparentTilted.png" alt="Logo de gorra LocEssentials" class="logo">
+                            <a href="/" class="course-title">Loc801: Localización Web para Principiantes</a>
+                        </div>
+                        <div class="header-actions">
+                            <a href="/esquema.html" class="outline-btn">
+                                <span>📋</span>
+                                <span>Esquema</span>
+                            </a>
+                            <div class="lang-picker">
+                                <button class="lang-btn" data-lang="en">English</button>
+                                <button class="lang-btn" data-lang="es">Español</button>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+
+                <!-- Contenido principal -->
+                <div class="container">
+                    <nav class="breadcrumb">
+                        <a href="/">Inicio del curso</a>
+                        <span class="breadcrumb-separator">›</span>
+                        <a href="/t-7/tema-7-intro.html">Tema 7</a>
+                        <span class="breadcrumb-separator">›</span>
+                        <span>Proyecto de Localización Web: Python Patrol</span>
+                    </nav>
+
+                    <div class="page-header">
+                        <span class="topic-number">TEMA 7</span>
+                        <h1 class="topic-title">Proyecto de Localización Web: Python Patrol</h1>
+                        <p class="topic-description">
+                            Usa una herramienta TAC para localizar una página de conservación real al español de Miami y reflexiona honestamente sobre lo que produce la traducción segmento por segmento.
+                        </p>
+                    </div>
+
+                    <div class="content-section">
+                        <h2 class="section-title">
+                            <span class="section-icon">🎯</span>
+                            Descripción del Proyecto
+                        </h2>
+                        <p class="intro-text">
+                            En este proyecto trabajarás con una página real de la campaña Python Patrol de The Nature Conservancy y la localizarás al español de Miami — la variedad del español que se habla en el sur de Florida, moldeada por influencias colombianas, cubanas y de otros contextos latinoamericanos. El público destinatario es la comunidad hispanohablante de Florida, que puede encontrarse con pitones birmanas y necesita saber cómo reportarlas.
+                        </p>
+                        
+                        <p class="regular-text">
+                            Este proyecto te pide hacer dos cosas al mismo tiempo: producir un sitio web bilingüe funcional, y pensar críticamente sobre lo que una herramienta TAC logra, y no logra, con la traducción segmento por segmento. Obtendrás experiencia práctica con una TEnT (Translation Environment Tool) real, practicarás la localización de enlaces y reflexionarás sobre la calidad de la traducción, el SEO y la descubribilidad en LLM.
+                        </p>
+
+                        <div class="info-box">
+                            <div class="info-box-title">🐍 ¿Por qué Python Patrol?</div>
+                            <div class="info-box-content">
+                                La invasión de pitones birmanas en los Everglades de Florida es una crisis ecológica real y en curso. El programa Python Patrol de The Nature Conservancy entrena a personas voluntarias para reportar avistamientos de pitones de forma segura, pero el alcance del programa depende de que la gente sepa que existe. Una versión en español de esta página tiene el potencial de incorporar a miles de residentes del sur de Florida al esfuerzo de conservación. Es un caso de uso real, con un público real y consecuencias reales si la localización no está bien hecha.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-section">
+                        <h2 class="section-title">
+                            <span class="section-icon">🍴</span>
+                            Parte 1: Haz un Fork del Repositorio
+                        </h2>
+                        <p class="intro-text">
+                            El primer paso es crear tu propia copia del repositorio del proyecto en GitHub.
+                        </p>
+
+                        <div class="instruction-steps">
+                            <div class="instruction-step">
+                                <div class="step-number">1</div>
+                                <h3 class="step-title">Haz un Fork del Repositorio</h3>
+                            </div>
+                            <div>
+                                <p class="step-content">
+                                    Ve al repositorio <a href="https://github.com/locessentials/loc801-python-patrol" target="_blank" rel="noopener" class="inline-link">loc801-python-patrol</a> en GitHub. Haz clic en el botón <strong>Fork</strong> en la esquina superior derecha para crear tu propia copia en tu cuenta de GitHub.
+                                </p>
+                            </div>
+
+                            <div class="instruction-step">
+                                <div class="step-number">2</div>
+                                <h3 class="step-title">Clona el Repositorio a tu Computadora</h3>
+                            </div>
+                            <div>
+                                <p class="step-content">
+                                    Clona tu repositorio en tu computadora usando GitHub Desktop o la línea de comandos, como has hecho en proyectos anteriores. Ábrelo en Visual Studio Code y lee el README antes de hacer cualquier otra cosa.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-section">
+                        <h2 class="section-title">
+                            <span class="section-icon">🔧</span>
+                            Parte 2: Traduce con una Herramienta TAC
+                        </h2>
+                        <p class="intro-text">
+                            Ahora viene la tarea central: traducir <code>index.html</code> usando la herramienta TAC de tu elección.
+                        </p>
+
+                        <div class="instruction-steps">
+                            <div class="instruction-step">
+                                <div class="step-number">1</div>
+                                <h3 class="step-title">Elige tu TEnT</h3>
+                            </div>
+                            <div>
+                                <p class="step-content">
+                                    Revisa las herramientas vistas en este tema y selecciona una con la que trabajar. Consulta la <a href="scorecard-tecnología.html" class="inline-link">Scorecard de Tecnología de Traducción</a> y el <a href="foro-segmentación.html" class="inline-link">Foro de Segmentación</a> para orientarte. En tu reflexión tendrás que justificar tu elección, así que piénsalo bien antes de decidirte.
+                                </p>
+                                <div class="tip-box" style="margin-top: 1rem;">
+                                    <div class="tip-box-title">💡 Consejo</div>
+                                    <div class="tip-box-content">
+                                        Si es tu primera vez con herramientas TAC, OmegaT es gratuito, de código abierto y funciona bien con archivos HTML. Si quieres probar un entorno profesional en la nube, SmartCAT ofrece un nivel gratuito. En cualquier caso, asegúrate de que puedes exportar un archivo HTML limpio al terminar.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="instruction-step">
+                                <div class="step-number">2</div>
+                                <h3 class="step-title">Primero, Maneja el Texto en JavaScript</h3>
+                            </div>
+                            <div>
+                                <p class="step-content">
+                                    Abre <code>PythonPatrol-base.js</code> y encuentra el objeto <code>STRINGS</code> al inicio del archivo. La clave <code>es-US</code> tiene un valor provisional en inglés. Antes de cargar <code>index.html</code> en tu herramienta TAC, piensa cómo vas a manejar este texto: no se detectará automáticamente al importar el archivo HTML.
+                                </p>
+                                <p class="step-content">
+                                    Algunas opciones: añadirlo manualmente a tu memoria de traducción, crear un archivo de texto pequeño con solo este segmento y pasarlo por la herramienta primero, o traducirlo directamente. Lo que decidas, prepárate para explicar tu enfoque en la reflexión.
+                                </p>
+                            </div>
+
+                            <div class="instruction-step">
+                                <div class="step-number">3</div>
+                                <h3 class="step-title">Importa y Traduce <code>index.html</code></h3>
+                            </div>
+                            <div>
+                                <p class="step-content">
+                                    Carga <code>index.html</code> en tu herramienta TAC como archivo fuente, con el español de Miami (<code>es-US</code>) como idioma de destino. Trabaja a través de los segmentos traduciendo el contenido de la página.
+                                </p>
+                                <p class="step-content">
+                                    Presta atención a lo que tu herramienta segmenta correctamente y a lo que no. ¿Mantiene intactas las etiquetas HTML? ¿Maneja de forma sensata los elementos en línea como <code>&lt;strong&gt;</code> y <code>&lt;em&gt;</code>? Toma nota de cualquier cosa inusual — usarás estas observaciones en tu reflexión.
+                                </p>
+
+                                <div class="resource-box" style="margin-top: 1rem;">
+                                    <h3 class="resource-title">Qué Traducir</h3>
+                                    <ul class="ul-step-list">
+                                        <li>Todo el texto visible: encabezados, párrafos, listas, etiquetas de botones, texto de marcador de posición</li>
+                                        <li>Los atributos <code>alt</code> y <code>title</code> de las imágenes</li>
+                                        <li>El elemento <code>&lt;title&gt;</code> y todo el contenido de las etiquetas <code>&lt;meta&gt;</code> (descripción, palabras clave, etiquetas Open Graph)</li>
+                                        <li>El texto de los enlaces del pie de página</li>
+                                    </ul>
+                                    <h3 class="resource-title" style="margin-top: 1.5rem;">Qué No Traducir</h3>
+                                    <ul class="ul-step-list">
+                                        <li>Nombres de etiquetas HTML ni nombres de atributos (<code>class</code>, <code>id</code>, <code>href</code>, etc.)</li>
+                                        <li>Nombres de clases CSS</li>
+                                        <li>Rutas de archivos locales (valores <code>src</code> de imágenes, enlaces a hojas de estilo)</li>
+                                        <li>El número de teléfono <strong>1-888-IVEGOT1</strong> — es una línea real; consérvalo tal como está</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="instruction-step">
+                                <div class="step-number">4</div>
+                                <h3 class="step-title">Exporta como <code>inicio.html</code></h3>
+                            </div>
+                            <div>
+                                <p class="step-content">
+                                    Exporta tu archivo traducido y guárdalo como <code>inicio.html</code> en la raíz del repositorio. Luego ábrelo en VS Code y realiza los siguientes ajustes manuales, que tu herramienta TAC no habrá gestionado automáticamente:
+                                </p>
+                                <ul class="ul-step-list">
+                                    <li>Establece <code>&lt;html lang="es-US"&gt;</code></li>
+                                    <li>Establece <code>og:locale</code> como <code>es_US</code> y <code>og:url</code> como <code>inicio.html</code></li>
+                                    <li>Mueve <code>class="active"</code> al enlace de Español en el selector de idioma</li>
+                                    <li>Actualiza el valor provisional en <code>PythonPatrol-base.js</code> con tu traducción</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-section">
+                        <h2 class="section-title">
+                            <span class="section-icon">🔗</span>
+                            Parte 3: Localiza los Enlaces Externos
+                        </h2>
+                        <p class="intro-text">
+                            Una página localizada no debería llevar al público hispanohablante a recursos solo en inglés si existen mejores opciones. Para cada enlace externo de <code>index.html</code>, verifica si hay una versión equivalente en español disponible.
+                        </p>
+
+                        <div class="resource-box">
+                            <h3 class="resource-title">Enlaces que Debes Verificar</h3>
+                            <ul class="ul-step-list">
+                                <li><a href="https://www.eddmaps.org/florida/report/index.htm" target="_blank" rel="noopener" class="inline-link">IveGot1.org</a> — Busca un selector de idioma o una URL en español</li>
+                                <li><a href="https://myfwc.com/wildlifehabitats/nonnatives/python/" target="_blank" rel="noopener" class="inline-link">Comisión de Pesca y Vida Silvestre de Florida (FWC)</a> — Busca un subdominio <code>es</code> o una página en español</li>
+                                <li><a href="https://edis.ifas.ufl.edu/uw336" target="_blank" rel="noopener" class="inline-link">Guía de reptiles no nativos — UF IFAS Extension</a> — Busca un PDF o página en español</li>
+                                <li><a href="https://www.nytimes.com/2019/04/08/us/python-florida.html" target="_blank" rel="noopener" class="inline-link">Artículo del New York Times</a> — Busca en NYT en Español</li>
+                                <li><a href="https://preserve.nature.org/page/80910/donate/1" target="_blank" rel="noopener" class="inline-link">Enlace de donación de The Nature Conservancy</a> — Busca una página de donación en español</li>
+                            </ul>
+                        </div>
+
+                        <p class="regular-text" style="margin-top: 1.5rem;">
+                            Donde exista una versión en español, actualiza tanto el <code>href</code> como el texto del enlace en <code>inicio.html</code>. Si no existe una versión en español, conserva el enlace en inglés. De cualquier manera, anota tus hallazgos en la reflexión: la ausencia de recursos en español también merece comentarse.
+                        </p>
+                    </div>
+
+                    <div class="content-section">
+                        <h2 class="section-title">
+                            <span class="section-icon">🚀</span>
+                            Parte 4: Publica en GitHub Pages
+                        </h2>
+
+                        <div class="instruction-steps">
+                            <div class="instruction-step">
+                                <div class="step-number">1</div>
+                                <h3 class="step-title">Haz Commit y Push</h3>
+                            </div>
+                            <div>
+                                <p class="step-content">
+                                    Haz commit de todos tus cambios — <code>inicio.html</code> y el <code>PythonPatrol-base.js</code> actualizado — con un mensaje descriptivo y súbelos a tu repositorio de GitHub.
+                                </p>
+                            </div>
+
+                            <div class="instruction-step">
+                                <div class="step-number">2</div>
+                                <h3 class="step-title">Activa GitHub Pages</h3>
+                            </div>
+                            <div>
+                                <p class="step-content">
+                                    En la configuración de tu repositorio, ve a <strong>Settings → Pages → Deploy from branch → main → / (root)</strong>. Espera un momento y verifica que ambas páginas cargan correctamente en tu URL de GitHub Pages:
+                                </p>
+                                <ul class="ul-step-list">
+                                    <li><code>https://[tu-usuario].github.io/loc801-python-patrol/index.html</code> → Página en inglés</li>
+                                    <li><code>https://[tu-usuario].github.io/loc801-python-patrol/inicio.html</code> → Página en español</li>
+                                </ul>
+                            </div>
+
+                            <div class="instruction-step">
+                                <div class="step-number">3</div>
+                                <h3 class="step-title">Prueba el Selector de Idioma</h3>
+                            </div>
+                            <div>
+                                <p class="step-content">
+                                    Confirma que el selector de idioma del encabezado navega correctamente entre tus páginas en inglés y en español en ambas direcciones.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-section">
+                        <h2 class="section-title">
+                            <span class="section-icon">✍️</span>
+                            Parte 5: Escribe tu Reflexión
+                        </h2>
+                        <p class="intro-text">
+                            Después de completar la localización, escribe una reflexión que aborde las cuatro áreas siguientes. No se trata de resumir lo que hiciste, sino de analizar qué tan bien funcionó y por qué.
+                        </p>
+
+                        <div class="resource-box" style="margin-bottom: 1.5rem;">
+                            <h3 class="resource-title">1. Elección de la Herramienta</h3>
+                            <p class="resource-content">
+                                ¿Qué herramienta TAC usaste y por qué la elegiste frente a las otras opciones vistas en este tema? Ten en cuenta factores como el costo, la compatibilidad con HTML, las funciones de memoria de traducción y la facilidad de uso. ¿Elegirías la misma herramienta para un proyecto más grande o más complejo?
+                            </p>
+                        </div>
+
+                        <div class="resource-box" style="margin-bottom: 1.5rem;">
+                            <h3 class="resource-title">2. El Texto en JavaScript</h3>
+                            <p class="resource-content">
+                                ¿Cómo manejaste el texto de interfaz en <code>PythonPatrol-base.js</code>? Describe tu enfoque y explica por qué lo abordaste de esa manera. ¿Qué te dice esta experiencia sobre los desafíos de localizar contenido que vive fuera del archivo principal traducible?
+                            </p>
+                        </div>
+
+                        <div class="resource-box" style="margin-bottom: 1.5rem;">
+                            <h3 class="resource-title">3. Calidad de la Traducción</h3>
+                            <p class="resource-content">
+                                ¿Qué tan bien funcionó la traducción segmento por segmento? Da ejemplos concretos: segmentos que se tradujeron bien y segmentos que necesitaron una edición significativa. Considera aspectos como: ¿La herramienta mantuvo correctamente las etiquetas HTML en línea? ¿Hubo segmentos donde la segmentación en sí causó problemas? ¿Cómo se compara el resultado de la herramienta TAC con lo que habrías escrito desde cero?
+                            </p>
+                        </div>
+
+                        <div class="resource-box">
+                            <h3 class="resource-title">4. SEO y Descubribilidad en LLM</h3>
+                            <p class="resource-content">
+                                Evalúa qué hizo la traducción segmento por segmento para el SEO y la descubribilidad en LLM de la página — y qué pudo haber perjudicado. ¿El contenido traducido se lee con la naturalidad suficiente como para posicionarse bien en búsquedas en español? ¿Hubo opciones de palabras clave en la traducción que resultaron torpes o poco naturales para el público del español de Miami? ¿La estructura y los metadatos se trasladaron de una forma que sirva bien a la página en las búsquedas en español y en las respuestas generadas por IA?
+                            </p>
+                        </div>
+
+                        <div class="tip-box" style="margin-top: 1.5rem;">
+                            <div class="tip-box-title">💡 Qué Hace una Buena Reflexión</div>
+                            <div class="tip-box-content">
+                                Las reflexiones sólidas son específicas y honestas. "La traducción estuvo bastante bien" no es una respuesta útil. Nombra segmentos concretos, describe problemas concretos y conecta tus observaciones con lo que has aprendido sobre calidad de traducción, SEO y flujos de trabajo de localización. Si la herramienta tuvo un rendimiento deficiente en algo, dilo con claridad y explica por qué crees que ocurrió.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-section">
+                        <h2 class="section-title">
+                            <span class="section-icon">📋</span>
+                            Lista de Verificación de Entrega
+                        </h2>
+                        
+                        <p class="intro-text">
+                            Antes de entregar, verifica que hayas completado todos los elementos requeridos:
+                        </p>
+
+                        <ul class="objectives-list">
+                            <li class="objective-item">Repositorio con fork desde <a href="https://github.com/locessentials/loc801-python-patrol" target="_blank" rel="noopener" class="inline-link">locessentials/loc801-python-patrol</a></li>
+                            <li class="objective-item"><code>inicio.html</code> comprometido en la raíz del repositorio con <code>lang="es-US"</code></li>
+                            <li class="objective-item">Todo el contenido de texto visible traducido al español de Miami</li>
+                            <li class="objective-item">Metadatos traducidos (<code>&lt;title&gt;</code>, meta descripción, palabras clave, etiquetas Open Graph)</li>
+                            <li class="objective-item">Estado activo del selector de idioma actualizado a Español en <code>inicio.html</code></li>
+                            <li class="objective-item">Texto de interfaz en <code>PythonPatrol-base.js</code> traducido (la clave <code>es-US</code>)</li>
+                            <li class="objective-item">Enlaces externos verificados para equivalentes en español y actualizados donde corresponde</li>
+                            <li class="objective-item">Sitio publicado en GitHub Pages con ambas páginas cargando correctamente</li>
+                            <li class="objective-item">El selector de idioma navega correctamente entre las páginas en inglés y en español</li>
+                            <li class="objective-item">Reflexión escrita que aborda las cuatro áreas requeridas</li>
+                        </ul>
+
+                        <div class="info-box" style="margin-top: 2rem;">
+                            <div class="info-box-title">Formato de Entrega</div>
+                            <div class="info-box-content">
+                                <p>Envía lo siguiente en el formato solicitado por tu instructore:</p>
+                                <ol class="ul-step-list" style="margin-top: 1rem;">
+                                    <li>Enlace a tu sitio de GitHub Pages (la página en español: <code>inicio.html</code>)</li>
+                                    <li>Tu reflexión escrita que aborda las cuatro áreas</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Navigation - Content loaded via JavaScript -->
+                    <div class="topic-nav"></div>
+                </div>
+
+                <!-- Footer - Content loaded via JavaScript -->
+                <footer class="site-footer"></footer>
+
+            </main>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="../assets/js/header.js"></script>
+    <script src="../assets/js/language-switcher.js"></script>
+    <script src="../assets/js/topic-navigation.js"></script>
+    <script src="../assets/js/footer.js"></script>
+</body>
+</html>

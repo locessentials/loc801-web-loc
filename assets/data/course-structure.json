@@ -199,6 +199,14 @@
           {
             "label": "Translation Technology Scorecard",
             "url": "/t-7/technology-scorecard.html"
+          },
+          {
+            "label": "Python Patrol Project",
+            "url": "/t-7/python-patrol-project.html"
+          },
+          {
+            "label": "Topic 7 Conclusion",
+            "url": "/t-7/topic-7-conclusion.html"
           }
         ]
       },
@@ -434,6 +442,14 @@
           {
             "label": "Scorecard - Tecnología TAC",
             "url": "/t-7/scorecard-tecnología.html"
+          },
+          {
+            "label": "Proyecto de Python Patrol",
+            "url": "/t-7/proyecto-python-patrol.html"
+          },
+          {
+            "label": "Tema 7 - Conclusión",
+            "url": "/t-7/tema-7-conclusión.html"
           }
         ]
       },
