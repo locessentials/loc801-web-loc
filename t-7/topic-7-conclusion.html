@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Review key concepts from Topic 7 on translation technology, CAT tools, segmentation, and the Python Patrol localization project.">
+    <meta name="keywords" content="CAT tool conclusion, translation technology review, TEnT evaluation, segmentation web localization, translation memory summary, Python Patrol project">
+
+    <!-- Open Graph for social media -->
+    <meta property="og:title" content="Topic 7 Conclusion | Loc801">
+    <meta property="og:description" content="Review and reflect on translation technology options, CAT tool evaluation, segmentation trade-offs, and hands-on web localization experience.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://loc801.locessentials.com/t-7/topic-7-conclusion.html">
+    <meta property="og:image" content="https://loc801.locessentials.com/assets/images/LocCapTransparentTilted.png">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://loc801.locessentials.com/t-7/topic-7-conclusion.html">
+
+    <!-- Language alternates -->
+    <link rel="alternate" hreflang="en" href="topic-7-conclusion.html">
+    <link rel="alternate" hreflang="es" href="tema-7-conclusión.html">
+    <link rel="alternate" hreflang="x-default" href="topic-7-conclusion.html">
+
+    <title>Topic 7 Conclusion | Loc801</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../assets/styles/styles.css">
+</head>
+<body>
+    <div class="page-wrapper">
+        <div class="main-content-wrapper">
+            <main class="main-content">
+
+                <!-- Header -->
+                <header>
+                    <div class="header-content">
+                        <div class="logo-section">
+                            <img src="../assets/images/LocCapTransparentTilted.png" alt="LocEssentials cap logo" class="logo">
+                            <a href="/" class="course-title">Loc801: Web Localization for Beginners</a>
+                        </div>
+                        <div class="header-actions">
+                            <a href="/outline.html" class="outline-btn">
+                                <span>📋</span>
+                                <span>Outline</span>
+                            </a>
+                            <div class="lang-picker">
+                                <button class="lang-btn" data-lang="en">English</button>
+                                <button class="lang-btn" data-lang="es">Español</button>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+
+                <!-- Main Content -->
+                <div class="container">
+                    <nav class="breadcrumb">
+                        <a href="/">Course Home</a>
+                        <span class="breadcrumb-separator">›</span>
+                        <a href="/t-7/topic-7-primer.html">Topic 7</a>
+                        <span class="breadcrumb-separator">›</span>
+                        <span>Conclusion</span>
+                    </nav>
+
+                    <div class="topic-header">
+                        <span class="topic-number">TOPIC 7</span>
+                        <h1 class="topic-title">Topic 7 Conclusion</h1>
+                        <p class="topic-description">
+                            Reflect on what you've learned about translation technology options, the trade-offs of CAT tool segmentation, and what your hands-on Python Patrol project revealed about real-world web localization.
+                        </p>
+                    </div>
+
+                    <div class="content-section">
+                        <h2 class="section-title">
+                            <span class="section-icon">🗝️</span>
+                            Key Takeaways
+                        </h2>
+                        <ul class="objectives-list">
+                            <li class="objective-item">CAT tools — also known as Translation Environment Tools (TEnTs) — are professional tools with genuine strengths in terminology consistency, translation memory reuse, and workflow management, but they are not always the right choice for website copy</li>
+                            <li class="objective-item">Segmentation — the process of breaking content into individual sentences before translation — is the foundational methodology of most TEnTs. While translators can still see surrounding context, segmentation encourages a sentence-by-sentence approach that works against natural flow.</li>
+                            <li class="objective-item">The "prison cell" problem is real: sentence-by-sentence translation prevents the pragmatic restructuring that makes localized content read like it was written for the target audience rather than translated from another language</li>
+                            <li class="objective-item">CAT tools perform best on technical content with high repetition — help documentation, technical texts, product specifications — where consistency across segments matters more than natural narrative flow</li>
+                            <li class="objective-item">Webpage copy, blog posts, and calls to action are cases where segmentation causes the most damage, because these rely on voice, tone, and paragraph-level coherence that segment-by-segment translation cannot preserve</li>
+                            <li class="objective-item">SEO and LLM discoverability in the target language depend on the translated content reading naturally to native speakers — awkward phrasing, calques, and unnatural word order signal to both search algorithms and AI systems that content was not written with the target audience in mind</li>
+                            <li class="objective-item">Machine translation integrated into a TEnT can accelerate a professional post-editing workflow — but only when a qualified translator is reviewing and correcting the output; unreviewed MT output produces UVT, not PVT</li>
+                            <li class="objective-item">Localizing content that lives outside the main HTML file — such as JavaScript strings, configuration files, or dynamically loaded data — requires deliberate attention and is often overlooked in CAT tool workflows</li>
+                            <li class="objective-item">Link localization is a meaningful part of web localization work: external links should be checked for language-appropriate equivalents, and internal links must be updated to point to the correct localized pages</li>
+                            <li class="objective-item">The Translation Technology Scorecard gives you a structured way to compare TEnTs across dimensions that matter specifically for web localization: file format support, collaboration features, terminology management, MT quality, automated QA, and CMS integration</li>
+                            <li class="objective-item">Not all TEnT criteria carry equal weight for every project — a solo translator localizing a small static site has different needs than a distributed team managing a multilingual e-commerce platform with continuous content updates</li>
+                            <li class="objective-item">The most valuable skill in evaluating translation technology is not knowing which tool is "best" — it is knowing which tool is right for a given project, audience, content type, and workflow, and being able to explain why</li>
+                        </ul>
+                    </div>
+
+                    <div class="content-section">
+                        <h2 class="section-title">
+                            <span class="section-icon">♻️</span>
+                            Reflect on Your Learning
+                        </h2>
+                        <div class="resource-box" style="margin-bottom: 2rem;">
+                            <p class="resource-content">
+                                Take a moment to consider these questions. You don't need to write formal responses, but thinking through them will help solidify your understanding.
+                            </p>
+                        </div>
+
+                        <div class="instruction-steps">
+                            <div class="instruction-step">
+                                <div class="step-number">1</div>
+                                <h3 class="step-title">Predictions vs. Reality</h3>
+                            </div>
+                            <div>
+                                <p class="step-content" style="margin-bottom: .7rem;">
+                                    Go back to the predictions you made in the Segmentation Forum before completing the Python Patrol project. How well did your predictions match what you actually experienced? Were there problems you anticipated that didn't materialize — or problems that surprised you? What did using the tool teach you that reading about segmentation alone couldn't?
+                                </p>
+                            </div>
+
+                            <div class="instruction-step">
+                                <div class="step-number">2</div>
+                                <h3 class="step-title">Right Tool, Right Job</h3>
+                            </div>
+                            <div>
+                                <p class="step-content" style="margin-bottom: .7rem;">
+                                    Think about the range of web localization projects you've encountered or can imagine — a small nonprofit's bilingual resource site, a high-volume e-commerce platform, a frequently updated news publication, a legal services firm. For each type, consider: would you recommend using a TEnT? Which features would matter most? Are there projects where you would advise against using a CAT tool for the web copy — and what would you recommend instead?
+                                </p>
+                            </div>
+
+                            <div class="instruction-step">
+                                <div class="step-number">3</div>
+                                <h3 class="step-title">Your Python Patrol Site</h3>
+                            </div>
+                            <div>
+                                <p class="step-content">
+                                    Look at the Spanish page you published. Read it as someone who speaks Miami Spanish natively would read it. Does it sound like content written for that audience, or does it sound like translated content? What specific choices — in word selection, sentence structure, tone, or metadata — reflect the quality of the CAT tool's output? What did you change, and what do you wish you had caught sooner?
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-section">
+                        <h2 class="section-title">
+                            <span class="section-icon">🗺️</span>
+                            Coming Up Next
+                        </h2>
+                        <p class="intro-text">
+                            You've now worked through the full translation technology decision — from evaluating tools against a structured scorecard, to experiencing firsthand what segment-by-segment translation does in practice. Combined with everything you've built in earlier topics, you're developing a well-rounded picture of what professional web localization actually requires.
+                        </p>
+                        <div class="info-box">
+                            <div class="info-box-title">Topic 8: Multilingual WordPress — Website Localization Within Content Management Systems</div>
+                            <div class="info-box-content">
+                                In Topic 8, you'll move from translation technology into the CMS layer where much of the real-world web localization work actually happens. You'll survey the CMS landscape and look closely at WordPress — the platform that powers roughly 43% of the web. You'll learn how to add a language picker to a WordPress site and take an honest look at the hidden costs of hosting with WordPress. This topic bridges your technical and translation skills with the practical realities of managing multilingual content inside a live CMS.
+                            </div>
+                        </div>
+
+                        <div class="tip-box">
+                            <div class="tip-box-title">💡 Before You Move On</div>
+                            <div class="tip-box-content">
+                                Make sure your Python Patrol project is complete, published to GitHub Pages, and reflects your best post-editing work — not just the raw CAT tool output. The reflection you wrote alongside it is just as important as the site itself: it shows that you can evaluate translation quality critically, not just produce a translated page.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Navigation - Content loaded via JavaScript -->
+                    <div class="topic-nav"></div>
+                </div>
+
+                <!-- Footer - Content loaded via JavaScript -->
+                <footer class="site-footer"></footer>
+
+            </main>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="../assets/js/header.js"></script>
+    <script src="../assets/js/language-switcher.js"></script>
+    <script src="../assets/js/topic-navigation.js"></script>
+    <script src="../assets/js/footer.js"></script>
+</body>
+</html>

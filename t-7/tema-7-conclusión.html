@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Revisa los conceptos clave del Tema 7 sobre tecnología de traducción, herramientas TAC, segmentación y el proyecto de localización Python Patrol.">
+    <meta name="keywords" content="conclusión herramientas TAC, revisión tecnología de traducción, evaluación TEnT, segmentación localización web, resumen memoria de traducción, proyecto Python Patrol">
+
+    <!-- Open Graph para redes sociales -->
+    <meta property="og:title" content="Tema 7 Conclusión | Loc801">
+    <meta property="og:description" content="Revisa y reflexiona sobre las opciones de tecnología de traducción, la evaluación de herramientas TAC, las ventajas y desventajas de la segmentación, y tu experiencia práctica de localización web.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://loc801.locessentials.com/t-7/tema-7-conclusión.html">
+    <meta property="og:image" content="https://loc801.locessentials.com/assets/images/LocCapTransparentTilted.png">
+
+    <!-- URL canónica -->
+    <link rel="canonical" href="https://loc801.locessentials.com/t-7/tema-7-conclusión.html">
+
+    <!-- Alternativas de idioma -->
+    <link rel="alternate" hreflang="es" href="tema-7-conclusión.html">
+    <link rel="alternate" hreflang="en" href="topic-7-conclusion.html">
+    <link rel="alternate" hreflang="x-default" href="topic-7-conclusion.html">
+
+    <title>Tema 7 Conclusión | Loc801</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Hojas de estilo -->
+    <link rel="stylesheet" href="../assets/styles/styles.css">
+</head>
+<body>
+    <div class="page-wrapper">
+        <div class="main-content-wrapper">
+            <main class="main-content">
+
+                <!-- Encabezado -->
+                <header>
+                    <div class="header-content">
+                        <div class="logo-section">
+                            <img src="../assets/images/LocCapTransparentTilted.png" alt="Logo de gorra LocEssentials" class="logo">
+                            <a href="/" class="course-title">Loc801: Localización Web para Principiantes</a>
+                        </div>
+                        <div class="header-actions">
+                            <a href="/esquema.html" class="outline-btn">
+                                <span>📋</span>
+                                <span>Esquema</span>
+                            </a>
+                            <div class="lang-picker">
+                                <button class="lang-btn" data-lang="en">English</button>
+                                <button class="lang-btn" data-lang="es">Español</button>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+
+                <!-- Contenido principal -->
+                <div class="container">
+                    <nav class="breadcrumb">
+                        <a href="/">Inicio del curso</a>
+                        <span class="breadcrumb-separator">›</span>
+                        <a href="/t-7/tema-7-intro.html">Tema 7</a>
+                        <span class="breadcrumb-separator">›</span>
+                        <span>Conclusión</span>
+                    </nav>
+
+                    <div class="topic-header">
+                        <span class="topic-number">TEMA 7</span>
+                        <h1 class="topic-title">Tema 7 Conclusión</h1>
+                        <p class="topic-description">
+                            Reflexiona sobre lo que aprendiste acerca de las opciones de tecnología de traducción, las ventajas y desventajas de la segmentación en las herramientas TAC, y lo que el proyecto práctico Python Patrol reveló sobre la localización web en el mundo real.
+                        </p>
+                    </div>
+
+                    <div class="content-section">
+                        <h2 class="section-title">
+                            <span class="section-icon">🗝️</span>
+                            Puntos Clave
+                        </h2>
+                        <ul class="objectives-list">
+                            <li class="objective-item">Las herramientas TAC — conocidas también como entornos de traducción asistida, o TEnT (Translation Environment Tools) — son herramientas profesionales con fortalezas reales en coherencia terminológica, reutilización de memorias de traducción y gestión de flujos de trabajo, pero no siempre son la mejor opción para el texto de sitios web</li>
+                            <li class="objective-item">La segmentación — el proceso de dividir el contenido en oraciones individuales antes de traducirlo — es la metodología fundamental de la mayoría de los TEnT; aunque el contexto circundante sigue siendo visible, la segmentación invita a traducir oración por oración, lo que puede dificultar lograr un flujo natural</li>
+                            <li class="objective-item">El problema de la "celda de prisión" es real: la traducción oración por oración impide la reestructuración pragmática que hace que el contenido localizado suene como si hubiera sido escrito para la audiencia de destino, en lugar de traducido desde otro idioma</li>
+                            <li class="objective-item">Las herramientas TAC funcionan mejor con contenido técnico de alta repetición — documentación de ayuda, textos técnicos, especificaciones de productos — donde la coherencia entre segmentos importa más que el flujo narrativo natural</li>
+                            <li class="objective-item">El texto de páginas web, las entradas de blog y las llamadas a la acción son unos casos donde la segmentación causa más daño, porque dependen de la voz, el tono y la coherencia a nivel de párrafo que la traducción segmento por segmento no puede preservar</li>
+                            <li class="objective-item">El posicionamiento en buscadores y la visibilidad en sistemas de IA en el idioma de destino dependen de que el contenido traducido suene natural para las personas que hablan ese idioma de forma nativa — las frases torpes, los calcos y el orden de palabras no natural son señales para los algoritmos de búsqueda y los sistemas de IA de que el contenido no fue escrito pensando en esa audiencia</li>
+                            <li class="objective-item">La traducción automática integrada en un TEnT puede acelerar un flujo de trabajo de posedición profesional — pero solo cuando una persona traductora calificada revisa y corrige el resultado; el resultado de la traducción automática sin revisión produce UVT, no PVT</li>
+                            <li class="objective-item">Localizar el contenido que vive fuera del archivo HTML principal — como cadenas en JavaScript, archivos de configuración o datos cargados de forma dinámica — requiere atención deliberada y con frecuencia pasa desapercibido en los flujos de trabajo de las herramientas TAC</li>
+                            <li class="objective-item">La localización de enlaces es una parte significativa del trabajo de localización web: los enlaces externos deben verificarse para encontrar equivalentes en el idioma de destino, y los enlaces internos deben actualizarse para apuntar a las páginas localizadas correctas</li>
+                            <li class="objective-item">El scorecard de evaluación de tecnología de traducción ofrece una manera estructurada de comparar TEnT en dimensiones que importan específicamente para la localización web: compatibilidad de formatos de archivo, funciones de colaboración, gestión terminológica, calidad de la TA, control de calidad automatizado e integración con sistemas de gestión de contenido</li>
+                            <li class="objective-item">No todos los criterios de evaluación de un TEnT tienen el mismo peso en todos los proyectos — quien traduce de forma independiente para un sitio estático pequeño tiene necesidades muy distintas a las de un equipo distribuido que gestiona una plataforma de comercio electrónico multilingüe con actualizaciones continuas de contenido</li>
+                            <li class="objective-item">La habilidad más valiosa para evaluar tecnología de traducción no es saber cuál herramienta es "la mejor" — es saber cuál es la adecuada para un proyecto, audiencia, tipo de contenido y flujo de trabajo específicos, y ser capaz de explicar por qué</li>
+                        </ul>
+                    </div>
+
+                    <div class="content-section">
+                        <h2 class="section-title">
+                            <span class="section-icon">♻️</span>
+                            Reflexiona sobre tu Aprendizaje
+                        </h2>
+                        <div class="resource-box" style="margin-bottom: 2rem;">
+                            <p class="resource-content">
+                                Tómate un momento para considerar estas preguntas. No necesitas escribir respuestas formales, pero pensar en ellas te ayudará a solidificar tu comprensión.
+                            </p>
+                        </div>
+
+                        <div class="instruction-steps">
+                            <div class="instruction-step">
+                                <div class="step-number">1</div>
+                                <h3 class="step-title">Predicciones vs. Realidad</h3>
+                            </div>
+                            <div>
+                                <p class="step-content" style="margin-bottom: .7rem;">
+                                    Vuelve a las predicciones que hiciste en el Foro de Segmentación antes de completar el proyecto Python Patrol. ¿Qué tan bien coincidieron tus predicciones con lo que experimentaste en la práctica? ¿Hubo problemas que anticipaste y que no ocurrieron — o problemas que te sorprendieron? ¿Qué te enseñó el uso de la herramienta que la lectura sobre segmentación por sí sola no pudo enseñarte?
+                                </p>
+                            </div>
+
+                            <div class="instruction-step">
+                                <div class="step-number">2</div>
+                                <h3 class="step-title">La Herramienta Correcta para Cada Trabajo</h3>
+                            </div>
+                            <div>
+                                <p class="step-content" style="margin-bottom: .7rem;">
+                                    Piensa en la variedad de proyectos de localización web que has encontrado o puedes imaginar — el sitio bilingüe de una organización sin fines de lucro, una plataforma de comercio electrónico de gran volumen, una publicación de noticias que se actualiza frecuentemente, un despacho de servicios legales. Para cada tipo, considera: ¿recomendarías usar un TEnT? ¿Qué funciones serían más importantes? ¿Hay proyectos en los que aconsejarías no usar una herramienta TAC para el texto del sitio — y qué recomendarías en su lugar?
+                                </p>
+                            </div>
+
+                            <div class="instruction-step">
+                                <div class="step-number">3</div>
+                                <h3 class="step-title">Tu Sitio Python Patrol</h3>
+                            </div>
+                            <div>
+                                <p class="step-content">
+                                    Observa la página en español que publicaste. Léela como lo haría alguien que habla español de Miami de forma nativa. ¿Suena como contenido escrito para esa audiencia, o suena como contenido traducido? ¿Qué decisiones concretas — en la elección de palabras, la estructura de las oraciones, el tono o los metadatos — reflejan la calidad del resultado de la herramienta TAC? ¿Qué modificaste, y qué desearías haber detectado antes?
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-section">
+                        <h2 class="section-title">
+                            <span class="section-icon">🗺️</span>
+                            Lo que Sigue
+                        </h2>
+                        <p class="intro-text">
+                            Ahora has trabajado a través de toda la decisión sobre tecnología de traducción — desde evaluar herramientas con un scorecard estructurado, hasta experimentar en primera persona lo que hace la traducción segmento por segmento en la práctica. Junto con todo lo que has construido en los temas anteriores, estás desarrollando una visión integral de lo que la localización web profesional realmente requiere.
+                        </p>
+                        <div class="info-box">
+                            <div class="info-box-title">Tema 8: WordPress Multilingüe — Localización Web dentro de los Sistemas de Gestión de Contenido</div>
+                            <div class="info-box-content">
+                                En el Tema 8, pasarás de la tecnología de traducción a la capa de gestión de contenido donde ocurre gran parte del trabajo real de localización web. Explorarás el panorama de los sistemas de gestión de contenido y analizarás en detalle WordPress — la plataforma que impulsa aproximadamente el 43% de la web. Aprenderás a agregar un selector de idioma a un sitio de WordPress y examinarás con honestidad los costos ocultos de alojar un sitio en WordPress. Este tema conecta tus habilidades técnicas y de traducción con las realidades prácticas de gestionar contenido multilingüe dentro de un sistema de gestión de contenido activo.
+                            </div>
+                        </div>
+
+                        <div class="tip-box">
+                            <div class="tip-box-title">💡 Antes de Continuar</div>
+                            <div class="tip-box-content">
+                                Asegúrate de que tu proyecto Python Patrol esté completo, publicado en GitHub Pages, y refleje tu mejor trabajo de posedición — no solo el resultado sin procesar de la herramienta TAC. La reflexión que escribiste junto al proyecto es tan importante como el sitio en sí: demuestra que puedes evaluar la calidad de la traducción de forma crítica, y no solo producir una página traducida.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Navigation - Content loaded via JavaScript -->
+                    <div class="topic-nav"></div>
+                </div>
+
+                <!-- Footer - Content loaded via JavaScript -->
+                <footer class="site-footer"></footer>
+
+            </main>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="../assets/js/header.js"></script>
+    <script src="../assets/js/language-switcher.js"></script>
+    <script src="../assets/js/topic-navigation.js"></script>
+    <script src="../assets/js/footer.js"></script>
+</body>
+</html>
