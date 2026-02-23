@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Una herramienta de evaluación para seleccionar herramientas de entorno de traducción (TEnT) en proyectos de localización web, con criterios de colaboración, terminología y calidad de traducción automática.">
+    <meta name="keywords" content="evaluación herramientas TAC, TEnT localización web, memoria de traducción, gestión terminológica, traducción automática, localización sitios web">
+
+    <!-- Open Graph para redes sociales -->
+    <meta property="og:title" content="Puntuación de Tecnología de Traducción: Localización Web | Tema 7 | Loc801">
+    <meta property="og:description" content="Usa esta herramienta de evaluación para comparar herramientas de entorno de traducción en proyectos de localización web.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://loc801.locessentials.com/t-7/scorecard-tecnología.html">
+    <meta property="og:image" content="https://loc801.locessentials.com/assets/images/LocCapTransparentTilted.png">
+
+    <!-- URL canónica -->
+    <link rel="canonical" href="https://loc801.locessentials.com/t-7/scorecard-tecnología.html">
+
+    <!-- Alternativas de idioma -->
+    <link rel="alternate" hreflang="es" href="scorecard-tecnología.html">
+    <link rel="alternate" hreflang="en" href="technology-scorecard.html">
+    <link rel="alternate" hreflang="x-default" href="technology-scorecard.html">
+
+    <title>Puntuación de Tecnología de Traducción: Localización Web | Tema 7 | Loc801</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Hojas de estilo -->
+    <link rel="stylesheet" href="../assets/styles/styles.css">
+    <link rel="stylesheet" href="../assets/styles/checklist.css">
+</head>
+<body>
+    <div class="page-wrapper">
+        <div class="main-content-wrapper">
+            <main class="main-content">
+                <!-- Encabezado -->
+                <header>
+                    <div class="header-content">
+                        <div class="logo-section">
+                            <img src="../assets/images/LocCapTransparentTilted.png" alt="Logo de LocEssentials" class="logo">
+                            <a href="/" class="course-title">Loc801: Localización Web para Principiantes</a>
+                        </div>
+                        <div class="header-actions">
+                            <a href="/outline.html" class="outline-btn">
+                                <span>📋</span>
+                                <span>Esquema</span>
+                            </a>
+                            <div class="lang-picker">
+                                <button class="lang-btn" data-lang="en">English</button>
+                                <button class="lang-btn" data-lang="es">Español</button>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+
+                <!-- Contenido principal -->
+                <div class="container">
+                    <nav class="breadcrumb">
+                        <a href="/">Inicio del curso</a>
+                        <span class="breadcrumb-separator">›</span>
+                        <a href="/t-7/introducción-tema-7.html">Tema 7</a>
+                        <span class="breadcrumb-separator">›</span>
+                        <span>Scorecard de Tecnología de Traducción</span>
+                    </nav>
+
+                    <div class="page-header">
+                        <span class="topic-number">TEMA 7</span>
+                        <h1 class="topic-title">Scorecard de Tecnología de Traducción: Tomar una Decisión Informada</h1>
+                        <p class="topic-description">
+                            Una herramienta de evaluación centrada en la localización web para comparar herramientas de entorno de traducción: desde el manejo de archivos web hasta la colaboración en equipo, la coherencia terminológica y la calidad de la traducción automática.
+                        </p>
+                    </div>
+
+                    <!-- Objetivos de aprendizaje -->
+                    <div class="content-section">
+                        <h2 class="section-title">
+                            <span class="section-icon">🎯</span>
+                            Objetivos de aprendizaje
+                        </h2>
+                        <ul class="objectives-list">
+                            <li class="objective-item">Identificar las funciones de las TEnT (Translation Environment Tools) que más importan en un contexto de localización web</li>
+                            <li class="objective-item">Evaluar las funciones de colaboración y flujo de trabajo que apoyan a equipos de traducción distribuidos</li>
+                            <li class="objective-item">Analizar el diseño del módulo de terminología y su impacto en la coherencia de la marca y el contenido</li>
+                            <li class="objective-item">Comparar la calidad de la integración de traducción automática e inteligencia artificial generativa en distintas herramientas</li>
+                            <li class="objective-item">Aplicar un proceso de evaluación estructurado para comparar dos o más TEnT</li>
+                        </ul>
+                    </div>
+
+                    <!-- Una advertencia importante -->
+                    <div class="content-section">
+                        <h2 class="section-title">
+                            <span class="section-icon">⚠️</span>
+                            Antes de recurrir a una herramienta TAC
+                        </h2>
+
+                        <p class="intro-text">
+                            Seamos directos: para la mayoría de los textos de sitios web, no recomendamos el uso de herramientas de traducción asistida por computadora (TAC), también conocidas como herramientas de entorno de traducción o TEnT.
+                        </p>
+
+                        <div class="how-to-use">
+                            <div class="how-to-use-icon">💡</div>
+                            <div class="how-to-use-text">
+                                <strong>¿Por qué no?</strong> Los textos de un sitio web, especialmente las páginas de destino, las llamadas a la acción y los artículos de blog, están escritos para persuadir, generar interés y convertir visitantes en clientes. Dependen de la voz, el ritmo y la resonancia cultural. Las herramientas TAC están optimizadas para traducir documentos, textos legales y contenido técnico donde la coherencia y la eficiencia son prioritarias. Cuando se procesa el contenido web a través de una TEnT, el resultado suele ser técnicamente correcto pero tonalmente plano. Tu sitio localizado merece algo mejor.
+                            </div>
+                        </div>
+
+                        <p class="regular-text">
+                            Dicho esto, hay casos legítimos en los que una TEnT puede ser útil en un flujo de trabajo de localización web. Si el sitio incluye grandes volúmenes de contenido estructurado y técnico, como documentación de ayuda, especificaciones de productos, preguntas frecuentes de soporte o cadenas de interfaz en una aplicación compleja, una TEnT puede ofrecer beneficios reales en términos de eficiencia y coherencia.
+                        </p>
+
+                        <p class="conclusion-text">
+                            Si ya evaluaste tu proyecto y decidiste que una TEnT es la herramienta adecuada, esta puntuación te ayudará a elegir la más conveniente. Completa cada sección y compara los resultados al final.
+                        </p>
+                    </div>
+
+                    <!-- Cómo usar esta herramienta -->
+                    <div class="content-section">
+                        <h2 class="section-title">
+                            <span class="section-icon">📋</span>
+                            Cómo usar esta herramienta de evaluación
+                        </h2>
+
+                        <div class="how-to-use">
+                            <div class="how-to-use-icon">🗂️</div>
+                            <div class="how-to-use-text">
+                                <strong>Prueba antes de puntuar.</strong> Dedica entre dos y cuatro horas a trabajar con cada TEnT usando contenido real de tu sitio —idealmente una combinación de cadenas de interfaz, un artículo de ayuda y contenido técnico como especificaciones de productos. Las puntuaciones basadas en demos o videos no reflejan la experiencia real. Utiliza el mismo contenido fuente en todas las herramientas que estés comparando para que los resultados sean significativos.
+                            </div>
+                        </div>
+
+                        <p class="conclusion-text">
+                            La herramienta de evaluación está organizada en siete áreas. Cada área incluye criterios específicos, una escala de puntuación y espacio para notas. Califica cada criterio y luego calcula una puntuación por sección. La sección final te ofrece un total ponderado para comparar las herramientas entre sí.
+                        </p>
+                    </div>
+
+                    <!-- La herramienta de evaluación -->
+                    <div class="content-section">
+                        <h2 class="section-title">
+                            <span class="section-icon">📊</span>
+                            La herramienta de evaluación
+                        </h2>
+
+                        <!-- 1. Compatibilidad con formatos de archivo web -->
+                        <div class="checklist-section">
+                            <div class="proficiency-card full-width">
+                                <div class="proficiency-header">
+                                    <div class="proficiency-icon">🌐</div>
+                                    <h3 class="proficiency-title">1. Compatibilidad con formatos de archivo y contenido web</h3>
+                                </div>
+                                <div class="proficiency-body">
+                                    <p class="proficiency-description">
+                                        La mayoría de las TEnT diseñadas para la traducción de documentos también están configuradas para procesar los tipos de archivo que conforman un sitio web moderno. Aun así, antes de comprometerte con alguna herramienta, verifica que sea compatible con tus formatos de contenido reales, sin pérdida de datos ni daños al formato.
+                                    </p>
+                                    <div class="web-loc-context">
+                                        <span class="web-loc-context-label">🌐 Por qué importa en la localización web</span>
+                                        Los sitios web están construidos con contenido estructurado: archivos HTML, cadenas de recursos en JSON y YAML, exportaciones de WordPress u otros sistemas de gestión de contenido, archivos de localización JavaScript y gráficos SVG con texto integrado. Una TEnT que no pueda procesar estos formatos correctamente eliminará contenido, dañará la estructura del archivo u obligará a las personas que traducen a trabajar alrededor de la herramienta, lo cual anula el propósito de usarla.
+                                    </div>
+                                    <p class="indicators-label">Criterios a evaluar</p>
+                                    <ul class="indicators-list">
+                                        <li>Compatible con HTML y capaz de identificar correctamente el texto traducible sin exponer etiquetas sin procesar a quienes traducen</li>
+                                        <li>Maneja formatos JSON, YAML y .po (gettext) para cadenas de interfaz y exportaciones de CMS</li>
+                                        <li>Preserva el formato en línea (negritas, enlaces, variables y marcadores de posición) a lo largo del flujo de traducción</li>
+                                        <li>Procesa correctamente el contenido basado en XML, incluidos los archivos SVG con texto traducible</li>
+                                        <li>Ofrece una vista previa o una vista en paralelo para que quienes traducen vean las cadenas en contexto, no solo como segmentos aislados</li>
+                                        <li>Incluye advertencias de límite de caracteres y longitud de cadena para elementos de interfaz</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 2. Colaboración y flujo de trabajo -->
+                        <div class="checklist-section">
+                            <div class="proficiency-card full-width">
+                                <div class="proficiency-header">
+                                    <div class="proficiency-icon">🤝</div>
+                                    <h3 class="proficiency-title">2. Colaboración y flujo de trabajo</h3>
+                                </div>
+                                <div class="proficiency-body">
+                                    <p class="proficiency-description">
+                                        La localización web rara vez es un trabajo individual. Incluso en proyectos pequeños, suele participar al menos una persona traductora, una revisora y alguien que coordina el proyecto. En proyectos más grandes pueden intervenir múltiples traductores, personas con conocimiento especializado en el tema, revisoras en el país de destino y personas que aprueban el contenido desde el cliente. La infraestructura de colaboración de una TEnT puede marcar la diferencia entre un flujo de trabajo claro y responsable, y una cadena confusa de archivos enviados por correo.
+                                    </p>
+                                    <div class="web-loc-context">
+                                        <span class="web-loc-context-label">🌐 Por qué importa en la localización web</span>
+                                        El contenido de los sitios web cambia con frecuencia. Lanzamientos de productos, campañas estacionales y actualizaciones regulatorias generan ciclos de revisión constantes. Una TEnT que soporte flujos de trabajo estructurados, historial de versiones y comunicación clara entre los miembros del equipo reduce el riesgo de publicar traducciones desactualizadas o incoherentes.
+                                    </div>
+                                    <p class="indicators-label">Criterios a evaluar</p>
+                                    <ul class="indicators-list">
+                                        <li>Admite acceso basado en roles (traducción, revisión, gestión de proyectos, cliente) con permisos apropiados para cada perfil</li>
+                                        <li>Permite la colaboración en tiempo real o casi en tiempo real, de modo que varias personas puedan trabajar en el mismo proyecto simultáneamente</li>
+                                        <li>Cuenta con un sistema de notificaciones que avisa a los miembros del equipo cuando se asignan tareas, se completan o requieren atención</li>
+                                        <li>Incluye un sistema de comentarios que permite la comunicación a nivel de segmento—no solo por correo electrónico fuera de la herramienta</li>
+                                        <li>Los comentarios pueden adjuntarse a segmentos individuales y trasladarse a través de las etapas del flujo de trabajo (traducción → revisión → aprobación) para que el contexto no se pierda</li>
+                                        <li>Cuando se reutiliza un segmento de la memoria de traducción, los comentarios previamente asociados a ese segmento aparecen visibles, lo que permite a las personas revisoras conocer los antecedentes y la justificación de una decisión de traducción</li>
+                                        <li>Admite seguimiento de cambios e historial de revisiones para saber qué se modificó, quién lo hizo y cuándo</li>
+                                        <li>Permite a quienes gestionan proyectos seguir el avance tanto a nivel de archivo como de segmento, sin tener que interrumpir al equipo de traducción para solicitar actualizaciones de estado</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 3. Gestión terminológica -->
+                        <div class="checklist-section">
+                            <div class="proficiency-card full-width">
+                                <div class="proficiency-header">
+                                    <div class="proficiency-icon">📖</div>
+                                    <h3 class="proficiency-title">3. Gestión terminológica</h3>
+                                </div>
+                                <div class="proficiency-body">
+                                    <p class="proficiency-description">
+                                        La coherencia terminológica es un asunto de marca y usabilidad. Si en inglés el producto se llama "dashboard", la versión localizada debe usar el término acordado para ese idioma—siempre, en cada página. Un módulo de terminología bien diseñado garantiza esa coherencia en el momento de la traducción, no después durante la revisión de calidad.
+                                    </p>
+                                    <div class="web-loc-context">
+                                        <span class="web-loc-context-label">🌐 Por qué importa en la localización web</span>
+                                        En sitios web, las consecuencias de la incoherencia terminológica son significativas. Los motores de búsqueda indexan páginas individuales: si tu palabra clave SEO es "gestión de proyectos" en una página y "administración de proyectos" en otra, estás dividiendo tu relevancia. La interfaz se vuelve confusa si el mismo botón dice cosas distintas en páginas diferentes. Y la voz de marca se deteriora cuando los nombres de productos y los eslóganes se traducen de manera inconsistente.
+                                    </div>
+                                    <p class="indicators-label">Criterios a evaluar</p>
+                                    <ul class="indicators-list">
+                                        <li>Las entradas terminológicas están basadas en conceptos, no solo en palabras: cada entrada puede incluir una definición, una nota de uso y un contexto de aplicación</li>
+                                        <li>Es posible especificar términos prohibidos y alternativas preferidas por variante lingüística y dominio temático</li>
+                                        <li>La herramienta resalta o señala en tiempo real los términos reconocidos dentro del editor de traducción, sin que la persona traductora tenga que consultarlo manualmente</li>
+                                        <li>La revisión automática de calidad puede verificar el uso de términos y señalar segmentos con términos omitidos o incorrectos antes de la entrega</li>
+                                        <li>La base terminológica puede compartirse entre proyectos, para que la coherencia se mantenga a medida que el proyecto crece o se añaden nuevas lenguas</li>
+                                        <li>Existen opciones de importación y exportación—preferiblemente compatibles con TBX, el formato estándar de intercambio terminológico—para poder aprovechar recursos existentes</li>
+                                        <li>Las entradas pueden incluir metadatos gramaticales relevantes para la lengua de destino (género, formas plurales, declinaciones), especialmente importante para lenguas con morfología compleja</li>
+                                        <li>La interfaz para mantener la base terminológica es accesible para personas sin formación técnica en localización, de modo que el cliente o el equipo interno puedan actualizarla sin necesidad de asistencia especializada</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 4. Calidad de la integración de TA e IA -->
+                        <div class="checklist-section">
+                            <div class="proficiency-card full-width">
+                                <div class="proficiency-header">
+                                    <div class="proficiency-icon">🤖</div>
+                                    <h3 class="proficiency-title">4. Calidad de la integración de traducción automática e inteligencia artificial</h3>
+                                </div>
+                                <div class="proficiency-body">
+                                    <p class="proficiency-description">
+                                        La mayoría de las TEnT actuales ofrecen integración con uno o más motores de traducción automática (TA) y, cada vez con mayor frecuencia, con modelos de lenguaje de gran escala (LLM). La salida de TA y LLM puede funcionar como punto de partida para quienes traducen—pero la calidad de ese borrador varía considerablemente según el par lingüístico, el dominio y el motor. Evaluar esto requiere pruebas con contenido real y los pares lingüísticos de tu proyecto.
+                                    </p>
+                                    <div class="web-loc-context">
+                                        <span class="web-loc-context-label">🌐 Una advertencia fundamental: los LLM están entrenados principalmente en inglés</span>
+                                        La mayoría de los modelos de lenguaje de gran escala—incluidos los comerciales más ampliamente utilizados—fueron entrenados con conjuntos de datos en su mayoría en inglés. Su desempeño en otros idiomas varía considerablemente: algunos funcionan bien en las lenguas europeas más habladas, pero el rendimiento suele caer de forma notable en lenguas con menos recursos digitales. Además, los LLM tienden a producir resultados que <em>suenan fluidos</em> aunque sean incorrectos, lo que hace más difícil detectar errores. Nunca uses traducciones generadas por LLM sin revisión de una persona traductora profesional en la lengua de destino.
+                                    </div>
+                                    <p class="indicators-label">Criterios a evaluar</p>
+                                    <ul class="indicators-list">
+                                        <li>La herramienta ofrece acceso a múltiples motores de TA (por ejemplo, DeepL, Google Translate, Microsoft Translator), lo que permite seleccionar el motor de mayor calidad según la lengua meta</li>
+                                        <li>Existen opciones de integración con LLM (por ejemplo, modelos GPT, Gemini o DeepSeek) para lenguas donde los LLM puedan superar a la TA tradicional</li>
+                                        <li>Las sugerencias de TA y LLM están claramente marcadas como generadas por máquina, para que quienes traducen sepan qué segmentos requieren qué tipo de verificación</li>
+                                        <li>La herramienta admite TA adaptativa: el sistema aprende de las correcciones realizadas durante la posedición y mejora las sugerencias posteriores</li>
+                                        <li>Es posible personalizar o ajustar un motor de TA usando corpus y terminología propias para obtener traducciones que reflejen mejor el estilo, dominio y voz propios</li>
+                                        <li>La integración de TA y LLM puede desactivarse a nivel de proyecto o archivo para contenido sensible donde la pretraducción automática no sea adecuada</li>
+                                        <li>Existe transparencia sobre cómo los proveedores externos de TA y LLM gestionan tus datos—especialmente importante si el contenido incluye precios, descripciones propietarias de productos o lenguaje con implicaciones legales</li>
+                                        <li>Hay analíticas de uso disponibles (llamadas a la API, volumen, costos asociados) para controlar y gestionar el gasto en traducción automática</li>
+                                    </ul>
+
+                                    <div class="how-to-use" style="margin-top: 1.5rem;">
+                                        <div class="how-to-use-icon">⚠️</div>
+                                        <div class="how-to-use-text">
+                                            <strong>Una advertencia sobre las puntuaciones automáticas de calidad.</strong> Algunas TEnT muestran estimaciones automáticas de calidad junto con la salida de traducción automática: puntuaciones numéricas que pretenden indicar qué tan buena es una traducción generada por máquina. Estas puntuaciones deben interpretarse con cautela. La mayoría se basan en métricas como BLEU (<em>Bilingual Evaluation Understudy</em>), que miden qué tan literalmente la salida de TA coincide con una traducción de referencia, palabra por palabra. El problema es que BLEU y métricas similares premian las traducciones literales y apegadas al texto fuente, que son precisamente las que con frecuencia suenan poco naturales en la lengua de destino. Un segmento puede obtener una puntuación alta en BLEU y aun así sonar rígido, poco idiomático o con un tono equivocado para una persona lectora nativa. Usa estas puntuaciones como una señal aproximada de priorización, no como un juicio sobre la calidad real de la traducción. La revisión humana sigue siendo indispensable.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 5. Memoria de traducción -->
+                        <div class="checklist-section">
+                            <div class="proficiency-card full-width">
+                                <div class="proficiency-header">
+                                    <div class="proficiency-icon">🔁</div>
+                                    <h3 class="proficiency-title">5. Diseño de la memoria de traducción y coherencia</h3>
+                                </div>
+                                <div class="proficiency-body">
+                                    <p class="proficiency-description">
+                                        La memoria de traducción (MT) es una de las razones principales para usar una TEnT: los segmentos ya traducidos se almacenan y reutilizan, de modo que las personas que traducen no empiezan desde cero cada vez que aparece contenido similar o idéntico. Sin embargo, la calidad de la MT depende en gran medida de quién ha contribuido las traducciones y de cómo la herramienta gestiona las coincidencias, los umbrales de similitud y el contexto.
+                                    </p>
+                                    <div class="web-loc-context">
+                                        <span class="web-loc-context-label">🌐 Por qué importa en la localización web</span>
+                                        Los sitios web reutilizan contenido de formas que no siempre son evidentes: texto estándar en el pie de página, etiquetas de interfaz compartidas, avisos legales recurrentes, descripciones de productos generadas por plantillas. Un buen diseño de MT significa que este contenido se traduce una vez, se almacena y se reutiliza de forma coherente, en lugar de ser retraducido por personas distintas que toman decisiones ligeramente diferentes cada vez.
+                                    </div>
+                                    <p class="indicators-label">Criterios a evaluar</p>
+                                    <ul class="indicators-list">
+                                        <li>La herramienta identifica qué persona tradujo cada segmento, lo que facilita aislar y eliminar todos los segmentos de un proveedor específico en caso de que surjan dudas sobre la calidad de su trabajo</li>
+                                        <li>La herramienta distingue entre coincidencias exactas, coincidencias contextuales (el mismo segmento en el mismo contenido circundante) y coincidencias aproximadas y presenta cada tipo de forma diferente</li>
+                                        <li>Existe coincidencia contextual: la herramienta considera los segmentos adyacentes al evaluar si una coincidencia es adecuada, no solo el texto del segmento de forma aislada</li>
+                                        <li>Los umbrales de coincidencia aproximada son configurables para decidir qué porcentaje de similitud activa una sugerencia frente a una traducción desde cero</li>
+                                        <li>Hay informes de aprovechamiento de MT disponibles para estimar costos, planificar plazos y comunicarse de forma eficiente con clientes y partes interesadas</li>
+                                        <li>Las MT pueden compartirse entre proyectos y entre miembros del equipo, para que todo el equipo se beneficie del trabajo realizado en proyectos anteriores</li>
+                                        <li>Las entradas de MT pueden editarse, anotarse o marcarse para revisión, de modo que los errores no se propaguen indefinidamente una vez que están en la memoria</li>
+                                        <li>La herramienta admite importación y exportación en formato TMX (el formato estándar de intercambio de memorias de traducción) para evitar quedar atrapado en un sistema propietario</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 6. Revisión automática de calidad -->
+                        <div class="checklist-section">
+                            <div class="proficiency-card full-width">
+                                <div class="proficiency-header">
+                                    <div class="proficiency-icon">✅</div>
+                                    <h3 class="proficiency-title">6. Revisión automática de calidad</h3>
+                                </div>
+                                <div class="proficiency-body">
+                                    <p class="proficiency-description">
+                                        La revisión automática de calidad ejecuta verificaciones en todos los segmentos traducidos antes de la entrega, detectando errores mecánicos que las personas revisoras pueden pasar por alto bajo presión de tiempo: espacios faltantes o sobrantes, segmentos sin traducir, errores de etiquetas, infracciones terminológicas, inconsistencias en el formato de números y fechas, y más.
+                                    </p>
+                                    <div class="web-loc-context">
+                                        <span class="web-loc-context-label">🌐 Por qué importa en la localización web</span>
+                                        Las etiquetas HTML rotas o los marcadores de posición mal formados en un archivo localizado pueden dañar una página web o hacer que un CMS rechace el archivo por completo. La revisión automática que verifica la integridad de las etiquetas es especialmente importante para el contenido web. Una etiqueta de cierre faltante en una cadena traducida puede dejar toda una sección de la página sin funcionar.
+                                    </div>
+                                    <p class="indicators-label">Criterios a evaluar</p>
+                                    <ul class="indicators-list">
+                                        <li>Verificación de etiquetas: la herramienta comprueba que todas las etiquetas en línea del segmento fuente estén correctamente reproducidas en el segmento de destino</li>
+                                        <li>Revisión terminológica: la herramienta señala segmentos donde falta un término requerido o se ha utilizado un término prohibido</li>
+                                        <li>Verificaciones de coherencia: segmentos fuente idénticos o muy similares se comparan para confirmar que las decisiones de traducción son consistentes en todo el proyecto</li>
+                                        <li>Las verificaciones de números, fechas y puntuación son configurables para ajustarse a las convenciones de la variante lingüística de destino</li>
+                                        <li>La detección de segmentos sin traducir señala cualquier segmento que haya quedado en el idioma fuente</li>
+                                        <li>Los informes de revisión de calidad pueden exportarse para que los problemas puedan clasificarse, asignarse y dar seguimiento hasta su resolución</li>
+                                        <li>La revisión de calidad puede ejecutarse automáticamente en etapas definidas del flujo de trabajo, no solo manualmente a demanda</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 7. Integración con CMS y plataformas web -->
+                        <div class="checklist-section">
+                            <div class="proficiency-card full-width">
+                                <div class="proficiency-header">
+                                    <div class="proficiency-icon">🔌</div>
+                                    <h3 class="proficiency-title">7. Integración con CMS y plataformas web</h3>
+                                </div>
+                                <div class="proficiency-body">
+                                    <p class="proficiency-description">
+                                        Exportar el contenido del sitio web manualmente, cargarlo en la herramienta, traducirlo y luego descargar e importar de nuevo los archivos traducidos es tedioso, propenso a errores y genera riesgos de control de versiones, especialmente en sitios que se actualizan con frecuencia. La integración directa entre una TEnT y la plataforma web elimina esta fricción al permitir que el contenido fluya automáticamente hacia dentro y fuera del flujo de trabajo de traducción.
+                                    </p>
+                                    <div class="web-loc-context">
+                                        <span class="web-loc-context-label">🌐 Por qué importa en la localización web</span>
+                                        El ciclo manual de descarga-traducción-carga es una de las principales fuentes de ineficiencia y error en la localización web. Un conector de API o un plugin para el CMS significa que cuando se actualiza una página en el idioma fuente, puede marcarse automáticamente para traducción y asignarse a la persona traductora adecuada sin que nadie tenga que recordar hacerlo. En la etapa de entrega, las traducciones aprobadas pueden publicarse directamente en el sitio desde la TEnT sin que ningún desarrollador tenga que manipular un archivo. Para equipos que gestionan actualizaciones de contenido de forma continua en varios idiomas, esto no es una comodidad, es una necesidad.
+                                    </div>
+                                    <p class="indicators-label">Criterios a evaluar</p>
+                                    <ul class="indicators-list">
+                                        <li>Existe un conector nativo o plugin disponible para tu CMS (WordPress, Shopify, HubSpot u otros que utilices)</li>
+                                        <li>El contenido puede enviarse automáticamente desde el CMS a la TEnT cuando se detectan páginas nuevas o actualizadas, sin necesidad de exportar archivos manualmente</li>
+                                        <li>El contenido traducido puede publicarse de vuelta al CMS directamente desde la TEnT una vez aprobado, sin requerir descarga ni reimportación de archivos</li>
+                                        <li>El conector admite actualizaciones incrementales: solo se envían para traducción los segmentos que han cambiado, no la página completa cada vez</li>
+                                        <li>Cuando se envían segmentos modificados para traducción, la persona traductora tiene acceso al contexto en el que aparecerá la traducción</li>
+                                        <li>Existe una API pública disponible para equipos que utilizan una plataforma personalizada no cubierta por conectores prediseñados</li>
+                                        <li>La API está bien documentada y se mantiene activamente, con ejemplos de código disponibles para los entornos de desarrollo más comunes</li>
+                                        <li>Los webhooks o activadores basados en eventos empujan contenido al flujo de trabajo de traducción cuando cambia el contenido fuente</li>
+                                        <li>La integración preserva la estructura del contenido y los metadatos (campos SEO, slug, texto alternativo de imágenes) para que los elementos traducibles más allá del cuerpo principal del texto no se pasen por alto</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Resumen de puntuación -->
+                    <div class="content-section">
+                        <h2 class="section-title">
+                            <span class="section-icon">🧮</span>
+                            Cómo interpretar tus resultados
+                        </h2>
+
+                        <p class="intro-text">
+                            Para cada sección, califica la herramienta en una escala del 1 al 5 para cada criterio y luego calcula un promedio por sección. Usa la tabla a continuación para registrar las puntuaciones de cada herramienta que estés comparando. No todas las secciones tienen el mismo peso para todos los proyectos: ajusta la columna de ponderación según lo que más importa en tu caso específico.
+                        </p>
+
+                        <div class="proficiency-card full-width" style="margin-top: 1.5rem;">
+                            <div class="proficiency-header">
+                                <div class="proficiency-icon">📋</div>
+                                <h3 class="proficiency-title">Tabla resumen de puntuación</h3>
+                            </div>
+                            <div class="proficiency-body">
+                                <div class="web-loc-context">
+                                    <span class="web-loc-context-label">Cómo puntuar</span>
+                                    Califica cada criterio: <strong>1 = No disponible / Deficiente</strong> · <strong>2 = Mínimo / Con fallas</strong> · <strong>3 = Adecuado</strong> · <strong>4 = Bueno</strong> · <strong>5 = Excelente / Totalmente funcional</strong>. Calcula el promedio de la sección y multiplícalo por el porcentaje de peso asignado. Suma los puntajes ponderados para obtener un total final sobre 5.
+                                </div>
+                                <p class="indicators-label" style="margin-top: 1.25rem;">Pesos por sección (valores sugeridos)</p>
+                                <ul class="indicators-list">
+                                    <li><strong>Compatibilidad con formatos web (15%)</strong> — aumenta este peso si trabajas con archivos de aplicaciones web complejas; redúcelo si el contenido es principalmente documentos HTML</li>
+                                    <li><strong>Colaboración y flujo de trabajo (25%)</strong> — otorga más peso a esta sección en proyectos con equipos distribuidos o procesos de revisión en múltiples etapas</li>
+                                    <li><strong>Gestión terminológica (20%)</strong> — aumenta este peso si la coherencia de marca y el control de palabras clave SEO son prioritarios</li>
+                                    <li><strong>Calidad de la integración de TA e IA (15%)</strong> — aumenta este peso si la posedición de traducción automática es una parte central del flujo de trabajo</li>
+                                    <li><strong>Integración con CMS y plataformas web (15%)</strong> — aumenta este peso si el sitio se actualiza con frecuencia o gestionas múltiples idiomas de forma continua</li>
+                                    <li><strong>Memoria de traducción (5%)</strong> — aumenta este peso en proyectos con mucho contenido repetido distribuido en muchas páginas</li>
+                                    <li><strong>Revisión automática de calidad (5%)</strong> — se trata de un requisito mínimo; la mayoría de las herramientas serias lo cubren de manera adecuada</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Promoción del scorecard completo -->
+                    <div class="content-section">
+                        <h2 class="section-title">
+                            <span class="section-icon">📬</span>
+                            ¿Quieres profundizar más?
+                        </h2>
+
+                        <div class="checklist-intro-callout">
+                            <p>
+                                Estamos desarrollando una <strong>herramienta de evaluación completa para TEnT</strong> que va mucho más allá de esta página. Cubre experiencia e interfaz de usuario, seguridad y protección de datos, rendimiento bajo carga, capacidades de integración, modelos de precios y licencias, y calidad del soporte técnico del proveedor.
+                            </p>
+                            <p style="margin-top: 1rem;">
+                                La herramienta completa está diseñada para equipos que realizan un proceso serio de selección de tecnología: incluye metodología de ponderación, orientación para garantizar la consistencia entre evaluadores, procedimientos de comparación y plantillas para documentar los resultados.
+                            </p>
+                            <p style="margin-top: 1rem;">
+                                Si te interesa recibir una copia, escríbenos a <a href="mailto:info@locessentials.com" class="inline-link">info@locessentials.com</a>. Te añadiremos a la lista y te avisaremos en cuanto esté lista.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Navegación - Contenido cargado mediante JavaScript -->
+                    <div class="topic-nav"></div>
+                </div>
+
+                <!-- Pie de página - Contenido cargado mediante JavaScript -->
+                <footer class="site-footer"></footer>
+
+            </main>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="../assets/js/header.js"></script>
+    <script src="../assets/js/language-switcher.js"></script>
+    <script src="../assets/js/topic-navigation.js"></script>
+    <script src="../assets/js/footer.js"></script>
+</body>
+</html>

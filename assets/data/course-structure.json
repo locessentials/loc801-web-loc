@@ -195,6 +195,10 @@
           {
             "label": "Segmentation Forum",
             "url": "/t-7/segmentation-forum.html"
+          },
+          {
+            "label": "Translation Technology Scorecard",
+            "url": "/t-7/technology-scorecard.html"
           }
         ]
       },
@@ -426,6 +430,10 @@
           {
             "label": "Foro de Segmentación",
             "url": "/t-7/foro-segmentación.html"
+          },
+          {
+            "label": "Scorecard - Tecnología TAC",
+            "url": "/t-7/scorecard-tecnología.html"
           }
         ]
       },
