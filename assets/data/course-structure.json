@@ -237,6 +237,22 @@
           {
             "label": "Topic 10 Primer",
             "url": "/t-10/topic-10-primer.html"
+          },
+          {
+            "label": "Course Review",
+            "url": "/t-10/course-review.html"
+          },
+          {
+            "label": "Visual Design",
+            "url": "/t-10/visual-design.html"
+          },
+          {
+            "label": "Portfolio Project",
+            "url": "/t-10/portfolio-project.html"
+          },
+          {
+            "label": "Topic 10 Conclusion",
+            "url": "/t-10/topic-10-conclusion.html"
           }
         ]
       }
@@ -480,6 +496,22 @@
           {
             "label": "Tema 10 - Introducción",
             "url": "/t-10/tema-10-intro.html"
+          },
+          {
+            "label": "Repaso del Curso",
+            "url": "/t-10/repaso-curso.html"
+          },
+          {
+            "label": "Diseño Visual",
+            "url": "/t-10/diseño-visual.html"
+          },
+          {
+            "label": "Proyecto Portafolio",
+            "url": "/t-10/proyecto-portafolio.html"
+          },
+          {
+            "label": "Tema 10 - Conclusión",
+            "url": "/t-10/tema-10-conclusión.html"
           }
         ]
       }
