@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn what Localization Quality Assurance (LQA) is and how to apply a practical sanity checklist to catch common errors across translated content, code integrity, discoverability, and accessibility.">
+    <meta name="keywords" content="localization quality assurance, LQA, web localization review, translation checklist, hreflang, alt text, meta description, broken links, localized URLs">
+
+    <!-- Open Graph for social media -->
+    <meta property="og:title" content="Localization Quality Assurance (LQA) | Topic 9 | Loc801">
+    <meta property="og:description" content="A practical LQA sanity checklist for web localization projects — covering translated content, code integrity, SEO discoverability, and accessibility.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://loc801.locessentials.com/t-9/localization-quality-assurance.html">
+    <meta property="og:image" content="https://loc801.locessentials.com/assets/images/LocCapTransparentTilted.png">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://loc801.locessentials.com/t-9/localization-quality-assurance.html">
+
+    <!-- Language alternates -->
+    <link rel="alternate" hreflang="en" href="localization-quality-assurance.html">
+    <link rel="alternate" hreflang="es" href="aseguramiento-de-calidad.html">
+    <link rel="alternate" hreflang="x-default" href="localization-quality-assurance.html">
+
+    <title>Localization Quality Assurance (LQA) | Topic 9 | Loc801</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../assets/styles/styles.css">
+    <link rel="stylesheet" href="../assets/styles/checklist.css">
+</head>
+<body>
+    <div class="page-wrapper">
+        <div class="main-content-wrapper">
+            <main class="main-content">
+
+                <!-- Header -->
+                <header>
+                    <div class="header-content">
+                        <div class="logo-section">
+                            <img src="../assets/images/LocCapTransparentTilted.png" alt="LocEssentials cap logo" class="logo">
+                            <a href="/" class="course-title">Loc801: Web Localization for Beginners</a>
+                        </div>
+                        <div class="header-actions">
+                            <a href="/outline.html" class="outline-btn">
+                                <span>📋</span>
+                                <span>Outline</span>
+                            </a>
+                            <div class="lang-picker">
+                                <button class="lang-btn" data-lang="en">English</button>
+                                <button class="lang-btn" data-lang="es">Español</button>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+
+                <!-- Main Content -->
+                <div class="container">
+                    <nav class="breadcrumb">
+                        <a href="/">Course Home</a>
+                        <span class="breadcrumb-separator">›</span>
+                        <a href="/t-9/topic-9-primer.html">Topic 9</a>
+                        <span class="breadcrumb-separator">›</span>
+                        <span>Localization Quality Assurance (LQA)</span>
+                    </nav>
+
+                    <div class="page-header">
+                        <span class="topic-number">TOPIC 9</span>
+                        <h1 class="topic-title">Localization Quality Assurance (LQA)</h1>
+                        <p class="topic-description">
+                            LQA is the review process that catches what translation alone doesn't: broken code, missing strings, inaccessible content, and discoverability gaps. Here's what to look for and how to look for it.
+                        </p>
+                    </div>
+
+                    <!-- Learning Objectives -->
+                    <div class="content-section">
+                        <h2 class="section-title">
+                            <span class="section-icon">🎯</span>
+                            Learning Objectives
+                        </h2>
+                        <ul class="objectives-list">
+                            <li class="objective-item">Understand what LQA is and why it is distinct from translation review</li>
+                            <li class="objective-item">Identify the categories of errors most common in website and web application (and even game) localization</li>
+                            <li class="objective-item">Apply a practical LQA sanity checklist to a localized website</li>
+                            <li class="objective-item">Recognize quality issues related to code integrity, discoverability, and accessibility</li>
+                        </ul>
+                    </div>
+
+                    <!-- What is LQA -->
+                    <div class="content-section">
+                        <h2 class="section-title">
+                            <span class="section-icon">🔍</span>
+                            What Is Localization Quality Assurance?
+                        </h2>
+                        <p class="intro-text">
+                            Localization Quality Assurance (LQA) is the structured review process that verifies a localized product works correctly in its target language and locale. It goes well beyond checking whether the translation reads naturally. LQA asks whether the entire localized experience is complete, functional, findable, and accessible.
+                        </p>
+                        <p class="regular-text">
+                            In <strong>web localization</strong>, LQA means reviewing not just the body copy but every piece of text the site surfaces, including menus, error messages, browser tab titles, image alt texts, and form placeholders, as well as the underlying code that controls layout, behavior, and metadata. A missed string in a JSON file, a broken CSS class reference in a translated page, or a meta description left in the source language are all LQA failures, even if the translation itself is excellent.
+                        </p>
+                        <p class="regular-text-w-top-padding">
+                            LQA further extends to the user interface: button labels that get cut off when text expands in translation, date and number formats that don't match the target locale, and dialog boxes that overflow their containers. The website or web application has to be tested in the target language environment, not just read as a document.
+                        </p>
+                        <p class="conclusion-text">
+                            Video content adds another layer of complexity. At a minimum, videos should include subtitles in the user's language that sync with audio, though a more fully localized experience would include custom video content as well.
+                        </p>
+                    </div>
+
+                    <!-- Why LQA is its own discipline -->
+                    <div class="content-section">
+                        <h2 class="section-title">
+                            <span class="section-icon">⚙️</span>
+                            Why LQA Is Its Own Discipline
+                        </h2>
+                        <p class="intro-text">
+                            LQA is sometimes treated as a final proofreading pass: a translator gives the work one more read before it goes live. That's not LQA. It's a useful step, but it catches only linguistic errors that a reader would notice. It won't find a missing string in a navigation menu that's assembled dynamically from a JSON file. It won't catch a broken JavaScript function that prevents a form from submitting. It won't tell you whether your localized page is being indexed by search engines under the right language signals.
+                        </p>
+                        <p class="conclusion-text">
+                            Genuine LQA requires someone who understands how the site is built, which content lives in which files, which behaviors are controlled by JavaScript, and which metadata elements affect discoverability, and who reviews the live rendered output rather than the source documents alone. For a small course site like this one, that may be you. For larger projects, it may be a team of dedicated LQA specialists or a developer working alongside the translator.
+                        </p>
+                    </div>
+
+                    <!-- LQA CHECKLIST -->
+                    <div class="content-section">
+                        <h2 class="section-title">
+                            <span class="section-icon">✅</span>
+                            LQA Sanity Checklist
+                        </h2>
+
+                        <div class="checklist-intro-callout">
+                            The checklist below is organized from the most visible and straightforward items to the most technical. Work through it in order, as catching a completely untranslated page early saves you from reviewing it for everything else. Within each category, items are ordered from the simplest checks to the ones that require more technical investigation.
+                        </div>
+
+                        <div class="how-to-use">
+                            <div class="how-to-use-icon">💡</div>
+                            <div class="how-to-use-text">
+                                <strong>Review the live rendered page, not just the source files.</strong> Many LQA errors, such as missing translations and broken layouts, only become visible once the page is assembled and loaded in a browser. When in doubt, open the page in your browser and use the developer tools (F12 in most browsers) to inspect what's actually being rendered.
+                            </div>
+                        </div>
+
+                        <!-- Category 1 -->
+                        <div class="checklist-section">
+                            <div class="proficiency-card">
+                                <div class="proficiency-header">
+                                    <div class="proficiency-icon">🌐</div>
+                                    <h3 class="proficiency-title">Category 1 — Has Everything Been Translated?</h3>
+                                </div>
+                                <div class="proficiency-body">
+                                    <p class="proficiency-description">
+                                        Websites surface text from many different places, not just the main body copy, but structural elements assembled from separate files. A complete translation review means checking every place the site produces visible or functional text, not just the most obvious ones.
+                                    </p>
+                                    <div class="web-loc-context">
+                                        <span class="web-loc-context-label">📁 A note on where content lives</span>
+                                        In a well-structured site, repetitive elements like navigation menus, headers, and footers are typically generated dynamically from JSON or PO files rather than hard-coded into each HTML page. This is good practice for maintainability, but it means that untranslated strings in those files will silently produce untranslated output across every page they appear on. Always check the source files as well as the rendered output.
+                                    </div>
+                                    <p class="indicators-label">What to Check</p>
+                                    <ul class="indicators-list">
+                                        <li><strong>Page title and browser tab text</strong> — The <code>&lt;title&gt;</code> tag doesn't appear on the page itself, which makes it easy to forget. Check it in the page source or developer tools.</li>
+                                        <li><strong>Headers and footers</strong> — Including the site name, tagline, navigation labels, social links, and any legal text like copyright notices or privacy policy links.</li>
+                                        <li><strong>Menus and navigation</strong> — Both the main navigation and any secondary menus, dropdowns, or breadcrumb trails. In this course, these are generated from <code>course-structure.json</code>.</li>
+                                        <li><strong>Main body content</strong> — All headings, body text, callout boxes, labels, and captions.</li>
+                                        <li><strong>Form fields and placeholders</strong> — Input labels, placeholder text, submit button labels, and any helper text or field descriptions. These are often stored separately from the main content.</li>
+                                        <li><strong>Error messages and validation text</strong> — Messages that appear when something goes wrong are frequently hardcoded outside the main content files and overlooked in translation.</li>
+                                        <li><strong>Popup messages and system alerts</strong> — Any text that appears in modal dialogs, confirmation prompts, or dynamic notifications.</li>
+                                        <li><strong>Images and video</strong> — Text embedded in images needs to be reproduced in a localized version; videos need localized subtitles or captions at minimum. (Image and video localization is not covered in depth in this course, but the omission should be a conscious decision.)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Category 2 -->
+                        <div class="checklist-section">
+                            <div class="proficiency-card">
+                                <div class="proficiency-header">
+                                    <div class="proficiency-icon">🔧</div>
+                                    <h3 class="proficiency-title">Category 2 — Code Integrity</h3>
+                                </div>
+                                <div class="proficiency-body">
+                                    <p class="proficiency-description">
+                                        Translation sometimes introduces code errors, particularly when translators are working inside HTML files and inadvertently modify tags, attributes, or references. The symptoms depend on which type of file was affected.
+                                    </p>
+                                    <div class="web-loc-context">
+                                        <span class="web-loc-context-label">⚠️ How translation breaks code</span>
+                                        The most common source of code errors in localized files is a translator who modified text that was adjacent to a tag or attribute, or who worked in a tool that didn't correctly protect non-translatable elements. Always visually review the rendered page as well as the source.
+                                    </div>
+                                    <p class="indicators-label">What to Check</p>
+                                    <ul class="indicators-list">
+                                        <li><strong>Character encoding</strong> — Confirm that <code>&lt;meta charset="UTF-8"&gt;</code> is declared and that no special characters (accented letters, quotation marks, em dashes) are rendering as garbled symbols. Encoding issues are particularly common when files are passed between tools or operating systems.</li>
+                                        <li><strong>HTML errors</strong> — Broken or malformed HTML tags will manifest as raw code appearing visibly on the page, or as content that is missing or oddly positioned. Use your browser's developer tools to check for parse errors.</li>
+                                        <li><strong>Broken internal links</strong> — Links that pointed to source-language pages may not have been updated to point to their localized equivalents. A Spanish page linking back to an English page is a common and easy-to-miss LQA error.</li>
+                                        <li><strong>CSS errors</strong> — If class names or IDs were accidentally modified during translation, elements will lose their styling. Alternatively, some classes may require updates that were not possible to make in a CAT tool, where the code is hidden. Look for content that appears unstyled, misaligned, or visually broken compared to the source-language version.</li>
+                                        <li><strong>JavaScript errors</strong> — Broken JavaScript typically manifests as functionality that silently stops working: a navigation menu that doesn't expand, a form that won't submit, or dynamic content that fails to load. Open the browser console to check for JavaScript errors.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Category 3 -->
+                        <div class="checklist-section">
+                            <div class="proficiency-card">
+                                <div class="proficiency-header">
+                                    <div class="proficiency-icon">📐</div>
+                                    <h3 class="proficiency-title">Category 3 — Layout and Locale Formatting</h3>
+                                </div>
+                                <div class="proficiency-body">
+                                    <p class="proficiency-description">
+                                        Translated text rarely takes up the same amount of space as the source. Spanish, for example, tends to run 20–30% longer than English. Layout review confirms that the translated content fits its container and that locale-specific formats like dates and numbers match the expectations of the target audience.
+                                    </p>
+                                    <p class="indicators-label">What to Check</p>
+                                    <ul class="indicators-list">
+                                        <li><strong>Text expansion in UI elements</strong> — Check buttons, navigation labels, tab names, and any element with a fixed width or height. Translated text that overflows its container, truncates, or wraps unexpectedly is a layout failure, not a translation failure, and it's discovered during LQA.</li>
+                                        <li><strong>Date, number, and currency formats</strong> — Confirm that any dates, numbers, and currency values displayed on the page follow the conventions of the target locale. For ESP-MEX, this means DD/MM/YYYY date format, a period as the thousands separator, and a comma as the decimal separator, the opposite of the ENG-USA convention.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Category 4 -->
+                        <div class="checklist-section">
+                            <div class="proficiency-card">
+                                <div class="proficiency-header">
+                                    <div class="proficiency-icon">♿</div>
+                                    <h3 class="proficiency-title">Category 4 — Accessibility</h3>
+                                </div>
+                                <div class="proficiency-body">
+                                    <p class="proficiency-description">
+                                        Accessibility review confirms that the localized site can be used by people who rely on assistive technology, screen readers, keyboard navigation, and other tools. Many accessibility attributes contain translatable text that is invisible to sighted users, making them particularly easy to overlook.
+                                    </p>
+                                    <div class="web-loc-context">
+                                        <span class="web-loc-context-label">♿ Why this matters beyond compliance</span>
+                                        Accessibility failures in the localized version affect the same users who are most dependent on correct language signals: screen reader users whose software relies on the <code>lang</code> attribute to select the right voice, and keyboard users navigating with descriptive link text. A localized site that is less accessible than the source version has narrowed its audience.
+                                    </div>
+                                    <p class="indicators-label">What to Check</p>
+                                    <ul class="indicators-list">
+                                        <li><strong>Image alt text</strong> — Confirm that <code>alt</code> attributes have been translated on all images. Alt text is read aloud by screen readers and also contributes to SEO. It is invisible on the rendered page, which makes it one of the most commonly skipped translation items.</li>
+                                        <li><strong>ARIA labels and descriptions</strong> — Check that <code>aria-label</code>, <code>aria-describedby</code>, and similar attributes have been translated. These are used by assistive technology to describe interactive elements, such as buttons, icons, and form fields, that may not have visible text labels.</li>
+                                        <li><strong>Link text</strong> — Review anchor text for links that were translated literally but are no longer descriptive. Phrases like "click here" or "read more" give screen reader users no information about where a link leads. Links should ideally describe their destination, which may require rewriting the surrounding sentence so that the linked text corresponds meaningfully to the URL it points to.</li>
+                                        <li><strong>Color contrast</strong> — If any colors were adjusted during localization (for example, to accommodate a culturally different palette for the target market), verify that text maintains sufficient contrast against its background for users with low vision or color blindness.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Category 5 -->
+                        <div class="checklist-section">
+                            <div class="proficiency-card">
+                                <div class="proficiency-header">
+                                    <div class="proficiency-icon">🔎</div>
+                                    <h3 class="proficiency-title">Category 5 — Discoverability</h3>
+                                </div>
+                                <div class="proficiency-body">
+                                    <p class="proficiency-description">
+                                        A localized page that nobody can find is a missed opportunity. Discoverability review confirms that your translated content is correctly signaled to search engines and language models, and that the metadata actually matches what's on the page.
+                                    </p>
+                                    <div class="web-loc-context">
+                                        <span class="web-loc-context-label">🌐 Covered in Topic 5</span>
+                                        This course covered SEO fundamentals, keyword research, and LLM discoverability in Topic 5. The checks below apply those concepts to the localized version of the site.
+                                    </div>
+                                    <p class="indicators-label">What to Check</p>
+                                    <ul class="indicators-list">
+                                        <li><strong>Language attribute</strong> — Confirm that the <code>&lt;html lang="..."&gt;</code> attribute matches the page language (e.g. <code>lang="es"</code> for Spanish, <code>lang="en"</code> for English). This is the most basic signal to search engines and assistive technology about what language the page is in.</li>
+                                        <li><strong>Meta title and meta description</strong> — Open the developer tools and confirm that the <code>&lt;title&gt;</code> and <code>&lt;meta name="description"&gt;</code> tags have been translated and contain target-language keywords. A meta description left in the source language is one of the most common and consequential LQA oversights.</li>
+                                        <li><strong>Keywords meta tag and Open Graph tags</strong> — Check that the <code>&lt;meta name="keywords"&gt;</code>, <code>og:title</code>, and <code>og:description</code> tags have been localized. Open Graph tags control how the page appears when shared on social media.</li>
+                                        <li><strong>Localized internal URLs</strong> — Confirm that the page's URL has been localized where appropriate. A localized page served at an English URL (e.g. <code>/t-9/localization-quality-assurance.html</code> instead of <code>/t-9/aseguramiento-de-calidad.html</code>) sends mixed signals to search engines and looks unprofessional to users.</li>
+                                        <li><strong>External links and surrounding copy</strong> — Verify that external links point to localized versions of the linked resource where they exist (e.g. a link to an English Wikipedia article should point to the Spanish equivalent), or to an entirely new resource if a localized version of the original link is not available. Check that the anchor text and any surrounding copy have been updated accordingly. A sentence written around a source text link may read awkwardly or be factually inconsistent once the link destination changes.</li>
+                                        <li><strong>Keyword frequency in body copy</strong> — Verify that target-language keywords (or synonyms) appear with reasonable frequency in the body text. A translated page that doesn't write around the keywords in its metadata misses an opportunity to reinforce topical relevance. Google can recognize synonyms, and body copy that naturally reflects the page's target keywords sends a stronger signal.</li>
+                                        <li><strong>Keyword conflicts between pages</strong> — If multiple pages on the site are targeting the same keyword in the target language, they will compete against each other in search results. Each page should have a distinct keyword focus.</li>
+                                        <li><strong>hreflang attributes</strong> — For a bilingual site, confirm that each page correctly declares its language alternates using <code>hreflang</code> tags. These tell search engines which pages are translations of each other and prevent them from being indexed as duplicate content.</li>
+                                        <li><strong>Writing quality and LLM discoverability</strong> — If a CAT tool was used, review the body copy for the telltale signs of segment-by-segment translation: abrupt sentence transitions, unnatural repetition, and phrasing that is technically correct but reads mechanically. Poor writing quality degrades performance with both traditional search engines and LLM-based discovery tools. Passages like this may need to be rewritten rather than corrected word by word.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+                    </div><!-- end checklist content-section -->
+
+                    <!-- Summary -->
+                    <div class="content-section">
+                        <h2 class="section-title">
+                            <span class="section-icon">📌</span>
+                            LQA as a Habit, Not a Handoff
+                        </h2>
+                        <p class="intro-text">
+                            The most effective LQA happens throughout a localization project, not just at the end. Catching a missing string in a JSON file before translation is complete costs very little. Catching it after the site is live when a user screenshots your English menu in a Spanish-language page and shares it online costs considerably more.
+                        </p>
+                        <p class="conclusion-text">
+                            For a project of the scale you'll be working with in this course, a single pass through this checklist before publishing each localized page is sufficient. For larger projects, such as a full e-commerce site or a multilingual SaaS product, LQA becomes a formal stage with dedicated reviewers, issue tracking, and defined acceptance criteria. The principles, however, are the same.
+                        </p>
+
+                        <div class="info-box">
+                            <div class="info-box-title">Up Next: The Speedrun LQA Project</div>
+                            <div class="info-box-content">
+                                Now that you've reviewed what LQA covers and why, it's time to put it into practice. In the Speedrun LQA Project, the focus will be on completeness, or making sure all content has been translated. You'll have access to a completeness dashboard that you can enable to highlight unfinished translations directly on the page.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Navigation - Content loaded via JavaScript -->
+                    <div class="topic-nav"></div>
+                </div>
+
+                <!-- Footer - Content loaded via JavaScript -->
+                <footer class="site-footer"></footer>
+
+            </main>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="../assets/js/header.js"></script>
+    <script src="../assets/js/language-switcher.js"></script>
+    <script src="../assets/js/topic-navigation.js"></script>
+    <script src="../assets/js/footer.js"></script>
+</body>
+</html>
