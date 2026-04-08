@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Revisa los conceptos clave del Tema 9 sobre aseguramiento de calidad en localización, la lista de verificación LQA, el proyecto Speedrun y lo que las personas desarrolladoras necesitan que los profesionales del lenguaje comprendan.">
+    <meta name="keywords" content="conclusión LQA, revisión aseguramiento de calidad localización, resumen lista de verificación LQA, proyecto Speedrun, entrevista desarrollador localización, Loc801">
+
+    <!-- Open Graph para redes sociales -->
+    <meta property="og:title" content="Tema 9 Conclusión | Loc801">
+    <meta property="og:description" content="Revisa y reflexiona sobre el aseguramiento de calidad en localización, la lista de verificación LQA, y lo que tus proyectos Speedrun e independiente revelaron sobre la localización web en el mundo real.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://loc801.locessentials.com/t-9/tema-9-conclusión.html">
+    <meta property="og:image" content="https://loc801.locessentials.com/assets/images/LocCapTransparentTilted.png">
+
+    <!-- URL canónica -->
+    <link rel="canonical" href="https://loc801.locessentials.com/t-9/tema-9-conclusión.html">
+
+    <!-- Alternativas de idioma -->
+    <link rel="alternate" hreflang="es" href="tema-9-conclusión.html">
+    <link rel="alternate" hreflang="en" href="topic-9-conclusion.html">
+    <link rel="alternate" hreflang="x-default" href="topic-9-conclusion.html">
+
+    <title>Tema 9 Conclusión | Loc801</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Hojas de estilo -->
+    <link rel="stylesheet" href="../assets/styles/styles.css">
+</head>
+<body>
+    <div class="page-wrapper">
+        <div class="main-content-wrapper">
+            <main class="main-content">
+
+                <!-- Encabezado -->
+                <header>
+                    <div class="header-content">
+                        <div class="logo-section">
+                            <img src="../assets/images/LocCapTransparentTilted.png" alt="Logo de gorra LocEssentials" class="logo">
+                            <a href="/" class="course-title">Loc801: Localización Web para Principiantes</a>
+                        </div>
+                        <div class="header-actions">
+                            <a href="/esquema.html" class="outline-btn">
+                                <span>📋</span>
+                                <span>Esquema</span>
+                            </a>
+                            <div class="lang-picker">
+                                <button class="lang-btn" data-lang="en">English</button>
+                                <button class="lang-btn" data-lang="es">Español</button>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+
+                <!-- Contenido principal -->
+                <div class="container">
+                    <nav class="breadcrumb">
+                        <a href="/">Inicio del curso</a>
+                        <span class="breadcrumb-separator">›</span>
+                        <a href="/t-9/tema-9-intro.html">Tema 9</a>
+                        <span class="breadcrumb-separator">›</span>
+                        <span>Conclusión</span>
+                    </nav>
+
+                    <div class="topic-header">
+                        <span class="topic-number">TEMA 9</span>
+                        <h1 class="topic-title">Tema 9 Conclusión</h1>
+                        <p class="topic-description">
+                            Reflexiona sobre lo que aprendiste acerca del aseguramiento de calidad en localización, desde la lista de verificación LQA hasta el trabajo práctico en proyectos, y lo que la perspectiva de una persona desarrolladora aporta a tu comprensión de por qué la LQA es importante.
+                        </p>
+                    </div>
+
+                    <div class="content-section">
+                        <h2 class="section-title">
+                            <span class="section-icon">🗝️</span>
+                            Puntos clave
+                        </h2>
+                        <ul class="objectives-list">
+                            <li class="objective-item">La LQA (aseguramiento de calidad en localización) es distinta de la revisión de traducción: evalúa si un producto localizado funciona correctamente como sistema completo, no solo si el texto es preciso</li>
+                            <li class="objective-item">Las cinco categorías de la LQA de contenido traducido de integridad del código, diseño, accesibilidad y descubribilidad corresponden a diferentes capas de un sitio web localizado y requieren distintos tipos de atención</li>
+                            <li class="objective-item">Los problemas de integridad del código como etiquetas rotas, marcadores de posición corruptos y JSON malformado se encuentran entre los errores de LQA más graves, porque pueden romper la funcionalidad de forma silenciosa en lugar de simplemente verse mal</li>
+                            <li class="objective-item">Los problemas de diseño como texto truncadosuelen ser invisibles para quienes traducen desde una hoja de cálculo, pero resultan inmediatamente evidentes para quienes usan el sitio localizado</li>
+                            <li class="objective-item">La accesibilidad en un sitio localizado va más allá del texto visible traducido: los atributos alt, las etiquetas ARIA y las declaraciones de idioma deben ser correctas para que las tecnologías de asistencia puedan servir a las personas usuarias en el idioma de destino</li>
+                            <li class="objective-item">La LQA de descubribilidad abarca la capa de metadatos: títulos de página, meta descripciones, etiquetas Open Graph y atributos hreflang que los motores de búsqueda y los sistemas de IA utilizan para comprender y mostrar el contenido localizado</li>
+                            <li class="objective-item">El Proyecto Speedrun demostró que los errores de completitud, cadenas sin traducir, traducciones de atributos faltantesy  JSON incompleto, suelen ser más frecuentes de lo que parecen a primera vista, y que la revisión sistemática detecta cosas que una lectura casual pasa por alto</li>
+                            <li class="objective-item">El contexto es esencial para la LQA: revisar cadenas de forma aislada lleva a juicios técnicamente correctos pero contextualmente equivocados; siempre que sea posible, evalúa las traducciones dentro del producto o la interfaz en uso</li>
+                            <li class="objective-item">Las decisiones de localización se toman mucho antes de que comience la traducción: cómo se almacenan las cadenas, cómo se estructura la disposición y cómo se gestionan las imágenes son decisiones de ingeniería que pueden facilitar la localización o crear obstáculos para ella</li>
+                            <li class="objective-item">La expansión de texto es una preocupación real y frecuente en la LQA: una traducción puede ser considerablemente más larga o más corta que el texto de origen, e interfaces diseñadas pensando únicamente en el idioma de origen a menudo no la acomodan bien</li>
+                            <li class="objective-item">Las personas profesionales del lenguaje que comprenden la capa técnica están mejor equipadas para detectar problemas que quedan fuera de la revisión de traducción convencional y para comunicarse con eficacia con los equipos de desarrollo que deben corregirlos</li>
+                            <li class="objective-item">La LQA es más eficaz cuando se trata como una práctica continua y no como una entrega única; los sitios localizados cambian, y la calidad debe mantenerse a lo largo de las actualizaciones</li>
+                        </ul>
+                    </div>
+
+                    <div class="content-section">
+                        <h2 class="section-title">
+                            <span class="section-icon">♻️</span>
+                            Reflexiona sobre tu aprendizaje
+                        </h2>
+                        <div class="resource-box" style="margin-bottom: 2rem;">
+                            <p class="resource-content">
+                                Tómate un momento para considerar estas preguntas. No necesitas escribir respuestas formales, pero pensar en ellas te ayudará a solidificar tu comprensión.
+                            </p>
+                        </div>
+
+                        <div class="instruction-steps">
+                            <div class="instruction-step">
+                                <div class="step-number">1</div>
+                                <h3 class="step-title">Lo que reveló la lista de verificación</h3>
+                            </div>
+                            <div>
+                                <p class="step-content" style="margin-bottom: .7rem;">
+                                    Piensa en tu Proyecto Speedrun y en tu revisión LQA independiente. ¿Qué categoría de errores fue más frecuente en los sitios que revisaste? ¿Hubo problemas que la lista de verificación te ayudó a encontrar y que de otro modo no habrías buscado? ¿Cuáles elementos de la lista te parecieron sencillos de aplicar y cuáles requirieron más criterio, o más conocimiento técnico del que esperabas?
+                                </p>
+                            </div>
+
+                            <div class="instruction-step">
+                                <div class="step-number">2</div>
+                                <h3 class="step-title">La perspectiva de quien desarrolla</h3>
+                            </div>
+                            <div>
+                                <p class="step-content" style="margin-bottom: .7rem;">
+                                    En la entrevista, Mohit señaló cómo las decisiones de ingeniería tomadas al inicio de un proyecto determinan lo que es posible en la versión localizada. ¿Cómo cambia esa perspectiva tu manera de pensar en el trabajo de LQA? ¿Encontraste en tus revisiones problemas que claramente eran resultado de decisiones tomadas antes de que comenzara la traducción? ¿Cómo plantearías ese tipo de observaciones a un equipo de desarrollo?
+                                </p>
+                            </div>
+
+                            <div class="instruction-step">
+                                <div class="step-number">3</div>
+                                <h3 class="step-title">La LQA como habilidad profesional</h3>
+                            </div>
+                            <div>
+                                <p class="step-content">
+                                    Observa el trabajo de localización que has realizado a lo largo de este curso. ¿Cómo ha cambiado tu capacidad para evaluar contenido localizado desde que comenzaste? ¿Qué harías de manera diferente en una próxima revisión LQA? ¿Y cómo le explicarías el valor de un proceso de LQA riguroso a una persona cliente o empleadora que lo ve como un complemento opcional y no como una parte central de la localización web?
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-section">
+                        <h2 class="section-title">
+                            <span class="section-icon">🗺️</span>
+                            Lo que sigue
+                        </h2>
+                        <p class="intro-text">
+                            Ahora has desarrollado un marco práctico para evaluar la calidad de sitios web localizados desde la precisión de la traducción y la integridad del código hasta la accesibilidad y la descubribilidad. Combinado con las habilidades técnicas, de contenido y de factores humanos de los temas anteriores, te estás acercando a una base sólida y completa para el trabajo profesional de localización web.
+                        </p>
+                        <div class="info-box">
+                            <div class="info-box-title">Tema 10: Conclusiones y presentación de proyectos</div>
+                            <div class="info-box-content">
+                                En el Tema 10, cerrarás el curso con un repaso de todo lo que construiste a lo largo de nueve temas, una introducción a fundamentos de diseño visual para presentar tu trabajo de forma profesional, y un proyecto final de portafolio. Harás un fork de una plantilla de portafolio bilingüe, la personalizarás con tus propios proyectos y contenido, y publicarás un sitio en GitHub Pages, una muestra profesional que podrás compartir con clientes, colegas y futuros empleadores.
+                            </div>
+                        </div>
+
+                        <div class="tip-box">
+                            <div class="tip-box-title">💡 Antes de continuar</div>
+                            <div class="tip-box-content">
+                                Asegúrate de que tanto tu Proyecto Speedrun como tu publicación en el foro de LQA independiente estén completos. Tu reflexión en la publicación del foro importa tanto como la revisión en sí. Demuestra que puedes analizar qué significan los errores de localización en la práctica, y no solo identificar que existen.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Navigation - Content loaded via JavaScript -->
+                    <div class="topic-nav"></div>
+                </div>
+
+                <!-- Footer - Content loaded via JavaScript -->
+                <footer class="site-footer"></footer>
+
+            </main>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="../assets/js/header.js"></script>
+    <script src="../assets/js/language-switcher.js"></script>
+    <script src="../assets/js/topic-navigation.js"></script>
+    <script src="../assets/js/footer.js"></script>
+</body>
+</html>
