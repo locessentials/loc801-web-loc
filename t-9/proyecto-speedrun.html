@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Realiza control de calidad lingüístico en una página FAQ multilingüe real, usando un panel de integridad integrado para rastrear y corregir traducciones faltantes.">
+    <meta name="keywords" content="control de calidad de localización, proyecto LQA, integridad de traducción, traducción JSON, i18n, FAQ a16z speedrun">
+    
+    <!-- Open Graph para redes sociales -->
+    <meta property="og:title" content="Proyecto de Speedrun | Tema 9 | Loc801">
+    <meta property="og:description" content="Realiza LQA en una página FAQ multilingüe real y usa el panel integrado de integridad para dar seguimiento a tu progreso.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://loc801.locessentials.com/t-9/proyecto-speedrun.html">
+    <meta property="og:image" content="https://loc801.locessentials.com/assets/images/LocCapTransparentTilted.png">
+    
+    <!-- URL canónica -->
+    <link rel="canonical" href="https://loc801.locessentials.com/t-9/proyecto-speedrun.html">
+    
+    <!-- Alternativas de idioma -->
+    <link rel="alternate" hreflang="es" href="proyecto-speedrun.html">
+    <link rel="alternate" hreflang="en" href="speedrun-lqa-project.html">
+    <link rel="alternate" hreflang="x-default" href="speedrun-lqa-project.html">
+    
+    <title>Proyecto de Speedrun | Tema 9 | Loc801</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Hojas de estilo -->
+    <link rel="stylesheet" href="../assets/styles/styles.css">
+    <link rel="stylesheet" href="../assets/styles/code-viewer.css">
+</head>
+<body>
+    <div class="page-wrapper">
+        <div class="main-content-wrapper">
+            <main class="main-content">
+                <!-- Encabezado -->
+                <header>
+                    <div class="header-content">
+                        <div class="logo-section">
+                            <img src="../assets/images/LocCapTransparentTilted.png" alt="Logo de gorra LocEssentials" class="logo">
+                            <a href="/" class="course-title">Loc801: Localización Web para Principiantes</a>
+                        </div>
+                        <div class="header-actions">
+                            <a href="/esquema.html" class="outline-btn">
+                                <span>📋</span>
+                                <span>Esquema</span>
+                            </a>
+                            <div class="lang-picker">
+                                <button class="lang-btn" data-lang="en">English</button>
+                                <button class="lang-btn" data-lang="es">Español</button>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+
+                <!-- Contenido principal -->
+                <div class="container">
+                    <nav class="breadcrumb">
+                        <a href="/">Inicio del curso</a>
+                        <span class="breadcrumb-separator">›</span>
+                        <a href="/t-9/tema-9-intro.html">Tema 9</a>
+                        <span class="breadcrumb-separator">›</span>
+                        <span>Proyecto de Speedrun</span>
+                    </nav>
+
+                    <div class="page-header">
+                        <span class="topic-number">TEMA 9</span>
+                        <h1 class="topic-title">Proyecto de Speedrun</h1>
+                        <p class="topic-description">
+                            Realiza control de calidad lingüístico en una página FAQ multilingüe real, con foco en la integridad: asegurarte de que cada cadena traducible haya sido traducida.
+                        </p>
+                    </div>
+
+                    <div class="content-section">
+                        <h2 class="section-title">
+                            <span class="section-icon">🎯</span>
+                            Resumen del proyecto
+                        </h2>
+                        <p class="intro-text">
+                            En este proyecto trabajarás con una versión localizada de la <a href="https://speedrun.a16z.com/faq" target="_blank" rel="noopener" class="inline-link">página FAQ de a16z Speedrun</a>, un programa real para startups del fondo de capital de riesgo Andreessen Horowitz. El proyecto ya viene configurado con un sistema i18n completo: cada cadena de texto en la página está vinculada a una clave de traducción, y el archivo de traducción al español está parcialmente completo. Tu tarea es terminarlo.
+                        </p>
+                        
+                        <p class="regular-text">
+                            Lo que hace especial a este proyecto es el panel de pruebas de traducción que tiene integrado. Puedes activarlo en cualquier momento para ver exactamente qué tan completa está tu traducción, resaltar las cadenas que aún faltan y descargar tu archivo JSON con el progreso actual. Así es el control de calidad de localización con retroalimentación directamente en la página.
+                        </p>
+
+                        <div class="info-box">
+                            <div class="info-box-title">🔍 Pruébalo antes de empezar</div>
+                            <div class="info-box-content">
+                                <p>Antes de hacer un fork de nada, explora el proyecto. Abre <a href="https://locessentials.github.io/loc801-a16z-speedrun-faq/" target="_blank" rel="noopener" class="inline-link">locessentials.github.io/loc801-a16z-speedrun-faq/</a> en Chrome y presiona <code>Ctrl+Shift+L</code> para abrir el panel de pruebas de traducción. Cambia al español y observa cómo se ve la página cuando una traducción está incompleta. Este panel es el núcleo del proyecto, entonces familiarízate con él desde ahora.</p>
+                                <p style="margin-top: 0.75rem;"><strong>Nota:</strong> El panel de pruebas funciona en Chrome. No funciona en Opera.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-section">
+                        <h2 class="section-title">
+                            <span class="section-icon">📁</span>
+                            Cómo está organizado el proyecto
+                        </h2>
+                        <p class="intro-text">
+                            Antes de empezar a traducir, vale la pena entender cómo está organizado este proyecto y por qué. El README del repositorio explica todo esto en detalle, entonces léelo. Lo que encontrarás aquí es una orientación general para que puedas ubicarte.
+                        </p>
+
+                        <div class="resource-box" style="margin-bottom: 1.5rem;">
+                            <h3 class="resource-title">Un solo archivo HTML, varios idiomas</h3>
+                            <p class="resource-content">
+                                A diferencia de proyectos anteriores del curso, este usa un solo <code>index.html</code> para todos los idiomas, en lugar de un archivo HTML separado por idioma. Este es un patrón común en el desarrollo web moderno. El HTML contiene el contenido en inglés como respaldo, y los atributos <code>data-i18n</code> distribuidos por toda la página funcionan como claves de búsqueda. Cuando alguien elige un idioma, el JavaScript reemplaza las cadenas de texto con las traducciones del archivo JSON correspondiente.
+                            </p>
+                        </div>
+
+                        <div class="resource-box" style="margin-bottom: 1.5rem;">
+                            <h3 class="resource-title">Dónde vive tu trabajo</h3>
+                            <p class="resource-content">
+                                Casi todo tu trabajo ocurre en un solo archivo: <code>locales/es.json</code>. Esta es la plantilla de traducción al español. Tu tarea es añadir los claves ycompletar los valores. El archivo de referencia en inglés (<code>locales/en.json</code>) es tu fuente. El archivo <code>locales/fr.json</code> es opcional; puedes crearlo si quieres.
+                            </p>
+                        </div>
+
+                        <div class="resource-box">
+                            <h3 class="resource-title">Cómo se localizan los atributos</h3>
+                            <p class="resource-content">
+                                Algunos elementos usan no solo <code>data-i18n</code> sino también <code>data-i18n-attr</code>. Este segundo atributo le indica al script de localización qué atributo HTML debe actualizar, cosas como <code>placeholder</code>, <code>alt</code> y <code>title</code>. Estos atributos no son visibles como texto en la página, lo que hace fácil pasarlos por alto. El panel de pruebas los detectará por ti.
+                            </p>
+                        </div>
+
+                        <div class="tip-box" style="margin-top: 1.5rem;">
+                            <div class="tip-box-title">📖 Lee el README</div>
+                            <div class="tip-box-content">
+                                El <a href="https://github.com/locessentials/loc801-a16z-speedrun-faq" target="_blank" rel="noopener" class="inline-link">README del repositorio</a> explica la estructura del proyecto, detalla el patrón i18n de un solo archivo, describe cómo funciona el selector de idiomas y enumera cada tarea. Esta página te da el panorama general y el README te da los detalles que necesitarás para completar el trabajo. Léelo antes de empezar.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-section">
+                        <h2 class="section-title">
+                            <span class="section-icon">🍴</span>
+                            Fork y configuración inicial
+                        </h2>
+                        <p class="intro-text">
+                            Empieza creando tu propia copia del repositorio.
+                        </p>
+
+                        <div class="instruction-steps">
+                            <div class="instruction-step">
+                                <div class="step-number">1</div>
+                                <h3 class="step-title">Haz un fork del repositorio</h3>
+                            </div>
+                            <div>
+                                <p class="step-content">
+                                    Ve a <a href="https://github.com/locessentials/loc801-a16z-speedrun-faq" target="_blank" rel="noopener" class="inline-link">locessentials/loc801-a16z-speedrun-faq</a> en GitHub y haz clic en <strong>Fork</strong> para crear tu propia copia.
+                                </p>
+                            </div>
+
+                            <div class="instruction-step">
+                                <div class="step-number">2</div>
+                                <h3 class="step-title">Clona a tu computadora</h3>
+                            </div>
+                            <div>
+                                <p class="step-content">
+                                    Clona tu fork usando la línea de comandos o GitHub Desktop, luego abre el proyecto en Visual Studio Code. Tómate unos minutos para explorar la estructura de archivos antes de empezar a trabajar.
+                                </p>
+                            </div>
+
+                            <div class="instruction-step">
+                                <div class="step-number">3</div>
+                                <h3 class="step-title">Ábrelo con Live Server</h3>
+                            </div>
+                            <div>
+                                <p class="step-content">
+                                    Usa la extensión Live Server en VS Code para previsualizar el proyecto localmente en Chrome. Abre el panel de pruebas con <code>Ctrl+Shift+L</code> para confirmar que puedes ver el panel de integridad antes de comenzar.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-section instructions-section">
+                        <h2 class="section-title">
+                            <span class="section-icon">📋</span>
+                            Tus tareas
+                        </h2>
+                        
+                        <p class="intro-text">
+                            El README detalla todas las tareas requeridas. Aquí tienes un resumen de lo que debes completar.
+                        </p>
+
+                        <div class="instruction-steps">
+                            <div class="instruction-step">
+                                <div class="step-number">1</div>
+                                <h3 class="step-title">Completa la traducción al español</h3>
+                            </div>
+                            <div>
+                                <p class="step-content">
+                                    Usando <code>en.json</code> como referencia, traduce todas las cadenas en <code>es.json</code>. El archivo contiene alrededor de 2,000 palabras de contenido. Como en punto de este proyecto es practicar el proceso, considera seguir un flujo de trabajo de traducción automática + posedición para trabajar con mayor velocidad.
+                                </p>
+                                <ul class="ul-step-list">
+                                    <li>Traduce todas las cadenas de interfaz: navegación, botones, etiquetas, marcadores de posición</li>
+                                    <li>Traduce todo el contenido del FAQ, preservando el significado y el tono del original</li>
+                                    <li>Presta atención a los objetos anidados en la estructura JSON, mantén la jerarquía exactamente igual</li>
+                                    <li>No dejes ninguna clave con un valor en inglés sin traducir</li>
+                                </ul>
+                            </div>
+
+                            <div class="instruction-step">
+                                <div class="step-number">2</div>
+                                <h3 class="step-title">Maneja correctamente el contenido especial</h3>
+                            </div>
+                            <div>
+                                <p class="step-content">
+                                    Hay tres categorías de contenido que requieren localización más allá de la simple traducción de texto:
+                                </p>
+                                <ul class="ul-step-list">
+                                    <li><strong>Fechas</strong>: La fecha límite de solicitud (May 11, 2025) debe estar formateada según las convenciones del español de México</li>
+                                    <li><strong>Moneda</strong>: El monto de inversión ($1,000,000) debe formatearse para una audiencia hispanohablante</li>
+                                    <li><strong>Pluralización</strong>: Resuelve las formas plurales que difieren entre el inglés y el español</li>
+                                </ul>
+                            </div>
+
+                            <div class="instruction-step">
+                                <div class="step-number">3</div>
+                                <h3 class="step-title">Verifica que los atributos estén localizados</h3>
+                            </div>
+                            <div>
+                                <p class="step-content">
+                                    Asegúrate de que los atributos no visibles, como <code>placeholder</code>, <code>alt</code> y <code>title</code>, estén correctamente actualizados en tu archivo JSON. Son fáciles de pasar por alto, pero el panel de pruebas los detectará.
+                                </p>
+                            </div>
+
+                            <div class="instruction-step">
+                                <div class="step-number">4</div>
+                                <h3 class="step-title">Prueba tu trabajo con el panel</h3>
+                            </div>
+                            <div>
+                                <p class="step-content">
+                                    Usa el panel de pruebas de traducción (<code>Ctrl+Shift+L</code>) a lo largo de tu trabajo para:
+                                </p>
+                                <ul class="ul-step-list">
+                                    <li>Revisar el porcentaje de cadenas traducidas en cualquier momento</li>
+                                    <li>Usar "Resaltar faltantes" para identificar visualmente lo que aún necesita atención</li>
+                                    <li>Activar las claves de traducción para verificar qué cadenas corresponden a qué elementos</li>
+                                    <li>Descargar tu archivo JSON en cualquier momento para guardar tu progreso</li>
+                                </ul>
+                            </div>
+
+                            <div class="instruction-step">
+                                <div class="step-number">5</div>
+                                <h3 class="step-title">Opcional: Traduce el contenido en francés</h3>
+                            </div>
+                            <div>
+                                <p class="step-content">
+                                    El archivo <code>fr.json</code> es una extensión opcional. Si quieres practicar más, aplica el mismo proceso para añadir la traducción en francés.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-section">
+                        <h2 class="section-title">
+                            <span class="section-icon">✍️</span>
+                            Reflexión
+                        </h2>
+                        <p class="intro-text">
+                            Después de completar tu traducción, escribe una reflexión que aborde las tres áreas siguientes. Esto no es un resumen de lo que hiciste, es un análisis de las decisiones que tomaste y lo que aprendiste de ellas.
+                        </p>
+
+                        <div class="resource-box" style="margin-bottom: 1.5rem;">
+                            <h3 class="resource-title">1. Decisiones y retos de traducción</h3>
+                            <p class="resource-content">
+                                ¿Qué decisiones tomaste sobre terminología, tono y registro? ¿Cómo manejaste los términos técnicos o el vocabulario propio del ecosistema de startups que no tenía un equivalente claro en español? ¿Hubo casos en los que preferiste mantener un término en inglés (como "speedrun" o "a16z") en lugar de traducirlo, y por qué? Analiza al menos dos retos concretos de traducción y explica cómo los resolviste.
+                            </p>
+                        </div>
+
+                        <div class="resource-box" style="margin-bottom: 1.5rem;">
+                            <h3 class="resource-title">2. Convenciones locales</h3>
+                            <p class="resource-content">
+                                ¿Qué convenciones locales aplican para tu variante de destino (español de México) y en qué se diferencian del inglés fuente? ¿Hubo casos donde el script de localización gestionó el formato automáticamente, y otros donde tuviste que tomar una decisión manualmente?
+                            </p>
+                        </div>
+
+                        <div class="resource-box">
+                            <h3 class="resource-title">3. El panel de pruebas como herramienta de control de calidad</h3>
+                            <p class="resource-content">
+                                Reflexiona sobre el panel de pruebas como herramienta de LQA. ¿Detectó algo que quizás habrías pasado por alto por tu cuenta? ¿Tiene limitaciones, cosas que una verificación de integridad no puede decirte sobre el progreso y la calidad de la traducción? ¿Cómo se relaciona este tipo de verificación automatizada con los conceptos de LQA que se abordaron en este tema?
+                            </p>
+                        </div>
+
+                        <div class="tip-box" style="margin-top: 1.5rem;">
+                            <div class="tip-box-title">💡 Qué hace una buena reflexión</div>
+                            <div class="tip-box-content">
+                                Las reflexiones sólidas citan ejemplos concretos: cadenas específicas, decisiones específicas, resultados específicos. "La traducción fue fluida" no es una respuesta útil. Señala contenido real del FAQ, describe el problema real que encontraste y conecta tus observaciones con lo que has aprendido sobre LQA y localización web.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-section">
+                        <h2 class="section-title">
+                            <span class="section-icon">🚀</span>
+                            Publicación y entrega
+                        </h2>
+
+                        <div class="instruction-steps">
+                            <div class="instruction-step">
+                                <div class="step-number">1</div>
+                                <h3 class="step-title">Confirma y sube los cambios</h3>
+                            </div>
+                            <div>
+                                <p class="step-content">
+                                    Haz commit de tu <code>es.json</code> completado (y de <code>fr.json</code> si aplica) con un mensaje de commit claro y súbelo a tu repositorio de GitHub.
+                                </p>
+                            </div>
+
+                            <div class="instruction-step">
+                                <div class="step-number">2</div>
+                                <h3 class="step-title">Activa GitHub Pages</h3>
+                            </div>
+                            <div>
+                                <p class="step-content">
+                                    En la configuración de tu repositorio, activa la publicación en GitHub Pages desde la rama principal, tal como lo has hecho en proyectos anteriores.
+                                </p>
+                            </div>
+
+                            <div class="instruction-step">
+                                <div class="step-number">3</div>
+                                <h3 class="step-title">Prueba el sitio en vivo</h3>
+                            </div>
+                            <div>
+                                <p class="step-content">
+                                    Visita tu URL de GitHub Pages y verifica la experiencia completa en español: cambio de idioma, búsqueda, comportamiento del acordeón y el contenido completo del FAQ. Confirma que el panel de pruebas muestre 100% de completitud al activarlo.
+                                </p>
+                            </div>
+
+                            <div class="instruction-step">
+                                <div class="step-number">4</div>
+                                <h3 class="step-title">Entrega tu trabajo</h3>
+                            </div>
+                            <div>
+                                <p class="step-content">
+                                    Entrega lo siguiente en el formato que indique quien enseña el curso:
+                                </p>
+                                <ul class="ul-step-list">
+                                    <li>Enlace a tu sitio en GitHub Pages con el español activo</li>
+                                    <li>Tu reflexión escrita abordando las tres áreas requeridas</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-section">
+                        <h2 class="section-title">
+                            <span class="section-icon">✅</span>
+                            Lista de verificación para la entrega
+                        </h2>
+
+                        <ul class="objectives-list">
+                            <li class="objective-item">Repositorio bifurcado desde <a href="https://github.com/locessentials/loc801-a16z-speedrun-faq" target="_blank" rel="noopener" class="inline-link">locessentials/loc801-a16z-speedrun-faq</a></li>
+                            <li class="objective-item"><code>es.json</code> completamente traducido, es decir no hay ninguna cadena en inglés pendiente</li>
+                            <li class="objective-item">Fechas y monedas formateadas según las convenciones del español de México</li>
+                            <li class="objective-item">Todos los atributos <code>data-i18n-attr</code> traducidos (placeholders, textos alternativos, títulos)</li>
+                            <li class="objective-item">Estructura JSON intacta, sin comas faltantes ni sobrantes, sin anidado roto</li>
+                            <li class="objective-item">El panel de pruebas muestra 100% de completitud para el español</li>
+                            <li class="objective-item">Sitio publicado en GitHub Pages con el cambio de idioma funcionando correctamente</li>
+                            <li class="objective-item">Reflexión escrita abordando las tres áreas requeridas con ejemplos concretos</li>
+                        </ul>
+                    </div>
+
+                    <!-- Navegación - Contenido cargado mediante JavaScript -->
+                    <div class="topic-nav"></div>
+                </div>
+
+                <!-- Pie de página - Contenido cargado mediante JavaScript -->
+                <footer class="site-footer"></footer>
+
+            </main>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="../assets/js/header.js"></script>
+    <script src="../assets/js/language-switcher.js"></script>
+    <script src="../assets/js/topic-navigation.js"></script>
+    <script src="../assets/js/footer.js"></script>
+</body>
+</html>

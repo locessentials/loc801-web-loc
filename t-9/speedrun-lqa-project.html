@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Perform localization quality assurance on a real multilingual FAQ page, using a built-in completeness panel to track and fix missing translations.">
+    <meta name="keywords" content="localization quality assurance, LQA project, translation completeness, JSON translation, i18n, a16z speedrun FAQ">
+    
+    <!-- Open Graph for social media -->
+    <meta property="og:title" content="Speedrun LQA Project | Topic 9 | Loc801">
+    <meta property="og:description" content="Perform LQA on a real multilingual FAQ page and use the built-in completeness panel to track your progress.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://loc801.locessentials.com/t-9/speedrun-lqa-project.html">
+    <meta property="og:image" content="https://loc801.locessentials.com/assets/images/LocCapTransparentTilted.png">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://loc801.locessentials.com/t-9/speedrun-lqa-project.html">
+    
+    <!-- Language alternates -->
+    <link rel="alternate" hreflang="en" href="speedrun-lqa-project.html">
+    <link rel="alternate" hreflang="es" href="proyecto-speedrun.html">
+    <link rel="alternate" hreflang="x-default" href="speedrun-lqa-project.html">
+    
+    <title>Speedrun LQA Project | Topic 9 | Loc801</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../assets/styles/styles.css">
+    <link rel="stylesheet" href="../assets/styles/code-viewer.css">
+</head>
+<body>
+    <div class="page-wrapper">
+        <div class="main-content-wrapper">
+            <main class="main-content">
+                <!-- Header -->
+                <header>
+                    <div class="header-content">
+                        <div class="logo-section">
+                            <img src="../assets/images/LocCapTransparentTilted.png" alt="LocEssentials cap logo" class="logo">
+                            <a href="/" class="course-title">Loc801: Web Localization for Beginners</a>
+                        </div>
+                        <div class="header-actions">
+                            <a href="/outline.html" class="outline-btn">
+                                <span>📋</span>
+                                <span>Outline</span>
+                            </a>
+                            <div class="lang-picker">
+                                <button class="lang-btn" data-lang="en">English</button>
+                                <button class="lang-btn" data-lang="es">Español</button>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+
+                <!-- Main Content -->
+                <div class="container">
+                    <nav class="breadcrumb">
+                        <a href="/">Course Home</a>
+                        <span class="breadcrumb-separator">›</span>
+                        <a href="/t-9/topic-9-primer.html">Topic 9</a>
+                        <span class="breadcrumb-separator">›</span>
+                        <span>Speedrun LQA Project</span>
+                    </nav>
+
+                    <div class="page-header">
+                        <span class="topic-number">TOPIC 9</span>
+                        <h1 class="topic-title">Speedrun LQA Project</h1>
+                        <p class="topic-description">
+                            Perform localization quality assurance on a real multilingual FAQ page, focusing on completeness: making sure every translatable string has been translated.
+                        </p>
+                    </div>
+
+                    <div class="content-section">
+                        <h2 class="section-title">
+                            <span class="section-icon">🎯</span>
+                            Project Overview
+                        </h2>
+                        <p class="intro-text">
+                            In this project, you'll work with a simplified version of the <a href="https://speedrun.a16z.com/faq" target="_blank" rel="noopener" class="inline-link">a16z Speedrun FAQ page</a>—a real startup program run by the venture capital firm Andreessen Horowitz. The project has already been set up with a full i18n system: every string on the page is tied to a translation key, and the Spanish translation file is partially complete. Your job is to finish it.
+                        </p>
+                        
+                        <p class="regular-text">
+                            What makes this project distinctive is the built-in Translation Testing panel. You can toggle it on at any point during your work to see exactly how complete your translation is, highlight the strings that are still missing, and download your current JSON file. This is localization quality assurance with feedback built directly into the page.
+                        </p>
+
+                        <div class="info-box">
+                            <div class="info-box-title">🔍 Try It Before You Start</div>
+                            <div class="info-box-content">
+                                <p>Before you fork anything, take the project for a spin. Navigate to <a href="https://locessentials.github.io/loc801-a16z-speedrun-faq/" target="_blank" rel="noopener" class="inline-link">locessentials.github.io/loc801-a16z-speedrun-faq/</a> in Chrome and press <code>Ctrl+Shift+L</code> to open the Translation Testing panel. Switch to Spanish and see what it looks like when a translation is incomplete. This panel is the heart of the project, so it pays toget familiar with it now.</p>
+                                <p style="margin-top: 0.75rem;"><strong>Note:</strong> The testing panel works in Chrome. It does not work in Opera.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-section">
+                        <h2 class="section-title">
+                            <span class="section-icon">📁</span>
+                            How the Project Is Structured
+                        </h2>
+                        <p class="intro-text">
+                            Before you start translating, it's worth understanding how this project is organized and why. The README in the repository explains all of this in detail, so do be sure toread it. What follows here is a high-level orientation to help you find your footing.
+                        </p>
+
+                        <div class="resource-box" style="margin-bottom: 1.5rem;">
+                            <h3 class="resource-title">One HTML File, Multiple Languages</h3>
+                            <p class="resource-content">
+                                Unlike earlier projects in this course, this one uses a single <code>index.html</code> for all languages rather than a separate HTML file per locale. This is a common pattern in modern web development. The HTML contains default English content as a fallback, and the <code>data-i18n</code> attributes throughout the page serve as lookup keys. When a user selects a language, the JavaScript swaps in the translated strings from the appropriate JSON file.
+                            </p>
+                        </div>
+
+                        <div class="resource-box" style="margin-bottom: 1.5rem;">
+                            <h3 class="resource-title">Where Your Work Lives</h3>
+                            <p class="resource-content">
+                                Almost all of your work happens in one file: <code>locales/es.json</code>. This is the Spanish translation template. Your job is to fill in the missing keys and values. The English reference file (<code>locales/en.json</code>) is your source. The <code>locales/fr.json</code> file is optional; you can create it if you wish.
+                            </p>
+                        </div>
+
+                        <div class="resource-box">
+                            <h3 class="resource-title">How Attributes Are Localized</h3>
+                            <p class="resource-content">
+                                Some elements use not just <code>data-i18n</code> but also <code>data-i18n-attr</code>. This second attribute tells the localization script which HTML attribute to update, so things like <code>placeholder</code>, <code>alt</code>, and <code>title</code>. These aren't visible as text on the page, which makes them easy to miss. The testing panel will catch them for you.
+                            </p>
+                        </div>
+
+                        <div class="tip-box" style="margin-top: 1.5rem;">
+                            <div class="tip-box-title">📖 Read the README</div>
+                            <div class="tip-box-content">
+                                The <a href="https://github.com/locessentials/loc801-a16z-speedrun-faq" target="_blank" rel="noopener" class="inline-link">repository README</a> walks through the project structure, explains the single-file i18n pattern in depth, describes how the language picker works, and outlines each task. This page gives you the big picture. The README gives you the details you'll need to actually complete the work. Read it before you start.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-section">
+                        <h2 class="section-title">
+                            <span class="section-icon">🍴</span>
+                            Fork and Set Up
+                        </h2>
+                        <p class="intro-text">
+                            Start by creating your own copy of the repository.
+                        </p>
+
+                        <div class="instruction-steps">
+                            <div class="instruction-step">
+                                <div class="step-number">1</div>
+                                <h3 class="step-title">Fork the Repository</h3>
+                            </div>
+                            <div>
+                                <p class="step-content">
+                                    Navigate to <a href="https://github.com/locessentials/loc801-a16z-speedrun-faq" target="_blank" rel="noopener" class="inline-link">locessentials/loc801-a16z-speedrun-faq</a> on GitHub and click <strong>Fork</strong> to create your own copy.
+                                </p>
+                            </div>
+
+                            <div class="instruction-step">
+                                <div class="step-number">2</div>
+                                <h3 class="step-title">Clone to Your Computer</h3>
+                            </div>
+                            <div>
+                                <p class="step-content">
+                                    Clone your fork using the command line or GitHub Desktop, then open the project in Visual Studio Code. Take a few minutes to explore the file structure before you start working.
+                                </p>
+                            </div>
+
+                            <div class="instruction-step">
+                                <div class="step-number">3</div>
+                                <h3 class="step-title">Open with Live Server</h3>
+                            </div>
+                            <div>
+                                <p class="step-content">
+                                    Use the Live Server extension in VS Code to preview the project locally in Chrome. Open the testing panel with <code>Ctrl+Shift+L</code> to confirm you can see the completeness dashboard before you begin.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-section instructions-section">
+                        <h2 class="section-title">
+                            <span class="section-icon">📋</span>
+                            Your Tasks
+                        </h2>
+                        
+                        <p class="intro-text">
+                            The README outlines all required tasks. Here's a summary of what you should complete.
+                        </p>
+
+                        <div class="instruction-steps">
+                            <div class="instruction-step">
+                                <div class="step-number">1</div>
+                                <h3 class="step-title">Complete the Spanish Translation</h3>
+                            </div>
+                            <div>
+                                <p class="step-content">
+                                    Using <code>en.json</code> as your reference, translate all strings in <code>es.json</code>. The file has around 2,000 words of content. Since the point here is just to get experience with the process, consider following an automatic translation + post-editing workflow so you can work more quickly.
+                                </p>
+                                <ul class="ul-step-list">
+                                    <li>Translate all interface strings: navigation, buttons, labels, placeholders</li>
+                                    <li>Translate all FAQ content, preserving the meaning and tone of the original</li>
+                                    <li>Pay attention to nested objects in the JSON structure; maintain the hierarchy exactly</li>
+                                    <li>Do not leave any key with an untranslated English value</li>
+                                </ul>
+                            </div>
+
+                            <div class="instruction-step">
+                                <div class="step-number">2</div>
+                                <h3 class="step-title">Handle Special Content Correctly</h3>
+                            </div>
+                            <div>
+                                <p class="step-content">
+                                    Three categories of content require localization beyond simple text translation:
+                                </p>
+                                <ul class="ul-step-list">
+                                    <li><strong>Dates</strong>: The application deadline (May 11th, 2025) should be formatted according to the Spanish locale convention</li>
+                                    <li><strong>Currency</strong>: The investment amount ($1,000,000) should be formatted for a Spanish-speaking audience</li>
+                                    <li><strong>Pluralization</strong>: Handle any plural forms that differ between English and Spanish</li>
+                                </ul>
+                            </div>
+
+                            <div class="instruction-step">
+                                <div class="step-number">3</div>
+                                <h3 class="step-title">Verify Attributes Are Localized</h3>
+                            </div>
+                            <div>
+                                <p class="step-content">
+                                    Ensure that hidden attributes like <code>placeholder</code>, <code>alt</code>, <code>title</code> are correctly updated in your JSON file. These are easy to overlook but will show up as missing in the testing panel.
+                                </p>
+                            </div>
+
+                            <div class="instruction-step">
+                                <div class="step-number">4</div>
+                                <h3 class="step-title">Test Your Work with the Panel</h3>
+                            </div>
+                            <div>
+                                <p class="step-content">
+                                    Use the Translation Testing panel (<code>Ctrl+Shift+L</code>) throughout your work to:
+                                </p>
+                                <ul class="ul-step-list">
+                                    <li>Check the percentage of translated strings at any point</li>
+                                    <li>Use "Highlight Missing" to visually identify what still needs attention</li>
+                                    <li>Toggle translation keys on to verify which strings map to which elements</li>
+                                    <li>Download your JSON file at any time to save your progress</li>
+                                </ul>
+                            </div>
+
+                            <div class="instruction-step">
+                                <div class="step-number">5</div>
+                                <h3 class="step-title">Optional: Translate the Content into French</h3>
+                            </div>
+                            <div>
+                                <p class="step-content">
+                                    The <code>fr.json</code> file is an optional extension. If you'd like additional practice, apply the same process to add a French translation.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-section">
+                        <h2 class="section-title">
+                            <span class="section-icon">✍️</span>
+                            Reflection
+                        </h2>
+                        <p class="intro-text">
+                            After completing your translation, write a reflection addressing the three areas below, not a summary of what you did, but an analysis of the decisions you made and what you learned from them.
+                        </p>
+
+                        <div class="resource-box" style="margin-bottom: 1.5rem;">
+                            <h3 class="resource-title">1. Translation Decisions and Challenges</h3>
+                            <p class="resource-content">
+                                What decisions did you make about terminology, tone, and register? How did you handle technical terms or startup-specific vocabulary that may not have a clean Spanish equivalent? Were there cases where you kept an English term (like "speedrun" or "a16z") rather than translating it, and why? Discuss at least two specific translation challenges and explain how you resolved them.
+                            </p>
+                        </div>
+
+                        <div class="resource-box" style="margin-bottom: 1.5rem;">
+                            <h3 class="resource-title">2. Locale Conventions</h3>
+                            <p class="resource-content">
+                                What locale conventions apply to your target locale (Spanish-speaking Mexico), and how do they differ from the English source? Were there any cases where the localization script handled formatting automatically, and any where you had to make a judgment call manually?
+                            </p>
+                        </div>
+
+                        <div class="resource-box">
+                            <h3 class="resource-title">3. Using the Testing Panel as an LQA Tool</h3>
+                            <p class="resource-content">
+                                Reflect on the testing panel as an LQA tool. Did it catch anything that you might have missed on your own? Were there any limitations—things a completeness check can't tell you about translation progress and quality? How does this kind of automated checking relate to the broader LQA concepts covered in this topic?
+                            </p>
+                        </div>
+
+                        <div class="tip-box" style="margin-top: 1.5rem;">
+                            <div class="tip-box-title">💡 What Makes a Good Reflection</div>
+                            <div class="tip-box-content">
+                                Strong reflections name specific examples, that is, specific strings, specific decisions, specific results. "The translation went smoothly" is not useful. Point to actual content from the FAQ, describe the actual problem you encountered, and connect your observations to what you've learned about LQA and web localization.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-section">
+                        <h2 class="section-title">
+                            <span class="section-icon">🚀</span>
+                            Deployment and Submission
+                        </h2>
+
+                        <div class="instruction-steps">
+                            <div class="instruction-step">
+                                <div class="step-number">1</div>
+                                <h3 class="step-title">Commit and Push</h3>
+                            </div>
+                            <div>
+                                <p class="step-content">
+                                    Commit your completed <code>es.json</code> (and <code>fr.json</code> if applicable) with a clear commit message and push to your GitHub repository.
+                                </p>
+                            </div>
+
+                            <div class="instruction-step">
+                                <div class="step-number">2</div>
+                                <h3 class="step-title">Enable GitHub Pages</h3>
+                            </div>
+                            <div>
+                                <p class="step-content">
+                                    In your repository settings, enable GitHub Pages deployment from the primary branch, as you've done in previous projects.
+                                </p>
+                            </div>
+
+                            <div class="instruction-step">
+                                <div class="step-number">3</div>
+                                <h3 class="step-title">Test the Live Site</h3>
+                            </div>
+                            <div>
+                                <p class="step-content">
+                                    Visit your GitHub Pages URL and verify the full experience in Spanish: language switching, search, accordion behavior, and the complete FAQ content. Confirm the testing panel shows 100% completion when you toggle it.
+                                </p>
+                            </div>
+
+                            <div class="instruction-step">
+                                <div class="step-number">4</div>
+                                <h3 class="step-title">Submit Your Work</h3>
+                            </div>
+                            <div>
+                                <p class="step-content">
+                                    Submit the following in the format requested by your instructor:
+                                </p>
+                                <ul class="ul-step-list">
+                                    <li>Link to your GitHub Pages site with Spanish active</li>
+                                    <li>Your written reflection addressing all three areas</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-section">
+                        <h2 class="section-title">
+                            <span class="section-icon">✅</span>
+                            Submission Checklist
+                        </h2>
+
+                        <ul class="objectives-list">
+                            <li class="objective-item">Repository forked from <a href="https://github.com/locessentials/loc801-a16z-speedrun-faq" target="_blank" rel="noopener" class="inline-link">locessentials/loc801-a16z-speedrun-faq</a></li>
+                            <li class="objective-item"><code>es.json</code> fully completed; no untranslated English strings remaining</li>
+                            <li class="objective-item">Dates and currencies formatted according to Spanish locale conventions</li>
+                            <li class="objective-item">All <code>data-i18n-attr</code> attributes translated (placeholders, alt text, titles)</li>
+                            <li class="objective-item">JSON structure intact: no missing or extra commas, no broken nesting</li>
+                            <li class="objective-item">Testing panel shows 100% completion for Spanish</li>
+                            <li class="objective-item">Site published to GitHub Pages with language switching working correctly</li>
+                            <li class="objective-item">Reflection written addressing all three required areas with specific examples</li>
+                        </ul>
+                    </div>
+
+                    <!-- Navigation - Content loaded via JavaScript -->
+                    <div class="topic-nav"></div>
+                </div>
+
+                <!-- Footer - Content loaded via JavaScript -->
+                <footer class="site-footer"></footer>
+
+            </main>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="../assets/js/header.js"></script>
+    <script src="../assets/js/language-switcher.js"></script>
+    <script src="../assets/js/topic-navigation.js"></script>
+    <script src="../assets/js/footer.js"></script>
+</body>
+</html>
