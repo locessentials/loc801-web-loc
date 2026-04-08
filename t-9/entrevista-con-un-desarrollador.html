@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Una entrevista con Mohit Agarwal de ByondLabs sobre la construcción de sitios web multilingües, las mejores prácticas de localización y lo que les gustaría que las personas de idiomas supieran.">
+    <meta name="keywords" content="desarrollo web multilingüe, ingeniería de localización, entrevista desarrollador, mejores prácticas i18n, soporte RTL, localización web">
+
+    <!-- Open Graph para redes sociales -->
+    <meta property="og:title" content="Entrevista con un Desarrollador | Tema 9 | Loc801">
+    <meta property="og:description" content="Mohit Agarwal de ByondLabs comparte su perspectiva sobre la construcción de sitios web multilingües y qué hace que la localización tenga éxito o fracase a nivel de ingeniería.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://loc801.locessentials.com/t-9/entrevista-con-un-desarrollador.html">
+    <meta property="og:image" content="https://loc801.locessentials.com/assets/images/LocCapTransparentTilted.png">
+
+    <!-- URL canónica -->
+    <link rel="canonical" href="https://loc801.locessentials.com/t-9/entrevista-con-un-desarrollador.html">
+
+    <!-- Alternativas de idioma -->
+    <link rel="alternate" hreflang="es" href="entrevista-con-un-desarrollador.html">
+    <link rel="alternate" hreflang="en" href="interview-with-developer.html">
+    <link rel="alternate" hreflang="x-default" href="interview-with-developer.html">
+
+    <title>Entrevista con un Desarrollador | Tema 9 | Loc801</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Hojas de estilo -->
+    <link rel="stylesheet" href="../assets/styles/styles.css">
+</head>
+<body>
+    <div class="page-wrapper">
+        <div class="main-content-wrapper">
+            <main class="main-content">
+                <!-- Encabezado -->
+                <header>
+                    <div class="header-content">
+                        <div class="logo-section">
+                            <img src="../assets/images/LocCapTransparentTilted.png" alt="Logo de gorra de LocEssentials" class="logo">
+                            <a href="/" class="course-title">Loc801: Localización Web para Principiantes</a>
+                        </div>
+                        <div class="header-actions">
+                            <a href="/esquema.html" class="outline-btn">
+                                <span>📋</span>
+                                <span>Esquema</span>
+                            </a>
+                            <div class="lang-picker">
+                                <button class="lang-btn" data-lang="en">English</button>
+                                <button class="lang-btn" data-lang="es">Español</button>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+
+                <!-- Contenido principal -->
+                <div class="container">
+                    <nav class="breadcrumb">
+                        <a href="/inicio.html">Inicio del Curso</a>
+                        <span class="breadcrumb-separator">›</span>
+                        <a href="/t-9/tema-9-intro.html">Tema 9</a>
+                        <span class="breadcrumb-separator">›</span>
+                        <span>Entrevista con Mohit Agarwal</span>
+                    </nav>
+
+                    <div class="page-header">
+                        <span class="topic-number">TEMA 9</span>
+                        <h1 class="topic-title">Entrevista con Mohit Agarwal, Desarrollador</h1>
+                        <p class="topic-description">
+                            Mohit Agarwal, cofundador de ByondLabs y el desarrollador que construyó el Traductor Automático Pragmático de LocEssentials, se sentó con nosotros a hablar sobre lo que realmente implica construir para la web multilingüe y lo que sale mal cuando la localización se trata como una ocurrencia de último momento.
+                        </p>
+                    </div>
+
+                    <!-- Biografía del invitado -->
+                    <div class="content-section">
+                        <h2 class="section-title">
+                            <span class="section-icon">👤</span>
+                            Sobre Nuestro Invitado
+                        </h2>
+                        <div class="info-box">
+                            <div class="info-box-title">Mohit Agarwal, Cofundador y Arquitecto Principal, ByondLabs</div>
+                            <div class="info-box-content">
+                                Mohit cuenta con más de 11 años de experiencia en ingeniería de producto, construyendo soluciones intuitivas y de alto rendimiento a gran escala. En Helpshift, diseñó SDKs (kits de desarrollo de software) para dispositivos móviles desplegados en más de 2,000 millones de dispositivos. En Fairmatic, desarrolló aplicaciones web y móviles avanzadas para la experiencia de quienes conducen y el análisis de riesgos. Se especializa en el diseño de experiencias de cliente escalables y fáciles de usar para plataformas móviles y web, y cofundó <a href="https://byondlabs.tech/about-us.html" target="_blank" rel="noopener noreferrer" class="inline-link">ByondLabs</a>, donde lidera la ingeniería orientada al cliente con enfoque en el desarrollo de software con IA como núcleo.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Entrevista -->
+                    <div class="content-section">
+                        <h2 class="section-title">
+                            <span class="section-icon">🎙️</span>
+                            La Entrevista
+                        </h2>
+
+                        <!-- P1 -->
+                        <div class="info-box" style="margin-bottom: 2rem;">
+                            <div class="info-box-title">¿A qué te dedicas? Cuéntanos un poco sobre tu trayectoria y tu trabajo.</div>
+                            <div class="info-box-content">
+                                <p>Soy ingeniero de software con más de 12 años de experiencia. He construido productos orientados a quienes los usan en aplicaciones móviles para Android e iOS, así como aplicaciones web que han llegado a miles de millones de personas. Hace aproximadamente año y medio cofundé ByondLabs, donde soy arquitecto principal de experiencias para las personas usuarias finales. Ofrecemos servicios de desarrollo de software con IA como núcleo, desde agentes de voz con IA hasta aplicaciones habilitadas con inteligencia artificial.</p>
+                            </div>
+                        </div>
+
+                        <!-- P2 -->
+                        <div class="info-box" style="margin-bottom: 2rem;">
+                            <div class="info-box-title">¿Cuáles son los retos de construir para la web multilingüe?</div>
+                            <div class="info-box-content">
+                                <p>Muchas veces, las personas construyen experiencias pensando en un solo idioma y luego asumen que agregar traducciones será suficiente para que el producto funcione bien en otros contextos. Las traducciones suelen tratarse como una tarea final en lugar de una preocupación central, y no reciben la atención que merecen. El contenido se entrega a una agencia como una hoja de cálculo, con poca o ninguna información sobre cómo se usan las cadenas, en qué parte de la aplicación o el juego aparecen, o a qué flujo de la experiencia pertenecen. El resultado suele ser una traducción literal que técnicamente dice las palabras correctas, pero que no encaja de forma natural en el producto.</p>
+                                <p style="margin-top: 1rem;">Hemos intentado mejorar esto incluyendo algunas oraciones de contexto junto con el texto fuente, pero los resultados han sido variables. A veces la persona que traduce aprovecha bien ese contexto; otras veces, seguimos recibiendo algo genérico.</p>
+                                <p style="margin-top: 1rem;">El RTL (de derecha a izquierda) es otra área que frecuentemente se pasa por alto. Las interfaces se diseñan de izquierda a derecha, la navegación sigue convenciones del inglés, y a veces las instrucciones hacen referencia a una esquina de la pantalla que en RTL queda del lado opuesto. Eso es una localización incorrecta aunque el texto traducido en sí sea perfecto. El mismo problema aparece con imágenes e íconos que contienen texto embebido: muchos equipos de desarrollo no los localizan, lo que deja el producto solo parcialmente adaptado para ese idioma.</p>
+                            </div>
+                        </div>
+
+                        <!-- P3 -->
+                        <div class="info-box" style="margin-bottom: 2rem;">
+                            <div class="info-box-title">¿Qué flujos de trabajo sigues al construir para la web multilingüe?</div>
+                            <div class="info-box-content">
+                                <p>Una regla básica: siempre configura tu proyecto con soporte multilingüe desde el principio, aunque en la primera versión solo vayas a usar un idioma. Usa las APIs de la plataforma para gestionar bien tus cadenas de texto desde el día uno. Si no lo haces, eventualmente tendrás que rastrear cada cadena escrita directamente en el código, extraerla, refactorizar y volver a probar todo para asegurarte de que nada se rompió. Es mucho trabajo innecesario que se evita fácilmente con una buena planificación desde el inicio.</p>
+                            </div>
+                        </div>
+
+                        <!-- P4 -->
+                        <div class="info-box" style="margin-bottom: 2rem;">
+                            <div class="info-box-title">¿Sigues algún framework en particular, como listas de verificación para el producto?</div>
+                            <div class="info-box-content">
+                                <p>Android e iOS tienen soporte nativo excelente para la localización. Sus entornos de desarrollo &mdash;Android Studio y Xcode&mdash; ofrecen herramientas sólidas para gestionar traducciones, identificar lo que aún está pendiente, y manejar cosas como RTL y formas plurales. Las plataformas web tienen un soporte razonable para detectar el idioma de la persona usuaria, pero generalmente se necesitan bibliotecas adicionales para obtener el mismo rango de funcionalidades.</p>
+                                <p style="margin-top: 1rem;">Además de eso, mantenemos una lista de verificación de producto y diseño para que la localización y la accesibilidad estén presentes a lo largo de todo el proceso, no solo al lanzamiento. Algunos ejemplos de lo que incluye:</p>
+                                <ul class="ul-step-list" style="margin-top: 1rem;">
+                                    <li>Los diseños deben entregarse tanto en versión LTR como RTL, para que los problemas de maquetación no obvios salgan a la luz desde temprano.</li>
+                                    <li>Debe enviarse una lista del nuevo contenido y los idiomas objetivo antes de que comience el trabajo, para que nada quede en el olvido ni se apresure al final.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- P5 -->
+                        <div class="info-box" style="margin-bottom: 2rem;">
+                            <div class="info-box-title">¿Qué consejos le darías a quienes trabajan en traducción y en idiomas y realizan aseguramiento de calidad (LQA) dentro de una aplicación multilingüe?</div>
+                            <div class="info-box-content">
+                                <p>Usa la aplicación. Recorre todos los flujos en los que aparecen tus traducciones. Traducir solo a partir de una descripción, no leyendo cadenas de texto de forma aislada, deja demasiado margen para las suposiciones. Tener acceso a la aplicación en sí &mdash;o al menos a un video de demostración&mdash;. Te da un contexto que puede mejorar radicalmente la calidad de la traducción. Vas a notar cosas que ninguna cantidad de notas en una hoja de cálculo habría revelado.</p>
+                            </div>
+                        </div>
+
+                        <!-- P6 -->
+                        <div class="info-box" style="margin-bottom: 2rem;">
+                            <div class="info-box-title">¿Y qué consejos les darías a quienes lideran productos y a las organizaciones que buscan construir sitios web y aplicaciones multilingües?</div>
+                            <div class="info-box-content">
+                                <p>Lo mismo: véanlo en acción en todos los idiomas. No traten la localización como una casilla que hay que marcar &mdash;háganla una parte de primera clase en su planificación&mdash;. Algo que las personas a cargo del producto frecuentemente pasan por alto es la expansión del texto. Una traducción puede ser notablemente más corta o más larga que el texto fuente, y si la interfaz solo fue diseñada para el inglés, un idioma más extenso podría aparecer cortado con puntos suspensivos. Esa no es una buena experiencia para quien lee.</p>
+                            </div>
+                        </div>
+
+                        <!-- P7 -->
+                        <div class="info-box" style="margin-bottom: 2rem;">
+                            <div class="info-box-title">¿Ves a muchos equipos construyendo versiones culturalmente adaptadas de sus productos desde cero, en lugar de simplemente traducir?</div>
+                            <div class="info-box-content">
+                                <p>No tanto. Pero sí animamos a la gente a pensar en ir hacia lo multilingüe desde el inicio de sus proyectos. Aunque al principio solo vayan a construir para un idioma, los sistemas pueden prepararse para el futuro y evitar retrabajos innecesarios cuando la organización decida expandirse.</p>
+                            </div>
+                        </div>
+
+                        <!-- P8 -->
+                        <div class="info-box" style="margin-bottom: 2rem;">
+                            <div class="info-box-title">¿Algún pensamiento final o consejo adicional que quieras compartir?</div>
+                            <div class="info-box-content">
+                                <p>La traducción nunca debería ser un ítem de una lista de tareas. Necesita pensamiento dedicado de producto y diseño desde el principio. Las empresas que lo hacen bien &mdash;Apple es un buen ejemplo&mdash; lo tratan como algo que importa. Mi mejor consejo: ponte en el lugar de alguien que no conoce tu idioma principal e intenta usar tu producto. Incluso cambiar tu propio teléfono o aplicación a tu segundo idioma es revelador. Rápidamente notarás qué tan poco natural puede sentirse una traducción superficial.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Conclusiones -->
+                    <div class="content-section">
+                        <h2 class="section-title">
+                            <span class="section-icon">💡</span>
+                            Puntos Clave
+                        </h2>
+                        <p class="intro-text">
+                            La perspectiva de Mohit desde el lado de la ingeniería refuerza varias ideas que has encontrado a lo largo de este curso y añade algunos ángulos nuevos que vale la pena llevar a tu trabajo de LQA.
+                        </p>
+                        <div class="tip-box">
+                            <div class="tip-box-title">Qué Tener Presente</div>
+                            <div class="tip-box-content">
+                                <ul class="ul-step-list">
+                                    <li><strong>El contexto lo es todo.</strong> Traducir cadenas de texto de forma aislada produce resultados técnicamente correctos pero contextualmente torpes. Siempre que sea posible, pide acceso al producto que estás localizando.</li>
+                                    <li><strong>La localización es una preocupación de ingeniería, no solo de idioma.</strong> Las decisiones que se toman al inicio del desarrollo &mdash;cómo se almacenan las cadenas, cómo se estructuran las maquetas, cómo se manejan las imágenes&mdash; determinan lo que es posible en una versión localizada.</li>
+                                    <li><strong>El RTL y la expansión de texto son problemas reales.</strong> Incluso una traducción perfecta puede arruinar una experiencia de la persona usuaria si la interfaz no fue diseñada para acomodarla.</li>
+                                    <li><strong>Aboga por involucrarte desde temprano.</strong> Los mejores resultados de localización ocurren cuando las personas especialistas en idiomas forman parte de la conversación antes de que se escriban las cadenas, no después de que el producto sale al mercado.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Navegación - Contenido cargado mediante JavaScript -->
+                    <div class="topic-nav"></div>
+                </div>
+
+                <!-- Pie de página - Contenido cargado mediante JavaScript -->
+                <footer class="site-footer"></footer>
+
+            </main>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="../assets/js/header.js"></script>
+    <script src="../assets/js/language-switcher.js"></script>
+    <script src="../assets/js/topic-navigation.js"></script>
+    <script src="../assets/js/footer.js"></script>
+</body>
+</html>

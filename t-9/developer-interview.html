@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="An interview with Mohit Agarwal of ByondLabs on building for the multilingual web, localization best practices, and what developers wish language professionals knew.">
+    <meta name="keywords" content="multilingual web development, localization engineering, developer interview, i18n best practices, RTL support, web localization">
+
+    <!-- Open Graph for social media -->
+    <meta property="og:title" content="Interview with a Developer | Topic 9 | Loc801">
+    <meta property="og:description" content="Mohit Agarwal of ByondLabs shares his perspective on building for the multilingual web and what makes localization succeed or fail at the engineering level.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://loc801.locessentials.com/t-9/interview-with-developer.html">
+    <meta property="og:image" content="https://loc801.locessentials.com/assets/images/LocCapTransparentTilted.png">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://loc801.locessentials.com/t-9/interview-with-developer.html">
+
+    <!-- Language alternates -->
+    <link rel="alternate" hreflang="es" href="entrevista-con-un-desarrollador.html">
+    <link rel="alternate" hreflang="en" href="interview-with-developer.html">
+    <link rel="alternate" hreflang="x-default" href="interview-with-developer.html">
+
+    <title>Interview with a Developer | Topic 9 | Loc801</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../assets/styles/styles.css">
+</head>
+<body>
+    <div class="page-wrapper">
+        <div class="main-content-wrapper">
+            <main class="main-content">
+                <!-- Header -->
+                <header>
+                    <div class="header-content">
+                        <div class="logo-section">
+                            <img src="../assets/images/LocCapTransparentTilted.png" alt="LocEssentials cap logo" class="logo">
+                            <a href="/" class="course-title">Loc801: Web Localization for Beginners</a>
+                        </div>
+                        <div class="header-actions">
+                            <a href="/outline.html" class="outline-btn">
+                                <span>📋</span>
+                                <span>Outline</span>
+                            </a>
+                            <div class="lang-picker">
+                                <button class="lang-btn" data-lang="en">English</button>
+                                <button class="lang-btn" data-lang="es">Español</button>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+
+                <!-- Main Content -->
+                <div class="container">
+                    <nav class="breadcrumb">
+                        <a href="/">Course Home</a>
+                        <span class="breadcrumb-separator">›</span>
+                        <a href="/t-9/topic-9-primer.html">Topic 9</a>
+                        <span class="breadcrumb-separator">›</span>
+                        <span>Interview with Mohit Agarwal</span>
+                    </nav>
+
+                    <div class="page-header">
+                        <span class="topic-number">TOPIC 9</span>
+                        <h1 class="topic-title">Interview with Developer Mohit Agarwal</h1>
+                        <p class="topic-description">
+                            Mohit Agarwal, co-founder of ByondLabs and the developer who built LocEssentials' Pragmatic Auto-Translator, sat down with us to talk about what it actually takes to build for the multilingual web, and what goes wrong when localization is treated as an afterthought.
+                        </p>
+                    </div>
+
+                    <!-- Guest Bio -->
+                    <div class="content-section">
+                        <h2 class="section-title">
+                            <span class="section-icon">👤</span>
+                            About Our Guest
+                        </h2>
+                        <div class="info-box">
+                            <div class="info-box-title">Mohit Agarwal, Co-Founder &amp; Chief Architect, ByondLabs</div>
+                            <div class="info-box-content">
+                                Mohit brings over 11 years of experience in product engineering, building intuitive, high-performance solutions at scale. At Helpshift, he architected mobile SDKs (software development kits) deployed across more than 2 billion devices. At Fairmatic, he developed advanced web and mobile applications for driver experience and risk analysis. He specializes in designing scalable, user-friendly client experiences for both mobile and web platforms, and he co-founded <a href="https://byondlabs.tech/about-us.html" target="_blank" rel="noopener noreferrer" class="inline-link">ByondLabs</a>, where he leads client-facing engineering with a focus on AI-first software development.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Interview -->
+                    <div class="content-section">
+                        <h2 class="section-title">
+                            <span class="section-icon">🎙️</span>
+                            The Interview
+                        </h2>
+
+                        <!-- Q1 -->
+                        <div class="info-box" style="margin-bottom: 2rem;">
+                            <div class="info-box-title">What do you do? Tell us a bit about your background and work.</div>
+                            <div class="info-box-content">
+                                <p>I'm a software engineer with more than 12 years of experience. I've built end-user-facing products across Android and iOS mobile apps as well as web apps that have been used by billions of people. About a year and a half ago, I co-founded ByondLabs, where I serve as chief architect for end-user experiences. We provide AI-first software development services, ranging from AI voice agents to AI-enabled applications.</p>
+                            </div>
+                        </div>
+
+                        <!-- Q2 -->
+                        <div class="info-box" style="margin-bottom: 2rem;">
+                            <div class="info-box-title">What are the challenges of building for the multilingual web?</div>
+                            <div class="info-box-content">
+                                <p>A lot of the time, people build user experiences with only one language in mind and then assume that adding translations will be enough to make the product work for everyone else. Translations tend to get treated as a final phase task rather than a core concern, and they often don't receive enough attention. Copy gets handed off to an agency as a spreadsheet, with little to no context about how the strings are used, what part of the app or game they appear in, or what user flow they belong to. The result is often a literal translation that technically says the right words but doesn't fit the product naturally.</p>
+                                <p style="margin-top: 1rem;">We've tried to improve this by including a few sentences of context alongside the source copy, but it's been hit or miss. Sometimes the translator uses that context well; other times we still receive something generic.</p>
+                                <p style="margin-top: 1rem;">RTL is another area people frequently miss. UIs are designed left to right, navigation follows English conventions, and sometimes instructions reference a corner of the screen that is on the opposite side in RTL. That's an inaccurate localization even if the translated text itself is perfectly correct. The same issue comes up with images and icons that contain embedded text. Developers often don't localize those, which leaves the product only partially adapted for that language.</p>
+                            </div>
+                        </div>
+
+                        <!-- Q3 -->
+                        <div class="info-box" style="margin-bottom: 2rem;">
+                            <div class="info-box-title">What workflows do you follow when building for the multilingual web?</div>
+                            <div class="info-box-content">
+                                <p>One basic rule: always set up your project with multilingual support in mind from the start, even if you're only using English for version one. Use the platform's APIs to manage your strings properly from day one. If you don't, you'll eventually have to track down every hardcoded string in your codebase, extract it, refactor, and test again to make sure nothing broke. That's a lot of unnecessary work that's easy to avoid by planning ahead.</p>
+                            </div>
+                        </div>
+
+                        <!-- Q4 -->
+                        <div class="info-box" style="margin-bottom: 2rem;">
+                            <div class="info-box-title">Are there any frameworks you follow, such as product checklists?</div>
+                            <div class="info-box-content">
+                                <p>Android and iOS have excellent native localization support. Their development environments&mdash;Android Studio and Xcode&mdash;offer solid tooling for managing translations, flagging what's still pending, and handling things like RTL and plural forms. Web platforms have decent support for detecting the user's language, but you generally need additional libraries to get the same range of functionality.</p>
+                                <p style="margin-top: 1rem;">Beyond that, we maintain a product and design checklist so that localization and accessibility stay front of mind throughout the process, not just at launch. A few examples of what's on it:</p>
+                                <ul class="ul-step-list" style="margin-top: 1rem;">
+                                    <li>Designs must be provided in both LTR and RTL layouts so that non-obvious layout quirks surface early.</li>
+                                    <li>A list of new copy and target languages must be submitted before work begins, so nothing gets rushed or forgotten at the end.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Q5 -->
+                        <div class="info-box" style="margin-bottom: 2rem;">
+                            <div class="info-box-title">What advice do you have for translators and language professionals performing LQA on a multilingual application?</div>
+                            <div class="info-box-content">
+                                <p>Actually use the application. Go through all the workflows that your translations appear in. Translating from a description alone, or by reading strings in isolation, leaves too much room for assumptions. Having access to the app itself, or at minimum a video walkthrough of it, gives you context that can dramatically improve translation quality. You'll catch things that no amount of notes in a spreadsheet would have revealed.</p>
+                            </div>
+                        </div>
+
+                        <!-- Q6 -->
+                        <div class="info-box" style="margin-bottom: 2rem;">
+                            <div class="info-box-title">What about advice for product owners and clients looking to build multilingual websites and apps?</div>
+                            <div class="info-box-content">
+                                <p>Same idea: see it in action across languages. Don't treat localization as a box to check. Make it a first-class part of your planning. One thing product owners often overlook is text expansion. A translation can be significantly shorter or longer than the source, and if the UI was only designed to accommodate English, a more verbose language might end up truncated with an ellipsis. That's not a good experience for the person reading it.</p>
+                            </div>
+                        </div>
+
+                        <!-- Q7 -->
+                        <div class="info-box" style="margin-bottom: 2rem;">
+                            <div class="info-box-title">Do you see many teams building culturally adapted versions of their products from scratch, rather than just translating?</div>
+                            <div class="info-box-content">
+                                <p>Not so much. But we do encourage people to think about going multilingual from the start of their projects. Even if they'll only be building for one language initially, systems can be future-proofed to avoid unnecessary rework down the line when the organization decides to expand.</p>
+                            </div>
+                        </div>
+
+                        <!-- Q8 -->
+                        <div class="info-box" style="margin-bottom: 2rem;">
+                            <div class="info-box-title">Any final thoughts or additional advice you'd like to share?</div>
+                            <div class="info-box-content">
+                                <p>Translation should never be a checklist item. It needs dedicated product and design thinking from the beginning. Companies that do this well, and Apple is a good example, treat it as something that matters. My best advice: put yourself in the shoes of someone who doesn't know your primary language and try to use your product. Even switching your own phone or app to your second language is revealing. You'll quickly notice how unnatural a surface-level translation can feel.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Takeaways -->
+                    <div class="content-section">
+                        <h2 class="section-title">
+                            <span class="section-icon">💡</span>
+                            Key Takeaways
+                        </h2>
+                        <p class="intro-text">
+                            Mohit's perspective from the engineering side reinforces several things you've encountered throughout this course and adds some new angles worth carrying into your LQA work.
+                        </p>
+                        <div class="tip-box">
+                            <div class="tip-box-title">What to Keep in Mind</div>
+                            <div class="tip-box-content">
+                                <ul class="ul-step-list">
+                                    <li><strong>Context is everything.</strong> Translating strings in isolation leads to technically correct but contextually awkward results. Whenever possible, ask for access to the product you're localizing.</li>
+                                    <li><strong>Localization is an engineering concern, not just a language one.</strong> Decisions made early in development, such as how strings are stored, how layouts are structured, how images are handled, shape what's even possible in a localized version.</li>
+                                    <li><strong>RTL and text expansion are real issues.</strong> Even a perfect translation can break a user experience if the interface wasn't designed to accommodate it.</li>
+                                    <li><strong>Advocate for being involved early.</strong> The best localization outcomes happen when language professionals are part of the conversation before strings are written, not after the product ships.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Navigation - Content loaded via JavaScript -->
+                    <div class="topic-nav"></div>
+                </div>
+
+                <!-- Footer - Content loaded via JavaScript -->
+                <footer class="site-footer"></footer>
+
+            </main>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="../assets/js/header.js"></script>
+    <script src="../assets/js/language-switcher.js"></script>
+    <script src="../assets/js/topic-navigation.js"></script>
+    <script src="../assets/js/footer.js"></script>
+</body>
+</html>

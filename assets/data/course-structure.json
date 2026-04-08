@@ -227,6 +227,26 @@
           {
             "label": "Topic 9 Primer",
             "url": "/t-9/topic-9-primer.html"
+          },
+          {
+            "label": "Developer Interview: Mohit Agarwal",
+            "url": "/t-9/developer-interview.html"
+          },
+          {
+            "label": "Localization Quality Assurance (LQA)",
+            "url": "/t-9/localization-quality-assurance.html"
+          },
+          {
+            "label": "Speedrun LQA Project",
+            "url": "/t-9/speedrun-lqa-project.html"
+          },
+          {
+            "label": "Your LQA Project Forum",
+            "url": "/t-9/your-lqa-project-forum.html"
+          },
+          {
+            "label": "Topic 9 Conclusion",
+            "url": "/t-9/topic-9-conclusion.html"
           }
         ]
       },
@@ -285,7 +305,7 @@
     "topics": [
       {
         "number": 1,
-        "title": "Orientación en la Localización de Sitios Web",
+        "title": "Orientación en la localización de sitios web",
         "pages": [
           {
             "label": "Tema 1 - Introducción",
@@ -296,11 +316,11 @@
             "url": "/t-1/autoevaluación.html"
           },
           {
-            "label": "I18n y L10n Web",
+            "label": "I18n y L10n web",
             "url": "/t-1/i18n-l10n-web.html"
           },
           {
-            "label": "Ergonomía Cultural",
+            "label": "Ergonomía cultural",
             "url": "/t-1/ergonomía-cultural.html"
           },
           {
@@ -311,18 +331,18 @@
       },
       {
         "number": 2,
-        "title": "Traducibles de Sitios Web y Flujos de Trabajo de la Localización",
+        "title": "Traducibles de sitios web y flujos de trabajo de la localización",
         "pages": [
           {
             "label": "Tema 2 - Introducción",
             "url": "/t-2/tema-2-intro.html"
           },
           {
-            "label": "Elementos Traducibles",
+            "label": "Elementos traducibles",
             "url": "/t-2/elementos-traducibles.html"
           },
           {
-            "label": "La Teoría y la Práctica",
+            "label": "La teoría y la práctica",
             "url": "/t-2/foro-teoría-loc-web.html"
           },
           {
@@ -352,7 +372,7 @@
             "url": "/t-3/configuración-vsc.html"
           },
           {
-            "label": "Proyecto Página de Terminología",
+            "label": "Proyecto página de terminología",
             "url": "/t-3/proyecto-página-terminología.html"
           },
           {
@@ -374,7 +394,7 @@
             "url": "/t-4/javascript-json-lo-básico.html"
           },
           {
-            "label": "CSS y Estilización Visual",
+            "label": "CSS y estilización visual",
             "url": "/t-4/css-estilización-visual.html"
           },
           {
@@ -389,18 +409,18 @@
       },
       {
         "number": 5,
-        "title": "SEO Tradicional, Palabras Clave y Visibilidad en LLMs",
+        "title": "SEO tradicional, palabras clave y visibilidad en LLMs",
         "pages": [
           {
             "label": "Tema 5 - Introducción",
             "url": "/t-5/tema-5-intro.html"
           },
           {
-            "label": "SEO Tradicional",
+            "label": "SEO tradicional",
             "url": "/t-5/seo-tradicional.html"
           },
           {
-            "label": "Investigación de Keywords",
+            "label": "Investigación de keywords",
             "url": "/t-5/investigación-keywords.html"
           },
           {
@@ -408,7 +428,7 @@
             "url": "/t-5/visibilidad-en-llms.html"
           },
           {
-            "label": "Proyecto de Blog en WordPress",
+            "label": "Proyecto de blog en WordPress",
             "url": "/t-5/proyecto-blog-wordpress.html"
           },
           {
@@ -419,22 +439,22 @@
       },
       {
         "number": 6,
-        "title": "Selección de Traductor",
+        "title": "Selección de tu traductor",
         "pages": [
           {
             "label": "Tema 6 - Introducción",
             "url": "/t-6/tema-6-intro.html"
           },
           {
-            "label": "Cómo Elegir a Quien Traduce",
+            "label": "Cómo elegir a quien traduce",
             "url": "/t-6/elegir-quién-traduce.html"
           },
           {
-            "label": "Lista de Selección de Traductores",
+            "label": "Lista de selección de traductores",
             "url": "/t-6/lista-selección-traductores.html"
           },
           {
-            "label": "Trabajar con Agencias",
+            "label": "Trabajar con agencias",
             "url": "/t-6/trabajar-con-agencias.html"
           },
           {
@@ -445,14 +465,14 @@
       },
       {
         "number": 7,
-        "title": "Opciones de Tecnología de Traducción",
+        "title": "Opciones de tecnología de traducción",
         "pages": [
           {
             "label": "Tema 7 - Introducción",
             "url": "/t-7/tema-7-intro.html"
           },
           {
-            "label": "Foro de Segmentación",
+            "label": "Foro de segmentación",
             "url": "/t-7/foro-segmentación.html"
           },
           {
@@ -471,7 +491,7 @@
       },
       {
         "number": 8,
-        "title": "WordPress Multilingüe",
+        "title": "WordPress multilingüe",
         "pages": [
           {
             "label": "Tema 8 - Introducción",
@@ -481,32 +501,52 @@
       },
       {
         "number": 9,
-        "title": "Trabajar con Desarrolladores y LQA",
+        "title": "Trabajar con desarrolladores y LQA",
         "pages": [
           {
             "label": "Tema 9 - Introducción",
             "url": "/t-9/tema-9-intro.html"
+          },
+          {
+            "label": "Entrevista con Mohit Agarwal",
+            "url": "/t-9/entrevista-con-un-desarrollador.html"
+          },
+          {
+            "label": "Aseguramiento de calidad (LQA)",
+            "url": "/t-9/aseguramiento-de-calidad.html"
+          },
+          {
+            "label": "Proyecto de calidad - Speedrun",
+            "url": "/t-9/proyecto-speedrun.html"
+          },
+          {
+            "label": "Foro de control de calidad",
+            "url": "/t-9/foro-tu-proyecto-control-calidad.html"
+          },
+          {
+            "label": "Tema 9 - Conclusión",
+            "url": "/t-9/tema-9-conclusión.html"
           }
         ]
       },
       {
         "number": 10,
-        "title": "Conclusiones y Proyecto Final",
+        "title": "Conclusiones y proyecto final",
         "pages": [
           {
             "label": "Tema 10 - Introducción",
             "url": "/t-10/tema-10-intro.html"
           },
           {
-            "label": "Repaso del Curso",
+            "label": "Repaso del curso",
             "url": "/t-10/repaso-curso.html"
           },
           {
-            "label": "Diseño Visual",
+            "label": "Diseño visual",
             "url": "/t-10/diseño-visual.html"
           },
           {
-            "label": "Proyecto Portafolio",
+            "label": "Proyecto portafolio",
             "url": "/t-10/proyecto-portafolio.html"
           },
           {
