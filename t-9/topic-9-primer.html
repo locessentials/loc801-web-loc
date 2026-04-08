@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn how to evaluate localization quality on multilingual websites. Covers LQA checklists, a hands-on speedrun project, and an interview with a developer on building for the multilingual web.">
+    <meta name="keywords" content="localization quality assurance, LQA checklist, multilingual website review, web localization, Loc801">
+
+    <!-- Open Graph for social media -->
+    <meta property="og:title" content="Topic 9: Localization Quality Assurance | Loc801">
+    <meta property="og:description" content="Learn how to evaluate localization quality on multilingual websites with LQA checklists, a hands-on project, and a developer interview.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://loc801.locessentials.com/t-9/topic-9-primer.html">
+    <meta property="og:image" content="https://loc801.locessentials.com/assets/images/LocCapTransparentTilted.png">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://loc801.locessentials.com/t-9/topic-9-primer.html">
+
+    <!-- Language alternates -->
+    <link rel="alternate" hreflang="en" href="topic-9-primer.html">
+    <link rel="alternate" hreflang="es" href="tema-9-intro.html">
+    <link rel="alternate" hreflang="x-default" href="topic-9-primer.html">
+
+    <title>Topic 9: Localization Quality Assurance | Loc801</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../assets/styles/styles.css">
+</head>
+<body>
+    <div class="page-wrapper">
+        <div class="main-content-wrapper">
+            <main class="main-content">
+                <!-- Header -->
+                <header>
+                    <div class="header-content">
+                        <div class="logo-section">
+                            <img src="../assets/images/LocCapTransparentTilted.png" alt="LocEssentials cap logo" class="logo">
+                            <a href="/" class="course-title">Loc801: Web Localization for Beginners</a>
+                        </div>
+                        <div class="header-actions">
+                            <a href="/outline.html" class="outline-btn">
+                                <span>📋</span>
+                                <span>Outline</span>
+                            </a>
+                            <div class="lang-picker">
+                                <button class="lang-btn" data-lang="en">English</button>
+                                <button class="lang-btn" data-lang="es">Español</button>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+
+                <!-- Main Content -->
+                <div class="container">
+                    <nav class="breadcrumb">
+                        <a href="/">Course Home</a>
+                        <span class="breadcrumb-separator">›</span>
+                        <span>Topic 9</span>
+                    </nav>
+
+                    <div class="topic-header">
+                        <span class="topic-number">TOPIC 9</span>
+                        <h1 class="topic-title">Localization Quality Assurance</h1>
+                        <p class="topic-description">
+                            Building a multilingual site is only half the job. This topic is about making sure it actually works across languages, layouts, and user experiences. You'll learn a structured approach to LQA, practice it on a real site, and hear from a developer about what good localization looks like from the engineering side.
+                        </p>
+                    </div>
+
+                    <div class="content-section">
+                        <h2 class="section-title">
+                            <span class="section-icon">🎯</span>
+                            Learning Objectives
+                        </h2>
+                        <ul class="objectives-list">
+                            <li class="objective-item">Apply a structured LQA checklist to evaluate multilingual websites across five categories: translated content, code integrity, layout, accessibility, and discoverability</li>
+                            <li class="objective-item">Identify and document localization issues clearly and with supporting evidence</li>
+                            <li class="objective-item">Analyze how localization errors affect site effectiveness, credibility, and reach</li>
+                            <li class="objective-item">Understand localization from a developer's perspective, including common engineering oversights and best practices for building multilingual products</li>
+                            <li class="objective-item">Conduct an independent LQA review of a live multilingual site and reflect on your findings</li>
+                        </ul>
+                    </div>
+
+                    <div class="content-section">
+                        <h2 class="section-title">
+                            <span class="section-icon">📋</span>
+                            Action Items
+                        </h2>
+                        <div class="activities-grid-2x2">
+                            <div class="activity-card">
+                                <div class="activity-type">Interview</div>
+                                <div class="activity-title">Interview with Developer Mohit Agarwal</div>
+                                <p class="activity-description">Hear from the developer who built LocEssentials' Pragmatic Auto-Translator on what it takes to build for the multilingual web.</p>
+                            </div>
+                            <div class="activity-card">
+                                <div class="activity-type">Reference</div>
+                                <div class="activity-title">LQA Checklist</div>
+                                <p class="activity-description">Explore a structured checklist for evaluating multilingual websites across five categories: translated content, code integrity, layout, accessibility, and discoverability.</p>
+                            </div>
+                            <div class="activity-card">
+                                <div class="activity-type">Project</div>
+                                <div class="activity-title">Speedrun LQA Project</div>
+                                <p class="activity-description">Perform translation and a focused LQA review on a real multilingual FAQ page, using a built-in completeness panel to track and fix missing translations.</p>
+                            </div>
+                            <div class="activity-card">
+                                <div class="activity-type">Forum</div>
+                                <div class="activity-title">Your LQA Project</div>
+                                <p class="activity-description">Choose a live bilingual or multilingual site, apply one LQA category from the checklist, and share your findings and reflections with the group.</p>
+                            </div>
+                        </div>
+
+                        <div class="info-box">
+                            <div class="info-box-title">⏱️ Estimated Time</div>
+                            <div class="info-box-content">
+                                Plan for approximately 5–7 hours to complete all activities in this topic. The Speedrun LQA Project and Your LQA Project are the core hands-on components. They're where the checklist concepts come to life.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Navigation - Content loaded via JavaScript -->
+                    <div class="topic-nav"></div>
+                </div>
+
+                <!-- Footer - Content loaded via JavaScript -->
+                <footer class="site-footer"></footer>
+
+            </main>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="../assets/js/header.js"></script>
+    <script src="../assets/js/language-switcher.js"></script>
+    <script src="../assets/js/topic-navigation.js"></script>
+    <script src="../assets/js/footer.js"></script>
+</body>
+</html>
