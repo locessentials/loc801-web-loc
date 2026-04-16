@@ -212,11 +212,23 @@
       },
       {
         "number": 8,
-        "title": "Multilingual WordPress",
+        "title": "Multilingual CMS & WordPress",
         "pages": [
           {
             "label": "Topic 8 Primer",
             "url": "/t-8/topic-8-primer.html"
+          },
+          {
+            "label": "CMS & WordPress",
+            "url": "/t-8/cms-and-wordpress.html"
+          },
+          {
+            "label": "CMS Project Quote",
+            "url": "/t-8/cms-project-quote.html"
+          },
+          {
+            "label": "Topic 8 Conclusion",
+            "url": "/t-8/topic-8-conclusion.html"
           }
         ]
       },
@@ -491,11 +503,23 @@
       },
       {
         "number": 8,
-        "title": "WordPress multilingüe",
+        "title": "CMS multilingüe y WordPress",
         "pages": [
           {
             "label": "Tema 8 - Introducción",
             "url": "/t-8/tema-8-intro.html"
+          },
+          {
+            "label": "CMS y WordPress",
+            "url": "/t-8/cms-y-wordpress.html"
+          },
+          {
+            "label": "Cotización - Proyecto en un CMS",
+            "url": "/t-8/cotización-proyecto-cms.html"
+          },
+          {
+            "label": "Tema 8 - Conclusión",
+            "url": "/t-8/tema-8-conclusión.html"
           }
         ]
       },

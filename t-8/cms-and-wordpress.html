@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn what a Content Management System (CMS) is and what web localization looks like inside WordPress, including themes, styling, plugins, and translation file formats.">
+    <meta name="keywords" content="CMS, content management system, WordPress localization, WordPress themes, .po files, .php files, Loco Translate, WPML, Gutenberg, web localization">
+
+    <!-- Open Graph for social media -->
+    <meta property="og:title" content="CMS & WordPress | Topic 8 | Loc801">
+    <meta property="og:description" content="An introduction to content management systems and a practical look at what localization involves inside WordPress.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://loc801.locessentials.com/t-8/cms-and-wordpress.html">
+    <meta property="og:image" content="https://loc801.locessentials.com/assets/images/LocCapTransparentTilted.png">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://loc801.locessentials.com/t-8/cms-and-wordpress.html">
+
+    <!-- Language alternates -->
+    <link rel="alternate" hreflang="en" href="cms-and-wordpress.html">
+    <link rel="alternate" hreflang="es" href="cms-y-wordpress.html">
+    <link rel="alternate" hreflang="x-default" href="cms-and-wordpress.html">
+
+    <title>CMS & WordPress | Topic 8 | Loc801</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../assets/styles/styles.css">
+    <link rel="stylesheet" href="../assets/styles/checklist.css">
+</head>
+<body>
+    <div class="page-wrapper">
+        <div class="main-content-wrapper">
+            <main class="main-content">
+
+                <!-- Header -->
+                <header>
+                    <div class="header-content">
+                        <div class="logo-section">
+                            <img src="../assets/images/LocCapTransparentTilted.png" alt="LocEssentials cap logo" class="logo">
+                            <a href="/" class="course-title">Loc801: Web Localization for Beginners</a>
+                        </div>
+                        <div class="header-actions">
+                            <a href="/outline.html" class="outline-btn">
+                                <span>📋</span>
+                                <span>Outline</span>
+                            </a>
+                            <div class="lang-picker">
+                                <button class="lang-btn" data-lang="en">English</button>
+                                <button class="lang-btn" data-lang="es">Español</button>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+
+                <!-- Main Content -->
+                <div class="container">
+                    <nav class="breadcrumb">
+                        <a href="/">Course Home</a>
+                        <span class="breadcrumb-separator">›</span>
+                        <a href="/t-8/topic-8-primer.html">Topic 8</a>
+                        <span class="breadcrumb-separator">›</span>
+                        <span>CMS & WordPress</span>
+                    </nav>
+
+                    <div class="page-header">
+                        <span class="topic-number">TOPIC 8</span>
+                        <h1 class="topic-title">CMS & WordPress</h1>
+                        <p class="topic-description">
+                            Most websites you will localize are not built from scratch in a code editor. They run on a Content Management System. Here is what that means, and what localization looks like inside the most widely used one.
+                        </p>
+                    </div>
+
+                    <!-- What Is a CMS -->
+                    <div class="content-section">
+                        <h2 class="section-title">
+                            <span class="section-icon">🗂️</span>
+                            What Is a Content Management System?
+                        </h2>
+                        <p class="intro-text">
+                            A Content Management System (CMS) is software that lets people build and manage a website without writing code by hand. Instead of editing raw HTML files, site owners work through a visual interface where they can write posts, upload images, change layouts, and manage settings.
+                        </p>
+                        <p class="regular-text">
+                            Under the hood, a CMS still generates HTML, CSS, and sometimes JavaScript. But most of that happens automatically, based on templates and settings. The person running the site only sees a dashboard.
+                        </p>
+                        <p class="conclusion-text">
+                            For a web localizer, this has real implications. The text you need to translate may not live in one clean HTML file. It can be spread across a database, theme files, plugin files, and configuration files, sometimes in formats you have not worked with before. Understanding the CMS is part of understanding the localization job.
+                        </p>
+                    </div>
+
+                    <!-- WordPress Overview -->
+                    <div class="content-section">
+                        <h2 class="section-title">
+                            <span class="section-icon">🌐</span>
+                            WordPress: the big picture
+                        </h2>
+                        <p class="intro-text">
+                            WordPress powers approximately 43% of all websites globally, making it the most widely used CMS in the world. It comes in two very different forms.
+                        </p>
+
+                        <div class="info-box">
+                            <div class="info-box-title">WordPress.com vs. WordPress.org</div>
+                            <div class="info-box-content">
+                                <p><strong>WordPress.com</strong> is a hosted platform. You create an account and WordPress handles the servers, updates, and maintenance. It is the easiest way to get started and includes a free tier.</p> 
+                                <p style="margin-top: 1.5rem;"><strong>WordPress.org</strong> is the open-source software you download and install on your own web hosting server. It gives you full control over your site, including the ability to install any plugin or theme, but you are responsible for hosting, security, and updates. Most professional and business sites run on WordPress.org. When a client asks you to localize their WordPress site, it is likely a self-hosted WordPress.org installation.</p>
+                            </div>
+                        </div>
+
+                        <p class="conclusion-text">
+                            In Topic 5, you built a site on WordPress.com to practice writing SEO-optimized content. That gave you a feel for the editing interface. In this topic, we zoom out to look at WordPress as a localization environment, including the parts that are less visible from the front end.
+                        </p>
+                    </div>
+
+                    <!-- Blessings and Curses -->
+                    <div class="content-section">
+                        <h2 class="section-title">
+                            <span class="section-icon">⚖️</span>
+                            WordPress for localizers: blessings and curses
+                        </h2>
+                        <p class="intro-text">
+                            WordPress makes some things easy and other things surprisingly complicated. Here is an honest look at both sides across the areas that matter most for localization.
+                        </p>
+
+                        <!-- The Platform Itself -->
+                        <p class="indicators-label with-top-margin">The platform itself</p>
+                        <ul class="indicators-list">
+                            <li><strong>Blessing:</strong> You can create as many free WordPress.com sites as you want, which makes it an accessible practice environment.</li>
+                            <li class="desventaja"><strong>Curse:</strong> On WordPress.com, plugins require a paid plan, WordPress.com ads appear on free sites, and a custom domain also requires payment. Many of the tools most useful for localization, including translation plugins, are only available on paid plans or on self-hosted WordPress.org installations.</li>
+                        </ul>
+
+                        <!-- Themes -->
+                        <p class="indicators-label with-top-margin">Themes</p>
+                        <ul class="indicators-list">
+                            <li><strong>Blessing:</strong> Installing a theme instantly changes the look and layout of a site. There is no need to build a design from scratch.</li>
+                            <li class="desventaja"><strong>Curse:</strong> Theme text strings, such as button labels, navigation items, and footer copy, are often not stored in the page content at all. They live in the theme's language files, typically <code>.po</code> and <code>.pot</code> files, which are accessed through the WordPress Admin Panel (wp-admin). To edit these, you need to know how to work within that format, and in some cases you will need to write HTML and CSS directly inside the translation interface to get the output you want.
+                            <br><br>
+                            Additionally, some theme content lives in <code>.php</code> files, which are the template files that control how WordPress builds each page. A localizer working on a professional project will need to locate all of these files to make sure nothing gets missed. Identifying where all localizable strings actually live is a real part of the scoping process.</li>
+                        </ul>
+
+                        <!-- Styling -->
+                        <p class="indicators-label with-top-margin">Styling</p>
+                        <ul class="indicators-list">
+                            <li><strong>Blessing:</strong> Many themes offer pre-built style components. You add a block or a section and the design is already handled.</li>
+                            <li class="desventaja"><strong>Curse:</strong> Where you go to customize styles depends on which type of theme is installed. Classic themes use <code>Appearance &gt; Customize</code>, while block-based themes use the Site Editor, found under <code>Appearance &gt; Editor</code>. These two interfaces work very differently from each other. Headers, footers, and automatically generated pages like blog archives or product listings may each be controlled in different places, and the setup changes from theme to theme. This inconsistency can make navigation genuinely difficult, even for experienced WordPress users. And as noted above, some style-related strings will still require going into the language files on the backend.</li>
+                        </ul>
+
+                        <!-- Plugins -->
+                        <p class="indicators-label with-top-margin">Plugins</p>
+                        <ul class="indicators-list">
+                            <li><strong>Blessing:</strong> The WordPress plugin ecosystem is enormous. There is a plugin for almost any functionality you can imagine, including translation and localization workflows.</li>
+                            <li class="desventaja"><strong>Curse:</strong> Full plugin functionality often requires payment. Plugins like WooCommerce (the most popular e-commerce plugin for WordPress) can also inject ads or promotional banners directly onto site pages. Getting a visually consistent result across a site that uses multiple plugins and a theme can be a significant challenge, since each plugin may bring its own styles.</li>
+                        </ul>
+
+                        <!-- The Gutenberg Editor -->
+                        <div class="tip-box" style="margin-top: 1.5rem;">
+                            <div class="tip-box-title">The Gutenberg editor and the Code editor</div>
+                            <div class="tip-box-content">
+                                <p>
+                                    Since WordPress 5.0 (released in December 2018), the default content editor is the block editor, known as <strong>Gutenberg</strong>. Content is built by adding and arranging blocks for text, images, buttons, and other elements. If you have used WordPress.com in this course, you have already worked in Gutenberg.
+                                </p>
+                                <p style="margin-top: 1.5rem;">
+                                    Within Gutenberg, there is a <strong>Code editor</strong> view accessible from the three-dot menu in the top-right corner of the editor. This lets you see and edit the raw block markup directly, which looks similar to HTML but uses WordPress-specific comment syntax to define blocks. When localizing content at the code level, this is where you would work.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Localization Tools for WordPress -->
+                    <div class="content-section">
+                        <h2 class="section-title">
+                            <span class="section-icon">🛠️</span>
+                            Localization tools for WordPress
+                        </h2>
+                        <p class="intro-text">
+                            Before any translation work begins, a localizer needs to identify all the places where text lives on a WordPress site. That means page content in the database, theme strings in <code>.po</code>/<code>.pot</code> files, template logic in <code>.php</code> files, and any strings added by plugins. Scoping a WordPress localization project thoroughly at the start will prevent gaps from showing up in the final product.
+                        </p>
+                        <p class="regular-text">
+                            Once the scope is clear, there are several tool options for the translation work itself.
+                        </p>
+
+                        <div class="info-box">
+                            <div class="info-box-title">Loco Translate (free)</div>
+                            <div class="info-box-content">
+                                Loco Translate is the standard free plugin for translating WordPress themes and plugins directly from wp-admin. It gives you a browser-based interface for editing <code>.po</code> and <code>.pot</code> files without needing to download them or use a separate tool. It is a good starting point for understanding how WordPress language files work.
+                            </div>
+                        </div>
+
+                        <div class="info-box" style="margin-top: 1rem;">
+                            <div class="info-box-title">WPML (paid)</div>
+                            <div class="info-box-content">
+                                WPML (WordPress Multilingual Plugin) is the most widely used paid solution for building multilingual WordPress sites. It handles page content, theme strings, and plugin strings in one interface and supports multiple languages simultaneously. It is a professional-grade tool used in many commercial localization projects.
+                            </div>
+                        </div>
+
+                        <div class="info-box" style="margin-top: 1rem;">
+                            <div class="info-box-title">CAT tool connectors: a word of caution</div>
+                            <div class="info-box-content">
+                                Some plugins and services offer direct connectors between WordPress and CAT tools (Computer-Assisted Translation tools, also called TEnTs). While this sounds efficient, we do not recommend this approach for most website content. As covered in Topic 7, CAT tools segment text sentence by sentence. Website copy, including calls to action, landing page content, and blog posts, depends on tone, rhythm, and cultural adaptation to perform well. Sentence-level segmentation produces translations that are technically accurate but tonally flat, which damages both the user experience and SEO performance. CAT tools have their place in technical documentation and large structured content sets, but website copy deserves a more thoughtful approach.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Conclusion -->
+                    <div class="content-section">
+                        <h2 class="section-title">
+                            <span class="section-icon">➡️</span>
+                            What comes next
+                        </h2>
+                        <p class="intro-text">
+                            WordPress is the dominant CMS, but it is far from the only one. In the next page, you will take on a practical assignment: a client has come to you with a localization project on a different CMS platform, and they need a quote and your recommendations. To do that well, you will need to understand the landscape of CMS options beyond WordPress and what each one means for a localization workflow.
+                        </p>
+                    </div>
+
+                    <!-- Navigation -->
+                    <div class="topic-nav"></div>
+                </div>
+
+                <!-- Footer -->
+                <footer class="site-footer"></footer>
+
+            </main>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="../assets/js/header.js"></script>
+    <script src="../assets/js/language-switcher.js"></script>
+    <script src="../assets/js/topic-navigation.js"></script>
+    <script src="../assets/js/footer.js"></script>
+</body>
+</html>

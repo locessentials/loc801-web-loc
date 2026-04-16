@@ -1,6 +1,5 @@
 /* ============================================
-   Loc801 - Topic 6
-   Translator Selection Checklist Stylesheet
+   Loc801 - Checklist Styles
    ============================================ */
 
 /* Checklist Section */
@@ -111,6 +110,10 @@
     margin-bottom: 0.75rem;
 }
 
+.indicators-label.with-top-margin {
+    margin-top: 1.5rem;
+}
+
 .indicators-list {
     list-style: none;
     padding: 0;
@@ -135,6 +138,11 @@
     color: var(--pink);
     font-weight: 700;
     font-size: 0.95rem;
+}
+
+.indicators-list li.desventaja::before {
+    content: '✗';
+    color: var(--medium-blue); /* or whatever color fits */
 }
 
 /* Intro Callout */

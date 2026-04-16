@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aprende qué es un sistema de gestión de contenidos (CMS) y cómo se ve la localización dentro de WordPress: temas, estilos, plugins y formatos de archivos de traducción.">
+    <meta name="keywords" content="CMS, sistema de gestión de contenidos, localización WordPress, temas WordPress, archivos .po, archivos .php, Loco Translate, WPML, Gutenberg, localización web">
+
+    <!-- Open Graph para redes sociales -->
+    <meta property="og:title" content="CMS y WordPress | Tema 8 | Loc801">
+    <meta property="og:description" content="Una introducción a los sistemas de gestión de contenidos y un análisis práctico de lo que implica la localización dentro de WordPress.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://loc801.locessentials.com/t-8/cms-y-wordpress.html">
+    <meta property="og:image" content="https://loc801.locessentials.com/assets/images/LocCapTransparentTilted.png">
+
+    <!-- URL canónica -->
+    <link rel="canonical" href="https://loc801.locessentials.com/t-8/cms-y-wordpress.html">
+
+    <!-- Alternativas de idioma -->
+    <link rel="alternate" hreflang="en" href="cms-and-wordpress.html">
+    <link rel="alternate" hreflang="es" href="cms-y-wordpress.html">
+    <link rel="alternate" hreflang="x-default" href="cms-and-wordpress.html">
+
+    <title>CMS y WordPress | Tema 8 | Loc801</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Hojas de estilo -->
+    <link rel="stylesheet" href="../assets/styles/styles.css">
+    <link rel="stylesheet" href="../assets/styles/checklist.css">
+</head>
+<body>
+    <div class="page-wrapper">
+        <div class="main-content-wrapper">
+            <main class="main-content">
+
+                <!-- Encabezado -->
+                <header>
+                    <div class="header-content">
+                        <div class="logo-section">
+                            <img src="../assets/images/LocCapTransparentTilted.png" alt="Logo de gorra LocEssentials" class="logo">
+                            <a href="/" class="course-title">Loc801: Localización Web para Principiantes</a>
+                        </div>
+                        <div class="header-actions">
+                            <a href="/esquema.html" class="outline-btn">
+                                <span>📋</span>
+                                <span>Esquema</span>
+                            </a>
+                            <div class="lang-picker">
+                                <button class="lang-btn" data-lang="en">English</button>
+                                <button class="lang-btn" data-lang="es">Español</button>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+
+                <!-- Contenido principal -->
+                <div class="container">
+                    <nav class="breadcrumb">
+                        <a href="/">Inicio del curso</a>
+                        <span class="breadcrumb-separator">›</span>
+                        <a href="/t-8/tema-8-intro.html">Tema 8</a>
+                        <span class="breadcrumb-separator">›</span>
+                        <span>CMS y WordPress</span>
+                    </nav>
+
+                    <div class="page-header">
+                        <span class="topic-number">TEMA 8</span>
+                        <h1 class="topic-title">CMS y WordPress</h1>
+                        <p class="topic-description">
+                            La mayoría de los sitios web que localizarás no se construyen desde cero en un editor de código. Funcionan sobre un sistema de gestión de contenidos. Aquí explicamos qué significa eso y cómo se ve la localización dentro del más utilizado.
+                        </p>
+                    </div>
+
+                    <!-- Qué es un CMS -->
+                    <div class="content-section">
+                        <h2 class="section-title">
+                            <span class="section-icon">🗂️</span>
+                            ¿Qué es un sistema de gestión de contenidos?
+                        </h2>
+                        <p class="intro-text">
+                            Un sistema de gestión de contenidos (CMS, por sus siglas en inglés) es un software que permite crear y administrar un sitio web sin escribir código manualmente. En lugar de editar archivos HTML directamente, las personas que gestionan el sitio trabajan a través de una interfaz visual donde pueden redactar publicaciones, subir imágenes, cambiar diseños y administrar configuraciones.
+                        </p>
+                        <p class="regular-text">
+                            Por debajo, un CMS sigue generando HTML, CSS y en ocasiones JavaScript. Pero gran parte de eso ocurre de forma automática, a partir de plantillas y configuraciones. Quien administra el sitio solo ve un panel de control.
+                        </p>
+                        <p class="conclusion-text">
+                            Para quienes trabajan en localización web, esto tiene implicaciones concretas. El texto que hay que traducir puede no estar en un solo archivo HTML limpio. Puede estar distribuido entre una base de datos, archivos de tema, archivos de plugin y archivos de configuración, a veces en formatos con los que no se ha trabajado antes. Entender el CMS es parte de entender el proyecto de localización.
+                        </p>
+                    </div>
+
+                    <!-- Panorama general de WordPress -->
+                    <div class="content-section">
+                        <h2 class="section-title">
+                            <span class="section-icon">🌐</span>
+                            WordPress: el panorama general
+                        </h2>
+                        <p class="intro-text">
+                            Como aprendieron en el tema 5, WordPress impulsa aproximadamente el 43% de todos los sitios web del mundo, lo que lo convierte en el CMS más utilizado a nivel global. Existe en dos formas muy distintas.
+                        </p>
+
+                        <div class="info-box">
+                            <div class="info-box-title">Un repaso: WordPress.com vs. WordPress.org</div>
+                            <div class="info-box-content">
+                                <p><strong>WordPress.com</strong> es una plataforma alojada. Se crea una cuenta y WordPress se encarga de los servidores, las actualizaciones y el mantenimiento. Es la forma más sencilla de comenzar e incluye una modalidad gratuita.</p> 
+                                <p style="margin-top: 1.5rem;"><strong>WordPress.org</strong> es el software de código abierto que se descarga e instala en un servidor de alojamiento propio. Ofrece control total sobre el sitio, incluyendo la posibilidad de instalar cualquier plugin o tema, pero la persona que lo usa es responsable del alojamiento, la seguridad y las actualizaciones. La mayoría de los sitios profesionales y comerciales funcionan con WordPress.org. Cuando un cliente solicita la localización de su sitio WordPress, es probable que sea una instalación autoalojada en WordPress.org.</p>
+                            </div>
+                        </div>
+
+                        <p class="conclusion-text">
+                            En el Tema 5, creaste un sitio en WordPress.com para practicar la escritura de contenido optimizado para SEO. Eso te dio una idea del entorno de edición. En este tema, ampliamos la perspectiva para analizar WordPress como entorno de localización, incluyendo las partes que no son visibles desde el frontend.
+                        </p>
+                    </div>
+
+                    <!-- Ventajas y desventajas -->
+                    <div class="content-section">
+                        <h2 class="section-title">
+                            <span class="section-icon">⚖️</span>
+                            WordPress para quienes localizan: ventajas y desventajas
+                        </h2>
+                        <p class="intro-text">
+                            WordPress facilita algunas cosas y complica otras de manera sorprendente. A continuación, un análisis honesto de ambas caras en las áreas que más importan para la localización.
+                        </p>
+
+                        <!-- La plataforma en sí -->
+                        <p class="indicators-label with-top-margin">La plataforma en sí</p>
+                        <ul class="indicators-list">
+                            <li><strong>Ventaja:</strong> Se pueden crear tantos sitios gratuitos en WordPress.com como se quiera, lo que lo convierte en un entorno de práctica accesible.</li>
+                            <li class="desventaja"><strong>Desventaja:</strong> En WordPress.com, los plugins requieren un plan de pago, los anuncios de WordPress.com aparecen en los sitios gratuitos y un dominio personalizado también requiere pago. Muchas de las herramientas más útiles para la localización, incluidos los plugins de traducción, solo están disponibles en planes de pago o en instalaciones autoalojadas de WordPress.org.</li>
+                        </ul>
+
+                        <!-- Temas -->
+                        <p class="indicators-label with-top-margin">Temas</p>
+                        <ul class="indicators-list">
+                            <li><strong>Ventaja:</strong> Instalar un tema cambia instantáneamente el aspecto y la estructura del sitio. No es necesario construir un diseño desde cero.</li>
+                            <li class="desventaja"><strong>Desventaja:</strong> Las cadenas de texto del tema, como etiquetas de botones, elementos de navegación y contenido del pie de página, frecuentemente no se almacenan en el contenido de la página. Viven en los archivos de idioma del tema, generalmente archivos <code>.po</code> y <code>.pot</code>, a los que se accede desde el panel de administración de WordPress (wp-admin). Para editarlos, es necesario saber trabajar con ese formato y, en algunos casos, escribir HTML y CSS directamente dentro de la interfaz de traducción para obtener el resultado deseado. 
+                            <br><br>    
+                            Además, parte del contenido del tema vive en archivos <code>.php</code>, que son los archivos de plantilla que controlan cómo WordPress construye cada página. Quienes trabajan en proyectos de localización profesional necesitan localizar todos estos archivos para asegurarse de que no se pase nada por alto. Identificar dónde viven todas las cadenas localizables es una parte real del proceso de análisis del proyecto.</li>
+                        </ul>
+
+                        <!-- Estilos -->
+                        <p class="indicators-label with-top-margin">Estilos</p>
+                        <ul class="indicators-list">
+
+                            <li><strong>Ventaja:</strong> Muchos temas ofrecen componentes de estilo prediseñados. Se agrega un bloque o una sección y el diseño ya está resuelto.</li>
+                            <li class="desventaja"><strong>Desventaja:</strong> El lugar donde se personalizan los estilos depende del tipo de tema instalado. Los temas clásicos usan <code>Apariencia &gt; Personalizar</code>, mientras que los temas basados en bloques usan el Editor del sitio, que se encuentra en <code>Apariencia &gt; Editor</code>. Estas dos interfaces funcionan de manera muy diferente entre sí. Los encabezados, pies de página y las páginas generadas automáticamente, como archivos de blog o listados de productos, pueden estar controlados en lugares distintos, y la configuración cambia de un tema a otro. Esta falta de consistencia puede dificultar genuinamente la navegación, incluso para personas con experiencia en WordPress. Y como se mencionó antes, algunas cadenas relacionadas con estilos seguirán requiriendo ir a los archivos de idioma en el backend.</li>
+                        </ul>
+
+                        <!-- Plugins -->
+                        <p class="indicators-label with-top-margin">Plugins</p>
+                        <ul class="indicators-list">
+                            <li><strong>Ventaja:</strong> El ecosistema de plugins de WordPress es enorme. Existe un plugin para casi cualquier funcionalidad imaginable, incluidos los flujos de trabajo de traducción y localización.</li>
+                            <li class="desventaja"><strong>Desventaja:</strong> La funcionalidad completa de los plugins frecuentemente requiere pago. Plugins como WooCommerce (el plugin de comercio electrónico más popular para WordPress) pueden también inyectar anuncios o banners promocionales directamente en las páginas del sitio. Lograr un resultado visualmente consistente en un sitio que usa varios plugins y un tema puede representar un desafío significativo, ya que cada plugin puede traer sus propios estilos.</li>
+                        </ul>
+
+                        <!-- El editor Gutenberg -->
+                        <div class="tip-box" style="margin-top: 1.5rem;">
+                            <div class="tip-box-title">El editor Gutenberg y el editor de código</div>
+                            <div class="tip-box-content">
+                                <p>
+                                    Desde WordPress 5.0 (lanzado en diciembre de 2018), el editor de contenido predeterminado es el editor de bloques, conocido como <strong>Gutenberg</strong>. El contenido se construye agregando y organizando bloques para texto, imágenes, botones y otros elementos. Si usaste WordPress.com en este curso, ya trabajaste con Gutenberg.
+                                </p>
+                                <p style="margin-top: 1.5rem;">
+                                    Dentro de Gutenberg existe una vista de <strong>editor de código</strong> accesible desde el menú de tres puntos en la esquina superior derecha del editor. Esto permite ver y editar directamente el marcado de bloques sin procesar, que se parece al HTML pero usa una sintaxis de comentarios propia de WordPress para definir los bloques. Al localizar contenido a nivel de código, este es el lugar donde se trabaja.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Herramientas de localización para WordPress -->
+                    <div class="content-section">
+                        <h2 class="section-title">
+                            <span class="section-icon">🛠️</span>
+                            Herramientas de localización para WordPress
+                        </h2>
+                        <p class="intro-text">
+                            Antes de comenzar cualquier trabajo de traducción, es necesario identificar todos los lugares donde vive el texto en un sitio WordPress. Eso incluye el contenido de las páginas en la base de datos, las cadenas del tema en archivos <code>.po</code>/<code>.pot</code>, la lógica de las plantillas en archivos <code>.php</code> y cualquier cadena añadida por plugins. Hacer un análisis exhaustivo del proyecto desde el inicio evitará que aparezcan lagunas en el producto final.
+                        </p>
+                        <p class="regular-text">
+                            Una vez definido el alcance, existen varias opciones de herramientas para el trabajo de traducción.
+                        </p>
+
+                        <div class="info-box">
+                            <div class="info-box-title">Loco Translate (gratuito)</div>
+                            <div class="info-box-content">
+                                Loco Translate es el plugin gratuito estándar para traducir temas y plugins de WordPress directamente desde wp-admin. Ofrece una interfaz en el navegador para editar archivos <code>.po</code> y <code>.pot</code> sin necesidad de descargarlos ni usar una herramienta separada. Es un buen punto de partida para entender cómo funcionan los archivos de idioma en WordPress.
+                            </div>
+                        </div>
+
+                        <div class="info-box" style="margin-top: 1rem;">
+                            <div class="info-box-title">WPML (de pago)</div>
+                            <div class="info-box-content">
+                                WPML (WordPress Multilingual Plugin) es la solución de pago más utilizada para crear sitios WordPress multilingües. Gestiona el contenido de las páginas, las cadenas del tema y las cadenas de los plugins en una sola interfaz, y admite varios idiomas de forma simultánea. Es una herramienta de nivel profesional que se usa en muchos proyectos de localización comercial.
+                            </div>
+                        </div>
+
+                        <div class="info-box" style="margin-top: 1rem;">
+                            <div class="info-box-title">Conectores con herramientas TAC: una advertencia</div>
+                            <div class="info-box-content">
+                                Algunos plugins y servicios ofrecen conectores directos entre WordPress y herramientas TAC (herramientas de traducción asistida por computadora). Aunque suena eficiente, no recomendamos este enfoque para la mayoría del contenido web. Como se vio en el Tema 7, las herramientas TAC segmentan el texto oración por oración. El contenido web, incluyendo llamadas a la acción, páginas de destino y publicaciones de blog, depende del tono, el ritmo y la adaptación cultural para funcionar bien. La segmentación a nivel de oración produce traducciones técnicamente correctas pero tonalmente planas, lo que daña tanto la experiencia de las personas que visitan el sitio como el posicionamiento SEO. Las herramientas TAC tienen su lugar en la documentación técnica y en conjuntos de contenido estructurado y extenso, pero el contenido web merece un enfoque más cuidadoso.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Conclusión -->
+                    <div class="content-section">
+                        <h2 class="section-title">
+                            <span class="section-icon">➡️</span>
+                            Lo que sigue
+                        </h2>
+                        <p class="intro-text">
+                            WordPress es el CMS más usado, pero está lejos de ser el único. En la siguiente página, realizarás una tarea práctica: un cliente se ha acercado con un proyecto de localización en una plataforma CMS diferente y necesita una cotización y tus recomendaciones. Para hacerlo bien, necesitarás conocer el panorama de opciones de CMS más allá de WordPress y lo que cada una implica para un flujo de trabajo de localización.
+                        </p>
+                    </div>
+
+                    <!-- Navegación -->
+                    <div class="topic-nav"></div>
+                </div>
+
+                <!-- Pie de página -->
+                <footer class="site-footer"></footer>
+
+            </main>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="../assets/js/header.js"></script>
+    <script src="../assets/js/language-switcher.js"></script>
+    <script src="../assets/js/topic-navigation.js"></script>
+    <script src="../assets/js/footer.js"></script>
+</body>
+</html>
