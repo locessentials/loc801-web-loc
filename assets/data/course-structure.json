@@ -227,6 +227,10 @@
             "url": "/t-8/cms-project-quote.html"
           },
           {
+            "label": "Example CMS Quote",
+            "url": "/t-8/example-cms-quote.html"
+          },
+          {
             "label": "Topic 8 Conclusion",
             "url": "/t-8/topic-8-conclusion.html"
           }
@@ -516,6 +520,10 @@
           {
             "label": "Cotización - Proyecto en un CMS",
             "url": "/t-8/cotización-proyecto-cms.html"
+          },
+          {
+            "label": "Ejemplo de cotización CMS",
+            "url": "/t-8/ejemplo-cotización-cms.html"
           },
           {
             "label": "Tema 8 - Conclusión",
