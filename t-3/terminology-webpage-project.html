@@ -314,6 +314,13 @@
                                 </p>
                             </div>
                         </div>
+
+                        <div class="tip-box">
+                            <div class="tip-box-title">💡 Tip: Changes Not Showing Up? Force a Refresh</div>
+                            <div class="tip-box-content">
+                                If you push an update to GitHub Pages and your browser still shows the old version, you're running into <strong>caching</strong>. Browsers cache files, meaning they save a local copy of your HTML, CSS, and JS so pages load faster on repeat visits. The problem is that cached files can stick around even after you've deployed new changes. To bypass the cache without clearing your entire browser history, open the <strong>Google Chrome DevTools console</strong> (F12 or right-click → Inspect → Console tab) and run: <code>location.reload(true)</code>. This triggers a <strong>hard reload</strong>. It tells the browser to ignore its cached copies and re-fetch all files directly from the server. It's the quickest way to confirm your latest deployment is actually live without affecting any other cached pages in your browser.
+                            </div>
+                        </div>
                     </div>
 
                     <div class="content-section">
